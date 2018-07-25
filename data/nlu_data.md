@@ -1,67 +1,263 @@
 ## intent:bye
 - Bye
 - Goodbye
-- See you later
-- Bye bot
-- Goodbye friend
+- Hasta luego
+- bye bot
+- Adios amigo
 - bye
-- bye for now
-- catch you later
-- gotta go
-- See you
-- goodnight
-- have a nice day
-- i'm off
-- see you later alligator
-- we'll speak soon
+- goodbye
+- hasta luego
+- me tengo que ir
+- Nos vemos
+- adios bot
+- adios amigo
+- nos vemos luego
+- hablamos luego
 
 ## intent:greet
 - Hi
 - Hey
-- Hi bot
+- Hola bot
 - Hey bot
 - Hello
-- Good morning
-- hi again
-- hi folks
-- hi Mister
-- hi pal!
-- hi there
-- greetings
-- hello everybody
-- hello is anybody there
-- hello robot
+- hola
+- hola denuevo
+- Hola amigo
+- Que tal
+- hola robot
+- saludos
+- Saludos
+- hey
 
 ## intent:thank
-- Thanks
-- Thank you
-- Thank you so much
-- Thanks bot
-- Thanks for that
-- cheers
-- cheers bro
-- ok thanks!
-- perfect thank you
-- thanks a bunch for everything
-- thanks for the help
-- thanks a lot
-- amazing, thanks
-- cool, thanks
-- cool thank you
+- Gracias
+- gracias
+- Muchas gracias
+- muchas gracias
+- Gracias bot
+- gracias bot
+- ok gracias
+- Ok gracias!
+- perfecto gracias
+- gracias por todo
+- gracias por la ayuda
+- te lo agradesco
+- cool, gracias
 
 ## intent:deny
 - no
-- definitely not
-- never
-- absolutely not
-- i don't think so
-- i'm afraid not
-- no sir
-- no ma'am
-- no way
-- no sorry
-- No, not really.
-- nah not for me
+- definitivamente no
+- nunca
+- absolutamente no
+- no creo
+- no robot
+- no robot
+- No
+- No creo
+- No bot
+- No robot
 - nah
-- no and no again
-- no go
+- no y no
+- Nah
+
+## intent:mood_affirm
+- si
+- Si
+- claro
+- por supuesto
+- correcto
+- Claro
+- Correcto
+- si, claro
+- si claro
+
+## intent:mood_deny
+- no
+- nunca
+- No creo
+- no creo
+- para nada
+
+## intent:mood_great
+- perfecto
+- muy bien
+- bien
+- increible
+- todo bien
+- me siento excelente
+- excelente
+- Yo estoy bien
+- yo me siento bien
+- tamo bien
+- super
+- Todo bien
+- Perfecto
+- Muy bien
+
+## intent:mood_unhappy
+- no me siento bien
+- No estoy bien
+- me siento mal
+- Me siento mal
+- No estoy feliz
+- no estoy feliz
+
+## intent:query_event
+- cuando es el [Inicio de prematricula](event) 
+- cuando es el [Inicio de prematricula](event)?
+- Cuando es el [Inicio de prematricula](event)?
+- cuando es el [Inicio de prematricula](event)
+- cuando es el [Inicio de prematricula](event)?
+- Cuando es la [prematricula](event)?
+- en que fecha es la [prematricula](event)
+- En que fecha es la [prematricula](event)?
+- Cuando sera la [prematricula](event)
+- cuando es la [inscripcion](event)
+- cuando es la [inscripcion](event)?
+- Cuando es la [inscripcion](event)?
+- en que fecha es la [inscripcion](event)
+- En que fecha es la [inscripcion](event)?
+- Cuando sera la [inscripcion](event)
+- cuando es el [Inicio del periodo](event) 
+- cuando es el [Inicio del periodo](event)?
+- Cuando es el [Inicio del periodo](event)?
+- cuando es el [primer pago de matrcula estudiantes de nuevo ingreso](event) 
+- cuando es el [primer pago de matrcula estudiantes de nuevo ingreso](event)?
+- Cuando es el [primer pago de matrcula estudiantes de nuevo ingreso](event)?
+- Cuando es el [primer pago de matrcula estudiantes de nuevo ingreso](event)
+- cuando son las [inscripciones Generales y Primer Pago de Matrcula](event) 
+- cuando son las [inscripciones generales y primer pago de matrcula](event)?
+- Cuando son las [Inscripciones Generales y Primer Pago de Matrcula](event)?
+- Cuando son las [Inscripciones Generales y Primer Pago de Matrcula](event)
+- cuando es la [bienvenida estudiantes de nuevo ingreso](event) 
+- cuando es la [bienvenida estudiantes de nuevo ingreso](event)?
+- Cuando es la [bienvenida estudiantes de nuevo ingreso](event)?
+- Cuando es la [bienvenida estudiantes de nuevo ingreso](event)
+- cuando es el [Reinicio de Labores](event) 
+- cuando es el [Reinicio de Labores](event)?
+- Cuando es el [Reinicio de Labores](event)?
+- Cuando es el [Reinicio de Labores](event)
+- cuando son los [Exmenes. I/E del cuatrimestre 1-2017-2018](event) 
+- cuando son los [Exmenes. I/E del cuatrimestre 1-2017-2018](event)?
+- Cuando son los [Exmenes. I/E del cuatrimestre 1-2017-2018](event)?
+- Cuando son los [Exmenes. I/E del cuatrimestre 1-2017-2018](event)
+- cuando es el [Inicio de Docencia](event) 
+- cuando es el [Inicio de Docencia](event)?
+- Cuando es el [Inicio de Docencia](event)?
+- Cuando es el [Inicio de Docencia](event)
+- cuando es la [Remocin I/E del cuatrimestre 1-2017-2018](event) 
+- cuando es la [Remocin I/E del cuatrimestre 1-2017-2018](event)?
+- Cuando es la [Remocin I/E del cuatrimestre 1-2017-2018](event)?
+- Cuando es la [Remocin I/E del cuatrimestre 1-2017-2018](event)
+- cuando es la [Modificacin de Inscripcin](event) 
+- cuando es la [Modificacin de Inscripcin](event)?
+- Cuando es la [Modificacin de Inscripcin](event)?
+- Cuando es la [Modificacin de Inscripcin](event)
+- cuando es la [Entrega de carn](event) 
+- cuando es la [Entrega de carn](event)?
+- Cuando es la [Entrega de carn](event)?
+- Cuando es la [Entrega de carn](event)
+- cuando son las [Inscripciones Tardas y de estudiantes con I/E](event) 
+- cuando son las [Inscripciones Tardas y de estudiantes con I/E](event)?
+- Cuando son las [Inscripciones Tardas y de estudiantes con I/E](event)?
+- Cuando son las [Inscripciones Tardas y de estudiantes con I/E](event)
+- cuando es la [Fecha lmite para la firma de documentos de Crdito Educativo](event) 
+- cuando es la [Fecha lmite para la firma de documentos de Crdito Educativo](event)?
+- Cuando es la [Fecha lmite para la firma de documentos de Crdito Educativo](event)?
+- Cuando es la [Fecha lmite para la firma de documentos de Crdito Educativo](event)
+- cuando es la [Fecha lmite para el segundo pago de matrcula](event) 
+- cuando es la [Fecha lmite para el segundo pago de matrcula](event)?
+- Cuando es la [Fecha lmite para el segundo pago de matrcula](event)?
+- Cuando es la [Fecha lmite para el segundo pago de matrcula](event)
+- cuando es la [Ceremonia de la Nonagsima Sptima Graduacin](event) 
+- cuando es la [Ceremonia de la Nonagsima Sptima Graduacin](event)?
+- Cuando es la [Ceremonia de la Nonagsima Sptima Graduacin](event)?
+- Cuando es la [Ceremonia de la Nonagsima Sptima Graduacin](event)
+- cuando es la [Fecha lmite para los separados apelar a Vicerrectora Acadmica, entrada al 3-2017-2018](event) 
+- cuando es la [Fecha lmite para los separados apelar a Vicerrectora Acadmica, entrada al 3-2017-2018](event)?
+- Cuando es la [Fecha lmite para los separados apelar a Vicerrectora Acadmica, entrada al 3-2017-2018](event)?
+- Cuando es la [Fecha lmite para los separados apelar a Vicerrectora Acadmica, entrada al 3-2017-2018](event)
+- cuando es la [Feria Expo-PUCMM 2018](event) 
+- cuando es la [Feria Expo-PUCMM 2018](event)?
+- Cuando es la [Feria Expo-PUCMM 2018](event)?
+- Cuando es la [Feria Expo-PUCMM 2018](event)
+- cuando es la [Fecha lmite para el tercer pago de matrcula](event) 
+- cuando es la [Fecha lmite para el tercer pago de matrcula](event)?
+- Cuando es la [Fecha lmite para el tercer pago de matrcula](event)?
+- Cuando es la [Fecha lmite para el tercer pago de matrcula](event)
+- cuando es la [Solicitud de readmisin para el perodo 3-2017-2018](event) 
+- cuando es la [Solicitud de readmisin para el perodo 3-2017-2018](event)?
+- Cuando es la [Solicitud de readmisin para el perodo 3-2017-2018](event)?
+- Cuando es la [Solicitud de readmisin para el perodo 3-2017-2018](event)
+- cuando es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event) 
+- cuando es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)?
+- Cuando es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)?
+- Cuando es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)
+- cuando es el [Inicio del perodo de Evaluacin Profesoral](event) 
+- cuando es el [Inicio del perodo de Evaluacin Profesoral](event)?
+- Cuando es el [Inicio del perodo de Evaluacin Profesoral](event)?
+- Cuando es el [Inicio del perodo de Evaluacin Profesoral](event)
+- cuando es el [Retiro Parcial](event) 
+- cuando es el [Retiro Parcial](event)?
+- Cuando es el [Retiro Parcial](event)?
+- Cuando es el [Retiro Parcial](event)
+- cuando es la [Solicitud de cambio de campus para el 3-2017-2018](event) 
+- cuando es la [Solicitud de cambio de campus para el 3-2017-2018](event)?
+- Cuando es la [Solicitud de cambio de campus para el 3-2017-2018](event)?
+- Cuando es la [Solicitud de cambio de campus para el 3-2017-2018](event)
+- cuando es la [Solicitud de cambio de carrera para el 3-2017-2018](event) 
+- cuando es la [Solicitud de cambio de carrera para el 3-2017-2018](event)?
+- Cuando es la [Solicitud de cambio de carrera para el 3-2017-2018](event)?
+- Cuando es la [Solicitud de cambio de carrera para el 3-2017-2018](event)
+- cuando es el [Perodo de prematrcula para el 3-2017-2018](event) 
+- cuando es el [Perodo de prematrcula para el 3-2017-2018](event)?
+- Cuando es el [Perodo de prematrcula para el 3-2017-2018](event)?
+- Cuando es el [Perodo de prematrcula para el 3-2017-2018](event)
+- cuando es el [Primer examen de admisin para ingresar en el perodo 1-2018-2019](event) 
+- cuando es el [Primer examen de admisin para ingresar en el perodo 1-2018-2019](event)?
+- Cuando es el [Primer examen de admisin para ingresar en el perodo 1-2018-2019](event)?
+- Cuando es el [Primer examen de admisin para ingresar en el perodo 1-2018-2019](event)
+- cuando es la [Fecha lmite para el cuarto pago de matrcula](event) 
+- cuando es la [Fecha lmite para el cuarto pago de matrcula](event)?
+- Cuando es la [Fecha lmite para el cuarto pago de matrcula](event)?
+- Cuando es la [Fecha lmite para el cuarto pago de matrcula](event)
+- cuando es la [Fecha lmite Retiro Total](event) 
+- cuando es la [Fecha lmite Retiro Total](event)?
+- Cuando es la [Fecha lmite Retiro Total](event)?
+- Cuando es la [Fecha lmite Retiro Total](event)
+- cuando es la [Fecha lmite para remover IT y ET del 1-2017-2018.](event) 
+- cuando es la [Fecha lmite para remover IT y ET del 1-2017-2018.](event)?
+- Cuando es la [Fecha lmite para remover IT y ET del 1-2017-2018.](event)?
+- Cuando es la [Fecha lmite para remover IT y ET del 1-2017-2018.](event)
+- cuando es el [Fin perodo de evaluacin profesoral](event) 
+- cuando es el [Fin perodo de evaluacin profesoral](event)?
+- Cuando es el [Fin perodo de evaluacin profesoral](event)?
+- Cuando es el [Fin perodo de evaluacin profesoral](event)
+- cuando es el [Inicio perodo de reporte de calificaciones finales](event) 
+- cuando es el [Inicio perodo de reporte de calificaciones finales](event)?
+- Cuando es el [Inicio perodo de reporte de calificaciones finales](event)?
+- Cuando es el [Inicio perodo de reporte de calificaciones finales](event)
+- cuando es el [Perodo de modificacin de prematrcula](event) 
+- cuando es el [Perodo de modificacin de prematrcula ](event)?
+- Cuando es el [Perodo de modificacin de prematrcula ](event)?
+- Cuando es el [Perodo de modificacin de prematrcula ](event)
+- cuando es el [ltimo da de docencia](event) 
+- cuando es el [ltimo da de docencia](event)?
+- Cuando es el [ltimo da de docencia](event)?
+- Cuando es el [ltimo da de docencia](event)
+- cuando es la [Fecha lmite para los profesores reportar las calificaciones finales](event) 
+- cuando es la [Fecha lmite para los profesores reportar las calificaciones finales](event)?
+- Cuando es la [Fecha lmite para los profesores reportar las calificaciones finales](event)?
+- Cuando es la [Fecha lmite para los profesores reportar las calificaciones finales](event)
+- cuando es el [ltimo da de docencia](event) 
+- cuando es el [ltimo da de docencia](event)?
+- Cuando es el [ltimo da de docencia](event)?
+- Cuando es el [ltimo da de docencia](event)
+- cuando es la [Solicitud de revisin de calificaciones finales](event) 
+- cuando es la [Solicitud de revisin de calificaciones finales](event)?
+- Cuando es la [Solicitud de revisin de calificaciones finales](event)?
+- Cuando es la [Solicitud de revisin de calificaciones finales](event)
+- cuando es la [Fecha lmite para los escuelas reportar resultados de la revisin de calificaciones finales](event) 
+- cuando es la [Fecha lmite para los escuelas reportar resultados de la revisin de calificaciones finales](event)?
+- Cuando es la [Fecha lmite para los escuelas reportar resultados de la revisin de calificaciones finales](event)?
+- Cuando es la [Fecha lmite para los escuelas reportar resultados de la revisin de calificaciones finales](event)

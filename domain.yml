@@ -5,28 +5,88 @@ intents:
   - bye
   - deny
   - affirm
+  - informar
+  - pedir_info
+  - ofrecer_info
+  - query_date
+  - query_event
+  - query_process
+  - sorry
 
 entities:
   # replace with your entities
-  - example_entity
+  - event  #se puede cambiar a spanish??
 
 slots:
   # replace with your slots
-  example_slot:
+  event:
     type: unfeaturized
+  date:
+    type: unfeaturized
+  matching_events:
+    type: list
 
 templates:
   # templates the bot should respond with
   utter_greet:
-    - "Hey, how can I help you?"
+  - text: "Hola! soy el bot de registro, dime algo que quieras saber."
+  - text: "¡Saludos!. Soy el bot de registro. ¿En qué puedo ayudarte?"
+  - text: "¡Bienvenido!. Soy el bot de registro. ¿Cómo te ayudo el día de hoy?"
+
   utter_thank:
-    - "You're welcome!"
+    - "Por nada. Estoy para servirte!"
+
   utter_bye:
-    - "Goodbye"
+    - text: "Adios."
+    - text: "¡Bye-bye!"
+    - text: "¡Hasta luego!"
+    - text: "Hasta pronto, gracias por tu visita!"
+
+  utter_sorry:
+    - text: "Lo siento pero por el momento no puedo ayudarte."
+    - text: "No tengo informacion suficiente para responderte."
+    - text: "Luego podre responder preguntas como estas. Estoy en aprendizaje."
+    - text: "No puedo responder tu inquietud, disculpa."
+
+  utter_date:
+    - "You have one incoming event: Prematricula" #lol no me atrevo a cambiar esto.. revisa
+
+  utter_did_that_help:
+    - text: "¿Te sirvió de ayuda mi respuesta?"
+    - text: "¿Logré responder tu inquietud?"
+    - text: "¿Encontraste la información que buscabas?"
+
+  utter_happy:
+    - text: "Genial!"
+    - text: "Me alegra escuchar eso!"
+
+  utter_goodbye:
+    - text: "Bye"
+    - text: "Hasta luego!"
+    - text: "Adios!"
+
+  utter_ack_eventdate:
+    - text: "El evento {event} será el {date}"
+
+  utter_another_question:
+    - text: "Tienes otra pregunta?"
+    - text: "Necesitas saber algo mas?"
+
+  utter_default:
+    - text: "Lo siento, no entendí tu pregunta, intenta con otra"
 
 actions:
   # all the utter actions from the templates, plus any custom actions
   - utter_greet
   - utter_thank
   - utter_bye
+  - utter_sorry
+  - utter_date
+  - utter_did_that_help
+  - utter_happy
+  - utter_ack_eventdate
+  - utter_goodbye
+  - utter_another_question
+  - utter_default
   - actions.ActionExample
+  - actions.ActionlookforEvent
