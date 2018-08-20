@@ -73,7 +73,7 @@ templates:
     - text: "Necesitas saber algo mas?"
 
   utter_default:
-    - text: "Lo siento, no entendí tu pregunta, intenta con otra"
+    - text: "Lo siento, no entendí lo que quisiste decir, intenta con otras palabras"
 
 actions:
   # all the utter actions from the templates, plus any custom actions
