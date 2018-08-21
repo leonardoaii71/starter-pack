@@ -25,22 +25,24 @@ slots:
     type: unfeaturized
   matching_events:
     type: list
+  username:
+    type: unfeaturized
 
 templates:
   # templates the bot should respond with
   utter_greet:
-  - text: "Hola! soy el bot de registro, dime algo que quieras saber."
-  - text: "¡Saludos!. Soy el bot de registro. ¿En qué puedo ayudarte?"
-  - text: "¡Bienvenido!. Soy el bot de registro. ¿Cómo te ayudo el día de hoy?"
+  - text: "Hola {username}! soy el bot de registro, dime algo que quieras saber."
+  - text: "¡Saludos {username}!. Soy el bot de registro. ¿En qué puedo ayudarte?"
+  - text: "¡Bienvenido {username}!. Soy el bot de registro. ¿Cómo te ayudo el día de hoy?"
 
   utter_thank:
     - "Por nada. Estoy para servirte!"
 
   utter_bye:
-    - text: "Adios."
-    - text: "¡Bye-bye!"
-    - text: "¡Hasta luego!"
-    - text: "Hasta pronto, gracias por tu visita!"
+    - text: "Adios {username}."
+    - text: "¡Bye-bye {username}!"
+    - text: "¡Hasta luego {username}!"
+    - text: "Hasta pronto, gracias por tu visita {username}!"
 
   utter_sorry:
     - text: "Lo siento pero por el momento no puedo ayudarte."
@@ -49,7 +51,7 @@ templates:
     - text: "No puedo responder tu inquietud, disculpa."
 
   utter_date:
-    - "You have one incoming event: Prematricula" #lol no me atrevo a cambiar esto.. revisa
+    - "You have one incoming event: Prematricula" 
 
   utter_did_that_help:
     - text: "¿Te sirvió de ayuda mi respuesta?"
@@ -68,12 +70,15 @@ templates:
   utter_ack_eventdate:
     - text: "El evento {event} será el {date}"
 
+  utter_ask_username:
+    - text: "¿Cual es tu nombre?"
+
   utter_another_question:
-    - text: "Tienes otra pregunta?"
-    - text: "Necesitas saber algo mas?"
+    - text: "Tienes otra pregunta {username}?"
+    - text: "Necesitas saber algo mas {username}?"
 
   utter_default:
-    - text: "Lo siento, no entendí lo que quisiste decir, intenta con otras palabras"
+    - text: "Lo siento, no entendí tu pregunta, intenta con otra"
 
 actions:
   # all the utter actions from the templates, plus any custom actions
@@ -87,6 +92,7 @@ actions:
   - utter_ack_eventdate
   - utter_goodbye
   - utter_another_question
+  - utter_ask_username
   - utter_default
   - actions.ActionExample
   - actions.ActionlookforEvent
