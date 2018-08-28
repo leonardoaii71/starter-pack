@@ -840,3 +840,87 @@
 - cuales dias asueto hay en [octubre](date)?
 - cuales dias asueto hay en [noviembre](date)?
 - cuales dias asueto hay en [diciembre](date)?
+
+## synonym:Inicio de prematricula   <!-- synonyms method -->
+- prematricula
+
+## synonym:Inicio de Docencia
+- docencia
+
+## synonym:inscripcion
+- inscripciones
+
+## synonym:bienvenida estudiantes de nuevo ingreso
+- bienvenida de estudiantes
+
+## synonym:Reinicio de Labores
+- reinicio de clases
+- reinicio de docencia
+- reinicio de clase
+
+## synonym:Entrega de carne
+- entrega de carnet
+- entrega del carnet
+
+## synonym:Inscripciones Tardias y de estudiantes con I/E
+- inscripciones tardias
+- inscripcion tardia
+
+## synonym:Fecha limite para la firma de documentos de Credito Educativo
+- fecha para la firma de documentos de credito educativo
+- firma de documentos de credito educativo
+
+## synonym:Ceremonia de la Nonagesima Septima Graduacion
+- graduacion
+
+## synonym:Feria Expo-PUCMM 2018
+- expopucmm
+- expo-pucmm
+- expo pucmm
+
+## synonym:Fecha limite para el tercer pago de matricula
+- tercer pago de matricula
+
+## synonym:Solicitud de readmision para el periodo 3-2017-2018
+- solicitud de readmision
+
+## synonym:Inicio del periodo de Evaluacion Profesoral
+- evaluacion profesoral
+
+## synonym:Solicitud de cambio de campus para el 3-2017-2018
+- solicitud de cambio de campus
+- solicitud para cambio de campus
+
+## synonym:Periodo de prematricula para el 3-2017-2018
+- periodo de prematricula
+- periodo para prematricula
+
+## synonym:Primer examen de admision para ingresar en el periodo 1-2018-2019
+- primer examen de admision
+
+## synonym:Fecha limite para el cuarto pago de matricula
+- cuarto pago de matricula
+
+## synonym:Fecha limite Retiro Total
+- retiro total
+
+## synonym:Fin periodo de evaluacion profesoral
+- fin de evaluacion profesoral
+- fin de la evaluacion de profesores
+
+## synonym:Inicio periodo de reporte de calificaciones finales
+- reporte de calificaciones finales
+- periodo de reporte de calificaciones finales
+
+## synonym:Periodo de modificacion de prematricula
+- modificacion de prematricula
+
+## synonym:ultimo dia de docencia
+- ultimo dia de clases
+- ultimo dia de clase
+- ultimo dia del periodo
+
+## synonym:Solicitud de revision de calificaciones finales
+- revision de calificaciones finales
+- revision de calificaciones
+- revision de notas finales
