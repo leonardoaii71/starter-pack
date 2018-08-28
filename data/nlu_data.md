@@ -238,9 +238,9 @@
 - Cuando es el [Inicio periodo de reporte de calificaciones finales](event)?
 - Cuando es el [Inicio periodo de reporte de calificaciones finales](event)
 - cuando es el [Periodo de modificacion de prematricula](event)
-- cuando es el [Periodo de modificacion de prematricula ](event)?
-- Cuando es el [Periodo de modificacion de prematricula ](event)?
-- Cuando es el [Periodo de modificacion de prematricula ](event)
+- cuando es el [Periodo de modificacion de prematricula](event)?
+- Cuando es el [Periodo de modificacion de prematricula](event)?
+- Cuando es el [Periodo de modificacion de prematricula](event)
 - cuando es el [ultimo dia de docencia](event)
 - cuando es el [ultimo dia de docencia](event)?
 - Cuando es el [ultimo dia de docencia](event)?
@@ -389,9 +389,9 @@
 - en que fecha es el [Inicio periodo de reporte de calificaciones finales](event)?
 - En que fecha es el [Inicio periodo de reporte de calificaciones finales](event)
 - en que fecha es el [Periodo de modificacion de prematricula](event)
-- en que fecha es el [Periodo de modificacion de prematricula ](event)?
-- En que fecha es el [Periodo de modificacion de prematricula ](event)?
-- En que fecha es el [Periodo de modificacion de prematricula ](event)
+- en que fecha es el [Periodo de modificacion de prematricula](event)?
+- En que fecha es el [Periodo de modificacion de prematricula](event)?
+- En que fecha es el [Periodo de modificacion de prematricula](event)
 - en que fecha es el [ultimo dia de docencia](event)
 - en que fecha es el [ultimo dia de docencia](event)?
 - En que fecha es el [ultimo dia de docencia](event)?
@@ -517,9 +517,9 @@
 - en cual fecha es el [Inicio periodo de reporte de calificaciones finales](event)?
 - En cual fecha es el [Inicio periodo de reporte de calificaciones finales](event)
 - en cual fecha es el [Periodo de modificacion de prematricula](event)
-- en cual fecha es el [Periodo de modificacion de prematricula ](event)?
-- En cual fecha es el [Periodo de modificacion de prematricula ](event)?
-- En cual fecha es el [Periodo de modificacion de prematricula ](event)
+- en cual fecha es el [Periodo de modificacion de prematricula](event)?
+- En cual fecha es el [Periodo de modificacion de prematricula](event)?
+- En cual fecha es el [Periodo de modificacion de prematricula](event)
 - en cual fecha es el [ultimo dia de docencia](event)
 - en cual fecha es el [ultimo dia de docencia](event)?
 - En cual fecha es el [ultimo dia de docencia](event)?
@@ -637,9 +637,9 @@
 - cuando sera el [Inicio periodo de reporte de calificaciones finales](event)?
 - Cuando sera el [Inicio periodo de reporte de calificaciones finales](event)
 - cuando sera el [Periodo de modificacion de prematricula](event)
-- cuando sera el [Periodo de modificacion de prematricula ](event)?
-- Cuando sera el [Periodo de modificacion de prematricula ](event)?
-- Cuando sera el [Periodo de modificacion de prematricula ](event)
+- cuando sera el [Periodo de modificacion de prematricula](event)?
+- Cuando sera el [Periodo de modificacion de prematricula](event)?
+- Cuando sera el [Periodo de modificacion de prematricula](event)
 - cuando sera el [ultimo dia de docencia](event)
 - cuando sera el [ultimo dia de docencia](event)?
 - Cuando sera el [ultimo dia de docencia](event)?
@@ -787,9 +787,9 @@
 - Que dia es el [Inicio periodo de reporte de calificaciones finales](event)?
 - Que dia es el [Inicio periodo de reporte de calificaciones finales](event)
 - que dia es el [Periodo de modificacion de prematricula](event)
-- que dia es el [Periodo de modificacion de prematricula ](event)?
-- Que dia es el [Periodo de modificacion de prematricula ](event)?
-- Que dia es el [Periodo de modificacion de prematricula ](event)
+- que dia es el [Periodo de modificacion de prematricula](event)?
+- Que dia es el [Periodo de modificacion de prematricula](event)?
+- Que dia es el [Periodo de modificacion de prematricula](event)
 - que dia es el [ultimo dia de docencia](event)
 - que dia es el [ultimo dia de docencia](event)?
 - Que dia es el [ultimo dia de docencia](event)?

@@ -29,8 +29,8 @@ def train_dialogue(domain_file="domain.yml",
                    training_data_file="data/stories.md"):
 
     fallback = FallbackPolicy(fallback_action_name="utter_default",
-                          core_threshold=0.3,
-                          nlu_threshold=0.3)
+                              core_threshold=0.4,
+                              nlu_threshold=0.3)
 
     agent = Agent(domain_file,
                   policies=[MemoizationPolicy(max_history=3),
@@ -40,7 +40,7 @@ def train_dialogue(domain_file="domain.yml",
     agent.train(
             training_data,
             epochs=400,
-            batch_size=100,
+            batch_size=50,
             validation_split=0.2
     )
 
@@ -55,7 +55,7 @@ def train_nlu():
 
     training_data = load_data('data/nlu_data.md')
     trainer = Trainer(config.load("nlu_config.yml"))
-    trainer.train(training_data)
+    trainer.train(training_data);
     model_directory = trainer.persist('models/current/',
                                       fixed_model_name="nlu")
 
@@ -65,7 +65,6 @@ def train_nlu():
 def run(serve_forever=True):
     interpreter = RasaNLUInterpreter("models/current/nlu/")
     agent = Agent.load("models/current/dialogue", interpreter=interpreter)
-
     if serve_forever:
         agent.handle_channel(ConsoleInputChannel())
     return agent

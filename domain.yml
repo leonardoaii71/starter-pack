@@ -16,6 +16,7 @@ intents:
 entities:
   # replace with your entities
   - event  #se puede cambiar a spanish??
+  - date
 
 slots:
   # replace with your slots
@@ -72,6 +73,10 @@ templates:
     - text: "Tienes otra pregunta?"
     - text: "Necesitas saber algo mas?"
 
+  utter_suggestions:
+    - text: "Creo que no entendí bien, quisiste decir:"
+    - text: "Por favor podrías ser mas especifico? intenta con:"
+
   utter_default:
     - text: "Lo siento, no entendí lo que quisiste decir, intenta con otras palabras"
 
@@ -88,5 +93,6 @@ actions:
   - utter_goodbye
   - utter_another_question
   - utter_default
-  - actions.ActionExample
+  - utter_suggestions
+  - actions.ActionShowEventResults
   - actions.ActionlookforEvent
