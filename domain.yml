@@ -15,7 +15,7 @@ intents:
 
 entities:
   # replace with your entities
-  - event  #se puede cambiar a spanish??
+  - event
   - date
 
 slots:
@@ -32,12 +32,14 @@ slots:
 templates:
   # templates the bot should respond with
   utter_greet:
-  - text: "Hola {username}! soy el bot de registro, dime algo que quieras saber."
-  - text: "¡Saludos {username}!. Soy el bot de registro. ¿En qué puedo ayudarte?"
-  - text: "¡Bienvenido {username}!. Soy el bot de registro. ¿Cómo te ayudo el día de hoy?"
+  - text: "¡Hola {username}! Soy el bot de registro. Puedes preguntarme cosas como: ¿Cuando es la prematricula?,  ¿Cual es mi indice académico?,  ¿Qué son estudiantes especiales?... Adelante!"
+  - text: "¡Saludos {username}!. Soy el bot de registro. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?"
+  - text: "¡Bienvenido {username}!. Soy el bot de registro. Estoy aqui para ofrecerte información academica. Preguntame acerca del calendario, procesos academicos o sobre tu historial. ¿Que deseas saber?"
 
   utter_thank:
     - "Por nada. Estoy para servirte!"
+    - "Es un placer ayudarte."
+    - "Fui creado para ayudarte"
 
   utter_bye:
     - text: "Adios {username}."
@@ -52,7 +54,7 @@ templates:
     - text: "No puedo responder tu inquietud, disculpa."
 
   utter_date:
-    - "You have one incoming event: Prematricula" 
+    - "You have one incoming event: Prematricula"
 
   utter_did_that_help:
     - text: "¿Te sirvió de ayuda mi respuesta?"
@@ -72,7 +74,7 @@ templates:
     - text: "El evento {event} será el {date}"
 
   utter_ask_username:
-    - text: "¿Cual es tu nombre?"
+    - text: "Por favor digite su nombre para iniciar:"
 
   utter_another_question:
     - text: "Tienes otra pregunta {username}?"
