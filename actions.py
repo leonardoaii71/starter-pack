@@ -1,8 +1,14 @@
-from rasa_core.actions import Action
-from rasa_core.events import SlotSet
 from datetime import datetime
-from pymongo import MongoClient
 
+import pytz
+from pymongo import MongoClient
+from rasa_core_sdk import Action
+from rasa_core_sdk.events import SlotSet
+
+if __name__ == '__main__':
+    import actions
+    a = actions.ActionlookforEvent()
+    a.run()
 
 class ActionlookforEvent(Action):
     def name(self):
@@ -11,7 +17,7 @@ class ActionlookforEvent(Action):
 
     def run(self, dispatcher, tracker, domain):
         # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
-        query = {}
+        query = {"date": {"$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))}}
         projection = {}
         sort = {}
         evento = tracker.get_slot('event')
@@ -22,36 +28,32 @@ class ActionlookforEvent(Action):
         with MongoClient("mongodb://localhost:27017/") as client:
             database = client["kb"]
             collection = database["Calendarios"]
-            docs = collection.find(query, projection=projection, sort=sort)
+            docs = collection.find(query, projection=projection, sort=sort).limit(5)
             matches = []
-
+            print(docs[0])
             if docs[0]['score'] >= 0.800:
                 doc = docs[0]
-                #print(doc['evento']['nombre'])
-
-                date = "día {0} ".format(self.date_to_text(doc['day'], doc['month'], doc['year']))
+                date = "{0} ".format(self.date_to_text(doc['day'], doc['month'], doc['year']))
                 return [SlotSet('date', date)]
             else:
-                #dispatcher.utter_template("utter_suggestions", tracker)
-               # print (docs)
                 for doc in docs:
                     event = doc['evento']['nombre']
                     matches.append(event)
-                    return [SlotSet('matching_events', matches)]
+                return [SlotSet('matching_events', matches)]
 
         return []
 
-    def date_to_text(self,day, month, year):
-            mes = [
-                "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
-                "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
-            ]
-            date = "{0} de {1}{2}".format(
-                day, mes[int(month) - 1],
-                "" if datetime.now().year == year else "del " + str(year)
-            )
+    def date_to_text(self, day, month, year):
+        mes = [
+            "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+            "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        ]
+        date = "{0} de {1}{2}".format(
+            day, mes[int(month) - 1],
+            "" if datetime.now().year == year else "del " + str(year)
+        )
 
-            return date
+        return date
 
 
 class ActionShowEventResults(Action):
@@ -63,10 +65,16 @@ class ActionShowEventResults(Action):
         matches = tracker.get_slot("matching_events")
 
         if match:
-            #dispatcher.utter_template("utter_ack_eventdate", tracker)
-            dispatcher.utter_message("El evento será "+match)
+            dispatcher.utter_template("utter_ack_eventdate", tracker, event=tracker.get_slot('event'), date=match)
+
         elif matches:
+            dispatcher.utter_template("utter_suggestions", tracker)
             suggestions = [{'title': event, 'payload': "/query_event{\"event\": \"%s\""} for event in matches]
-            dispatcher.utter_button_message("Quizas quisiste decir: ", suggestions)
+            dispatcher.utter_button_message("", suggestions)
 
         return []
+
+# todo dates
+# Convertir fechas a Date Objects
+# Solo devolver fechas futuras
+# query dates https://stackoverflow.com/questions/2943222/find-objects-between-two-dates-mongodb

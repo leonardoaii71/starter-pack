@@ -14,12 +14,10 @@ intents:
   - sorry
 
 entities:
-  # replace with your entities
-  - event  #se puede cambiar a spanish??
+  - event
   - date
 
 slots:
-  # replace with your slots
   event:
     type: unfeaturized
   date:
@@ -28,6 +26,7 @@ slots:
     type: list
   username:
     type: unfeaturized
+    initial_value: "humano"
 
 templates:
   # templates the bot should respond with
@@ -72,7 +71,7 @@ templates:
     - text: "El evento {event} será el {date}"
 
   utter_ask_username:
-    - text: "¿Cual es tu nombre?"
+    - text: "¿Hola, Soy el bot de PUCMM, para conocernos mejor, Cuál es tu nombre?"
 
   utter_another_question:
     - text: "Tienes otra pregunta {username}?"
@@ -101,4 +100,5 @@ actions:
   - utter_default
   - utter_suggestions
   - actions.ActionShowEventResults
-  - actions.ActionlookforEvent
+  - action_look_event
+  - action_suggest

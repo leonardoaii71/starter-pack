@@ -846,6 +846,8 @@
 
 ## synonym:Inicio de Docencia
 - docencia
+- inicio de clases
+- clases
 
 ## synonym:inscripcion
 - inscripciones
@@ -924,3 +926,4 @@
 - revision de calificaciones finales
 - revision de calificaciones
 - revision de notas finales
+- revision de notas

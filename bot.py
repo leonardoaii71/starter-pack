@@ -5,20 +5,13 @@ from __future__ import unicode_literals
 
 import argparse
 import logging
-import warnings
 
+from rasa_core import utils
+from rasa_core.agent import Agent
+# from rasa_core.channels.console import
+from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.policies.fallback import FallbackPolicy
 from rasa_core.policies.keras_policy import KerasPolicy
-from rasa_core.agent import Agent
-from rasa_core import utils
-from rasa_core.actions import Action
-from rasa_core.agent import Agent
-from rasa_core.channels.console import ConsoleInputChannel
-from rasa_core.events import SlotSet
-from rasa_core.featurizers import (
-    MaxHistoryTrackerFeaturizer,
-    BinarySingleStateFeaturizer)
-from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.policies.memoization import MemoizationPolicy
 
 logger = logging.getLogger(__name__)
@@ -29,18 +22,18 @@ def train_dialogue(domain_file="domain.yml",
                    training_data_file="data/stories.md"):
 
     fallback = FallbackPolicy(fallback_action_name="utter_default",
-                              core_threshold=0.4,
+                              core_threshold=0.3,
                               nlu_threshold=0.3)
 
     agent = Agent(domain_file,
-                  policies=[MemoizationPolicy(max_history=3),
-                            KerasPolicy(), fallback])
+                  policies=[MemoizationPolicy(max_history=2),
+                            KerasPolicy(), fallback],)
 
     training_data = agent.load_data(training_data_file)
     agent.train(
             training_data,
             epochs=400,
-            batch_size=50,
+            batch_size=100,
             validation_split=0.2
     )
 
@@ -66,7 +59,7 @@ def run(serve_forever=True):
     interpreter = RasaNLUInterpreter("models/current/nlu/")
     agent = Agent.load("models/current/dialogue", interpreter=interpreter)
     if serve_forever:
-        agent.handle_channel(ConsoleInputChannel())
+        #agent.handle_channel(ConsoleInputChannel())
     return agent
 
 
