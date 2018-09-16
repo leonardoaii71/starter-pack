@@ -12,6 +12,10 @@ intents:
   - query_event
   - query_process
   - sorry
+  - query_asueto
+  - query_importantes
+  - count_asueto
+  - count_importante
 
 entities:
   - event
@@ -28,13 +32,18 @@ slots:
   username:
     type: unfeaturized
     initial_value: "humano"
+  asueto_count:
+    type: unfeaturized
+  importantes_count:
+    type: unfeaturized
+
 
 templates:
   # templates the bot should respond with
   utter_greet:
-  - text: "¡Hola {username}! Soy el bot de registro. Puedes preguntarme cosas como: ¿Cuando es la prematricula?,  ¿Cual es mi indice académico?,  ¿Qué son estudiantes especiales?... Adelante!"
-  - text: "¡Saludos {username}!. Soy el bot de registro. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?"
-  - text: "¡Bienvenido {username}!. Soy el bot de registro. Estoy aqui para ofrecerte información academica. Preguntame acerca del calendario, procesos academicos o sobre tu historial. ¿Que deseas saber?"
+    - text: "¡Hola {username}! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuando es la prematricula?,  ¿Cual es mi indice académico?,  ¿Qué son estudiantes especiales?... Adelante!"
+    - text: "¡Saludos {username}!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?"
+    - text: "¡Bienvenido {username}!. Soy el bot regis. Estoy aqui para ofrecerte información academica. Preguntame acerca del calendario, procesos academicos o sobre tu historial. ¿Que deseas saber?"
 
   utter_thank:
     - "Por nada. Estoy para servirte!"
@@ -71,7 +80,10 @@ templates:
     - text: "Adios!"
 
   utter_ack_eventdate:
-    - text: "El evento {event} será el {date}"
+    - text: "El evento {event} será el {edate}"
+
+  utter_ack_prsnt_eventdate:
+    - text: "El evento {event} ya comenzó y finaliza el {edate}"
 
   utter_ask_username:
     - text: "Por favor digite su nombre para iniciar:"
@@ -83,6 +95,12 @@ templates:
   utter_suggestions:
     - text: "Creo que no entendí bien, quisiste decir:"
     - text: "Por favor podrías ser mas especifico? intenta con:"
+
+  utter_ack_asuetos:
+    - text: "Estos son los días asuetos que encontré: "
+
+  utter_ack_importantes:
+    - text: "Estos son los días a tomar en cuenta: "
 
   utter_default:
     - text: "Lo siento, no entendí tu pregunta, intenta con otra"
@@ -97,11 +115,14 @@ actions:
   - utter_did_that_help
   - utter_happy
   - utter_ack_eventdate
+  - utter_ack_prsnt_eventdate
   - utter_goodbye
   - utter_another_question
   - utter_ask_username
   - utter_default
   - utter_suggestions
-  - actions.ActionShowEventResults
+  - utter_ack_asuetos
   - action_look_event
   - action_suggest
+  - action_look_asuetos
+  - action_look_important

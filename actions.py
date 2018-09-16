@@ -128,6 +128,7 @@ class ActionLookForAsuetos(Action):
 
                 dispatcher.utter_template('utter_ack_asuetos', tracker)
                 dispatcher.utter_message(matches.__str__())
+                return [SlotSet('asueto_count', docs.count())]
 
 
 class ActionLookForImportant(Action):
@@ -159,9 +160,11 @@ class ActionLookForImportant(Action):
                     #date = datetime.strptime(doc['date'], '%Y-%m-%d %H:%M:%S.%f')
                     #dia = date.strftime('%d de %B del %Y')
                     matches.append(doc['evento']['nombre'])
-
                 dispatcher.utter_template('utter_ack_importantes', tracker)
                 dispatcher.utter_message(matches.__str__())
+                return [SlotSet('importantes_count', docs.count())]
+
+
 # todo dates
 # Convertir fechas a Date Objects
 # Solo devolver fechas futuras
