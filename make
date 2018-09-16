@@ -8,7 +8,8 @@ interactive learning:
 
 python -m rasa_core_sdk.endpoint --actions actions
 
-python -m rasa_core.run  --interactive -d models/dialogue --stories-out stories_interactive.md -u models/default/nlu
+python -m rasa_core.train --online -d domain.yml -s data/stories.md -o models/current/dialogue
 
 run
-python -m rasa_core.run -d models/current/dialogue  -u models/default/nlu --endpoints endpoints.yml
+python -m rasa_core.run -d models/current/dialogue  -u data/default/nlu --endpoints endpoints.yml
+

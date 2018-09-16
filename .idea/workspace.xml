@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2ec6d85-387d-4d13-b2ee-4363bb9fcd2d" name="Default" comment="">
+    <list default="true" id="f2ec6d85-387d-4d13-b2ee-4363bb9fcd2d" name="Default" comment="actions modified3">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actions.py" afterPath="$PROJECT_DIR$/actions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain.yml" afterPath="$PROJECT_DIR$/domain.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make" afterPath="$PROJECT_DIR$/make" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,10 +21,9 @@
       <file leaf-file-name="actions.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/actions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="48" column="83" lean-forward="false" selection-start-line="48" selection-start-column="83" selection-end-line="48" selection-end-column="83" />
+            <state relative-caret-position="493">
+              <caret line="96" column="17" lean-forward="true" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
               <folding>
-                <element signature="e#2354#3456#0" expanded="false" />
                 <element signature="e#3499#4778#0" expanded="false" />
                 <element signature="e#4823#6152#0" expanded="false" />
               </folding>
@@ -37,8 +34,8 @@
       <file leaf-file-name="make" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/make">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="83" lean-forward="false" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
+            <state relative-caret-position="68">
+              <caret line="4" column="65" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -47,8 +44,8 @@
       <file leaf-file-name="domain.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/domain.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+            <state relative-caret-position="305">
+              <caret line="119" column="26" lean-forward="true" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -114,9 +111,10 @@
         <option value="$PROJECT_DIR$/data/json_preprocess.py" />
         <option value="$PROJECT_DIR$/bot.py" />
         <option value="$PROJECT_DIR$/data/nlu_data.md" />
-        <option value="$PROJECT_DIR$/make" />
         <option value="$PROJECT_DIR$/domain.yml" />
         <option value="$PROJECT_DIR$/actions.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/make" />
       </list>
     </option>
   </component>
@@ -177,6 +175,24 @@
               <item name="starter-pack" type="b2602c69:ProjectViewProjectNode" />
               <item name="starter-pack" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="starter-pack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="starter-pack" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="starter-pack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="starter-pack" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="current" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="starter-pack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="starter-pack" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="current" type="462c0819:PsiDirectoryNode" />
+              <item name="nlu" type="4c48a1f:PuppetPsiDirectoryNode$Module" />
             </path>
           </expand>
           <select />
@@ -275,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537124700841</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="actions modified3">
+      <created>1537130212226</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537130212226</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -356,7 +379,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="actions modified" />
     <MESSAGE value="actions modified2" />
-    <option name="LAST_COMMIT_MESSAGE" value="actions modified2" />
+    <MESSAGE value="actions modified3" />
+    <option name="LAST_COMMIT_MESSAGE" value="actions modified3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -365,14 +389,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/domain.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/json_preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -386,7 +402,6 @@
         <state relative-caret-position="867">
           <caret line="61" column="17" lean-forward="false" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
           <folding>
-            <element signature="e#2354#3456#0" expanded="false" />
             <element signature="e#3499#4778#0" expanded="false" />
             <element signature="e#4823#6152#0" expanded="false" />
           </folding>
@@ -422,7 +437,6 @@
         <state relative-caret-position="238">
           <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding>
-            <element signature="e#2354#3456#0" expanded="false" />
             <element signature="e#3499#4778#0" expanded="false" />
             <element signature="e#4823#6152#0" expanded="false" />
           </folding>
@@ -465,7 +479,6 @@
         <state relative-caret-position="255">
           <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
           <folding>
-            <element signature="e#2354#3456#0" expanded="false" />
             <element signature="e#3499#4778#0" expanded="false" />
             <element signature="e#4823#6152#0" expanded="false" />
           </folding>
@@ -521,7 +534,6 @@
         <state relative-caret-position="238">
           <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
           <folding>
-            <element signature="e#2354#3456#0" expanded="false" />
             <element signature="e#3499#4778#0" expanded="false" />
             <element signature="e#4823#6152#0" expanded="false" />
           </folding>
@@ -577,7 +589,6 @@
         <state relative-caret-position="612">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
-            <element signature="e#2354#3456#0" expanded="false" />
             <element signature="e#3499#4778#0" expanded="false" />
             <element signature="e#4823#6152#0" expanded="false" />
           </folding>
@@ -618,7 +629,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2354#3456#0" expanded="false" />
             <element signature="e#3499#4778#0" expanded="false" />
             <element signature="e#4823#6152#0" expanded="false" />
           </folding>
@@ -734,14 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domain.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/nlu_data.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -758,20 +760,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/make">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="83" lean-forward="false" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="65" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="119" column="26" lean-forward="true" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/actions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="48" column="83" lean-forward="false" selection-start-line="48" selection-start-column="83" selection-end-line="48" selection-end-column="83" />
+        <state relative-caret-position="493">
+          <caret line="96" column="17" lean-forward="true" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
           <folding>
-            <element signature="e#2354#3456#0" expanded="false" />
             <element signature="e#3499#4778#0" expanded="false" />
             <element signature="e#4823#6152#0" expanded="false" />
           </folding>
