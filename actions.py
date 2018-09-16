@@ -8,7 +8,6 @@ from rasa_core_sdk.events import SlotSet
 
 if __name__ == '__main__':
     locale.setlocale(locale.LC_TIME, '')
-    ActionlookforEvent.run(None, None, None)
 
 
 class ActionlookforEvent(Action):
@@ -51,18 +50,19 @@ class ActionlookforEvent(Action):
             matches = []
             date = str()
             hoy = datetime.now()
-            if docs[0]:
-                if docs[0]['score'] >= 0.800:
-                    if docs[0]['date'] >= hoy:
-                        date = docs[0]['date']
-                    elif docs[0]['date'] < hoy <= docs[0]['evento']['finaliza']:
-                        date = docs[0]['evento']['finaliza']
-                    return "hola"#[SlotSet('date', date)]
-            else:
-                for doc in docs:
-                    event = doc['evento']['nombre']
-                    matches.append(event)
-                return "bye"#[SlotSet('matching_events', matches)]
+            return [SlotSet('date', datetime.now())]
+            # if docs[0]:
+            #     if docs[0]['score'] >= 0.800:
+            #         if docs[0]['date'] >= hoy:
+            #             date = docs[0]['date']
+            #         elif docs[0]['date'] < hoy <= docs[0]['evento']['finaliza']:
+            #             date = docs[0]['evento']['finaliza']
+            #         return "hola"#[SlotSet('date', date)]
+            # else:
+            #     for doc in docs:
+            #         event = doc['evento']['nombre']
+            #         matches.append(event)
+            #     return "bye"#[SlotSet('matching_events', matches)]
 
         return []
 
