@@ -810,8 +810,15 @@
 - que dia es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)?
 - Que dia es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)?
 - Que dia es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)
+
+## intent:query_importantes
+- fechas importantes
 - Cuales son las fechas importantes?
 - dime fechas importantes
+- dime todos los dias importantes
+- cuales dias son importantes este periodo
+- cuales dias son importantes para este semestre
+- cuales fechas importantes hay
 - Cuales son las fechas importantes del periodo?
 - cuales son las fechas importantes de [enero](date)?
 - cuales son las fechas importantes de [febrero](date)?
@@ -825,9 +832,13 @@
 - cuales son las fechas importantes de [octubre](date)?
 - cuales son las fechas importantes de [noviembre](date)?
 - cuales son las fechas importantes de [diciembre](date)?
+
+## intent:query_asueto
+- dias asuetos
 - Cuales son los dias asueto?
 - dime todos los dias asueto
 - Cuales son los dias asueto del periodo?
+- cuales dias asuetos hay
 - cuales dias asueto hay en [enero](date)?
 - cuales dias asueto hay en [febrero](date)?
 - cuales dias asueto hay en [marzo](date)?
@@ -840,6 +851,18 @@
 - cuales dias asueto hay en [octubre](date)?
 - cuales dias asueto hay en [noviembre](date)?
 - cuales dias asueto hay en [diciembre](date)?
+
+## intent:count_asueto
+- cuantos dias asuetos hay en este periodo
+- cuantos dias asuetos hay en este semestre
+- cual es la cantidad de dias asuetos del periodo
+- cantidad de dias asuetos
+
+## intent:count_importante
+- cuantos dias importantes hay en este periodo
+- cuantos dias importantes hay en este semestre
+- cual es la cantidad de dias importantes del periodo
+- cantidad de dias importantes
 
 ## synonym:Inicio de prematricula   <!-- synonyms method -->
 - prematricula

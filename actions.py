@@ -1,14 +1,15 @@
+import locale
 from datetime import datetime
-
 import pytz
 from pymongo import MongoClient
 from rasa_core_sdk import Action
 from rasa_core_sdk.events import SlotSet
 
+
 if __name__ == '__main__':
-    import actions
-    a = actions.ActionlookforEvent()
-    a.run()
+    locale.setlocale(locale.LC_TIME, '')
+    ActionlookforEvent.run(None, None, None)
+
 
 class ActionlookforEvent(Action):
     def name(self):
@@ -17,43 +18,53 @@ class ActionlookforEvent(Action):
 
     def run(self, dispatcher, tracker, domain):
         # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
-        query = {"date": {"$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))}}
+        print(locale.getdefaultlocale())
+        locale.setlocale(locale.LC_TIME, 'esp_esp')
+        print(locale.getdefaultlocale())
         projection = {}
         sort = {}
-        evento = tracker.get_slot('event')
-        query["$text"] = {u"$search": '"' + evento + '"'}
+        query = {
+            "$or": [
+                {
+                    "date": {
+                        "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
+                    }
+                },
+                {
+                    "evento.finaliza": {
+                        "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
+                    }
+                }
+            ]
+        }
+        evento = 'Inicio de prematricula'
+        query["$text"] = {
+            u"$search": '"' + evento + '"'
+        }
         projection["score"] = {u"$meta": u"textScore"}
-        sort = [('score', {'$meta': 'textScore'}), (u"year", 1), (u"day", 1), (u"month", 1)]
+        sort = [('score', {'$meta': 'textScore'}), (u"date", 1)]
 
         with MongoClient("mongodb://localhost:27017/") as client:
             database = client["kb"]
             collection = database["Calendarios"]
             docs = collection.find(query, projection=projection, sort=sort).limit(5)
             matches = []
-            print(docs[0])
-            if docs[0]['score'] >= 0.800:
-                doc = docs[0]
-                date = "{0} ".format(self.date_to_text(doc['day'], doc['month'], doc['year']))
-                return [SlotSet('date', date)]
+            date = str()
+            hoy = datetime.now()
+            if docs[0]:
+                if docs[0]['score'] >= 0.800:
+                    if docs[0]['date'] >= hoy:
+                        date = docs[0]['date']
+                    elif docs[0]['date'] < hoy <= docs[0]['evento']['finaliza']:
+                        date = docs[0]['evento']['finaliza']
+                    return "hola"#[SlotSet('date', date)]
             else:
                 for doc in docs:
                     event = doc['evento']['nombre']
                     matches.append(event)
-                return [SlotSet('matching_events', matches)]
+                return "bye"#[SlotSet('matching_events', matches)]
 
         return []
-
-    def date_to_text(self, day, month, year):
-        mes = [
-            "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
-            "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
-        ]
-        date = "{0} de {1}{2}".format(
-            day, mes[int(month) - 1],
-            "" if datetime.now().year == year else "del " + str(year)
-        )
-
-        return date
 
 
 class ActionShowEventResults(Action):
@@ -63,9 +74,20 @@ class ActionShowEventResults(Action):
     def run(self, dispatcher, tracker, domain):
         match = tracker.get_slot("date")
         matches = tracker.get_slot("matching_events")
+        date = datetime.strptime(match, '%Y-%m-%d %H:%M:%S.%f')
+        date_str = date.strftime('%d de %B del %Y')
 
         if match:
-            dispatcher.utter_template("utter_ack_eventdate", tracker, event=tracker.get_slot('event'), date=match)
+            print(date_str)
+            if date >= datetime.now(tz=pytz.timezone('America/Santo_Domingo')):
+                dispatcher.utter_template("utter_ack_eventdate", tracker,
+                                          event=tracker.get_slot('event'), date=date_str)
+
+            else:
+                print(date_str)
+                dispatcher.utter_template("utter_ack_prsnt_eventdate", tracker,
+                                          event=tracker.get_slot('event'), date=date_str)
+
 
         elif matches:
             dispatcher.utter_template("utter_suggestions", tracker)
@@ -74,6 +96,72 @@ class ActionShowEventResults(Action):
 
         return []
 
+
+class ActionLookForAsuetos(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_look_asuetos"
+
+    def run(self, dispatcher, tracker, domain):
+        # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
+        eventdate = tracker.get_slot('date')
+        query = {
+            "date": {"$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))}
+        }
+        if eventdate:
+            query = {"date": datetime.strptime(eventdate+"-"+datetime.now().year, '%B-%Y')}
+        projection = dict()
+        query["evento.asueto"] = "true"
+        projection["evento.nombre"] = 1
+        matches = list()
+
+        with MongoClient("mongodb://localhost:27017/") as client:
+            database = client["kb"]
+            collection = database["Calendarios"]
+            docs = collection.find(query, projection=projection)
+
+            if docs:
+                for doc in docs:
+                    #date = datetime.strptime(doc['date'], '%Y-%m-%d %H:%M:%S.%f')
+                    #dia = date.strftime('%d de %B del %Y')
+                    matches.append(doc['evento']['nombre'])
+
+                dispatcher.utter_template('utter_ack_asuetos', tracker)
+                dispatcher.utter_message(matches.__str__())
+
+
+class ActionLookForImportant(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_look_important"
+
+    def run(self, dispatcher, tracker, domain):
+        # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
+        eventdate = tracker.get_slot('date')
+        query = {
+            "date": {
+                "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
+            }
+        }
+        if eventdate:
+            query = {"date": datetime.strptime(eventdate + "-" + datetime.now().year, '%B-%Y')}
+        projection = dict()
+        query["evento.importante"] = "true"
+        projection["evento.nombre"] = 1
+        matches = list()
+
+        with MongoClient("mongodb://localhost:27017/") as client:
+            database = client["kb"]
+            collection = database["Calendarios"]
+            docs = collection.find(query, projection=projection)
+            if docs:
+                for doc in docs:
+                    #date = datetime.strptime(doc['date'], '%Y-%m-%d %H:%M:%S.%f')
+                    #dia = date.strftime('%d de %B del %Y')
+                    matches.append(doc['evento']['nombre'])
+
+                dispatcher.utter_template('utter_ack_importantes', tracker)
+                dispatcher.utter_message(matches.__str__())
 # todo dates
 # Convertir fechas a Date Objects
 # Solo devolver fechas futuras
