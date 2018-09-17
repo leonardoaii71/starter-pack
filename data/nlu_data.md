@@ -857,12 +857,15 @@
 - cuantos dias asuetos hay en este semestre
 - cual es la cantidad de dias asuetos del periodo
 - cantidad de dias asuetos
+- cantidad de dias asuetos
 
 ## intent:count_importante
+- cuantos dias importantes hay
 - cuantos dias importantes hay en este periodo
 - cuantos dias importantes hay en este semestre
 - cual es la cantidad de dias importantes del periodo
 - cantidad de dias importantes
+- cuantos son los dias importantes
 
 ## synonym:Inicio de prematricula   <!-- synonyms method -->
 - prematricula

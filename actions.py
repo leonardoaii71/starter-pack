@@ -66,7 +66,6 @@ class ActionlookforEvent(Action):
 
         return []
 
-
 class ActionShowEventResults(Action):
     def name(self):
         return 'action_suggest'
@@ -83,10 +82,12 @@ class ActionShowEventResults(Action):
                 dispatcher.utter_template("utter_ack_eventdate", tracker,
                                           event=tracker.get_slot('event'), date=date_str)
 
+
             else:
                 print(date_str)
                 dispatcher.utter_template("utter_ack_prsnt_eventdate", tracker,
                                           event=tracker.get_slot('event'), date=date_str)
+
 
 
         elif matches:
@@ -108,11 +109,12 @@ class ActionLookForAsuetos(Action):
         query = {
             "date": {"$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))}
         }
-        if eventdate:
-            query = {"date": datetime.strptime(eventdate+"-"+datetime.now().year, '%B-%Y')}
+        #if eventdate:
+        #    query = {"date": datetime.strptime(eventdate+"-"+str(datetime.now().year), '%B-%Y')}
         projection = dict()
         query["evento.asueto"] = "true"
         projection["evento.nombre"] = 1
+        projection["date"] = 1
         matches = list()
 
         with MongoClient("mongodb://localhost:27017/") as client:
@@ -122,13 +124,41 @@ class ActionLookForAsuetos(Action):
 
             if docs:
                 for doc in docs:
-                    #date = datetime.strptime(doc['date'], '%Y-%m-%d %H:%M:%S.%f')
-                    #dia = date.strftime('%d de %B del %Y')
-                    matches.append(doc['evento']['nombre'])
+                    dia = doc['date'].strftime('%d de %B del %Y')
+                    matches.append(doc['evento']['nombre'] + " " + dia+'\n')
 
                 dispatcher.utter_template('utter_ack_asuetos', tracker)
                 dispatcher.utter_message(matches.__str__())
-                return [SlotSet('asueto_count', docs.count())]
+        return [SlotSet('asueto_count', docs.count())]
+
+
+class ActionCountAsuetos(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_count_asuetos"
+
+    def run(self, dispatcher, tracker, domain):
+        # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
+        counted = tracker.get_slot('asueto_count')
+        if (counted):
+            print("the count is already done")
+            return
+        eventdate = tracker.get_slot('date')
+        query = {
+            "date": {"$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))}
+        }
+        if eventdate:
+            query = {"date": datetime.strptime(eventdate+"-"+datetime.now().year, '%B-%Y')}
+        projection = dict()
+        query["evento.asueto"] = "true"
+        projection["evento.nombre"] = 1
+
+        with MongoClient("mongodb://localhost:27017/") as client:
+            database = client["kb"]
+            collection = database["Calendarios"]
+            docs = collection.find(query, projection=projection)
+
+        return [SlotSet('asueto_count', docs.count())]
 
 
 class ActionLookForImportant(Action):
@@ -144,11 +174,12 @@ class ActionLookForImportant(Action):
                 "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
             }
         }
-        if eventdate:
-            query = {"date": datetime.strptime(eventdate + "-" + datetime.now().year, '%B-%Y')}
+        #if eventdate:
+        #   query = {"date": datetime.strptime(eventdate + "-" + str(datetime.now().year), '%B-%Y')}
         projection = dict()
         query["evento.importante"] = "true"
         projection["evento.nombre"] = 1
+        projection["date"] = 1
         matches = list()
 
         with MongoClient("mongodb://localhost:27017/") as client:
@@ -158,14 +189,41 @@ class ActionLookForImportant(Action):
             if docs:
                 for doc in docs:
                     #date = datetime.strptime(doc['date'], '%Y-%m-%d %H:%M:%S.%f')
-                    #dia = date.strftime('%d de %B del %Y')
-                    matches.append(doc['evento']['nombre'])
+                    dia = doc['date'].strftime('%d de %B del %Y')
+                    matches.append(doc['evento']['nombre'] + " " + dia+'\n')
+
                 dispatcher.utter_template('utter_ack_importantes', tracker)
                 dispatcher.utter_message(matches.__str__())
-                return [SlotSet('importantes_count', docs.count())]
+        return [SlotSet('importantes_count', docs.count())]
 
 
-# todo dates
-# Convertir fechas a Date Objects
-# Solo devolver fechas futuras
-# query dates https://stackoverflow.com/questions/2943222/find-objects-between-two-dates-mongodb
+class ActionCountImportant(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_count_important"
+
+    def run(self, dispatcher, tracker, domain):
+        # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
+        counted = tracker.get_slot('importantes_count')
+        if(counted):
+            print("the count is already done")
+            return
+
+        eventdate = tracker.get_slot('date')
+        query = {
+            "date": {
+                "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
+            }
+        }
+        if eventdate:
+            query = {"date": datetime.strptime(eventdate + "-" + datetime.now().year, '%B-%Y')}
+        projection = dict()
+        query["evento.importante"] = "true"
+        projection["evento.nombre"] = 1
+
+        with MongoClient("mongodb://localhost:27017/") as client:
+            database = client["kb"]
+            collection = database["Calendarios"]
+            docs = collection.find(query, projection=projection)
+
+        return [SlotSet('importantes_count', docs.count())]

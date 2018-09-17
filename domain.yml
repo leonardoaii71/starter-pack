@@ -80,10 +80,10 @@ templates:
     - text: "Adios!"
 
   utter_ack_eventdate:
-    - text: "El evento {event} será el {edate}"
+    - text: "El evento {event} será el {date}"
 
   utter_ack_prsnt_eventdate:
-    - text: "El evento {event} ya comenzó y finaliza el {edate}"
+    - text: "El evento {event} ya comenzó y finaliza el {date}"
 
   utter_ask_username:
     - text: "Por favor digite su nombre para iniciar:"
@@ -99,8 +99,14 @@ templates:
   utter_ack_asuetos:
     - text: "Estos son los días asuetos que encontré: "
 
+  utter_ack_number_asuetos:
+    - text: "Hay {asueto_count} dias asuetos"
+
   utter_ack_importantes:
     - text: "Estos son los días a tomar en cuenta: "
+
+  utter_ack_number_importantes:
+    - text: "Hay {importantes_count} dias importantes "
 
   utter_default:
     - text: "Lo siento, no entendí tu pregunta, intenta con otra"
@@ -126,3 +132,7 @@ actions:
   - action_suggest
   - action_look_asuetos
   - action_look_important
+  - utter_ack_number_asuetos
+  - utter_ack_number_importantes
+  - action_count_asuetos
+  - action_count_important
