@@ -931,6 +931,8 @@
 
 ## synonym:Ceremonia de la sexagésima quinta graduación – Campus Santo Tomás de Aquino
 - graduacion
+- proxima graduacion
+- siguiente graduacion
 
 ## synonym:Fecha limite Retiro Total
 - retiro total
