@@ -929,6 +929,9 @@
 ## synonym:Fecha limite para el cuarto pago de matricula
 - cuarto pago de matricula
 
+## synonym:Ceremonia de la sexagésima quinta graduación – Campus Santo Tomás de Aquino
+- graduacion
+
 ## synonym:Fecha limite Retiro Total
 - retiro total
 
