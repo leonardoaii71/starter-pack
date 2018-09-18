@@ -103,6 +103,8 @@
 - no estoy feliz
 
 ## intent:query_event
+- cuando es la [graduacion](event)
+- cuando es la [Ceremonia de la sexagésima quinta graduación – Campus Santo Tomás de Aquino](event)
 - cuando es el [Inicio de prematricula](event)
 - cuando es el [Inicio de prematricula](event)?
 - Cuando es el [Inicio de prematricula](event)?
@@ -867,94 +869,116 @@
 - cantidad de dias importantes
 - cuantos son los dias importantes
 
-## synonym:Inicio de prematricula   <!-- synonyms method -->
-- prematricula
-
-## synonym:Inicio de Docencia
-- docencia
+## synonym:Inicio de docencia
 - inicio de clases
-- clases
+- inicio de clase
 
-## synonym:inscripcion
-- inscripciones
+## synonym:Entrega de carné
+- entrega del carne
+- entrega de carne
+- entrega del carné
 
-## synonym:bienvenida estudiantes de nuevo ingreso
-- bienvenida de estudiantes
+## synonym:Cátedra inaugural del año académico 2018-2019 - Campus de Santiago
+- inauguracion del año academico 2018-2019
+- inauguracion del año academico
 
-## synonym:Reinicio de Labores
-- reinicio de clases
-- reinicio de docencia
-- reinicio de clase
+## synonym:Modificación a la inscripción
+- modificacion de inscripcion
+- modificacion de inscripciones
+- modificacion a la inscripcion
 
-## synonym:Entrega de carne
-- entrega de carnet
-- entrega del carnet
-
-## synonym:Inscripciones Tardias y de estudiantes con I/E
-- inscripciones tardias
-- inscripcion tardia
-
-## synonym:Fecha limite para la firma de documentos de Credito Educativo
-- fecha para la firma de documentos de credito educativo
-- firma de documentos de credito educativo
-
-## synonym:Ceremonia de la Nonagesima Septima Graduacion
-- graduacion
-
-## synonym:Feria Expo-PUCMM 2018
-- expopucmm
-- expo-pucmm
-- expo pucmm
-
-## synonym:Fecha limite para el tercer pago de matricula
-- tercer pago de matricula
-
-## synonym:Solicitud de readmision para el periodo 3-2017-2018
-- solicitud de readmision
-
-## synonym:Inicio del periodo de Evaluacion Profesoral
-- evaluacion profesoral
-
-## synonym:Solicitud de cambio de campus para el 3-2017-2018
-- solicitud de cambio de campus
-- solicitud para cambio de campus
-
-## synonym:Periodo de prematricula para el 3-2017-2018
-- periodo de prematricula
-- periodo para prematricula
-
-## synonym:Primer examen de admision para ingresar en el periodo 1-2018-2019
-- primer examen de admision
-
-## synonym:Fecha limite para el cuarto pago de matricula
-- cuarto pago de matricula
+## synonym:Aniversario de la fundación de la PUCMM
+- aniversario de la fundacion de pucmm
 
 ## synonym:Ceremonia de la sexagésima quinta graduación – Campus Santo Tomás de Aquino
 - graduacion
 - proxima graduacion
 - siguiente graduacion
 
-## synonym:Fecha limite Retiro Total
+## synonym:Día de Nuestra Señora de las Mercedes
+- dia de las mercedes
+
+## synonym:Fecha límite para Segundo pago de matrícula
+- segundo pago de matricula
+- segundo pago de la matricula
+
+## synonym:Firma de documentos de Crédito Educativo
+- firmas de documentos de credito
+
+## synonym:Fecha límite para Tercer pago de matrícula
+- tercer pago de matricula
+- tercer pago de la matricula
+
+## synonym:Fecha limite para solicitar readmisión para el período 2-2018-2019
+- solicitud de readmision
+
+## synonym:Fecha limite para solicitar transferencia de otra universidad para el período 2-2018-2019
+- solicitud de transferencia
+- solicitud de transferencia de universidad
+
+## synonym:Examen de admisión para ingresar al período 2-2018-2019
+- examen de admision
+- examenes de admision
+
+## synonym:Celebración Día de la Constitución
+- dia de la constitucion
+
+## synonym:Fecha límite para solicitar cambio de campus para el período 2-2018-2019
+- solicitud de cambio de Campus
+- cambio de campus
+
+## synonym:Fecha limite para cambio de carrera para el período 2-2018-2019
+- cambio de carrera
+- solicitud de cambio de carrera
+
+## synonym:Fecha límite para retiro parcial
+- retiro parcial
+
+## synonym:Fecha límite para solicitar revisión de calificaciones finales
+- revision de calificaciones
+- revision de calificaciones finales
+
+## synonym:Fecha limite para retirar prematrícula del período 2-2018-2019
+- retiro de prematricula
+
+## synonym:Fecha límite para las escuelas y departamentos reportar resultados de la revisión de calificaciones finales
+- reporte de calificaciones finales
+
+## synonym:Fecha limite para pagar la segunda cuota derecho graduación febrero 2019
+- segunda cuota del derecho de graduacion
+
+## synonym:Fecha límite para solicitud tardía graduación febrero 2019 - Campus de Santiago
+- solicitud tardia de graduacion
+
+## synonym:Inicio período de prematrícula para el 2-2018-2019
+- periodo de prematricula
+
+## synonym:Fecha límite para retiro total
 - retiro total
 
-## synonym:Fin periodo de evaluacion profesoral
-- fin de evaluacion profesoral
-- fin de la evaluacion de profesores
+## synonym:Fecha limite para los candidatos a graduación de febrero 2019 depositar documentos pendientes en la Oficina de Admisiones
+- deposito de documentos de graduacion
+- deposito de documentos pendientes de graduacion
 
-## synonym:Inicio periodo de reporte de calificaciones finales
-- reporte de calificaciones finales
-- periodo de reporte de calificaciones finales
+## synonym:Fecha límite para cuarto pago de matrícula
+- cuarto pago de matricula
 
-## synonym:Periodo de modificacion de prematricula
+## synonym:Período de modificación de prematrícula (presencial)
 - modificacion de prematricula
 
-## synonym:ultimo dia de docencia
+## synonym:Último día de docencia
+- ultimo dia de docencia
 - ultimo dia de clases
-- ultimo dia de clase
-- ultimo dia del periodo
 
-## synonym:Solicitud de revision de calificaciones finales
-- revision de calificaciones finales
-- revision de calificaciones
-- revision de notas finales
-- revision de notas
+## synonym:Inicio del período
+- inicio del periodo
+
+## synonym:Inscripción y primer pago de matrícula estudiantes de nuevo ingreso
+- inscripciones de nuevo ingreso
+
+## synonym:Inicio Inscripciones generales y primer pago de matrícula
+- inscripcion
+
+## synonym:Inicio asueto navideño
+- vacaciones navidenas
+- vacaciones navideñas
