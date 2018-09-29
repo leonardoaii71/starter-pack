@@ -48,7 +48,7 @@ def train_nlu():
 
     training_data = load_data('data/nlu_data.md')
     trainer = Trainer(config.load("nlu_config.yml"))
-    trainer.train(training_data);
+    trainer.train(training_data)
     model_directory = trainer.persist('models/current/',
                                       fixed_model_name="nlu")
 
@@ -60,7 +60,7 @@ def run(serve_forever=True):
     agent = Agent.load("models/current/dialogue", interpreter=interpreter)
     if serve_forever:
         #agent.handle_channel(ConsoleInputChannel())
-    return agent
+        return agent
 
 
 if __name__ == '__main__':

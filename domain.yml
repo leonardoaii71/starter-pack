@@ -16,6 +16,7 @@ intents:
   - query_importantes
   - count_asueto
   - count_importante
+  - nonsense
 
 entities:
   - event
@@ -24,9 +25,9 @@ entities:
 slots:
   # replace with your slots
   event:
-    type: unfeaturized
+    type: text
   date:
-    type: unfeaturized
+    type: text
   matching_events:
     type: list
   username:
@@ -108,8 +109,15 @@ templates:
   utter_ack_number_importantes:
     - text: "Hay {importantes_count} dias importantes "
 
+  utter_event_not_found:
+    - text: "Lo siento, no pude encontrarlo en el calendario. Intente con otro nomre"
+
   utter_default:
     - text: "Lo siento, no entendí tu pregunta, intenta con otra"
+    - text: "Lo siento pero por el momento no puedo ayudarte."
+    - text: "No tengo informacion suficiente para responderte."
+    - text: "Luego podre responder preguntas como estas. Estoy en aprendizaje."
+    - text: "No puedo responder tu inquietud, disculpa."
 
 actions:
   # all the utter actions from the templates, plus any custom actions
@@ -128,6 +136,7 @@ actions:
   - utter_default
   - utter_suggestions
   - utter_ack_asuetos
+  - utter_event_not_found
   - action_look_event
   - action_suggest
   - action_look_asuetos

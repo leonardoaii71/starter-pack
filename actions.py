@@ -1,10 +1,9 @@
 import locale
 from datetime import datetime
 import pytz
-from pymongo import MongoClient
+from pymongo import MongoClient, collection
 from rasa_core_sdk import Action
 from rasa_core_sdk.events import SlotSet
-
 
 if __name__ == '__main__':
     locale.setlocale(locale.LC_TIME, '')
@@ -17,30 +16,29 @@ class ActionlookforEvent(Action):
 
     def run(self, dispatcher, tracker, domain):
         # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
-        print(locale.getdefaultlocale())
-        locale.setlocale(locale.LC_TIME, 'esp_esp')
-        print(locale.getdefaultlocale())
-        projection = {}
-        sort = {}
-        query = {
-            "$or": [
-                {
-                    "date": {
-                        "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
-                    }
-                },
-                {
-                    "evento.finaliza": {
-                        "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
-                    }
+
+        evento = tracker.get_slot("event")
+        if evento is None:
+            dispatcher.utter_template(tracker, "utter_event_not_found")
+            return []
+        query = {"$or": [
+            {
+                "date": {
+                    "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
                 }
-            ]
+            },
+            {
+                "evento.finaliza": {
+                    "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
+                }
+            }
+        ], "$text": {u"$search": evento}}
+
+        projection = {
+            "score": {u"$meta": u"textScore"},
+            "evento.nombre": 1,
+            "date": 1,
         }
-        evento = 'Inicio de prematricula'
-        query["$text"] = {
-            u"$search": '"' + evento + '"'
-        }
-        projection["score"] = {u"$meta": u"textScore"}
         sort = [('score', {'$meta': 'textScore'}), (u"date", 1)]
 
         with MongoClient("mongodb://localhost:27017/") as client:
@@ -50,21 +48,24 @@ class ActionlookforEvent(Action):
             matches = []
             date = str()
             hoy = datetime.now()
-            return [SlotSet('date', datetime.now())]
-            # if docs[0]:
-            #     if docs[0]['score'] >= 0.800:
-            #         if docs[0]['date'] >= hoy:
-            #             date = docs[0]['date']
-            #         elif docs[0]['date'] < hoy <= docs[0]['evento']['finaliza']:
-            #             date = docs[0]['evento']['finaliza']
-            #         return "hola"#[SlotSet('date', date)]
-            # else:
-            #     for doc in docs:
-            #         event = doc['evento']['nombre']
-            #         matches.append(event)
-            #     return "bye"#[SlotSet('matching_events', matches)]
+            if docs.count() > 0:
+                if docs[0]['score'] >= 0.700:
+                    if docs[0]['date'] >= hoy:
+                        date = docs[0]['date']
 
+                    elif docs[0]['date'] < hoy <= docs[0]['evento']['finaliza']:
+                        date = docs[0]['evento']['finaliza']
+                    return [SlotSet('date', date)]
+
+                else:
+                    for doc in docs:
+                        event = doc['evento']['nombre']
+                        matches.append(event)
+                    return [SlotSet('matching_events', matches)]
+
+            dispatcher.utter_template('utter_sorry', tracker)
         return []
+
 
 class ActionShowEventResults(Action):
     def name(self):
@@ -77,23 +78,22 @@ class ActionShowEventResults(Action):
         date_str = date.strftime('%d de %B del %Y')
 
         if match:
-            print(date_str)
             if date >= datetime.now(tz=pytz.timezone('America/Santo_Domingo')):
                 dispatcher.utter_template("utter_ack_eventdate", tracker,
                                           event=tracker.get_slot('event'), date=date_str)
 
-
             else:
-                print(date_str)
                 dispatcher.utter_template("utter_ack_prsnt_eventdate", tracker,
                                           event=tracker.get_slot('event'), date=date_str)
-
-
 
         elif matches:
             dispatcher.utter_template("utter_suggestions", tracker)
             suggestions = [{'title': event, 'payload': "/query_event{\"event\": \"%s\""} for event in matches]
             dispatcher.utter_button_message("", suggestions)
+
+        tracker.get_slot('event').reset()
+        tracker.slots['date'].reset()
+        tracker.get_slot('date').reset()
 
         return []
 
@@ -109,7 +109,7 @@ class ActionLookForAsuetos(Action):
         query = {
             "date": {"$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))}
         }
-        #if eventdate:
+        # if eventdate:
         #    query = {"date": datetime.strptime(eventdate+"-"+str(datetime.now().year), '%B-%Y')}
         projection = dict()
         query["evento.asueto"] = "true"
@@ -125,7 +125,7 @@ class ActionLookForAsuetos(Action):
             if docs:
                 for doc in docs:
                     dia = doc['date'].strftime('%d de %B del %Y')
-                    matches.append(doc['evento']['nombre'] + " " + dia+'\n')
+                    matches.append(doc['evento']['nombre'] + " " + dia + '\n')
 
                 dispatcher.utter_template('utter_ack_asuetos', tracker)
                 dispatcher.utter_message(matches.__str__())
@@ -140,7 +140,7 @@ class ActionCountAsuetos(Action):
     def run(self, dispatcher, tracker, domain):
         # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
         counted = tracker.get_slot('asueto_count')
-        if (counted):
+        if counted:
             print("the count is already done")
             return
         eventdate = tracker.get_slot('date')
@@ -148,7 +148,7 @@ class ActionCountAsuetos(Action):
             "date": {"$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))}
         }
         if eventdate:
-            query = {"date": datetime.strptime(eventdate+"-"+datetime.now().year, '%B-%Y')}
+            query = {"date": datetime.strptime(eventdate + "-" + datetime.now().year, '%B-%Y')}
         projection = dict()
         query["evento.asueto"] = "true"
         projection["evento.nombre"] = 1
@@ -174,7 +174,7 @@ class ActionLookForImportant(Action):
                 "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
             }
         }
-        #if eventdate:
+        # if eventdate:
         #   query = {"date": datetime.strptime(eventdate + "-" + str(datetime.now().year), '%B-%Y')}
         projection = dict()
         query["evento.importante"] = "true"
@@ -188,9 +188,9 @@ class ActionLookForImportant(Action):
             docs = collection.find(query, projection=projection)
             if docs:
                 for doc in docs:
-                    #date = datetime.strptime(doc['date'], '%Y-%m-%d %H:%M:%S.%f')
+                    # date = datetime.strptime(doc['date'], '%Y-%m-%d %H:%M:%S.%f')
                     dia = doc['date'].strftime('%d de %B del %Y')
-                    matches.append(doc['evento']['nombre'] + " " + dia+'\n')
+                    matches.append(doc['evento']['nombre'] + " " + dia + '\n')
 
                 dispatcher.utter_template('utter_ack_importantes', tracker)
                 dispatcher.utter_message(matches.__str__())
@@ -205,7 +205,7 @@ class ActionCountImportant(Action):
     def run(self, dispatcher, tracker, domain):
         # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
         counted = tracker.get_slot('importantes_count')
-        if(counted):
+        if (counted):
             print("the count is already done")
             return
 

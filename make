@@ -14,3 +14,5 @@ python -m rasa_core_sdk.endpoint --actions actions
 #interactive learning:
 python -m rasa_core.train --online -d domain.yml -s data/stories.md -o models/current/dialogue -u models/current/nlu
 
+Activate BotProject
+cd C:\Users\Leonardo\Documents\GitHub\starter-pack

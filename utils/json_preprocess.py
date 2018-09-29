@@ -16,9 +16,9 @@ with MongoClient("mongodb://localhost:27017/") as client:
     #matches = []
     unset = {u"$unset": {"year": "", "month": "", "day": ""}}
     for doc in docs:
-        year = int(doc['year'])
-        mes = int(doc['month'])
-        dia = int(doc['day'])
+        year = 2018
+        mes = int(doc['mes'])
+        dia = int(doc['dia'])
         update = {}
         update["$set"] = {u'date': datetime.datetime(year, mes, dia, tzinfo=pytz.timezone('America/Santo_Domingo')
             )}

@@ -13166,3 +13166,2775 @@ C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocess
 C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
   if diff:
 
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             GET, HEAD, OPTIONS             /static/[filename]
+custom_webhook.health                              GET, HEAD, OPTIONS             /webhooks/rest/
+custom_webhook.receive                             POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.6375975045497666}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Bienvenido humano!. Soy el bot regis. Estoy aqui para ofrecerte información academica. Preguntame acerca del calendario, procesos academicos o sobre tu historial. ¿Que deseas saber?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la graduacion' with intent '{'name': 'query_event', 'confidence': 0.9752067265016229}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_query_event': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no he encontrado un resultado para esa pregunta :( , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_query_event': 1.0, 'prev_action_listen': 1.0}, {'intent_query_event': 1.0, 'prev_action_look_event': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento None será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'prev_action_listen': 1.0}, {'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 0.88.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la inscripcion' with intent '{'name': 'query_event', 'confidence': 0.980512095555187}' and entities '[{'start': 13, 'end': 24, 'value': 'inscripcion', 'entity': 'event', 'confidence': 0.9885915643809269, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 13 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: inscripcion
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no he encontrado un resultado para esa pregunta :( , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_listen': 1.0}, {'prev_action_look_event': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento inscripcion será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_listen': 1.0}, {'prev_action_look_event': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Tienes otra pregunta humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_look_event': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'prev_utter_another_question': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la ceremonia de graduacion' with intent '{'name': 'query_event', 'confidence': 0.9810811813157317}' and entities '[{'start': 13, 'end': 36, 'value': 'ceremonia de graduacion', 'entity': 'event', 'confidence': 0.9979363491325459, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: ceremonia de graduacion
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'prev_utter_another_question': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no he encontrado un resultado para esa pregunta :( , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_another_question': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_listen': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento ceremonia de graduacion será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_listen': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Necesitas saber algo mas humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'prev_utter_another_question': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 30 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: ceremonia de graduacion
+	importantes_count: None
+	matching_events: None
+	username: humano
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             GET, OPTIONS, HEAD             /static/[filename]
+custom_webhook.health                              GET, OPTIONS, HEAD             /webhooks/rest/
+custom_webhook.receive                             POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.6375975045497666}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Hola humano! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuando es la prematricula?,  ¿Cual es mi indice académico?,  ¿Qué son estudiantes especiales?... Adelante!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la inscripcion' with intent '{'name': 'query_event', 'confidence': 0.980512095555187}' and entities '[{'start': 13, 'end': 24, 'value': 'inscripcion', 'entity': 'event', 'confidence': 0.9885915643809269, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 7 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: inscripcion
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'entity_event': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no he encontrado un resultado para esa pregunta :( , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'entity_event': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'prev_action_look_event': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento inscripcion será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'prev_action_look_event': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Necesitas saber algo mas humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_look_event': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'prev_utter_another_question': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: inscripcion
+	importantes_count: None
+	matching_events: None
+	username: humano
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.6375975045497666}' and entities '[]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Bienvenido humano!. Soy el bot regis. Estoy aqui para ofrecerte información academica. Preguntame acerca del calendario, procesos academicos o sobre tu historial. ¿Que deseas saber?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la inscripcion' with intent '{'name': 'query_event', 'confidence': 0.980512095555187}' and entities '[{'start': 13, 'end': 24, 'value': 'inscripcion', 'entity': 'event', 'confidence': 0.9885915643809269, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 24 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: inscripcion
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'entity_event': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no he encontrado un resultado para esa pregunta :( , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'entity_event': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'prev_action_look_event': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento inscripcion será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'prev_action_look_event': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Tienes otra pregunta humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_look_event': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'prev_utter_another_question': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Inconsistent BILOU tagging found, B- tag, L- tag pair encloses multiple entity classes.i.e. [B-a, I-b, L-a] instead of [B-a, I-a, L-a].
+Assuming B- class is correct.
+Inconsistent BILOU tagging found, B- tag not closed by L- tag, i.e [B-a, I-a, O] instead of [B-a, L-a, O].
+Assuming last tag is L-
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es el retiro' with intent '{'name': 'query_event', 'confidence': 0.8871733105938725}' and entities '[{'start': 13, 'end': 19, 'value': 'retiro', 'entity': 'event', 'confidence': 0.0, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 33 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: retiro
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'prev_utter_another_question': 1.0, 'intent_query_event': 1.0}, {'prev_action_listen': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no he encontrado un resultado para esa pregunta :( , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'prev_utter_another_question': 1.0, 'intent_query_event': 1.0}, {'prev_action_listen': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'prev_action_look_event': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento retiro será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'prev_action_look_event': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Tienes otra pregunta humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_look_event': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'prev_utter_another_question': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook.health                              HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook.receive                             POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.6375975045497666}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Saludos humano!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Inconsistent BILOU tagging found, B- tag, L- tag pair encloses multiple entity classes.i.e. [B-a, I-b, L-a] instead of [B-a, I-a, L-a].
+Assuming B- class is correct.
+Inconsistent BILOU tagging found, B- tag not closed by L- tag, i.e [B-a, I-a, O] instead of [B-a, L-a, O].
+Assuming last tag is L-
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es el retiro' with intent '{'name': 'query_event', 'confidence': 0.8871733105938725}' and entities '[{'start': 13, 'end': 19, 'value': 'retiro', 'entity': 'event', 'confidence': 0.0, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 7 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: retiro
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_look_event' ended with events '[]'
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_listen': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento retiro será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_listen': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Necesitas saber algo mas humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la graduacion' with intent '{'name': 'query_event', 'confidence': 0.9752067265016229}' and entities '[]'
+Logged UserUtterance - tracker now has 14 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: retiro
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_look_event' ended with events '[]'
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'intent_query_event': 1.0, 'prev_action_look_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento retiro será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 0.88.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '' with intent '{'name': None, 'confidence': 0.0}' and entities '[]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: retiro
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'intent_query_event': 1.0}, {'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_look_important' with prob 0.76.
+Calling action endpoint to run action 'action_look_important'.
+Action 'action_look_important' ended with events '['SlotSet(key: importantes_count, value: 13)']'
+Bot utterance 'BotUttered(text: Estos son los días a tomar en cuenta: , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Bot utterance 'BotUttered(text: ['Ceremonia de la sexagésima quinta graduación – Campus Santo Tomás de Aquino 22 de septiembre del 2018\n', 'Fecha límite para Segundo pago de matrícula 26 de septiembre del 2018\n', 'Fecha límite para Tercer pago de matrícula 26 de octubre del 2018\n', 'Fecha limite para solicitar readmisión para el período 2-2018-2019 26 de octubre del 2018\n', 'Fecha limite para solicitar transferencia de otra universidad para el período 2-2018-2019 26 de octubre del 2018\n', 'Fecha límite para solicitud de graduación mayo 2019 en Campus Santo Tomás de Aquino 07 de noviembre del 2018\n', 'Fecha límite para retiro parcial 09 de noviembre del 2018\n', 'Fecha límite para retiro total 23 de noviembre del 2018\n', 'Inicio período de reporte de calificaciones finales 03 de diciembre del 2018\n', 'Último día de docencia 07 de diciembre del 2018\n', 'Fecha límite para los profesores reportar las calificaciones finales 11 de diciembre del 2018\n', 'Inscripción y primer pago de matrícula estudiantes de nuevo ingreso 17 de diciembre del 2018\n', 'Inicio Inscripciones generales y primer pago de matrícula 18 de diciembre del 2018\n'], data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_ack_eventdate': 1.0, 'intent_query_event': 1.0}, {'prev_action_listen': 1.0}, {'prev_action_look_important': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 25 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: retiro
+	importantes_count: 13
+	matching_events: None
+	username: humano
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la graduacion' with intent '{'name': 'query_event', 'confidence': 0.9752067265016229}' and entities '[]'
+Logged UserUtterance - tracker now has 29 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_look_event' with prob 0.98.
+Calling action endpoint to run action 'action_look_event'.
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_look_event' ended with events '[]'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'intent_query_event': 1.0, 'prev_action_look_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento None será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 0.88.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.6375975045497666}' and entities '[]'
+Logged UserUtterance - tracker now has 34 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'intent_query_event': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_look_important' with prob 0.93.
+Calling action endpoint to run action 'action_look_important'.
+Action 'action_look_important' ended with events '['SlotSet(key: importantes_count, value: 13)']'
+Bot utterance 'BotUttered(text: Estos son los días a tomar en cuenta: , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Bot utterance 'BotUttered(text: ['Ceremonia de la sexagésima quinta graduación – Campus Santo Tomás de Aquino 22 de September del 2018\n', 'Fecha límite para Segundo pago de matrícula 26 de September del 2018\n', 'Fecha límite para Tercer pago de matrícula 26 de October del 2018\n', 'Fecha limite para solicitar readmisión para el período 2-2018-2019 26 de October del 2018\n', 'Fecha limite para solicitar transferencia de otra universidad para el período 2-2018-2019 26 de October del 2018\n', 'Fecha límite para solicitud de graduación mayo 2019 en Campus Santo Tomás de Aquino 07 de November del 2018\n', 'Fecha límite para retiro parcial 09 de November del 2018\n', 'Fecha límite para retiro total 23 de November del 2018\n', 'Inicio período de reporte de calificaciones finales 03 de December del 2018\n', 'Último día de docencia 07 de December del 2018\n', 'Fecha límite para los profesores reportar las calificaciones finales 11 de December del 2018\n', 'Inscripción y primer pago de matrícula estudiantes de nuevo ingreso 17 de December del 2018\n', 'Inicio Inscripciones generales y primer pago de matrícula 18 de December del 2018\n'], data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_ack_eventdate': 1.0, 'intent_query_event': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_action_look_important': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 40 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: 13
+	matching_events: None
+	username: humano
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.6375975045497666}' and entities '[]'
+Logged UserUtterance - tracker now has 44 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Bienvenido humano!. Soy el bot regis. Estoy aqui para ofrecerte información academica. Preguntame acerca del calendario, procesos academicos o sobre tu historial. ¿Que deseas saber?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la graduacion' with intent '{'name': 'query_event', 'confidence': 0.9752067265016229}' and entities '[]'
+Logged UserUtterance - tracker now has 48 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_look_event' ended with events '[]'
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'intent_query_event': 1.0, 'prev_action_look_event': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento None será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 0.88.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la ceremonia de graduacion' with intent '{'name': 'query_event', 'confidence': 0.9810811813157317}' and entities '[{'start': 13, 'end': 36, 'value': 'ceremonia de graduacion', 'entity': 'event', 'confidence': 0.9979363491325459, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 54 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: ceremonia de graduacion
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'intent_query_event': 1.0}, {'prev_action_listen': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no he encontrado un resultado para esa pregunta :( , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_ack_eventdate': 1.0, 'intent_query_event': 1.0}, {'prev_action_listen': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento ceremonia de graduacion será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Necesitas saber algo mas humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/' with intent '{'name': '/', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 62 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: ceremonia de graduacion
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_utter_ack_eventdate': 1.0, 'entity_event': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}, {'intent_/': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Feature 'intent_/' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no he encontrado un resultado para esa pregunta :( , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}, {'intent_/': 1.0, 'prev_action_listen': 1.0}, {'intent_/': 1.0, 'prev_action_look_event': 1.0}]
+There is no memorised next action
+Feature 'intent_/' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_/' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento ceremonia de graduacion será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_/': 1.0, 'prev_action_listen': 1.0}, {'intent_/': 1.0, 'prev_action_look_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'intent_/': 1.0}]
+There is no memorised next action
+Feature 'intent_/' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_/' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_/' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_another_question' with prob 0.99.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Necesitas saber algo mas humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_/': 1.0, 'prev_action_look_event': 1.0}, {'prev_utter_ack_eventdate': 1.0, 'intent_/': 1.0}, {'prev_utter_another_question': 1.0, 'intent_/': 1.0}]
+There is no memorised next action
+Feature 'intent_/' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_/' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_/' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '' with intent '{'name': None, 'confidence': 0.0}' and entities '[]'
+Logged UserUtterance - tracker now has 70 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: ceremonia de graduacion
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_utter_ack_eventdate': 1.0, 'intent_/': 1.0}, {'prev_utter_another_question': 1.0, 'intent_/': 1.0}, {'prev_action_listen': 1.0}]
+There is no memorised next action
+Feature 'intent_/' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_/' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_bye' with prob 1.00.
+Action 'utter_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: Hasta pronto, gracias por tu visita humano!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_another_question': 1.0, 'intent_/': 1.0}, {'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0}]
+There is no memorised next action
+Feature 'intent_/' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook.health                              HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook.receive                             POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.6509914376605894}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Bienvenido humano!. Soy el bot regis. Estoy aqui para ofrecerte información academica. Preguntame acerca del calendario, procesos academicos o sobre tu historial. ¿Que deseas saber?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la graduacion' with intent '{'name': 'query_event', 'confidence': 0.9772745186363531}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_query_event': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_look_event' ended with events '[]'
+Current tracker state [{'intent_query_event': 1.0, 'prev_action_listen': 1.0}, {'intent_query_event': 1.0, 'prev_action_look_event': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento None será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_another_question' with prob 0.83.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Tienes otra pregunta humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'dime dias asuetos' with intent '{'name': 'query_asueto', 'confidence': 0.31281321631556086}' and entities '[]'
+Logged UserUtterance - tracker now has 13 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}, {'intent_query_asueto': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_bye' with prob 0.79.
+Action 'utter_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: Hasta pronto, gracias por tu visita humano!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_asueto': 1.0, 'prev_action_listen': 1.0}, {'intent_query_asueto': 1.0, 'prev_utter_bye': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'como estas manin' with intent '{'name': 'query_event', 'confidence': 0.5143869013543695}' and entities '[]'
+Logged UserUtterance - tracker now has 17 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_query_asueto': 1.0, 'prev_utter_bye': 1.0}, {'intent_query_event': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_look_event' with prob 0.88.
+Calling action endpoint to run action 'action_look_event'.
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_look_event' ended with events '[]'
+Current tracker state [{'intent_query_event': 1.0, 'prev_action_listen': 1.0}, {'intent_query_event': 1.0, 'prev_action_look_event': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento None será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_another_question' with prob 0.89.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Tienes otra pregunta humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'asdf sdfsdfsf' with intent '{'name': 'bye', 'confidence': 0.2014532441275586}' and entities '[]'
+Logged UserUtterance - tracker now has 24 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}, {'intent_bye': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+NLU confidence 0.2014532441275586 is lower than NLU threshold 0.3. Predicting fallback action: utter_default
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'utter_default' with prob 1.00.
+Action 'utter_default' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no entendí tu pregunta, intenta con otra, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_bye': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_default': 1.0, 'intent_bye': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'sljdnfslnf 23232' with intent '{'name': 'query_event', 'confidence': 0.23517069793870843}' and entities '[]'
+Logged UserUtterance - tracker now has 28 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_utter_default': 1.0, 'intent_bye': 1.0}, {'intent_query_event': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+NLU confidence 0.23517069793870843 is lower than NLU threshold 0.3. Predicting fallback action: utter_default
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'utter_default' with prob 1.00.
+Action 'utter_default' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no entendí tu pregunta, intenta con otra, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'prev_action_listen': 1.0}, {'intent_query_event': 1.0, 'prev_utter_default': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'dime dias asuetos' with intent '{'name': 'query_asueto', 'confidence': 0.31281321631556086}' and entities '[]'
+Logged UserUtterance - tracker now has 32 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_query_event': 1.0, 'prev_utter_default': 1.0}, {'intent_query_asueto': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'utter_default' with prob 1.00.
+Action 'utter_default' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no entendí tu pregunta, intenta con otra, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_asueto': 1.0, 'prev_action_listen': 1.0}, {'intent_query_asueto': 1.0, 'prev_utter_default': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cls' with intent '{'name': 'greet', 'confidence': 0.7531975658413557}' and entities '[]'
+Logged UserUtterance - tracker now has 36 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_query_asueto': 1.0, 'prev_utter_default': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.89.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             OPTIONS, GET, HEAD             /static/[filename]
+custom_webhook.health                              OPTIONS, GET, HEAD             /webhooks/rest/
+custom_webhook.receive                             OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.6431786008753981}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Hola humano! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuando es la prematricula?,  ¿Cual es mi indice académico?,  ¿Qué son estudiantes especiales?... Adelante!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la graduacion' with intent '{'name': 'query_event', 'confidence': 0.9766953894966218}' and entities '[{'start': 13, 'end': 23, 'value': 'Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino', 'entity': 'event', 'confidence': 0.8558116528413908, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+Logged UserUtterance - tracker now has 7 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'entity_event': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no he encontrado un resultado para esa pregunta :( , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'entity_event': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Tienes otra pregunta humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es el ultimo dia de docencia' with intent '{'name': 'query_event', 'confidence': 0.9621830916883134}' and entities '[{'start': 13, 'end': 35, 'value': '?ltimo d?a de docencia', 'entity': 'event', 'confidence': 0.997512536439855, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+Logged UserUtterance - tracker now has 16 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: ?ltimo d?a de docencia
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}, {'entity_event': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no he encontrado un resultado para esa pregunta :( , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}, {'entity_event': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento ?ltimo d?a de docencia será el None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Necesitas saber algo mas humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_action_look_event': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'entity_event': 1.0, 'intent_query_event': 1.0, 'prev_utter_another_question': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Rasa process starting
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook.health                              HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook.receive                             POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.6431786008753981}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Hola humano! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuando es la prematricula?,  ¿Cual es mi indice académico?,  ¿Qué son estudiantes especiales?... Adelante!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la graduacion' with intent '{'name': 'query_event', 'confidence': 0.9766953894966218}' and entities '[{'start': 13, 'end': 23, 'value': 'Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino', 'entity': 'event', 'confidence': 0.8558116528413908, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+Logged UserUtterance - tracker now has 7 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '['SlotSet(key: date, value: Wed, 19 Dec 2018 04:40:00 GMT)']'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}, {'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino será el Wed, 19 Dec 2018 04:40:00 GMT, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}, {'intent_query_event': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Necesitas saber algo mas humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la prematricula' with intent '{'name': 'query_event', 'confidence': 0.9748043831340912}' and entities '[{'start': 13, 'end': 25, 'value': 'prematricula', 'entity': 'event', 'confidence': 0.9647257490414052, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 16 events
+Current slot values: 
+	asueto_count: None
+	date: Wed, 19 Dec 2018 04:40:00 GMT
+	event: prematricula
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '["SlotSet(key: matching_events, value: ['Período de modificación de prematrícula (presencial)', 'Inicio período de prematrícula para el 2-2018-2019', 'Fecha limite para retirar prematrícula del período 2-2018-2019'])"]'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}, {'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento prematricula será el Wed, 19 Dec 2018 04:40:00 GMT, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}, {'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Tienes otra pregunta humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 24 events
+Current slot values: 
+	asueto_count: None
+	date: Wed, 19 Dec 2018 04:40:00 GMT
+	event: prematricula
+	importantes_count: None
+	matching_events: ['Período de modificación de prematrícula (presencial)', 'Inicio período de prematrícula para el 2-2018-2019', 'Fecha limite para retirar prematrícula del período 2-2018-2019']
+	username: humano
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 28 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hola' with intent '{'name': 'greet', 'confidence': 0.8743896478057266}' and entities '[]'
+Logged UserUtterance - tracker now has 32 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Bienvenido humano!. Soy el bot regis. Estoy aqui para ofrecerte información academica. Preguntame acerca del calendario, procesos academicos o sobre tu historial. ¿Que deseas saber?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la graduacion' with intent '{'name': 'query_event', 'confidence': 0.9766953894966218}' and entities '[{'start': 13, 'end': 23, 'value': 'Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino', 'entity': 'event', 'confidence': 0.8558116528413908, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+Logged UserUtterance - tracker now has 37 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '['SlotSet(key: date, value: Wed, 19 Dec 2018 04:40:00 GMT)']'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}, {'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino será el Wed, 19 Dec 2018 04:40:00 GMT, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}, {'intent_query_event': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Tienes otra pregunta humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la prematricula' with intent '{'name': 'query_event', 'confidence': 0.9748043831340912}' and entities '[{'start': 13, 'end': 25, 'value': 'prematricula', 'entity': 'event', 'confidence': 0.9647257490414052, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 46 events
+Current slot values: 
+	asueto_count: None
+	date: Wed, 19 Dec 2018 04:40:00 GMT
+	event: prematricula
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '["SlotSet(key: matching_events, value: ['Período de modificación de prematrícula (presencial)', 'Inicio período de prematrícula para el 2-2018-2019', 'Fecha limite para retirar prematrícula del período 2-2018-2019'])"]'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}, {'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento prematricula será el Wed, 19 Dec 2018 04:40:00 GMT, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}, {'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Necesitas saber algo mas humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 54 events
+Current slot values: 
+	asueto_count: None
+	date: Wed, 19 Dec 2018 04:40:00 GMT
+	event: prematricula
+	importantes_count: None
+	matching_events: ['Período de modificación de prematrícula (presencial)', 'Inicio período de prematrícula para el 2-2018-2019', 'Fecha limite para retirar prematrícula del período 2-2018-2019']
+	username: humano
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.6431786008753981}' and entities '[]'
+Logged UserUtterance - tracker now has 58 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: None
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Bienvenido humano!. Soy el bot regis. Estoy aqui para ofrecerte información academica. Preguntame acerca del calendario, procesos academicos o sobre tu historial. ¿Que deseas saber?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la graduacion' with intent '{'name': 'query_event', 'confidence': 0.9766953894966218}' and entities '[{'start': 13, 'end': 23, 'value': 'Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino', 'entity': 'event', 'confidence': 0.8558116528413908, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+Logged UserUtterance - tracker now has 63 events
+Current slot values: 
+	asueto_count: None
+	date: None
+	event: Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '['SlotSet(key: date, value: Wed, 19 Dec 2018 04:40:00 GMT)']'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}, {'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino será el Wed, 19 Dec 2018 04:40:00 GMT, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}, {'intent_query_event': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Necesitas saber algo mas humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la prematricula' with intent '{'name': 'query_event', 'confidence': 0.9748043831340912}' and entities '[{'start': 13, 'end': 25, 'value': 'prematricula', 'entity': 'event', 'confidence': 0.9647257490414052, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 72 events
+Current slot values: 
+	asueto_count: None
+	date: Wed, 19 Dec 2018 04:40:00 GMT
+	event: prematricula
+	importantes_count: None
+	matching_events: None
+	username: humano
+Current tracker state [{'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '["SlotSet(key: matching_events, value: ['Período de modificación de prematrícula (presencial)', 'Inicio período de prematrícula para el 2-2018-2019', 'Fecha limite para retirar prematrícula del período 2-2018-2019'])"]'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'entity_event': 1.0}, {'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento prematricula será el Wed, 19 Dec 2018 04:40:00 GMT, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}, {'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Tienes otra pregunta humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la bienvenida a estudiantes' with intent '{'name': 'query_event', 'confidence': 0.927895144530022}' and entities '[]'
+Logged UserUtterance - tracker now has 80 events
+Current slot values: 
+	asueto_count: None
+	date: Wed, 19 Dec 2018 04:40:00 GMT
+	event: prematricula
+	importantes_count: None
+	matching_events: ['Período de modificación de prematrícula (presencial)', 'Inicio período de prematrícula para el 2-2018-2019', 'Fecha limite para retirar prematrícula del período 2-2018-2019']
+	username: humano
+Current tracker state [{'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_look_event' with prob 0.99.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '["SlotSet(key: matching_events, value: ['Período de modificación de prematrícula (presencial)', 'Inicio período de prematrícula para el 2-2018-2019', 'Fecha limite para retirar prematrícula del período 2-2018-2019'])"]'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0}, {'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento prematricula será el Wed, 19 Dec 2018 04:40:00 GMT, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0}, {'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_another_question' with prob 0.75.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Necesitas saber algo mas humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es el inicio del periodo' with intent '{'name': 'query_event', 'confidence': 0.9600382379633385}' and entities '[{'start': 13, 'end': 31, 'value': 'Inicio del per?odo', 'entity': 'event', 'confidence': 0.9706938140746362, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+Logged UserUtterance - tracker now has 89 events
+Current slot values: 
+	asueto_count: None
+	date: Wed, 19 Dec 2018 04:40:00 GMT
+	event: Inicio del per?odo
+	importantes_count: None
+	matching_events: ['Período de modificación de prematrícula (presencial)', 'Inicio período de prematrícula para el 2-2018-2019', 'Fecha limite para retirar prematrícula del período 2-2018-2019']
+	username: humano
+Current tracker state [{'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0}, {'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_look_event' with prob 1.00.
+Calling action endpoint to run action 'action_look_event'.
+Action 'action_look_event' ended with events '['SlotSet(key: date, value: Mon, 17 Dec 2018 04:40:00 GMT)']'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}, {'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_ack_eventdate' with prob 1.00.
+Action 'utter_ack_eventdate' ended with events '[]'
+Bot utterance 'BotUttered(text: El evento Inicio del per?odo será el Mon, 17 Dec 2018 04:40:00 GMT, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_look_event': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}, {'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_another_question' with prob 1.00.
+Action 'utter_another_question' ended with events '[]'
+Bot utterance 'BotUttered(text: Necesitas saber algo mas humano?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0, 'prev_utter_ack_eventdate': 1.0}, {'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuantos eventos importantes hay' with intent '{'name': 'count_asueto', 'confidence': 0.28544350305882354}' and entities '[]'
+Logged UserUtterance - tracker now has 97 events
+Current slot values: 
+	asueto_count: None
+	date: Mon, 17 Dec 2018 04:40:00 GMT
+	event: Inicio del per?odo
+	importantes_count: None
+	matching_events: ['Período de modificación de prematrícula (presencial)', 'Inicio período de prematrícula para el 2-2018-2019', 'Fecha limite para retirar prematrícula del período 2-2018-2019']
+	username: humano
+Current tracker state [{'prev_utter_another_question': 1.0, 'intent_query_event': 1.0, 'slot_matching_events_0': 1.0, 'entity_event': 1.0}, {'intent_count_asueto': 1.0, 'prev_action_listen': 1.0, 'slot_matching_events_0': 1.0}]
+There is no memorised next action
+NLU confidence 0.28544350305882354 is lower than NLU threshold 0.3. Predicting fallback action: utter_default
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'utter_default' with prob 1.00.
+Action 'utter_default' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no entendí tu pregunta, intenta con otra, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_count_asueto': 1.0, 'prev_action_listen': 1.0, 'slot_matching_events_0': 1.0}, {'prev_utter_default': 1.0, 'intent_count_asueto': 1.0, 'slot_matching_events_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Mon, 17 Dec 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Fri, 09 Nov 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Fri, 23 Nov 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Fri, 23 Nov 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Mon, 17 Dec 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Mon, 17 Dec 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Fri, 09 Nov 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_look_event'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Fri, 09 Nov 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Fri, 09 Nov 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Fri, 09 Nov 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Fri, 09 Nov 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Fri, 09 Nov 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Fri, 09 Nov 2018 04:40:00 GMT"}' after the action.
