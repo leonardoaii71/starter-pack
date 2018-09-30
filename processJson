@@ -55,12 +55,12 @@ ofertaAcademicaPersonalizada:{
 
 seleccionDeAsignaturasLibres:{
 	nombre: "seleccion de asignaturas libres",
+	descripcion: "Es el proceso en el cual el estudiante tiene libertad de seleccionar asignaturas fuera de su pensum.",
 	procedimiento: ["1) Para seleccionar una asignatura fuera del pensum de su carrera, el estudiante debe utilizar la opción
 	Prematricular Asignatura Libre disponible en el menú Prematrícula de la aplicación WebSISE."],
 	advertencia: ["1) El estudiante puede prematricular una y sólo una asignatura fuera de su pensum siempre y cuando esta
 	no forme parte del pensum de una carrera de la cual haya sido separado alguna vez y haya cumplido los prerrequisitos
 	para poder cursar la misma."]
-
 }
 
 listaDeEspera:{
@@ -79,11 +79,9 @@ autorizacionesDeEmpalmes: {
 	descripcion: "Es un proceso apto específicamente para los estudiantes que están cursando el último período dentro de su carrera.
 	Estos pueden solicitar al decano correspondiente, a través del director que administra la asignatura, una autorización
 	de empalme de horario.",
-
 	advertencia: ["1) Si esta solicitud es aprobada, el estudiante debe añadir el grupo a su prematrícula, ya sea por WebSISE
 	o presencial en el departamento, para concluir con el proceso.", "2) Las solicitudes deben ser tramitadas por
 	el estudiante antes o durante el período de prematrícula."]
-
 }
 
 autorizacionDeAsignaturasPorTutoria:{
@@ -118,6 +116,7 @@ autorizacionDeAsignaturasPorTutoria:{
 
  modificacionPrematricula: {
 	 nombre: "modificacion de prematricula",
+	 descripcion: "Es el proceso en el cual un estudiante puede realizar modificaciones en las materias previamente seleccionadas en su prematrícula.",
 	 procedimiento: ["1) El estudiante que decida efectuar cualquier cambio en su prematrícula (añadir o eliminar asignaturas)
 		 lo puede realizar mediante la opción Realizar Prematrícula de WebSISE desde el momento mismo en que ingresa su
 		 prematrícula hasta la fecha límite establecida por Registro para tales fines, la cual es generalmente hasta un día
@@ -139,6 +138,7 @@ autorizacionDeAsignaturasPorTutoria:{
 
 	retiroPrematricula: {
 		nombre: "retiro de prematricula",
+		descripcion: "Es el proceso que ocurre cuando un estudiante no desea inscribirse y retira su prematrícula por diferentes razones personales.",
 		procedimiento: ["1) Los estudiantes que se prematriculen y por alguna razón decidan no inscribirse, deben retirar su
 			prematrícula antes del período de inscripciones.", "2) Para retirar la prematrícula se debe enviar una carta de
 			Solicitud de Retiro de Prematrícula a la Dirección del Registro antes de la fecha límite establecida en el
@@ -150,6 +150,7 @@ autorizacionDeAsignaturasPorTutoria:{
 
 cambioDeCampus:{
 	nombre: "cambio de campus",
+	descripcion:"Es el proceso en el cual el estudiante desea cursar uno a varios períodos en otro campus universitario. ",
 	procedimiento: ["1) El estudiante realiza el pago correspondiente a esta solicitud en el área de caja,
 		durante el período estipulado para estos fines en el Calendario Académico, y deposita en Registro
 		la solicitud acompañada del recibo.", "2) Antes de finalizar el período en curso se le informa al interesado
@@ -159,12 +160,12 @@ cambioDeCampus:{
 
 cursarAsignaturasEnOtroCampus:{
 	nombre: "Cursar asignaturas en otro campus",
+	descripcion:"Es el proceso en el cual el estudiante desea cursar una o varias asignaturas en otro campus universitario.",
 	procedimiento: ["1) Los estudiantes que han solicitado cursar asignaturas en dos campus deberán realizar
 		su prematrícula en el campus al cual pertenecen.", "2) La selección de asignaturas para la prematrícula
 		será tanto de las asignaturas que cursará en el otro campus, como de las que cursará en su campus.",
 		 "3) Para más detalles sobre este asunto referirse a la sección Cambio de Campus / Cursar Asignaturas en
 		 Otro Campus o en Dos Campus a la Vez del manual de procesos academicos."],
-
 	advertencia: ["Los cargos correspondientes al período se generarán y deberán ser pagados en el campus
 		al que pertenece el estudiante."]
 }
@@ -208,10 +209,10 @@ estudiantesOyentes:{
 
 	modificacionDeInscripcion:{
 		nombre: "Modificacion de inscripcion",
+		descripcion: "Es el proceso en el cual un estudiante agrega o elimina asignaturas de su inscripción por medio de su departamento.",
 		procedimiento: ["1) Los estudiantes inscritos que deseen modificar su inscripción deben dirigirse a sus respectivos
 		departamentos de carrera durante el período establecido para estos fines en el Calendario Académico."
 		"2) Luego de efectuados los cambios, se imprime un nuevo Informe de Inscripción el cual se le entrega al estudiante."],
-
 		penalidad: "Se generará un cargo automático por cada asignatura dada de baja y se cargarán las nuevas asignaturas
 		seleccionadas. Los cargos generados se reflejarán en la cuenta del estudiante y deberán saldarse en los pagos
 		subsiguientes del período académico."
@@ -219,9 +220,9 @@ estudiantesOyentes:{
 	}
 autorizacionAmpliacionDeCupos:{
 	nombre: "Autorizacion de ampliacion de cupos",
+	descripcion:"Es el proceso en el cual el director que administra una asignatura autoriza la ampliación de cupos de estudiantes para la misma.",
 	procedimiento: ["1) Las ampliaciones de cupo se solicitan al director que administra
 la asignatura para la cual el estudiante necesita el cupo."],
-
   advertencia: ["1) El director puede autorizar o no un cupo adicional de acuerdo a los criterios estipulados para estos fines.
 		Si la solicitud es aprobada, el estudiante debe dirigirse a su departamento para añadir la asignatura a su inscripción.",
 	"2) La autorización de ampliación de grupos es prerrogativa exclusiva del director del departamento que administra la asignatura."]
@@ -266,25 +267,14 @@ ausenciasAClases:{
 	advertencia: ["La asistencia a clases tiene carácter obligatorio.", "El número máximo de ausencias permitidas a
 		clases a un estudiante no debe ser mayor que tres veces el número de créditos de la asignatura. Hay excepciones
 		en los laboratorios y algunas asignaturas en específico (Reglamento Académico General, Artículo 21)."],
-
+		descripcion:"Son las faltas recurrentes de un estudiante a una clase determinada.",
 		penalidad: "En caso de que el estudiante no alcance la cantidad de asistencia mínima requerida para una asignatura
 		durante el período académico, la Dirección del Registro asigna la calificación final de “FN” (reprobación por inasistencia excesiva).",
 
 }
 
-excusasMedicas:{
-	nombre: "Excusas medicas",
-	advertencia: ["No se reciben excusas para inasistencia a clases, sólo para
-exámenes parciales o finales."],
-
-procedimiento: ["1) El estudiante que por motivos de salud no asista a un examen parcial o final puede depositar una excusa médica.
-	Esta excusa deberá ser depositada en la Dirección del Registro en el tiempo estipulado para la misma (Reglamento General,
-	Artículo 23, acápite 2 y 3).", "2) Una vez depositada la excusa, Registro procede a la digitación de la misma y a la impresión
-	del 'Comprobante de Excusa a Exámenes'.", "3) El estudiante recibe copia sellada como prueba de la recepción de la excusa."]
-}
-
 //CALIFICACIONES Y REVISION
-asignacionDeFn:{
+fn:{
   nombre: "FN",
 	descripcion: "'FN' (reprobación por inasistencia excesiva) es una calificación publicada a aquellos estudiantes que no
 	cumplieron con la cantidad mínima requerida según el artículo 21, numeral 3 del Reglamento Académico General.",
@@ -334,6 +324,7 @@ revisionDeCalificaciones:{
 //GRADUACION
 graduacion:{
 	nombre: "Graduacion",
+	descripcion: "",
 	procedimiento: ["1) El estudiante realiza esta solicitud en a la Oficina de Registro donde se ingresa la misma en el sistema y se imprime,
 		en original y copia, un informe de los requisitos académicos y administrativos pendientes hasta ese momento y se entrega al solicitante.",
 		"2) Luego de haber realizado la solicitud de graduación, el estudiante realiza el pago correspondiente en el área de caja y deposita el
@@ -373,6 +364,7 @@ graduacion:{
 	}
 	cambioDeCarrera:{
 		nombre: "Cambio de carrera",
+		descripcion:"Es el proceso en el cual un estudiante decide cambiar de carrera.",
 		procedimiento: ["1) El estudiante tramita su solicitud de cambio de carrera o concentración en el departamento de la carrera a la
 			cual va a cambiar, durante el período establecido para estos fines en el Calendario Académico.", "2) El estudiante realiza el pago
 			correspondiente a esta solicitud en el área de caja y se dirige al departamento de la carrera a la cual desea cambiar a depositar
@@ -389,6 +381,7 @@ graduacion:{
 //READMISION
 readmision:{
 nombre: "readmision",
+descripcion: "Es el proceso que permite admitir nuevamente a un estudiante en la universidad.",
 advertencia: ["Todo estudiante de la Institución que no esté inscrito en determinado período y desee ingresar debe solicitar readmisión a
 		través de la Oficina de Admisiones."],
 requisitos: ["1) Presentar debidamente lleno el formulario de solicitud de
@@ -402,6 +395,7 @@ en el estudio de la solicitud.","4) La Oficina de Admisiones comunicará por esc
 //EXPEDICIÓN DE DOCUMENTOS ACADÉMICOS
 expedicionDeDocumentos:{
 	nombre: "Expedicion de documentos",
+	descripcion:"Es el proceso en el cual el estudiante solicita documentos que indican un determinado hecho en el edificio administrativo.",
 	advertencia: ["La Dirección del Registro es la encargada de emitir cualquier documentación
 a los estudiantes de esta Institución."],
 procedimiento: ["1) El estudiante realiza el pago correspondiente a su solicitud en el área de caja y la deposita en Registro donde se ingresa
