@@ -17,10 +17,16 @@ intents:
   - count_asueto
   - count_importante
   - nonsense
+  - descripcion_proceso
+  - importancia_proceso
+  - penalidad_proceso
+  - advertencia_proceso
+  - procedimiento_proceso
 
 entities:
   - event
   - date
+  - proceso
 
 slots:
   # replace with your slots
@@ -37,7 +43,8 @@ slots:
     type: unfeaturized
   importantes_count:
     type: unfeaturized
-
+  proceso:
+    type: text
 
 templates:
   # templates the bot should respond with
@@ -60,7 +67,6 @@ templates:
   utter_sorry:
     - text: "Lo siento pero por el momento no puedo ayudarte."
     - text: "No tengo informacion suficiente para responderte."
-    - text: "Luego podre responder preguntas como estas. Estoy en aprendizaje."
     - text: "No puedo responder tu inquietud, disculpa."
 
   utter_date:
@@ -110,14 +116,28 @@ templates:
     - text: "Hay {importantes_count} dias importantes "
 
   utter_event_not_found:
-    - text: "Lo siento, no pude encontrarlo en el calendario. Intente con otro nomre"
+    - text: "Lo siento, no pude encontrar ese evento en el calendario. Intente con otro nombre"
 
   utter_default:
     - text: "Lo siento, no entendí tu pregunta, intenta con otra"
     - text: "Lo siento pero por el momento no puedo ayudarte."
     - text: "No tengo informacion suficiente para responderte."
-    - text: "Luego podre responder preguntas como estas. Estoy en aprendizaje."
     - text: "No puedo responder tu inquietud, disculpa."
+
+ utter_descripcion_proceso:
+    - text: "{descripcion}"
+
+utter_importancia_proceso:
+    - text: "{importancia}"
+
+utter_penalidad_proceso:
+    - text: "{penalidad}"
+
+utter_advertencia_proceso:
+    - text: "{advertencia}"
+
+utter_procedimiento_proceso:
+    - text: "{procedimiento}"
 
 actions:
   # all the utter actions from the templates, plus any custom actions
@@ -145,3 +165,8 @@ actions:
   - utter_ack_number_importantes
   - action_count_asuetos
   - action_count_important
+  - action_process_descripcion
+  - action_process_importancia
+  - action_process_penalidad
+  - action_process_advertencia
+  - action_process_procedimiento
