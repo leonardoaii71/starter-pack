@@ -891,6 +891,276 @@
 - 1234567890
 - bla bla bla
 - ajoer eofj eff q e prf
+- que hora es?
+- me amas?
+- como se llama mi mama?
+- me quieres?
+- clima
+
+## intent:descripcion_proceso
+- que es la [prematricula](proceso)?
+- que es la [prematricula](proceso)
+- que es la [oferta academica personalizada](proceso)?
+- que es la [oferta academica personalizada](proceso)
+- que son [asignaturas no programadas](proceso)?
+- que son [asignaturas no programadas](proceso)
+- que es la [seleccion de asignaturas libres](proceso)?
+- que es la [seleccion de asignaturas libres](proceso)
+- que es la [lista de espera](proceso)?
+- que es la [lista de espera](proceso)
+- que es la [autorizacion de empalmes](proceso)?
+- que es la [autorizacion de empalmes](proceso)
+- que es la [autorizacion de asignaturas por tutoria](proceso)?
+- que es la [autorizacion de asignaturas por tutoria](proceso)
+- que es la [autorizacion de exceso de carga academica](proceso)?
+- que es la [autorizacion de exceso de carga academica](proceso)
+- que es la [asignacion de asignaturas fuera de carrera](proceso)?
+- que es la [asignacion de asignaturas fuera de carrera](proceso)
+- que es la [modificacion de prematricula](proceso)?
+- que es la [modificacion de prematricula](proceso)
+- que son [bajas por prerrequisitos](proceso)?
+- que son [bajas por prerrequisitos](proceso)
+- que es el [retiro de prematricula](proceso)?
+- que es el [retiro de prematricula](proceso)
+- que es el [cambio de campus](proceso)?
+- que es el [cambio de campus](proceso)
+- que es [cursar asignaturas en otro campus](proceso)?
+- que es [cursar asignaturas en otro campus](proceso)
+- que son [estudiantes separados](proceso)?
+- que son [estudiantes separados](proceso)
+- que son [estudiantes no prematriculados](proceso)?
+- que son [estudiantes no prematriculados](proceso)
+- que son [estudiantes especiales](proceso)?
+- que son [estudiantes especiales](proceso)
+- que son [estudiantes oyentes](proceso)?
+- que son [estudiantes oyentes](proceso)
+- que es la [modificacion de inscripcion](proceso)?
+- que es la [modificacion de inscripcion](proceso)
+- que es la [autorizacion de ampliacion de cupos](proceso)?
+- que es la [autorizacion de ampliacion de cupos](proceso)
+- que es la [transferencia de estudiantes de grupos](proceso)?
+- que es la [transferencia de estudiantes de grupos](proceso)
+- que es la [cancelacion de grupos](proceso)?
+- que es la [cancelacion de grupos](proceso)
+- que es la [lista de clases](proceso)?
+- que es la [lista de clases](proceso)
+- que es [fn](proceso)?
+- que es [fn](proceso)
+- que son [actas de pruebas parciales](proceso)?
+- que son [actas de pruebas parciales](proceso)
+- que son [actas de calificaciones finales](proceso)?
+- que son [actas de calificaciones finales](proceso)
+- que es la [revision de calificaciones](proceso)?
+- que es la [revision de calificaciones](proceso)
+- que es el [reporte de calificaciones](proceso)?
+- que es el [reporte de calificaciones](proceso)
+- que es la [graduacion](proceso)?
+- que es la [graduacion](proceso)
+- que es el [retiro total y parcial](proceso)?
+- que es el [retiro total y parcial](proceso)
+- que es el [cambio de carrera](proceso)?
+- que es el [cambio de carrera](proceso)
+- que es la [readmision](proceso)?
+- que es la [readmision](proceso)
+- que es la [expedicion de documentos](proceso)?
+- que es la [expedicion de documentos](proceso)
+- que es el [correo electronico estudiantil](proceso)?
+- que es el [correo electronico estudiantil](proceso)
+
+## intent:procedimiento_proceso
+- cual es el procedimiento para la [prematricula](proceso)?
+- como realizo la [prematricula](proceso)?
+- como se realiza la [prematricula](proceso)?
+- como hago la [prematricula](proceso)?
+- cual es el procedimiento para la [prematricula](proceso)
+- como realizo la [prematricula](proceso)
+- como se realiza la [prematricula](proceso)
+- como hago la [prematricula](proceso)
+- cual es el procedimiento para la [seleccion de asignaturas libres](proceso)?
+- como realizo la [seleccion de asignaturas libres](proceso)?
+- como se realiza la [seleccion de asignaturas libres](proceso)?
+- como hago la [seleccion de asignaturas libres](proceso)?
+- cual es el procedimiento para la [seleccion de asignaturas libres](proceso)
+- como realizo la [seleccion de asignaturas libres](proceso)
+- como se realiza la [seleccion de asignaturas libres](proceso)
+- como hago la [seleccion de asignaturas libres](proceso)
+- cual es el procedimiento para la [modificacion de prematricula](proceso)?
+- como realizo la [modificacion de prematricula](proceso)?
+- como se realiza la [modificacion de prematricula](proceso)?
+- como hago la [modificacion de prematricula](proceso)?
+- cual es el procedimiento para la [modificacion de prematricula](proceso)
+- como realizo la [modificacion de prematricula](proceso)
+- como se realiza la [modificacion de prematricula](proceso)
+- como hago la [modificacion de prematricula](proceso)
+- cual es el procedimiento para el [retiro de prematricula](proceso)?
+- como realizo el [retiro de prematricula](proceso)?
+- como se realiza el [retiro de prematricula](proceso)?
+- como hago el [retiro de prematricula](proceso)?
+- cual es el procedimiento para el [retiro de prematricula](proceso)
+- como realizo el [retiro de prematricula](proceso)
+- como se realiza el [retiro de prematricula](proceso)
+- como hago el [retiro de prematricula](proceso)
+- cual es el procedimiento para el [cambio de campus](proceso)?
+- como realizo el [cambio de campus](proceso)?
+- como se realiza el [cambio de campus](proceso)?
+- como hago el [cambio de campus](proceso)?
+- como hago un [cambio de campus](proceso)?
+- como se realiza un [cambio de campus](proceso)?
+- como realizo un [cambio de campus](proceso)?
+- cual es el procedimiento para el [cambio de campus](proceso)
+- como realizo el [cambio de campus](proceso)
+- como se realiza el [cambio de campus](proceso)
+- como hago el [cambio de campus](proceso)
+- como hago un [cambio de campus](proceso)
+- como se realiza un [cambio de campus](proceso)
+- como realizo un [cambio de campus](proceso)
+- cual es el procedimiento para [cursar asignaturas en otro campus](proceso)
+- como [cursar asignaturas en otro campus](proceso)
+- cual es el procedimiento para [cursar asignaturas en otro campus](proceso)?
+- como [cursar asignaturas en otro campus](proceso)?
+- cual es el procedimiento para la [modificacion de inscripcion](proceso)?
+- como realizo la [modificacion de inscripcion](proceso)?
+- como se realiza la [modificacion de inscripcion](proceso)?
+- como hago la [modificacion de inscripcion](proceso)?
+- cual es el procedimiento para la [modificacion de inscripcion](proceso)
+- como realizo la [modificacion de inscripcion](proceso)
+- como se realiza la [modificacion de inscripcion](proceso)
+- como hago la [modificacion de inscripcion](proceso)
+- cual es el procedimiento para la [autorizacion de ampliacion de cupos](proceso)?
+- como realizo la [autorizacion de ampliacion de cupos](proceso)?
+- como se realiza la [autorizacion de ampliacion de cupos](proceso)?
+- como hago la [autorizacion de ampliacion de cupos](proceso)?
+- como hago una [autorizacion de ampliacion de cupos](proceso)?
+- como realizo una [autorizacion de ampliacion de cupos](proceso)?
+- como solicito la [autorizacion de ampliacion de cupos](proceso)?
+- cual es el procedimiento para la [autorizacion de ampliacion de cupos](proceso)
+- como realizo la [autorizacion de ampliacion de cupos](proceso)
+- como se realiza la [autorizacion de ampliacion de cupos](proceso)
+- como hago la [autorizacion de ampliacion de cupos](proceso)
+- como hago una [autorizacion de ampliacion de cupos](proceso)
+- como realizo una [autorizacion de ampliacion de cupos](proceso)
+- como solicito la [autorizacion de ampliacion de cupos](proceso)
+- cual es el procedimiento para la [revision de calificaciones](proceso)?
+- como realizo la [revision de calificaciones](proceso)?
+- como se realiza la [revision de calificaciones](proceso)?
+- como hago la [revision de calificaciones](proceso)?
+- como hago una [revision de calificaciones](proceso)?
+- como solicito una [revision de calificaciones](proceso)?
+- cual es el procedimiento para la [revision de calificaciones](proceso)
+- como realizo la [revision de calificaciones](proceso)
+- como se realiza la [revision de calificaciones](proceso)
+- como hago la [revision de calificaciones](proceso)
+- como hago una [revision de calificaciones](proceso)
+- como solicito una [revision de calificaciones](proceso)
+- cual es el procedimiento para la [graduacion](proceso)?
+- como realizo la [graduacion](proceso)?
+- como se realiza la [graduacion](proceso)?
+- como hago la [graduacion](proceso)?
+- cual es el procedimiento para la [graduacion](proceso)
+- como realizo la [graduacion](proceso)
+- como se realiza la [graduacion](proceso)
+- como hago la [graduacion](proceso)
+- cual es el procedimiento para el [retiro total y parcial](proceso)?
+- como realizo el [retiro total y parcial](proceso)?
+- como se realiza el [retiro total y parcial](proceso)?
+- como hago el [retiro total y parcial](proceso)?
+- cual es el procedimiento para el [retiro total y parcial](proceso)
+- como realizo el [retiro total y parcial](proceso)
+- como se realiza el [retiro total y parcial](proceso)
+- como hago el [retiro total y parcial](proceso)
+- cual es el procedimiento para la [cambio de carrera](proceso)?
+- como realizo la [cambio de carrera](proceso)?
+- como se realiza la [cambio de carrera](proceso)?
+- como hago la [cambio de carrera](proceso)?
+- cual es el procedimiento para la [cambio de carrera](proceso)
+- como realizo la [cambio de carrera](proceso)
+- como se realiza la [cambio de carrera](proceso)
+- como hago la [cambio de carrera](proceso)
+- cual es el procedimiento para la [expedicion de documentos](proceso)?
+- como realizo la [expedicion de documentos](proceso)?
+- como se realiza la [expedicion de documentos](proceso)?
+- como hago la [expedicion de documentos](proceso)?
+- cual es el procedimiento para la [expedicion de documentos](proceso)
+- como realizo la [expedicion de documentos](proceso)
+- como se realiza la [expedicion de documentos](proceso)
+- como hago la [expedicion de documentos](proceso)
+
+## intent:importancia_proceso
+- cual es la importancia de la [prematricula](proceso)?
+- cual es la importancia de la [oferta academica personalizada](proceso)?
+- cual es la importancia de la [cancelacion de grupos](proceso)?
+- cual es la importancia de la [lista de clases](proceso)?
+- cual es la importancia de la [fn](proceso)?
+- cual es la importancia de [fn](proceso)?
+- cual es la importancia de las [actas de calificaciones finales](proceso)?
+- cual es la importancia del [reporte de calificaciones](proceso)?
+- cual es la importancia de la [revision de calificaciones](proceso)?
+- cual es la importancia del [correo estudiantil](proceso)?
+- cual es la importancia de la [prematricula](proceso)
+- cual es la importancia de la [oferta academica personalizada](proceso)
+- cual es la importancia de la [cancelacion de grupos](proceso)
+- cual es la importancia de la [lista de clases](proceso)
+- cual es la importancia de la [fn](proceso)
+- cual es la importancia de [fn](proceso)
+- cual es la importancia de las [actas de calificaciones finales](proceso)
+- cual es la importancia del [reporte de calificaciones](proceso)
+- cual es la importancia de la [revision de calificaciones](proceso)
+- cual es la importancia del [correo estudiantil](proceso)
+
+##intent:penalidad_proceso
+- cual es la penalidad para la [prematricula](proceso)?
+- cual es la penalidad para los [estudiantes no prematriculados](proceso)?
+- cual es la penalidad para la [modificacion de inscripcion](proceso)?
+- cual es la penalidad para la [ausencia a clases](proceso)?
+- cual es la penalidad para la [graduacion](proceso)?
+- cual es la penalidad para la [prematricula](proceso)
+- cual es la penalidad para los [estudiantes no prematriculados](proceso)
+- cual es la penalidad para la [modificacion de inscripcion](proceso)
+- cual es la penalidad para la [ausencia a clases](proceso)
+- cual es la penalidad para la [graduacion](proceso)
+
+## intent:advertencia_proceso
+- cual es la advertencia para la [prematricula](proceso)?
+- cual es la advertencia para la [prematricula](proceso)
+- cual es la advertencia para la [oferta academica personalizada](proceso)?
+- cual es la advertencia para la [oferta academica personalizada](proceso)
+- cual es la advertencia para [asignaturas no programadas](proceso)?
+- cual es la advertencia para [asignaturas no programadas](proceso)
+- cual es la advertencia para la [seleccion de asignaturas libres](proceso)?
+- cual es la advertencia para la [seleccion de asignaturas libres](proceso)
+- cual es la advertencia para la [lista de espera](proceso)?
+- cual es la advertencia para la [lista de espera](proceso)
+- cual es la advertencia para las [autorizaciones de empalmes](proceso)?
+- cual es la advertencia para las [autorizaciones de empalmes](proceso)
+- cual es la advertencia para la [autorizacion de asignaturas por tutoria](proceso)?
+- cual es la advertencia para la [autorizacion de asignaturas por tutoria](proceso)
+- cual es la advertencia para la [autorizacion de exceso de carga academica](proceso)?
+- cual es la advertencia para la [autorizacion de exceso de carga academica](proceso)
+- cual es la advertencia para la [autorizacion de asignaturas fuera de carrera](proceso)?
+- cual es la advertencia para la [autorizacion de asignaturas fuera de carrera](proceso)
+- cual es la advertencia para la [modificacion de prematricula](proceso)?
+- cual es la advertencia para la [modificacion de prematricula](proceso)
+- cual es la advertencia para [cursar asignaturas en otro campus](proceso)?
+- cual es la advertencia para [cursar asignaturas en otro campus](proceso)
+- cual es la advertencia para los [estudiantes oyentes](proceso)?
+- cual es la advertencia para los [estudiantes oyentes](proceso)
+- cual es la advertencia para la [autorizacion de ampliacion de cupos](proceso)?
+- cual es la advertencia para la [autorizacion de ampliacion de cupos](proceso)
+- cual es la advertencia de [lista de clases](proceso)?
+- cual es la advertencia para la [ausencia a clases](proceso)?
+- cual es la advertencia para la [ausencia a clases](proceso)
+- cual es la advertencia para la [revision de calificaciones](proceso)?
+- cual es la advertencia para la [revision de calificaciones](proceso)
+- cual es la advertencia para la [graduacion](proceso)?
+- cual es la advertencia para la [graduacion](proceso)
+- cual es la advertencia para el [retiro total y parcial](proceso)?
+- cual es la advertencia para el [retiro total y parcial](proceso)
+- cual es la advertencia para el [cambio de carrera](proceso)?
+- cual es la advertencia para el [cambio de carrera](proceso)
+- cual es la advertencia para la [readmision](proceso)?
+- cual es la advertencia para la [readmision](proceso)
+- cual es la advertencia para la [expedicion de documentos](proceso)?
+- cual es la advertencia para la [expedicion de documentos](proceso)
 
 ## synonym:Inicio de docencia
 - inicio de clases
@@ -917,7 +1187,7 @@
 - proxima graduacion santo tomas de aquino
 - siguiente graduacion
 
-## synonym:Dia de Nuestra Señora de las Mercedes
+## synonym:Dia de Nuestra Senora de las Mercedes
 - dia de las mercedes
 
 ## synonym:Segundo pago de matricula
@@ -936,10 +1206,8 @@
 ## synonym:Solicitud de transferencia de universidad
 - solicitud de transferencia
 
-
 ## synonym:Primer Examen de admision
 - examen de admision
-
 
 ## synonym:Dia de la Constitucion
 - constitucion
@@ -977,7 +1245,7 @@
 - ultimo dia de docencia
 - ultimo dia de clases
 
-## synonym:Inicio del período
+## synonym:Inicio del periodo
 - inicio del periodo
 
 ## synonym:Inicio asueto navideño
