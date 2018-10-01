@@ -227,3 +227,60 @@ class ActionCountImportant(Action):
             docs = collection.find(query, projection=projection)
 
         return [SlotSet('importantes_count', docs.count())]
+    
+    
+    #Actions para procesos
+class ActionlookforProcessDescription(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_process_descripcion"
+
+    def run(self, dispatcher, tracker, domain):
+        proceso = tracker.get_slot("proceso")
+        with MongoClient("mongodb://localhost:27017/") as client:
+            database = client["kb"]
+            collection = database["Procesos"]
+            query = {
+            "nombre": proceso
+            }
+            projection = {"descripcion": 1}
+            docs = collection.find_one(query, projection=projection)
+            descripcion = docs["descripcion"]
+
+            dispatcher.utter_template("utter_descripcion_proceso", tracker,
+                                      proceso=tracker.get_slot('proceso'))
+
+
+class ActionlookforProcessImportancia(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_process_importancia"
+
+    def run(self, dispatcher, tracker, domain):
+        pass
+
+
+class ActionlookforProcessPenalidad(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_process_penalidad"
+
+    def run(self, dispatcher, tracker, domain):
+        pass
+
+class ActionlookforProcessAdvertencia(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_process_advertencia"
+
+    def run(self, dispatcher, tracker, domain):
+        pass
+
+class ActionlookforProcessProcedimiento(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_process_procedimiento"
+
+    def run(self, dispatcher, tracker, domain):
+        pass
+
