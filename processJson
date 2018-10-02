@@ -1,8 +1,5 @@
-//Estructura para los procesos academicos
 
-//PREMATRICULA
-
-	prematricula:{
+	{
 		nombre: "prematricula",
 		descripcion:"La prematrícula es el proceso de selección de los grupos de las asignaturas
 		que el estudiante cursará en el próximo período académico. Este proceso permite a la Universidad
@@ -27,7 +24,7 @@
 			opción de Realizar Prematrícula a través de WebSISE, deberá efectuarla en su departamento."]
 		}
 
-ofertaAcademicaPersonalizada:{
+{
 		nombre: "oferta academica personalizada",
 		descripcion: "Este es un informe que presenta al estudiante, de manera personalizada, una lista de las asignaturas
 		que puede cursar y para las cuales hay grupos abiertos el próximo período académico. El estudiante podrá cursar todas
@@ -41,7 +38,7 @@ ofertaAcademicaPersonalizada:{
 
 }
 
-	asignaturasNoProgramadas:{
+	{
 	nombre: "asignaturas no programadas",
 	descripcion: "Es el proceso en el cual el estudiante puede solicitar asignaturas que no tengan grupos abiertos
 	para el próximo período académico, siempre que haya cumplido o esté cumpliendo con los prerrequisitos de las
@@ -53,17 +50,17 @@ ofertaAcademicaPersonalizada:{
 	Una vez creado el grupo, los estudiantes deben ingresarlo a su prematrícula para completar el proceso."]
 }
 
-seleccionDeAsignaturasLibres:{
+{
 	nombre: "seleccion de asignaturas libres",
+	descripcion: "Es el proceso en el cual el estudiante tiene libertad de seleccionar asignaturas fuera de su pensum.",
 	procedimiento: ["1) Para seleccionar una asignatura fuera del pensum de su carrera, el estudiante debe utilizar la opción
 	Prematricular Asignatura Libre disponible en el menú Prematrícula de la aplicación WebSISE."],
 	advertencia: ["1) El estudiante puede prematricular una y sólo una asignatura fuera de su pensum siempre y cuando esta
 	no forme parte del pensum de una carrera de la cual haya sido separado alguna vez y haya cumplido los prerrequisitos
 	para poder cursar la misma."]
-
 }
 
-listaDeEspera:{
+{
 	nombre: "lista de espera",
 	descripcion: "Es una lista conformada por todos los estudiantes que están en cola en una asignatura durante el
 	período de prematrícula.",
@@ -71,22 +68,19 @@ listaDeEspera:{
 		reservaciones organizativas de cupos, el director ha ampliado cupos de grupos o ha creado nuevos grupos o
 		los estudiantes han liberado cupos.", "2) Al final de cada período, luego de que se reporten las calificaciones
 		y se realicen los siguientes procesos: Baja por Prerrequisito y Condición Académica."]
-
 }
 
-autorizacionesDeEmpalmes: {
+{
 	nombre: "autorizacion de empalmes",
 	descripcion: "Es un proceso apto específicamente para los estudiantes que están cursando el último período dentro de su carrera.
 	Estos pueden solicitar al decano correspondiente, a través del director que administra la asignatura, una autorización
 	de empalme de horario.",
-
 	advertencia: ["1) Si esta solicitud es aprobada, el estudiante debe añadir el grupo a su prematrícula, ya sea por WebSISE
 	o presencial en el departamento, para concluir con el proceso.", "2) Las solicitudes deben ser tramitadas por
 	el estudiante antes o durante el período de prematrícula."]
-
 }
 
-autorizacionDeAsignaturasPorTutoria:{
+{
 	nombre: "autorizacion de asignaturas por tutoria",
 	descripcion: "Es un proceso apto para los estudiantes de término que desean solicitar cursar asignaturas por tutoría siempre
 	y cuando no hayan reprobado la asignatura alguna vez. Cada facultad tiene restricciones específicas para la oferta
@@ -95,19 +89,17 @@ autorizacionDeAsignaturasPorTutoria:{
 	seguimiento de un profesor, requiere tanto de la aprobación del decano que administra la asignatura, como de la del
 	 decano de la carrera que cursa el estudiante.", "2) Si esta solicitud es aprobada, el estudiante debe dirigirse al
 	 departamento a añadir el grupo a su prematrícula, ya que estos grupos no están disponibles vía WebSISE."]
-
  }
 
- autorizacionExcesoCargaAcademica:{
+ {
 	 nombre: "autorizacion de exceso de carga academica",
 	 descripcion: "Es un proceso que ocurre si por alguna razón, el estudiante necesita prematricular y/o inscribir más créditos de los que
 	 están estipulados en su pensum para un período dado.",
 	 advertencia: ["El director gestionará dicha solicitud al decano de su facultad.
 		 Si ésta es aprobada, el estudiante debe añadir el grupo a su prematrícula para concluir el proceso."]
-
  }
 
- asignacionDeAsignaturasFueraDeCarrera:{
+{
 	 nombre: "autorizacion de asignaturas fuera de carrera",
 	 descripcion: "Es un proceso considerado un caso especial, el decano correspondiente puede autorizar a un estudiante a cursar más
 	 de una asignatura fuera de la carrera. El estudiante debe gestionar esta solicitud a través de su director.",
@@ -116,8 +108,9 @@ autorizacionDeAsignaturasPorTutoria:{
 		  el proceso."]
  }
 
- modificacionPrematricula: {
+ {
 	 nombre: "modificacion de prematricula",
+	 descripcion: "Es el proceso en el cual un estudiante puede realizar modificaciones en las materias previamente seleccionadas en su prematrícula.",
 	 procedimiento: ["1) El estudiante que decida efectuar cualquier cambio en su prematrícula (añadir o eliminar asignaturas)
 		 lo puede realizar mediante la opción Realizar Prematrícula de WebSISE desde el momento mismo en que ingresa su
 		 prematrícula hasta la fecha límite establecida por Registro para tales fines, la cual es generalmente hasta un día
@@ -129,7 +122,7 @@ autorizacionDeAsignaturasPorTutoria:{
 				y si desean añadir o eliminar asignaturas deberán esperar al día de modificación de inscripción."]
 	 }
 
-	bajasPorPrerrequisitos:{
+{
 		nombre: "bajas por prerrequisitos",
 		descripcion: "Es un proceso que ocurre en el caso de que el estudiante seleccione asignaturas cuyos prerrequisitos esté cursando y no los apruebe,
 		al final del período, luego de reportadas las calificaciones, el Sistema Integrado de Servicios al Estudiante (SISE)
@@ -137,8 +130,9 @@ autorizacionDeAsignaturasPorTutoria:{
 		el prerrequisito."
 	}
 
-	retiroPrematricula: {
+ {
 		nombre: "retiro de prematricula",
+		descripcion: "Es el proceso que ocurre cuando un estudiante no desea inscribirse y retira su prematrícula por diferentes razones personales.",
 		procedimiento: ["1) Los estudiantes que se prematriculen y por alguna razón decidan no inscribirse, deben retirar su
 			prematrícula antes del período de inscripciones.", "2) Para retirar la prematrícula se debe enviar una carta de
 			Solicitud de Retiro de Prematrícula a la Dirección del Registro antes de la fecha límite establecida en el
@@ -146,10 +140,9 @@ autorizacionDeAsignaturasPorTutoria:{
 			modificar prematrícula."]
 	}
 
-//ESTUDIANTES EN SITUACIONES ESPECIALES
-
-cambioDeCampus:{
+{
 	nombre: "cambio de campus",
+	descripcion:"Es el proceso en el cual el estudiante desea cursar uno a varios períodos en otro campus universitario. ",
 	procedimiento: ["1) El estudiante realiza el pago correspondiente a esta solicitud en el área de caja,
 		durante el período estipulado para estos fines en el Calendario Académico, y deposita en Registro
 		la solicitud acompañada del recibo.", "2) Antes de finalizar el período en curso se le informa al interesado
@@ -157,27 +150,25 @@ cambioDeCampus:{
 		campus realiza la reválida correspondiente."]
 }
 
-cursarAsignaturasEnOtroCampus:{
-	nombre: "Cursar asignaturas en otro campus",
+{
+	nombre: "cursar asignaturas en otro campus",
+	descripcion:"Es el proceso en el cual el estudiante desea cursar una o varias asignaturas en otro campus universitario.",
 	procedimiento: ["1) Los estudiantes que han solicitado cursar asignaturas en dos campus deberán realizar
 		su prematrícula en el campus al cual pertenecen.", "2) La selección de asignaturas para la prematrícula
 		será tanto de las asignaturas que cursará en el otro campus, como de las que cursará en su campus.",
 		 "3) Para más detalles sobre este asunto referirse a la sección Cambio de Campus / Cursar Asignaturas en
 		 Otro Campus o en Dos Campus a la Vez del manual de procesos academicos."],
-
 	advertencia: ["Los cargos correspondientes al período se generarán y deberán ser pagados en el campus
 		al que pertenece el estudiante."]
 }
 
-
-estudiantesSeparados:{
+{
 	nombre: "Estudiantes separados",
 	descripcion: "Es un caso donde un estudiante queda separado de su carrera, pierde la reservación de los grupos prematriculados,
 	es decir, el sistema le “dará de baja” a las asignaturas prematriculadas."
-
 }
 
-estudiantesNoPrematriculados:{
+{
 	nombre: "Estudiantes no prematriculados",
 	descripcion: "Son estudiantes que no realizaron su prematrícula en el período
 establecido, para estos fines deben dirigirse a sus respectivos departamentos
@@ -186,15 +177,14 @@ para seleccionar las asignaturas que inscribirán.",
 	reflejará en el Informe de Selección de Asignaturas excepto en el caso de estudiantes
 	readmitidos, transferidos o con cambio de campus."
 }
-
-estudiantesEspeciales:{
+{
 	nombre: "Estudiantes especiales",
 	descripcion: "Los estudiantes especiales son aquellos que cumplen con todos los requisitos
 	de admisión, pero no optan por ningún grado académico. Estos son asignados a un departamento
 	específico y deben recibir asesoría para seleccionar las asignaturas a inscribir."
 }
 
-estudiantesOyentes:{
+{
 	nombre: "Estudiantes oyentes",
 	descripcion: "Los estudiantes oyentes son aquellos que asisten a clases de asignaturas
 	 en las que no están matriculados oficialmente. ",
@@ -203,40 +193,35 @@ estudiantesOyentes:{
 		 indicada para estos fines en el Reglamento Académico, depositar dicha autorización en
 		 Registro y realizar en caja el pago correspondiente."]
 }
-
-//INSCRIPCION
-
-	modificacionDeInscripcion:{
+{
 		nombre: "Modificacion de inscripcion",
+		descripcion: "Es el proceso en el cual un estudiante agrega o elimina asignaturas de su inscripción por medio de su departamento.",
 		procedimiento: ["1) Los estudiantes inscritos que deseen modificar su inscripción deben dirigirse a sus respectivos
 		departamentos de carrera durante el período establecido para estos fines en el Calendario Académico."
 		"2) Luego de efectuados los cambios, se imprime un nuevo Informe de Inscripción el cual se le entrega al estudiante."],
-
 		penalidad: "Se generará un cargo automático por cada asignatura dada de baja y se cargarán las nuevas asignaturas
 		seleccionadas. Los cargos generados se reflejarán en la cuenta del estudiante y deberán saldarse en los pagos
 		subsiguientes del período académico."
 
 	}
-autorizacionAmpliacionDeCupos:{
+{
 	nombre: "Autorizacion de ampliacion de cupos",
+	descripcion:"Es el proceso en el cual el director que administra una asignatura autoriza la ampliación de cupos de estudiantes para la misma.",
 	procedimiento: ["1) Las ampliaciones de cupo se solicitan al director que administra
 la asignatura para la cual el estudiante necesita el cupo."],
-
   advertencia: ["1) El director puede autorizar o no un cupo adicional de acuerdo a los criterios estipulados para estos fines.
 		Si la solicitud es aprobada, el estudiante debe dirigirse a su departamento para añadir la asignatura a su inscripción.",
 	"2) La autorización de ampliación de grupos es prerrogativa exclusiva del director del departamento que administra la asignatura."]
-
 }
 
-transferenciaDeEstudiantesDeGrupos:{
+{
 	nombre: "Transferencia de estudiantes de grupos",
 	descripcion: "Es un proceso en el cual el director puede transferir estudiantes de un grupo a otro con el mismo horario dentro
 	de la misma asignatura para equilibrar los cupos. Después de finalizado este proceso, el director deberá informar a los estudiantes
 	involucrados."
-
 }
 
-cancelacionDeGrupos:{
+{
 	nombre: "Cancelacion de grupos",
 	descripcion: "Es un proceso en el cual el director podrá cancelar (cerrar) aquellos grupos que no tengan suficientes estudiantes
 	inscritos y no correspondan al período. A los estudiantes inscritos en los grupos cancelados, se les acredita el costo completo
@@ -246,10 +231,7 @@ cancelacionDeGrupos:{
 	adicional el día de inscripción tardía."
 }
 
-
-//SITUACIONES DE CLASES
-
-listaDeClases:{
+{
 	nombre: "lista de clases",
 	descripcion: "Es una lista generada por el departamento de Registro el primer día de docencia. Registro genera e imprime las listas provisionales de asistencia a clases
 	las cuales envía a los edificios de aulas correspondientes. ",
@@ -261,30 +243,16 @@ listaDeClases:{
 		 dirigirse a la Oficina de Registro para reportar la situación."]
 }
 
-ausenciasAClases:{
+{
 	nombre: "Ausencias a clases",
 	advertencia: ["La asistencia a clases tiene carácter obligatorio.", "El número máximo de ausencias permitidas a
 		clases a un estudiante no debe ser mayor que tres veces el número de créditos de la asignatura. Hay excepciones
 		en los laboratorios y algunas asignaturas en específico (Reglamento Académico General, Artículo 21)."],
-
+		descripcion:"Son las faltas recurrentes de un estudiante a una clase determinada.",
 		penalidad: "En caso de que el estudiante no alcance la cantidad de asistencia mínima requerida para una asignatura
-		durante el período académico, la Dirección del Registro asigna la calificación final de “FN” (reprobación por inasistencia excesiva).",
-
+		durante el período académico, la Dirección del Registro asigna la calificación final de “FN” (reprobación por inasistencia excesiva)."
 }
-
-excusasMedicas:{
-	nombre: "Excusas medicas",
-	advertencia: ["No se reciben excusas para inasistencia a clases, sólo para
-exámenes parciales o finales."],
-
-procedimiento: ["1) El estudiante que por motivos de salud no asista a un examen parcial o final puede depositar una excusa médica.
-	Esta excusa deberá ser depositada en la Dirección del Registro en el tiempo estipulado para la misma (Reglamento General,
-	Artículo 23, acápite 2 y 3).", "2) Una vez depositada la excusa, Registro procede a la digitación de la misma y a la impresión
-	del 'Comprobante de Excusa a Exámenes'.", "3) El estudiante recibe copia sellada como prueba de la recepción de la excusa."]
-}
-
-//CALIFICACIONES Y REVISION
-asignacionDeFn:{
+{
   nombre: "FN",
 	descripcion: "'FN' (reprobación por inasistencia excesiva) es una calificación publicada a aquellos estudiantes que no
 	cumplieron con la cantidad mínima requerida según el artículo 21, numeral 3 del Reglamento Académico General.",
@@ -292,13 +260,13 @@ asignacionDeFn:{
 	conteo de inasistencias por asignatura/por estudiante. Esta información se ingresa al SISE que automáticamente asigna la
 	calificación de FN a los estudiantes antes de iniciar el período de exámenes finales."]
 }
-actasDePruebasParciales:{
+{
  nombre: "Actas de pruebas parciales",
  descripcion: "En estas actas, los profesores registran todas las evaluaciones que administran a los estudiantes durante el período académico.
  La sumatoria de todas esas evaluaciones constituye el promedio parcial del estudiante en la asignatura."
 }
 
-actasDeCalificacionesFinales:{
+{
 	nombre: "Actas de calificaciones finales",
 	descripcion: "Es un proceso en el cual  registro envía a los departamentos las actas oficiales para reportar las calificaciones
 	finales obtenidas por los estudiantes en las diferentes asignaturas que cursan antes de iniciar el período de exámenes finales.",
@@ -307,7 +275,7 @@ actasDeCalificacionesFinales:{
 
 }
 
-reporteDeCalificaciones:{
+{
 	nombre: "Reporte de calificaciones",
 	descripcion: "Es un proceso que se lleva a cabo después de procesadas todas las calificaciones y realizados los cambios, la Oficina del Registro realiza los procesos
 	de lugar para generar los reportes de calificaciones finales de los estudiantes.",
@@ -316,7 +284,7 @@ reporteDeCalificaciones:{
 	cuando faltan 35 créditos o menos para completar el pensum de su carrera."
 }
 
-revisionDeCalificaciones:{
+{
 	nombre: "Revision de calificaciones",
 	descripcion: "Proceso en el cual todo estudiante que esté en desacuerdo con la calificación final obtenida en una o varias asignaturas, tiene derecho a
 	solicitar revisión.",
@@ -327,13 +295,13 @@ revisionDeCalificaciones:{
 			decisiones sobre las revisiones a Registro antes de la fecha establecida para estos fines en el Calendario Académico.", "4) En el caso de que un cambio proceda,
 			 el departamento envía a Registro el formulario correspondiente vía el decano. Si no procede, en el mismo formulario de revisión se escribe calificación
 			 ratificada y se envía a Registro."],
-  importancia: "No se permite solicitud de revisión en asignaturas reportadas después de un estatus de I, E, IT y ET"
+  importancia: "No se permite solicitud de revisión en asignaturas reportadas después de un estatus de I, E, IT y ET."
 }
 
-
-//GRADUACION
-graduacion:{
+{
 	nombre: "Graduacion",
+	descripcion: "Es la ceremonia oficial que sirve de reconocimiento a los estudiantes que han completado los requisitos académicos y se han hecho 
+	merecedores del título académico que otorga la institución.",
 	procedimiento: ["1) El estudiante realiza esta solicitud en a la Oficina de Registro donde se ingresa la misma en el sistema y se imprime,
 		en original y copia, un informe de los requisitos académicos y administrativos pendientes hasta ese momento y se entrega al solicitante.",
 		"2) Luego de haber realizado la solicitud de graduación, el estudiante realiza el pago correspondiente en el área de caja y deposita el
@@ -351,15 +319,11 @@ graduacion:{
 		De no ser así, la Dirección del Registro excluye a estos estudiantes de la lista definitiva de graduación.", "4) La asistencia a la ceremonia de
 		graduación tiene carácter de obligatoriedad. Si el graduando no asiste, la Oficina del Registro le retiene el título y demás documentos,
 		hasta tanto cumpla con la asistencia a otra ceremonia en cualquiera de los campus o realice el pago de la penalidad correspondiente."],
-
 		penalidad: "El Calendario Académico prevé una fecha límite de solicitud tardía, que implica un recargo. Pasado este segundo plazo no se
 		considerarán nuevas solicitudes."
 
 	}
-
-
-//SERVICIOS GENERALES
-	retiroTotalYParcial:{
+{
 		nombre: "Retiro total y parcial",
 		descripcion: " El retiro parcial o total de asignaturas es un derecho del Estudiante. Las solicitudes de retiro total o parcial se
 		 tramitan en el departamento de la carrera a la que pertenece el estudiante dentro del período establecido para estos fines en el
@@ -371,8 +335,9 @@ graduacion:{
 					quien podrá aprobar o no dicha solicitud.", "2) Los estudiantes que realicen retiro total de la Universidad deben solicitar
 					su reingreso a través de la Oficina de Admisiones."]
 	}
-	cambioDeCarrera:{
+{
 		nombre: "Cambio de carrera",
+		descripcion:"Es el proceso en el cual un estudiante decide cambiar de carrera.",
 		procedimiento: ["1) El estudiante tramita su solicitud de cambio de carrera o concentración en el departamento de la carrera a la
 			cual va a cambiar, durante el período establecido para estos fines en el Calendario Académico.", "2) El estudiante realiza el pago
 			correspondiente a esta solicitud en el área de caja y se dirige al departamento de la carrera a la cual desea cambiar a depositar
@@ -385,10 +350,9 @@ graduacion:{
 				 ejercicio de reválida correspondiente y toma las decisiones pertinentes. "]
 	}
 
-
-//READMISION
-readmision:{
+{
 nombre: "readmision",
+descripcion: "Es el proceso que permite admitir nuevamente a un estudiante en la universidad.",
 advertencia: ["Todo estudiante de la Institución que no esté inscrito en determinado período y desee ingresar debe solicitar readmisión a
 		través de la Oficina de Admisiones."],
 requisitos: ["1) Presentar debidamente lleno el formulario de solicitud de
@@ -397,11 +361,9 @@ readmisión disponible en la Oficina de Admisiones.", "2) Efectuar en el área d
 en el estudio de la solicitud.","4) La Oficina de Admisiones comunicará por escrito al estudiante la aceptación o no de su solicitud.",
 "5) Si el estudiante es aceptado, deberá acogerse al pensum de su carrera que esté vigente en ese momento."]
 }
-
-
-//EXPEDICIÓN DE DOCUMENTOS ACADÉMICOS
-expedicionDeDocumentos:{
+{
 	nombre: "Expedicion de documentos",
+	descripcion:"Es el proceso en el cual el estudiante solicita documentos que indican un determinado hecho en el edificio administrativo.",
 	advertencia: ["La Dirección del Registro es la encargada de emitir cualquier documentación
 a los estudiantes de esta Institución."],
 procedimiento: ["1) El estudiante realiza el pago correspondiente a su solicitud en el área de caja y la deposita en Registro donde se ingresa
@@ -409,13 +371,9 @@ procedimiento: ["1) El estudiante realiza el pago correspondiente a su solicitud
 	documento.", "Se expide documentación a los estudiantes inscritos o retirados que hayan depositado en la Dirección del Registro el Certificado
 	Provisional de Bachiller.", "3) En todos los casos, el solicitante no puede tener deuda pendiente en la Institución.", "4) El sistema provee un control
 	de los documentos solicitados durante un día o período específico.", "5) Asimismo, controla los servicios satisfechos y los no satisfechos por razones
-	 ajenas a la Institución."],
-
+	 ajenas a la Institución."]
 }
-
-//CORREO ELECTRÓNICO ESTUDIANTIL
-
-correoEstudiantil:{
+{
 	nombre: "Correo electronico estudiantil",
 	descripcion: "Es una cuenta de correo electrónico asignada por la universidad a cada estudiante inscrito. La nomenclatura para las cuentas de
 	los estudiantes es la matrícula sin el guión más el dominio @pucmm.edu.do (Ejemplo 19960461@pucmm.edu.do).",
