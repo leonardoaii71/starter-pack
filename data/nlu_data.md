@@ -14,6 +14,12 @@
 - nos vemos luego
 - hablamos luego
 
+## intent:what_should_i_ask
+- que cosas te puedo preguntar?
+- que te puedo preguntar?
+- que me puedes decir?
+- sobre que te puedo preguntar?
+
 ## intent:greet
 - Hi
 - Hey
