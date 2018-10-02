@@ -110,7 +110,7 @@ templates:
     - text: "Hay {importantes_count} dias importantes "
 
   utter_event_not_found:
-    - text: "Lo siento, no pude encontrarlo en el calendario. Intente con otro nomre"
+    - text: "Lo siento, no pude encontrarlo en el calendario. Intente con otro nombre"
 
   utter_default:
     - text: "Lo siento, no entendí tu pregunta, intenta con otra"
@@ -138,6 +138,7 @@ actions:
   - utter_ack_asuetos
   - utter_event_not_found
   - action_look_event
+  - action_ack_eventdate
   - action_suggest
   - action_look_asuetos
   - action_look_important

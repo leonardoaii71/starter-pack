@@ -238,10 +238,10 @@
 - cuando es el [Dia de Duarte](event)?
 - Cuando es el [Dia de Duarte](event)?
 - cuando es el [Dia de Duarte](event)
-- cuando es la [Graduacion Campus Santiago](event)
-- cuando es la [Graduacion Campus Santiago](event)?
-- Cuando es la [Graduacion Campus Santiago](event)?
-- Cuando es la [Graduacion Campus Santiago](event)
+- cuando es la [Graduación Campus Santiago](event)
+- cuando es la [Graduación Campus Santiago](event)?
+- Cuando es la [Graduación Campus Santiago](event)?
+- Cuando es la [Graduación Campus Santiago](event)
 - cuando es la [Feria Expo PUCMM](event)
 - cuando es la [Feria Expo PUCMM](event)?
 - Cuando es la [Feria Expo PUCMM](event)?
@@ -977,7 +977,7 @@
 - ultimo dia de docencia
 - ultimo dia de clases
 
-## synonym:Inicio del período
+## synonym:Inicio del periodo
 - inicio del periodo
 
 ## synonym:Inicio asueto navideño

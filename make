@@ -16,3 +16,4 @@ python -m rasa_core.train --online -d domain.yml -s data/stories.md -o models/cu
 
 Activate BotProject
 cd C:\Users\Leonardo\Documents\GitHub\starter-pack
+
