@@ -856,6 +856,8 @@
 - dias asuetos
 - cuales son los dias asueto?
 - dime todos los dias asueto
+- dime los dias asuetos
+- dime dias asueto
 - cuales son los dias asueto del periodo?
 - cuales dias asuetos hay
 - cuales dias asueto hay en [enero](date)?
@@ -874,6 +876,7 @@
 ## intent:count_asueto
 - cuantos dias asuetos hay en este periodo
 - cuantos dias asuetos hay en este semestre
+- cuantos dias asuetos hay
 - cual es la cantidad de dias asuetos del periodo
 - cantidad de dias asuetos
 - cantidad de dias asuetos

@@ -6,12 +6,10 @@ from rasa_core_sdk.events import SlotSet, UserUtteranceReverted
 from pymongo import MongoClient
 from Database import Database
 
-
 collection = Database('kb', 'Calendarios').collection
 
-
+# Actions Eventos
 class ActionlookforEvent(Action):
-
     def name(self):
         # type: () -> Text
         return "action_look_event"
@@ -97,9 +95,7 @@ class ActionSuggestEventResults(Action):
             suggestions = [{'title': event, 'payload': "/query_event{\"event\": \"%s\""} for event in matches]
             dispatcher.utter_button_message("", suggestions)
 
-        # tracker.get_slot('date').reset()
-
-
+            # tracker.get_slot('date').reset()
 
 
 class ActionLookForAsuetos(Action):
@@ -231,3 +227,62 @@ class ActionCountImportant(Action):
             docs = collection.find(query, projection=projection)
 
         return [SlotSet('importantes_count', docs.count())]
+
+
+# Actions para procesos
+class ActionlookforProcessDescription(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_process_descripcion"
+
+    def run(self, dispatcher, tracker, domain):
+        proceso = tracker.get_slot("proceso")
+        if proceso:
+            query = {
+                "nombre": proceso
+            }
+            projection = {
+                "descripcion": 1
+            }
+            result = collection.find(query, projection=projection)
+            dispatcher.utter_template("utter_descripcion_proceso", tracker,
+                                      proceso=result)
+
+
+class ActionlookforProcessImportancia(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_process_importancia"
+
+    def run(self, dispatcher, tracker, domain):
+        pass
+
+
+class ActionlookforProcessPenalidad(Action):
+    def name(self):
+        # type: () -> Text
+
+        return "action_process_penalidad"
+
+    def run(self, dispatcher, tracker, domain):
+        pass
+
+
+class ActionlookforProcessAdvertencia(Action):
+    def name(self):
+        # type: () -> Text
+
+        return "action_process_advertencia"
+
+    def run(self, dispatcher, tracker, domain):
+        pass
+
+
+class ActionlookforProcessProcedimiento(Action):
+    def name(self):
+        # type: () -> Text
+
+        return "action_process_procedimiento"
+
+    def run(self, dispatcher, tracker, domain):
+        pass
