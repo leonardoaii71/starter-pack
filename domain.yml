@@ -22,6 +22,7 @@ intents:
   - penalidad_proceso
   - advertencia_proceso
   - procedimiento_proceso
+  - what_should_i_ask
 
 entities:
   - event
@@ -48,10 +49,15 @@ slots:
 
 templates:
   # templates the bot should respond with
+  utter_you_should_ask:
+    - text: "Puedes preguntarme cosas como: ¿Cuándo es la prematrícula?,  ¿Cuál es mi índice académico?,  ¿Qué son estudiantes especiales?, ¿En qué fecha es el retiro parcial?... Adelante!"
+    - text: "Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :). Adelante"
+    - text: "Puedes preguntarme cosas como: ¿Qué son bajas por prerrequisitos?,  ¿Cómo realizo la selección de asignaturas libres?, ¿Cuál es la penalidad para la graduación? "
+
   utter_greet:
-    - text: "¡Hola {username}! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuando es la prematricula?,  ¿Cual es mi indice académico?,  ¿Qué son estudiantes especiales?... Adelante!"
+    - text: "¡Hola {username}! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuándo es la prematrícula?,  ¿Cuál es mi índice académico?,  ¿Qué son estudiantes especiales?... Adelante!"
     - text: "¡Saludos {username}!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?"
-    - text: "¡Bienvenido {username}!. Soy el bot regis. Estoy aqui para ofrecerte información academica. Preguntame acerca del calendario, procesos academicos o sobre tu historial. ¿Que deseas saber?"
+    - text: "¡Bienvenido {username}!. Soy el bot regis. Estoy aquí para ofrecerte información académica. Pregúntame acerca del calendario, procesos académicos o sobre tu historial. ¿Qué deseas saber?"
 
   utter_thank:
     - "Por nada. Estoy para servirte!"
@@ -101,19 +107,19 @@ templates:
 
   utter_suggestions:
     - text: "Creo que no entendí bien, quisiste decir:"
-    - text: "Por favor podrías ser mas especifico? intenta con:"
+    - text: "Por favor podrías ser mas específico? intenta con:"
 
   utter_ack_asuetos:
     - text: "Estos son los días asuetos que encontré: "
 
   utter_ack_number_asuetos:
-    - text: "Hay {asueto_count} dias asuetos"
+    - text: "Hay {asueto_count} días asuetos"
 
   utter_ack_importantes:
     - text: "Estos son los días a tomar en cuenta: "
 
   utter_ack_number_importantes:
-    - text: "Hay {importantes_count} dias importantes "
+    - text: "Hay {importantes_count} días importantes "
 
   utter_event_not_found:
     - text: "Lo siento, no pude encontrar ese evento en el calendario. Intente con otro nombre"
@@ -121,22 +127,22 @@ templates:
   utter_default:
     - text: "Lo siento, no entendí tu pregunta, intenta con otra"
     - text: "Lo siento pero por el momento no puedo ayudarte."
-    - text: "No tengo informacion suficiente para responderte."
+    - text: "No tengo información suficiente para responderte."
     - text: "No puedo responder tu inquietud, disculpa."
 
- utter_descripcion_proceso:
+  utter_descripcion_proceso:
     - text: "{descripcion}"
 
-utter_importancia_proceso:
+  utter_importancia_proceso:
     - text: "{importancia}"
 
-utter_penalidad_proceso:
+  utter_penalidad_proceso:
     - text: "{penalidad}"
 
-utter_advertencia_proceso:
+  utter_advertencia_proceso:
     - text: "{advertencia}"
 
-utter_procedimiento_proceso:
+  utter_procedimiento_proceso:
     - text: "{procedimiento}"
 
 actions:
@@ -170,3 +176,4 @@ actions:
   - action_process_penalidad
   - action_process_advertencia
   - action_process_procedimiento
+  - utter_you_should_ask
