@@ -23,6 +23,16 @@ intents:
   - advertencia_proceso
   - procedimiento_proceso
   - what_should_i_ask
+  - retiro_parcial
+  - retiro_total
+  - retiro_prematricula
+  - graduacion_sti
+  - graduacion_sta
+  - cuando_retiro
+  - cuando_graduacion
+  - mi_indice
+  - indice_acumulado
+  - indice_del_periodo
 
 entities:
   - event
@@ -124,6 +134,61 @@ templates:
   utter_event_not_found:
     - text: "Lo siento, no pude encontrar ese evento en el calendario. Intente con otro nombre"
 
+  utter_retiro_parcial_fecha:
+   - text: "La fecha límite para el retiro parcial es el 9 de Noviembre."
+
+  utter_retiro_total_fecha:
+  - text: "La fecha límite para el retiro total es el 23 de Noviembre."
+
+  utter_retiro_prematricula_fecha:
+  - text: "La fecha límite para el retiro de prematrícula es el 12 de Diciembre del 2018."
+
+  utter_cual_retiro:
+  - text: " ¿A cúal retiro te refieres?"
+    buttons:
+    - title: "Retiro Parcial"
+      payload: "retiro parcial"
+    - title: "Retiro Total"
+      payload: "retiro total"
+    - title: "Retiro de prematrícula"
+      payload: "retiro prematricula"
+
+  utter_graduacion_sti_fecha:
+   - text: "La ceremonia de la nonagésima novena graduación del Campus Santiago será el 2 de Febrero del 2019."
+
+  utter_graduacion_sta_fecha:
+  - text: "La ceremonia de la sexagésima sexta graduación del Campus Santo Tomás de Aquino será el 18 de Mayo del 2019."
+
+  utter_cual_graduacion:
+  - text: " ¿A cúal graduación te refieres?"
+    buttons:
+    - title: "graduación Campus Santiago"
+      payload: "graduacion sti"
+    - title: "graduación Campus Santo Tomás de Aquino"
+      payload: "graduacion sta"
+
+  utter_indice_acumulado:
+  - text: "Tu índice acumulado es none."
+
+  utter_algo_mas:
+  - text: "¿Necesitas saber algo más?."
+  - text: "¿Quieres saber algo más?"
+
+  utter_indice_periodo:
+  - text: "Tu índice del período es none."
+
+  utter_adelante:
+  - text: "Adelante, pregúntame cosas que necesites saber."
+  - text: "Adelante, pregúntame!."
+
+  utter_cual_indice:
+  - text: " ¿A cúal índice te refieres?"
+    buttons:
+    - title: "Índice acumulado"
+      payload: "indice acumulado"
+    - title: "Índice del período"
+      payload: "indice del periodo"
+
   utter_default:
     - text: "Lo siento, no entendí tu pregunta, intenta con otra"
     - text: "Lo siento pero por el momento no puedo ayudarte."
@@ -178,3 +243,15 @@ actions:
   - action_process_advertencia
   - action_process_procedimiento
   - utter_you_should_ask
+  - utter_retiro_total_fecha
+  - utter_retiro_parcial_fecha
+  - utter_retiro_prematricula_fecha
+  - utter_cual_retiro
+  - utter_cual_indice
+  - utter_indice_periodo
+  - utter_indice_acumulado
+  - utter_graduacion_sta_fecha
+  - utter_cual_graduacion
+  - utter_graduacion_sti_fecha
+  - utter_algo_mas
+  - utter_adelante
