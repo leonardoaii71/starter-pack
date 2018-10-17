@@ -100,6 +100,59 @@
 - Perfecto
 - Muy bien
 
+## intent:condicion_academica
+- Cual es mi condicion academica actual?
+- cual es mi condicion academica?
+
+## intent:requisitos_pendientes
+- Cuales son mis requisitos pendientes?
+- Que requisitos pendientes tengo?
+- Requisitos pendientes
+- requisitos pendientes
+- cuales son mis requisitos pendientes?
+- cuales requisitos pendientes tengo?
+
+## intent:creditos_acumulados
+- Cuantos creditos he cursado?
+- cuantos creditos he obtenido?
+- cuantos creditos he acumulado
+- creditos acumulados
+
+## intent:calificacion_a
+- Cuantas A he obtenido?
+- Cuantas a he obtenido?
+
+## intent:calificacion_b
+- cuantas B he obtenido?
+- cuantas b he obtenido?
+
+## intent:calificacion_c
+- Cuantas C he obtenido?
+- Cuantas c he obtenido?
+
+## intent:calificacion_d
+- Cuantas D he obtenido?
+- Cuantas d he obtenido?
+
+## intent:calificacion_f
+- cuantas F he obtenido?
+- cuantas f he obtenido?
+
+## intent:calificacion_r
+- cuantas R he obtenido?
+- cuantas r he obtenido?
+
+## intent:calificacion_fn
+- cuantas FN he obtenido?
+- cuantas fn he obtenido?
+
+## intent:requisitos_cursados
+- Cuales requisitos he cursado?
+- cuales requisitos he cursado?
+- requisitos cursados
+- Cuales materias he dado?
+- cuales materias he cursado
+
 ## intent:mood_unhappy
 - no me siento bien
 - No estoy bien
@@ -1161,13 +1214,6 @@
 
 ## synonym:Reporte resultados revision de calificaciones finales
 - reporte de calificaciones finales
-
-## synonym:Limite para pagar segunda cuota graduacion
-- segunda cuota del derecho de graduacion
-
-## synonym:Fecha limite para depositar documentos pendientes de graduacion
-- deposito de documentos de graduacion
-- deposito de documentos pendientes de graduacion
 
 ## synonym:Periodo de modificacion de prematricula
 - modificacion de prematricula
