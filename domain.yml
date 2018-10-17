@@ -33,11 +33,23 @@ intents:
   - mi_indice
   - indice_acumulado
   - indice_del_periodo
+  - condicion_academica
+  - requisitos_cursados
+  - requisitos_pendientes
+  - creditos_acumulados
+  - calificacion_a
+  - calificacion_b
+  - calificacion_c
+  - calificacion_d
+  - calificacion_f
+  - calificacion_r
+  - calificacion_fn
 
 entities:
   - event
   - date
   - proceso
+  - academico
 
 slots:
   # replace with your slots
@@ -55,6 +67,8 @@ slots:
   importantes_count:
     type: unfeaturized
   proceso:
+    type: text
+  acedemico:
     type: text
 
 templates:
@@ -210,6 +224,9 @@ templates:
   utter_procedimiento_proceso:
     - text: "{procedimiento}"
 
+  utter_condicion_academica:
+    - text: "Su condicion académica es: none."
+
 actions:
   # all the utter actions from the templates, plus any custom actions
   - utter_greet
@@ -255,3 +272,4 @@ actions:
   - utter_graduacion_sti_fecha
   - utter_algo_mas
   - utter_adelante
+  - utter_condicion_academica
