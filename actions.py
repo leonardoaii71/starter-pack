@@ -286,3 +286,29 @@ class ActionlookforProcessProcedimiento(Action):
 
     def run(self, dispatcher, tracker, domain):
         pass
+    
+#Actions para informacion academica personalizada
+
+class ActionlookforRequisitosPendientes(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_requisitos_pendientes"
+
+    def run(self, dispatcher, tracker, domain):
+        pass
+
+class ActionlookforCreditosAcumulados(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_creditos_acumulados"
+
+    def run(self, dispatcher, tracker, domain):
+        pass
+
+class ActionlookforRequisitosCursados(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_requisitos_cursados"
+
+    def run(self, dispatcher, tracker, domain):
+        pass
