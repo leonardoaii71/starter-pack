@@ -63,3 +63,15 @@
     - utter_cual_retiro
 * retiro_total
     - utter_retiro_total_fecha
+    
+## Generated Story 6516674712220716356
+* requisitos_pendientes
+    - action_requisitos_pendientes
+
+## Generated Story 6070435417377167289
+* creditos_acumulados
+    - action_creditos_acumulados
+
+## Generated Story -806123001115259216
+* requisitos_cursados
+    - action_requisitos_cursados
