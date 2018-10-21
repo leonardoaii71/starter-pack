@@ -49,7 +49,7 @@ entities:
   - event
   - date
   - proceso
-  - academico
+  - calificacion
 
 slots:
   # replace with your slots
@@ -68,8 +68,15 @@ slots:
     type: unfeaturized
   proceso:
     type: text
-  acedemico:
-    type: text
+  calificacion:
+    type: categorical
+    values:
+      - a
+      - b
+      - c
+      - d
+      - f
+
 
 templates:
   # templates the bot should respond with
@@ -227,6 +234,15 @@ templates:
   utter_condicion_academica:
     - text: "Su condicion académica es: none."
 
+  utter_requisitos_pendientes:
+    - text: "Sus requisitos pendientes son: "
+
+  utter_requisitos_cursados:
+    - text: "Sus requisitos cursados son: "
+
+  utter_creditos_acumulados:
+    - text: "La cantidad de créditos acumulados actualmente es: "
+
 actions:
   # all the utter actions from the templates, plus any custom actions
   - utter_greet
@@ -273,3 +289,9 @@ actions:
   - utter_algo_mas
   - utter_adelante
   - utter_condicion_academica
+  - utter_requisitos_pendientes
+  - utter_creditos_acumulados
+  - utter_requisitos_cursados
+  - action_requisitos_pendientes
+  - action_creditos_acumulados
+  - action_requisitos_cursados
