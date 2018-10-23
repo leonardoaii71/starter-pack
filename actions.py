@@ -1,14 +1,37 @@
 import locale
 from datetime import datetime
 import pytz
-from rasa_core_sdk import Action
+from rasa_core_sdk import Action, Tracker
 from rasa_core_sdk.events import SlotSet, UserUtteranceReverted
 from pymongo import MongoClient
+from rasa_core_sdk.forms import FormAction, FreeTextFormField, FormField
 from Database import Database
+from hunspell import hunspell
 
-collection = Database('kb', 'Calendarios').collection
+#collection = Database('kb', 'Calendarios').collection
 
 # Actions Eventos
+
+
+class ActionLogIn(Action):
+
+    def name(self):
+        return 'action_login_form'
+
+    def run(self, dispatcher, tracker, domain):
+        collection = Database('kb', 'Users').collection
+        passwd = str(tracker.get_slot("password")),
+        matricula = str(tracker.get_slot("matricula"))
+        query = {
+        "password" : passwd,
+        "matricula" : matricula
+        }
+        result = collection.find_one(query)
+        if result:
+            return [SlotSet("indice", result["indice"])]
+        return []
+
+
 class ActionlookforEvent(Action):
     def name(self):
         # type: () -> Text
@@ -16,7 +39,7 @@ class ActionlookforEvent(Action):
 
     def run(self, dispatcher, tracker, domain):
         # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
-
+        print(tracker.latest_message.keys())
         evento = tracker.get_slot("event")
         if evento is None:
             dispatcher.utter_template("utter_event_not_found", tracker)
@@ -40,6 +63,7 @@ class ActionlookforEvent(Action):
             "date": 1,
         }
         sort = [('score', {'$meta': 'textScore'}), (u"date", 1)]
+        collection = Database('kb', 'Calendarios').collection
         docs = collection.find(query, projection=projection, sort=sort).limit(5)
         matches = []
         date = str()
@@ -95,7 +119,7 @@ class ActionSuggestEventResults(Action):
             suggestions = [{'title': event, 'payload': "/query_event{\"event\": \"%s\""} for event in matches]
             dispatcher.utter_button_message("", suggestions)
 
-            # tracker.get_slot('date').reset()
+        return []
 
 
 class ActionLookForAsuetos(Action):
@@ -103,9 +127,11 @@ class ActionLookForAsuetos(Action):
         # type: () -> Text
         return "action_look_asuetos"
 
-    def run(self, dispatcher, tracker, domain):
+    def run(self, dispatcher, tracker: Tracker, domain):
         # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
         eventdate = tracker.get_slot('date')
+
+
         query = {
             "date": {"$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))}
         }
@@ -215,8 +241,9 @@ class ActionCountImportant(Action):
                 "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
             }
         }
-        if eventdate:
-            query = {"date": datetime.strptime(eventdate + "-" + datetime.now().year, '%B-%Y')}
+        # Contar los eventos de una fecha dada
+        # if eventdate:
+        #    query = {"date": datetime.strptime(eventdate + "-" + datetime.now().year, '%B-%Y')}
         projection = dict()
         query["evento.importante"] = "true"
         projection["evento.nombre"] = 1
@@ -237,16 +264,20 @@ class ActionlookforProcessDescription(Action):
 
     def run(self, dispatcher, tracker, domain):
         proceso = tracker.get_slot("proceso")
+        collection = Database('kb', 'Procesos').collection
         if proceso:
             query = {
-                "nombre": proceso
+                "nombre": proceso,
+                'descripcion': {'$exists': True}
             }
             projection = {
                 "descripcion": 1
             }
-            result = collection.find(query, projection=projection)
+            result = collection.find_one(query, projection=projection)
             dispatcher.utter_template("utter_descripcion_proceso", tracker,
-                                      proceso=result)
+                                          descripcion=result['descripcion'])
+
+        return []
 
 
 class ActionlookforProcessImportancia(Action):
@@ -255,17 +286,44 @@ class ActionlookforProcessImportancia(Action):
         return "action_process_importancia"
 
     def run(self, dispatcher, tracker, domain):
-        pass
+        proceso = tracker.get_slot("proceso")
+        collection = Database('kb', 'Procesos').collection
+        if proceso:
+            query = {
+                "nombre": proceso,
+                'importancia': {'$exists': True}
+            }
+            projection = {
+                "importancia": 1
+            }
+            result = collection.find_one(query, projection=projection)
+            dispatcher.utter_template("utter_importancia_proceso", tracker,
+                                      importancia=result['importancia'])
+
+        return []
 
 
 class ActionlookforProcessPenalidad(Action):
     def name(self):
         # type: () -> Text
-
         return "action_process_penalidad"
 
     def run(self, dispatcher, tracker, domain):
-        pass
+        proceso = tracker.get_slot("proceso")
+        collection = Database('kb', 'Procesos').collection
+        if proceso:
+            query = {
+                "nombre": proceso,
+                'penalidad': {'$exists': True}
+            }
+            projection = {
+                "penalidad": 1
+            }
+            result = collection.find_one(query, projection=projection)
+            dispatcher.utter_template("utter_penalidad_proceso", tracker,
+                                      penalidad=result['penalidad'])
+
+        return []
 
 
 class ActionlookforProcessAdvertencia(Action):
@@ -275,14 +333,58 @@ class ActionlookforProcessAdvertencia(Action):
         return "action_process_advertencia"
 
     def run(self, dispatcher, tracker, domain):
-        pass
+        proceso = tracker.get_slot("proceso")
+        collection = Database('kb', 'Procesos').collection
+        if proceso:
+            query = {
+                "nombre": proceso,
+                'advertencia': {'$exists': True}
+            }
+            projection = {
+                "advertencia": 1
+            }
+            result = collection.find_one(query, projection=projection)
+            dispatcher.utter_template("utter_advertencia_proceso", tracker,
+                                      advertencia=result['advertencia'])
+
+        return []
 
 
 class ActionlookforProcessProcedimiento(Action):
     def name(self):
         # type: () -> Text
-
         return "action_process_procedimiento"
 
     def run(self, dispatcher, tracker, domain):
-        pass
+        proceso = tracker.get_slot("proceso")
+        collection = Database('kb', 'Procesos').collection
+        if proceso:
+            query = {
+                "nombre": proceso,
+                'procedimiento': {'$exists': True}
+            }
+            projection = {
+                "procedimiento": 1
+            }
+            result = collection.find_one(query, projection=projection)
+            dispatcher.utter_template("utter_procedimiento_proceso", tracker,
+                                      procedimiento=result['procedimiento'])
+        return []
+
+class fallb(Action):
+
+    def name(self):
+        return 'action_fallo'
+
+    def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_template("utter_sorry", tracker)
+
+
+
+
+# todo
+#query confidence
+#reset slots
+#
+
+# Custom Field

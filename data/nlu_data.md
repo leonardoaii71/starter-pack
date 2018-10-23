@@ -19,6 +19,7 @@
 - que te puedo preguntar?
 - que me puedes decir?
 - sobre que te puedo preguntar?
+- ayuda
 
 ## intent:greet
 - Hi
@@ -108,6 +109,29 @@
 - No estoy feliz
 - no estoy feliz
 
+## intent:informar
+- [20121917](matricula)
+- [20130940](matricula)
+- [20003215](matricula)
+- [19980532](matricula)
+- [20106598](matricula)
+- [20186459](matricula)
+- [20132013](matricula)
+- [20122012](matricula)
+- [12345678](matricula)
+- mipassword
+- 06505641
+- dfgdsd34f
+- asdffff
+- asdfasdf
+- m80943295824
+- jljdf8384
+- OOV
+
+## regex:matricula
+- [0-9]{8}
+
+
 ## intent:query_event
 - cuando es el [Inicio de docencia](event)
 - cuando es el [Inicio de docencia](event)?
@@ -192,6 +216,14 @@
 - cuando es el [Retiro de prematricula](event)?
 - Cuando es el [Retiro de prematricula](event)?
 - cuando es el [Retiro de prematricula](event)
+- cuando es el [Retiro](event)
+- cuando es el [Retiro](event)?
+- Cuando es el [Retiro](event)?
+- cuando es el [Retiro] (event)
+- que dia es el [Retiro](event)?
+- cual dia sera el [Retiro](event)?
+- cuando va a ser el [Retiro](event)?
+- Cuando es el [Retiro](event)?
 - cuando es la [Prematricula](event)
 - cuando es la [Prematricula](event)?
 - Cuando es la [Prematricula](event)?
@@ -845,18 +877,6 @@
 - cuales dias son importantes para este semestre
 - cuales fechas importantes hay
 - Cuales son las fechas importantes del periodo?
-- cuales son las fechas importantes de [enero](date)?
-- cuales son las fechas importantes de [febrero](date)?
-- cuales son las fechas importantes de [marzo](date)?
-- cuales son las fechas importantes de [abril](date)?
-- cuales son las fechas importantes de [mayo](date)?
-- cuales son las fechas importantes de [junio](date)?
-- cuales son las fechas importantes de [julio](date)?
-- cuales son las fechas importantes de [agosto](date)?
-- cuales son las fechas importantes de [septiembre](date)?
-- cuales son las fechas importantes de [octubre](date)?
-- cuales son las fechas importantes de [noviembre](date)?
-- cuales son las fechas importantes de [diciembre](date)?
 
 ## intent:query_asueto
 - dias asuetos
@@ -866,18 +886,6 @@
 - dime dias asueto
 - cuales son los dias asueto del periodo?
 - cuales dias asuetos hay
-- cuales dias asueto hay en [enero](date)?
-- cuales dias asueto hay en [febrero](date)?
-- cuales dias asueto hay en [marzo](date)?
-- cuales dias asueto hay en [abril](date)?
-- cuales dias asueto hay en [mayo](date)?
-- cuales dias asueto hay en [junio](date)?
-- cuales dias asueto hay en [julio](date)?
-- cuales dias asueto hay en [agosto](date)?
-- cuales dias asueto hay en [septiembre](date)?
-- cuales dias asueto hay en [octubre](date)?
-- cuales dias asueto hay en [noviembre](date)?
-- cuales dias asueto hay en [diciembre](date)?
 
 ## intent:count_asueto
 - cuantos dias asuetos hay en este periodo
@@ -1171,6 +1179,14 @@
 - cual es la advertencia para la [expedicion de documentos](proceso)?
 - cual es la advertencia para la [expedicion de documentos](proceso)
 
+## intent:query_indice
+- Cual es mi indice academico?
+- mi indice
+- cual es mi indice?
+- cual es mi indice
+- Cual es mi indice?
+
+
 ## synonym:Inicio de docencia
 - inicio de clases
 - inicio de clase
@@ -1227,8 +1243,6 @@
 ## synonym:Solicitud de cambio de carrera
 - cambio de carrera
 
-## synonym:Fecha limite para retiro parcial
-- retiro parcial
 
 ## synonym:Solicitud de revision de calificaciones finales
 - revision de calificaciones
@@ -1240,8 +1254,7 @@
 ## synonym:Limite para pagar segunda cuota graduacion
 - segunda cuota del derecho de graduacion
 
-## synonym:Fecha limite para retiro total
-- retiro total
+
 
 ## synonym:Fecha limite para depositar documentos pendientes de graduacion
 - deposito de documentos de graduacion
