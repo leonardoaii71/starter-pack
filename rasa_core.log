@@ -26429,3 +26429,2907 @@ C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocess
 C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
   if diff:
 
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook.health                              HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook.receive                             POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '' with intent '{'name': None, 'confidence': 0.0}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{}, {'prev_action_listen': 1.0}]
+There is no memorised next action
+NLU confidence 0.0 is lower than NLU threshold 0.1. Predicting fallback action: action_fallo
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_fallo' with prob 1.00.
+Calling action endpoint to run action 'action_fallo'.
+Action 'action_fallo' ended with events '[]'
+Bot utterance 'BotUttered(text: No puedo responder tu inquietud, disculpa., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0}, {'prev_action_fallo': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuantas a he obtenido?' with intent '{'name': 'calificacion_a', 'confidence': 0.06982222046468066}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_action_fallo': 1.0}, {'prev_action_listen': 1.0, 'intent_calificacion_a': 1.0}]
+There is no memorised next action
+NLU confidence 0.06982222046468066 is lower than NLU threshold 0.1. Predicting fallback action: action_fallo
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_fallo' with prob 1.00.
+Calling action endpoint to run action 'action_fallo'.
+Action 'action_fallo' ended with events '[]'
+Bot utterance 'BotUttered(text: No puedo responder tu inquietud, disculpa., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_calificacion_a': 1.0}, {'prev_action_fallo': 1.0, 'intent_calificacion_a': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/calificacion_a' with intent '{'name': 'calificacion_a', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_action_fallo': 1.0, 'intent_calificacion_a': 1.0}, {'intent_calificacion_a': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_ack_calificacion' with prob 1.00.
+Calling action endpoint to run action 'action_ack_calificacion'.
+Failed to run custom action 'action_ack_calificacion'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_ack_calificacion'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_ack_calificacion' ended with events '[]'
+Current tracker state [{'intent_calificacion_a': 1.0, 'prev_action_listen': 1.0}, {'prev_action_ack_calificacion': 1.0, 'intent_calificacion_a': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/calificacion_a' with intent '{'name': 'calificacion_a', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 13 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_action_ack_calificacion': 1.0, 'intent_calificacion_a': 1.0}, {'intent_calificacion_a': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_ack_calificacion' with prob 1.00.
+Calling action endpoint to run action 'action_ack_calificacion'.
+Action 'action_ack_calificacion' ended with events '[]'
+Bot utterance 'BotUttered(text: Usted ha obtenido 73, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_calificacion_a': 1.0, 'prev_action_listen': 1.0}, {'prev_action_ack_calificacion': 1.0, 'intent_calificacion_a': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/greet' with intent '{'name': 'greet', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 17 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_action_ack_calificacion': 1.0, 'intent_calificacion_a': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Hola humano! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuándo es la prematrícula?,  ¿Cuál es mi índice académico?,  ¿Qué son estudiantes especiales?... Adelante!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/calificacion_a' with intent '{'name': 'calificacion_a', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 21 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_calificacion_a': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_ack_calificacion' with prob 1.00.
+Calling action endpoint to run action 'action_ack_calificacion'.
+Action 'action_ack_calificacion' ended with events '[]'
+Bot utterance 'BotUttered(text: Usted ha obtenido 73, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_calificacion_a': 1.0, 'prev_action_listen': 1.0}, {'prev_action_ack_calificacion': 1.0, 'intent_calificacion_a': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/calificacion_b' with intent '{'name': 'calificacion_b', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 25 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_action_ack_calificacion': 1.0, 'intent_calificacion_a': 1.0}, {'prev_action_listen': 1.0, 'intent_calificacion_b': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_ack_calificacion' with prob 1.00.
+Calling action endpoint to run action 'action_ack_calificacion'.
+Action 'action_ack_calificacion' ended with events '[]'
+Bot utterance 'BotUttered(text: Usted ha obtenido 73, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_calificacion_b': 1.0}, {'prev_action_ack_calificacion': 1.0, 'intent_calificacion_b': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cual es mi condicion academica?' with intent '{'name': 'advertencia_proceso', 'confidence': 0.12716935170645072}' and entities '[]'
+Logged UserUtterance - tracker now has 29 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_action_ack_calificacion': 1.0, 'intent_calificacion_b': 1.0}, {'intent_advertencia_proceso': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_default' with prob 1.00.
+Action 'utter_default' ended with events '[]'
+Bot utterance 'BotUttered(text: No puedo responder tu inquietud, disculpa., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_advertencia_proceso': 1.0, 'prev_action_listen': 1.0}, {'intent_advertencia_proceso': 1.0, 'prev_utter_default': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/condicion_academica' with intent '{'name': 'condicion_academica', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 33 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_advertencia_proceso': 1.0, 'prev_utter_default': 1.0}, {'prev_action_listen': 1.0, 'intent_condicion_academica': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_condicion_academica' with prob 1.00.
+Calling action endpoint to run action 'action_condicion_academica'.
+Action 'action_condicion_academica' ended with events '[]'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_condicion_academica': 1.0}, {'intent_condicion_academica': 1.0, 'prev_action_condicion_academica': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'requisitos cursados' with intent '{'name': 'requisitos_cursados', 'confidence': 0.19531162062828836}' and entities '[]'
+Logged UserUtterance - tracker now has 37 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_condicion_academica': 1.0, 'prev_action_condicion_academica': 1.0}, {'intent_requisitos_cursados': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_requisitos_cursados' with prob 1.00.
+Calling action endpoint to run action 'action_requisitos_cursados'.
+Failed to run custom action 'action_requisitos_cursados'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_requisitos_cursados'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_requisitos_cursados' ended with events '[]'
+Current tracker state [{'intent_requisitos_cursados': 1.0, 'prev_action_listen': 1.0}, {'intent_requisitos_cursados': 1.0, 'prev_action_requisitos_cursados': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/requisitos_pendientes' with intent '{'name': 'requisitos_pendientes', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 40 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_requisitos_cursados': 1.0, 'prev_action_requisitos_cursados': 1.0}, {'intent_requisitos_pendientes': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '54'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_requisitos_pendientes' with prob 1.00.
+Calling action endpoint to run action 'action_requisitos_pendientes'.
+Action 'action_requisitos_pendientes' ended with events '[]'
+Current tracker state [{'intent_requisitos_pendientes': 1.0, 'prev_action_listen': 1.0}, {'intent_requisitos_pendientes': 1.0, 'prev_action_requisitos_pendientes': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'requisitos acumulados' with intent '{'name': 'requisitos_cursados', 'confidence': 0.1971835044193954}' and entities '[]'
+Logged UserUtterance - tracker now has 44 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_requisitos_pendientes': 1.0, 'prev_action_requisitos_pendientes': 1.0}, {'intent_requisitos_cursados': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '57'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_requisitos_cursados' with prob 1.00.
+Calling action endpoint to run action 'action_requisitos_cursados'.
+Failed to run custom action 'action_requisitos_cursados'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_requisitos_cursados'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_requisitos_cursados' ended with events '[]'
+Current tracker state [{'intent_requisitos_cursados': 1.0, 'prev_action_listen': 1.0}, {'intent_requisitos_cursados': 1.0, 'prev_action_requisitos_cursados': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'requisitos cursados' with intent '{'name': 'requisitos_cursados', 'confidence': 0.19531162062828836}' and entities '[]'
+Logged UserUtterance - tracker now has 47 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_requisitos_cursados': 1.0, 'prev_action_requisitos_cursados': 1.0}, {'intent_requisitos_cursados': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '57'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_requisitos_cursados' with prob 1.00.
+Calling action endpoint to run action 'action_requisitos_cursados'.
+Failed to run custom action 'action_requisitos_cursados'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_requisitos_cursados'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_requisitos_cursados' ended with events '[]'
+Current tracker state [{'intent_requisitos_cursados': 1.0, 'prev_action_listen': 1.0}, {'intent_requisitos_cursados': 1.0, 'prev_action_requisitos_cursados': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'requisitos cursados' with intent '{'name': 'requisitos_cursados', 'confidence': 0.19531162062828836}' and entities '[]'
+Logged UserUtterance - tracker now has 50 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_requisitos_cursados': 1.0, 'prev_action_requisitos_cursados': 1.0}, {'intent_requisitos_cursados': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '57'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_requisitos_cursados' with prob 1.00.
+Calling action endpoint to run action 'action_requisitos_cursados'.
+Failed to run custom action 'action_requisitos_cursados'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_requisitos_cursados'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_requisitos_cursados' ended with events '[]'
+Current tracker state [{'intent_requisitos_cursados': 1.0, 'prev_action_listen': 1.0}, {'intent_requisitos_cursados': 1.0, 'prev_action_requisitos_cursados': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'creditos acumulados' with intent '{'name': 'creditos_acumulados', 'confidence': 0.1682205294079584}' and entities '[]'
+Logged UserUtterance - tracker now has 53 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_requisitos_cursados': 1.0, 'prev_action_requisitos_cursados': 1.0}, {'intent_creditos_acumulados': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '55'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_creditos_acumulados' with prob 1.00.
+Calling action endpoint to run action 'action_creditos_acumulados'.
+Action 'action_creditos_acumulados' ended with events '[]'
+Current tracker state [{'intent_creditos_acumulados': 1.0, 'prev_action_listen': 1.0}, {'intent_creditos_acumulados': 1.0, 'prev_action_creditos_acumulados': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 56 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hola' with intent '{'name': 'greet', 'confidence': 0.6295750203274535}' and entities '[]'
+Logged UserUtterance - tracker now has 60 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Saludos humano!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             GET, OPTIONS, HEAD             /static/[filename]
+custom_webhook.health                              GET, OPTIONS, HEAD             /webhooks/rest/
+custom_webhook.receive                             OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'condicion academica' with intent '{'name': 'nonsense', 'confidence': 0.09780078170317216}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{}, {'intent_nonsense': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '2'
+NLU confidence 0.09780078170317216 is lower than NLU threshold 0.1. Predicting fallback action: action_fallo
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_fallo' with prob 1.00.
+Calling action endpoint to run action 'action_fallo'.
+Action 'action_fallo' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento pero por el momento no puedo ayudarte., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_nonsense': 1.0, 'prev_action_listen': 1.0}, {'intent_nonsense': 1.0, 'prev_action_fallo': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/condicion_academica' with intent '{'name': 'condicion_academica', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_nonsense': 1.0, 'prev_action_fallo': 1.0}, {'prev_action_listen': 1.0, 'intent_condicion_academica': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_condicion_academica' with prob 1.00.
+Calling action endpoint to run action 'action_condicion_academica'.
+Action 'action_condicion_academica' ended with events '[]'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_condicion_academica': 1.0}, {'intent_condicion_academica': 1.0, 'prev_action_condicion_academica': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'requisitos cursados' with intent '{'name': 'requisitos_cursados', 'confidence': 0.19531162062828836}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: None
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_condicion_academica': 1.0, 'prev_action_condicion_academica': 1.0}, {'intent_requisitos_cursados': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_requisitos_cursados' with prob 1.00.
+Calling action endpoint to run action 'action_requisitos_cursados'.
+Failed to run custom action 'action_requisitos_cursados'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_requisitos_cursados'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 313, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 319, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 334, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_requisitos_cursados' ended with events '[]'
+Current tracker state [{'intent_requisitos_cursados': 1.0, 'prev_action_listen': 1.0}, {'intent_requisitos_cursados': 1.0, 'prev_action_requisitos_cursados': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook.health                              HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook.receive                             POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hola' with intent '{'name': 'greet', 'confidence': 0.2263130462740582}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Saludos humano!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'indice academico' with intent '{'name': 'mood_great', 'confidence': 0.10435746585023166}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_mood_great': 1.0}]
+There is no memorised next action
+Feature 'intent_mood_great' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_default' with prob 1.00.
+Action 'utter_default' ended with events '[]'
+Bot utterance 'BotUttered(text: No tengo información suficiente para responderte., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_mood_great': 1.0}, {'intent_mood_great': 1.0, 'prev_utter_default': 1.0}]
+There is no memorised next action
+Feature 'intent_mood_great' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_mood_great' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook.health                              HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook.receive                             OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hola' with intent '{'name': 'greet', 'confidence': 0.2263130462740582}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '3'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Saludos humano!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cual es mi indice?' with intent '{'name': 'query_indice', 'confidence': 0.18769951363878298}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_query_indice': 1.0}]
+There is a memorised next action '42'
+Feature 'intent_query_indice' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_cual_indice' with prob 1.00.
+Action 'utter_cual_indice' ended with events '[]'
+Bot utterance 'BotUttered(text:  ¿A cúal índice te refieres?, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "indice acumulado",
+      "title": "\u00cdndice acumulado"
+    },
+    {
+      "payload": "indice del periodo",
+      "title": "\u00cdndice del per\u00edodo"
+    }
+  ],
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_query_indice': 1.0}, {'prev_utter_cual_indice': 1.0, 'intent_query_indice': 1.0}]
+There is a memorised next action '0'
+Feature 'intent_query_indice' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_query_indice' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'indice del periodo' with intent '{'name': 'indice_del_periodo', 'confidence': 0.11590295960120574}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_utter_cual_indice': 1.0, 'intent_query_indice': 1.0}, {'prev_action_listen': 1.0, 'intent_indice_del_periodo': 1.0}]
+There is no memorised next action
+Feature 'intent_query_indice' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_query_indice' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_ask_matricula' with prob 1.00.
+Action 'utter_ask_matricula' ended with events '[]'
+Bot utterance 'BotUttered(text: Por favor, digita tu matricula sin espacios para continuar, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_indice_del_periodo': 1.0}, {'prev_utter_ask_matricula': 1.0, 'intent_indice_del_periodo': 1.0}]
+There is a memorised next action '0'
+Feature 'intent_query_indice' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_query_indice' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message '20121917' with intent '{'name': 'informar', 'confidence': 0.4864686072033461}' and entities '[{'start': 0, 'end': 8, 'value': '20121917', 'entity': 'matricula', 'confidence': 0.9220022091551303, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: None
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_utter_ask_matricula': 1.0, 'intent_indice_del_periodo': 1.0}, {'prev_action_listen': 1.0, 'intent_informar': 1.0, 'entity_matricula': 1.0}]
+There is a memorised next action '43'
+Feature 'intent_query_indice' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_query_indice' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_matricula' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_indice_periodo' with prob 1.00.
+Action 'utter_indice_periodo' ended with events '[]'
+Bot utterance 'BotUttered(text: Tu índice del período es 2.8., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_informar': 1.0, 'entity_matricula': 1.0}, {'intent_informar': 1.0, 'prev_utter_indice_periodo': 1.0, 'entity_matricula': 1.0}]
+There is a memorised next action '0'
+Feature 'intent_query_indice' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_matricula' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_matricula' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la graduacion?' with intent '{'name': 'query_event', 'confidence': 0.16510942818581176}' and entities '[{'start': 13, 'end': 23, 'value': 'graduacion', 'entity': 'proceso', 'confidence': 0.8387624784021251, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 20 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_informar': 1.0, 'prev_utter_indice_periodo': 1.0, 'entity_matricula': 1.0}, {'slot_proceso_0': 1.0, 'prev_action_listen': 1.0, 'entity_proceso': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Feature 'entity_matricula' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_matricula' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_event_not_found' with prob 1.00.
+Action 'utter_event_not_found' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no pude encontrar ese evento en el calendario. Intente con otro nombre, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_proceso_0': 1.0, 'prev_action_listen': 1.0, 'entity_proceso': 1.0, 'intent_query_event': 1.0}, {'slot_proceso_0': 1.0, 'entity_proceso': 1.0, 'intent_query_event': 1.0, 'prev_utter_event_not_found': 1.0}]
+There is no memorised next action
+Feature 'entity_matricula' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_matricula' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuando es la graduacion' with intent '{'name': 'query_event', 'confidence': 0.1462581104842831}' and entities '[{'start': 13, 'end': 23, 'value': 'graduacion', 'entity': 'proceso', 'confidence': 0.8073438035363336, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 25 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'slot_proceso_0': 1.0, 'entity_proceso': 1.0, 'intent_query_event': 1.0, 'prev_utter_event_not_found': 1.0}, {'slot_proceso_0': 1.0, 'prev_action_listen': 1.0, 'entity_proceso': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Feature 'entity_matricula' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_matricula' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_event_not_found' with prob 1.00.
+Action 'utter_event_not_found' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no pude encontrar ese evento en el calendario. Intente con otro nombre, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_proceso_0': 1.0, 'prev_action_listen': 1.0, 'entity_proceso': 1.0, 'intent_query_event': 1.0}, {'slot_proceso_0': 1.0, 'entity_proceso': 1.0, 'intent_query_event': 1.0, 'prev_utter_event_not_found': 1.0}]
+There is no memorised next action
+Feature 'entity_matricula' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cual es mi condicion academica?' with intent '{'name': 'advertencia_proceso', 'confidence': 0.06848079096084313}' and entities '[]'
+Logged UserUtterance - tracker now has 29 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'slot_proceso_0': 1.0, 'entity_proceso': 1.0, 'intent_query_event': 1.0, 'prev_utter_event_not_found': 1.0}, {'slot_proceso_0': 1.0, 'prev_action_listen': 1.0, 'intent_advertencia_proceso': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_cual_indice' with prob 0.89.
+Action 'utter_cual_indice' ended with events '[]'
+Bot utterance 'BotUttered(text:  ¿A cúal índice te refieres?, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "indice acumulado",
+      "title": "\u00cdndice acumulado"
+    },
+    {
+      "payload": "indice del periodo",
+      "title": "\u00cdndice del per\u00edodo"
+    }
+  ],
+  "attachment": null
+})'
+Current tracker state [{'slot_proceso_0': 1.0, 'prev_action_listen': 1.0, 'intent_advertencia_proceso': 1.0}, {'slot_proceso_0': 1.0, 'prev_utter_cual_indice': 1.0, 'intent_advertencia_proceso': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'condicion academica' with intent '{'name': 'nonsense', 'confidence': 0.09791669606216755}' and entities '[]'
+Logged UserUtterance - tracker now has 33 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'slot_proceso_0': 1.0, 'prev_utter_cual_indice': 1.0, 'intent_advertencia_proceso': 1.0}, {'intent_nonsense': 1.0, 'slot_proceso_0': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: No puedo responder tu inquietud, disculpa., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_proceso_0': 1.0, 'prev_action_listen': 1.0, 'intent_advertencia_proceso': 1.0}, {'slot_proceso_0': 1.0, 'prev_utter_cual_indice': 1.0, 'intent_advertencia_proceso': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/condicion_academica' with intent '{'name': 'condicion_academica', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 38 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'slot_proceso_0': 1.0, 'prev_utter_cual_indice': 1.0, 'intent_advertencia_proceso': 1.0}, {'prev_action_listen': 1.0, 'slot_proceso_0': 1.0, 'intent_condicion_academica': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_condicion_academica' with prob 1.00.
+Calling action endpoint to run action 'action_condicion_academica'.
+Action 'action_condicion_academica' ended with events '[]'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_proceso_0': 1.0, 'intent_condicion_academica': 1.0}, {'prev_action_condicion_academica': 1.0, 'slot_proceso_0': 1.0, 'intent_condicion_academica': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/condicion_academica' with intent '{'name': 'condicion_academica', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 42 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_action_condicion_academica': 1.0, 'slot_proceso_0': 1.0, 'intent_condicion_academica': 1.0}, {'prev_action_listen': 1.0, 'slot_proceso_0': 1.0, 'intent_condicion_academica': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_condicion_academica' with prob 1.00.
+Calling action endpoint to run action 'action_condicion_academica'.
+Action 'action_condicion_academica' ended with events '[]'
+Bot utterance 'BotUttered(text: Su condicion académica es: Condición académica normal., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_proceso_0': 1.0, 'intent_condicion_academica': 1.0}, {'prev_action_condicion_academica': 1.0, 'slot_proceso_0': 1.0, 'intent_condicion_academica': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/requisitos_pendientes' with intent '{'name': 'requisitos_pendientes', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 46 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_action_condicion_academica': 1.0, 'slot_proceso_0': 1.0, 'intent_condicion_academica': 1.0}, {'prev_action_listen': 1.0, 'slot_proceso_0': 1.0, 'intent_requisitos_pendientes': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_requisitos_pendientes' with prob 1.00.
+Calling action endpoint to run action 'action_requisitos_pendientes'.
+Action 'action_requisitos_pendientes' ended with events '[]'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_proceso_0': 1.0, 'intent_requisitos_pendientes': 1.0}, {'prev_action_requisitos_pendientes': 1.0, 'slot_proceso_0': 1.0, 'intent_requisitos_pendientes': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/requisitos_pendientes' with intent '{'name': 'requisitos_pendientes', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 50 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_action_requisitos_pendientes': 1.0, 'slot_proceso_0': 1.0, 'intent_requisitos_pendientes': 1.0}, {'prev_action_listen': 1.0, 'slot_proceso_0': 1.0, 'intent_requisitos_pendientes': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_requisitos_pendientes' with prob 1.00.
+Calling action endpoint to run action 'action_requisitos_pendientes'.
+Action 'action_requisitos_pendientes' ended with events '[]'
+Bot utterance 'BotUttered(text: Sus requisitos pendientes son: [['ISC-210-T', 'Programación Aplicada', 4], ['ISC-517-T', 'Programación Web Avanzada', 4], ['ISC-571-P', 'Proyecto Final', 1], ['ISC-581-T', 'Temas Especiales ISC', 3], ['II 422-T', 'Investigación de Operaciones', 4]] , data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_proceso_0': 1.0, 'intent_requisitos_pendientes': 1.0}, {'prev_action_requisitos_pendientes': 1.0, 'slot_proceso_0': 1.0, 'intent_requisitos_pendientes': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/creditos_acumulados' with intent '{'name': 'creditos_acumulados', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 54 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_action_requisitos_pendientes': 1.0, 'slot_proceso_0': 1.0, 'intent_requisitos_pendientes': 1.0}, {'intent_creditos_acumulados': 1.0, 'slot_proceso_0': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_creditos_acumulados' with prob 1.00.
+Calling action endpoint to run action 'action_creditos_acumulados'.
+Action 'action_creditos_acumulados' ended with events '[]'
+Bot utterance 'BotUttered(text: La cantidad de créditos acumulados actualmente es: 222, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_creditos_acumulados': 1.0, 'slot_proceso_0': 1.0, 'prev_action_listen': 1.0}, {'prev_action_creditos_acumulados': 1.0, 'intent_creditos_acumulados': 1.0, 'slot_proceso_0': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'cuantas b he obtenido?' with intent '{'name': 'bye', 'confidence': 0.07755372052965176}' and entities '[]'
+Logged UserUtterance - tracker now has 58 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_action_creditos_acumulados': 1.0, 'intent_creditos_acumulados': 1.0, 'slot_proceso_0': 1.0}, {'intent_bye': 1.0, 'slot_proceso_0': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_bye' with prob 1.00.
+Action 'utter_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Hasta luego humano!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_bye': 1.0, 'slot_proceso_0': 1.0, 'prev_action_listen': 1.0}, {'intent_bye': 1.0, 'slot_proceso_0': 1.0, 'prev_utter_bye': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/cuantas_b' with intent '{'name': 'cuantas_b', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 62 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_bye': 1.0, 'slot_proceso_0': 1.0, 'prev_utter_bye': 1.0}, {'prev_action_listen': 1.0, 'slot_proceso_0': 1.0, 'intent_cuantas_b': 1.0}]
+There is no memorised next action
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_default' with prob 0.89.
+Action 'utter_default' ended with events '[]'
+Bot utterance 'BotUttered(text: No tengo información suficiente para responderte., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_proceso_0': 1.0, 'intent_cuantas_b': 1.0}, {'prev_utter_default': 1.0, 'slot_proceso_0': 1.0, 'intent_cuantas_b': 1.0}]
+There is no memorised next action
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'calificacion_b' with intent '{'name': 'nonsense', 'confidence': 0.18706135458054454}' and entities '[]'
+Logged UserUtterance - tracker now has 66 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_utter_default': 1.0, 'slot_proceso_0': 1.0, 'intent_cuantas_b': 1.0}, {'intent_nonsense': 1.0, 'slot_proceso_0': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: No tengo información suficiente para responderte., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_proceso_0': 1.0, 'intent_cuantas_b': 1.0}, {'prev_utter_default': 1.0, 'slot_proceso_0': 1.0, 'intent_cuantas_b': 1.0}]
+There is no memorised next action
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/calificacion_b' with intent '{'name': 'calificacion_b', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 71 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'prev_utter_default': 1.0, 'slot_proceso_0': 1.0, 'intent_cuantas_b': 1.0}, {'intent_calificacion_b': 1.0, 'slot_proceso_0': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_ack_calificacion' with prob 1.00.
+Calling action endpoint to run action 'action_ack_calificacion'.
+Action 'action_ack_calificacion' ended with events '[]'
+Bot utterance 'BotUttered(text: Usted no ha obtenido ninguna, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_calificacion_b': 1.0, 'slot_proceso_0': 1.0, 'prev_action_listen': 1.0}, {'intent_calificacion_b': 1.0, 'prev_action_ack_calificacion': 1.0, 'slot_proceso_0': 1.0}]
+There is no memorised next action
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/greet' with intent '{'name': 'greet', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 75 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_calificacion_b': 1.0, 'prev_action_ack_calificacion': 1.0, 'slot_proceso_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_proceso_0': 1.0}]
+There is no memorised next action
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: ¡Bienvenido humano!. Soy el bot regis. Estoy aquí para ofrecerte información académica. Pregúntame acerca del calendario, procesos académicos o sobre tu historial. ¿Qué deseas saber?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_proceso_0': 1.0}, {'intent_greet': 1.0, 'slot_proceso_0': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Feature 'intent_cuantas_b' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message '{calificacion:"B"}' with intent '{'name': 'query_event', 'confidence': 0.08362804136679537}' and entities '[]'
+Logged UserUtterance - tracker now has 79 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_greet': 1.0, 'slot_proceso_0': 1.0, 'prev_utter_greet': 1.0}, {'slot_proceso_0': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_event_not_found' with prob 1.00.
+Action 'utter_event_not_found' ended with events '[]'
+Bot utterance 'BotUttered(text: Lo siento, no pude encontrar ese evento en el calendario. Intente con otro nombre, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_proceso_0': 1.0, 'prev_action_listen': 1.0, 'intent_query_event': 1.0}, {'slot_proceso_0': 1.0, 'intent_query_event': 1.0, 'prev_utter_event_not_found': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/calificacion_a' with intent '{'name': 'calificacion_a', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 83 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'slot_proceso_0': 1.0, 'intent_query_event': 1.0, 'prev_utter_event_not_found': 1.0}, {'intent_calificacion_a': 1.0, 'slot_proceso_0': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_ack_calificacion' with prob 1.00.
+Calling action endpoint to run action 'action_ack_calificacion'.
+Action 'action_ack_calificacion' ended with events '[]'
+Bot utterance 'BotUttered(text: Usted no ha obtenido ninguna, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_calificacion_a': 1.0, 'slot_proceso_0': 1.0, 'prev_action_listen': 1.0}, {'intent_calificacion_a': 1.0, 'prev_action_ack_calificacion': 1.0, 'slot_proceso_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/calificacion_b' with intent '{'name': 'calificacion_b', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 87 events
+Current slot values: 
+	asueto_count: None
+	calificacion: None
+	date: None
+	event: None
+	importantes_count: None
+	indice: None
+	matching_events: None
+	matricula: 20121917
+	password: None
+	proceso: graduacion
+	requested_slot: None
+	username: humano
+Current tracker state [{'intent_calificacion_a': 1.0, 'prev_action_ack_calificacion': 1.0, 'slot_proceso_0': 1.0}, {'intent_calificacion_b': 1.0, 'slot_proceso_0': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_ack_calificacion' with prob 1.00.
+Calling action endpoint to run action 'action_ack_calificacion'.
+Action 'action_ack_calificacion' ended with events '[]'
+Bot utterance 'BotUttered(text: Usted ha obtenido 16, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_calificacion_b': 1.0, 'slot_proceso_0': 1.0, 'prev_action_listen': 1.0}, {'intent_calificacion_b': 1.0, 'prev_action_ack_calificacion': 1.0, 'slot_proceso_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 271, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Rasa process starting
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5002
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5002
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+Wrong fb secret! Make sure this matches the secret in your facebook app settings
+Wrong fb secret! Make sure this matches the secret in your facebook app settings
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Wrong fb secret! Make sure this matches the secret in your facebook app settings
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Wrong fb secret! Make sure this matches the secret in your facebook app settings
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\fbmessenger\__init__.py", line 252, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Webhook Setup Successful
+Rasa Core server is up and running on http://localhost:5002
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_look_event'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+The model predicted the custom action 'action_look_event' but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration. https://rasa.com/docs/core/customactions/
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 305, in run
+    "".format(self.name(), DOCS_BASE_URL))
+Exception: The model predicted the custom action 'action_look_event' but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration. https://rasa.com/docs/core/customactions/
+Encountered an exception while running action 'action_ack_eventdate'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+The model predicted the custom action 'action_ack_eventdate' but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration. https://rasa.com/docs/core/customactions/
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 305, in run
+    "".format(self.name(), DOCS_BASE_URL))
+Exception: The model predicted the custom action 'action_ack_eventdate' but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration. https://rasa.com/docs/core/customactions/
+Rasa process starting
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-es'.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Webhook Setup Successful
+Rasa Core server is up and running on http://localhost:5002
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Tue, 13 Nov 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)",)': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_process_descripcion'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_process_descripcion'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 312, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 333, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_process_descripcion'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_process_descripcion'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 312, in run
+    response.raise_for_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\requests\models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 333, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Mon, 19 Nov 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_suggest'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Message text is empty
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 130, in send_response
+    message.get("buttons"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 76, in send_text_with_buttons
+    self.send_message(recipient_id, text, reply_markup=reply_markup)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 215, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message text is empty
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Mon, 19 Nov 2018 04:40:00 GMT"}' after the action.
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)",)': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)",)': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D953780>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',)': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D9537B8>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',)': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Exception on /webhooks/telegram/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 83, in create_connection
+    raise err
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [WinError 10051] Se ha intentado una operación de socket en una red no accesible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D953358>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 66, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 87, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D953358>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 135, in message
+    if not out_channel.get_me()['username'] == self.verify:
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 191, in get_me
+    result = self._request.get(url, timeout=timeout)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 245, in get
+    result = self._request_wrapper('GET', url, **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 201, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D953358>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',))
+Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D955BE0>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D955F60>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D955588>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)",)': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D76D780>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',)': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D76D748>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',)': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Exception on /webhooks/telegram/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 83, in create_connection
+    raise err
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 146, in _new_conn
+    (self.host, self.timeout))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ConnectTimeoutError: (<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D763EB8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 66, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 87, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D763EB8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 135, in message
+    if not out_channel.get_me()['username'] == self.verify:
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 191, in get_me
+    result = self._request.get(url, timeout=timeout)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 245, in get
+    result = self._request_wrapper('GET', url, **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 201, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D763EB8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)'))
+Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D7FE9E8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D80A710>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D80A6D8>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',)': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Exception on /webhooks/telegram/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 83, in create_connection
+    raise err
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [WinError 10051] Se ha intentado una operación de socket en una red no accesible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D80A5F8>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 66, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 87, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D80A5F8>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 135, in message
+    if not out_channel.get_me()['username'] == self.verify:
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 191, in get_me
+    result = self._request.get(url, timeout=timeout)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 245, in get
+    result = self._request_wrapper('GET', url, **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 201, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D80A5F8>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',))
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Action 'action_look_event' set a slot type 'date' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"date": "Tue, 13 Nov 2018 04:40:00 GMT"}' after the action.
+Encountered an exception while running action 'action_suggest'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.connectionpool.HTTPSConnectionPool object at 0x000002EB84C11780>, 'Connect timed out. (connect timeout=5.0)')': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D794CC0>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',)': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D794588>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',)': /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe
+Exception on /webhooks/telegram/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 83, in create_connection
+    raise err
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [WinError 10051] Se ha intentado una operación de socket en una red no accesible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D89EDA0>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 66, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 87, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D89EDA0>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 135, in message
+    if not out_channel.get_me()['username'] == self.verify:
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 191, in get_me
+    result = self._request.get(url, timeout=timeout)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 245, in get
+    result = self._request_wrapper('GET', url, **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 201, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4/getMe (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002EB8D89EDA0>: Failed to establish a new connection: [WinError 10051] Se ha intentado una operación de socket en una red no accesible',))

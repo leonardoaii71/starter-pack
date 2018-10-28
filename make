@@ -17,3 +17,5 @@ python -m rasa_core.train --online -d domain.yml -s data/stories.md -o models/cu
 Activate BotProject
 cd C:\Users\Leonardo\Documents\GitHub\starter-pack
 
+
+python -m rasa_core.run -d models/dialogue -u models/nlu/current --port 5002 --credentials credentials.yml

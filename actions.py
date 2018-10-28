@@ -380,11 +380,158 @@ class fallb(Action):
         dispatcher.utter_template("utter_sorry", tracker)
 
 
+# Informacion Academica
+class ActionlookforRequisitosPendientes(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_requisitos_pendientes"
+
+    def run(self, dispatcher, tracker, domain):
+        collection = Database('kb', 'ReqPendientes').collection
+        matricula = 20121917
+        if matricula:
+            query = {
+                "matricula": matricula,
+                'matricula': {'$exists': True}
+            }
+            projection = {
+                "matricula": 1,
+                "codTema": 1,
+                "nombre": 1,
+                "creditos": 1
+            }
+            result = collection.find(query, projection=projection)
+            requisitos = [(doc["codTema"], doc["nombre"], doc["creditos"]) for doc in result]
+            dispatcher.utter_template("utter_requisitos_pendientes", tracker,
+                                      requisitos=requisitos)
+        return []
 
 
-# todo
-#query confidence
-#reset slots
-#
+class ActionlookforRequisitosCursados(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_requisitos_cursados"
 
-# Custom Field
+    def run(self, dispatcher, tracker, domain):
+        collection = Database('kb', 'ReqCursados').collection
+        matricula = int(tracker.get_slot("matricula"))
+        if matricula:
+            query = {
+                "matricula": matricula,
+                'matricula': {'$exists': True}
+            }
+            projection = {
+                "matricula": 1,
+                "asignatura": 1,
+                "nombre": 1,
+                "creditos": 1,
+                "calificacion": 1
+            }
+            result = collection.find(query, projection=projection)
+            requisitos = [(doc["asignatura"], doc["nombre"], doc["creditos"], doc["calificacion"]) for doc in result]
+            dispatcher.utter_template("utter_requisitos_cursados", tracker,
+                                      requisitos=requisitos)
+        return []
+
+
+class ActionlookforCreditosAcumulados(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_creditos_acumulados"
+
+    def run(self, dispatcher, tracker: Tracker, domain) -> list:
+        collection = Database('kb', 'ReqCursados').collection
+        matricula = tracker.get_slot("matricula")
+        if matricula:
+            pipeline = [
+                {
+                    "$group": {
+                        "_id": "$matricula",
+                        "creditosAcumulados": {"$sum": '$creditos'}
+                    }
+                },
+            ]
+            result = [i for i in collection.aggregate(pipeline)][0]['creditosAcumulados']
+            dispatcher.utter_template("utter_creditos_acumulados", tracker, creditos=result)
+        return []
+
+
+class ActionCondicionAcademica(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_condicion_academica"
+
+    def run(self, dispatcher, tracker, domain):
+        collection = Database('kb', 'CondicionAcademica').collection
+        matricula = 20121917
+        if matricula:
+            query = {
+                "matricula": matricula,
+                'matricula': {'$exists': True}
+            }
+            projection = {
+                "condicionAcadActual": 1,
+
+            }
+            result = collection.find_one(query, projection=projection)
+            if result:
+                dispatcher.utter_template("utter_condicion_academica", tracker,
+                                      condicion=result['condicionAcadActual'])
+            else:
+                dispatcher.utter_message("Error interno")
+
+        return []
+
+class ActionCalificacion(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_ack_calificacion"
+
+    def run(self, dispatcher, tracker, domain):
+        collection = Database('kb', 'Calificaciones').collection
+        letra = "B"
+        matricula = 20121917
+        if matricula and letra:
+            query = {
+                "matricula": matricula,
+                "calificacion": letra,
+            }
+            projection = {
+                "calificacion": 1,
+
+            }
+            result = collection.find(query, projection=projection).count()
+            if result:
+                dispatcher.utter_message("Usted ha obtenido {0}".format(result))
+            else:
+                dispatcher.utter_message("Usted no ha obtenido ninguna")
+
+        return []
+
+
+class ActionCalificacionMateria(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_materia_calificacion"
+
+    def run(self, dispatcher, tracker, domain):
+        collection = Database('kb', 'Calificaciones').collection
+        letra = "B"
+        matricula = 20121917
+        if matricula and letra:
+            query = {
+                "matricula": matricula,
+                "calificacion": letra,
+            }
+            projection = {
+                "calificacion": 1,
+
+            }
+            result = collection.find(query, projection=projection).count()
+            if result:
+                dispatcher.utter_message("Usted ha obtenido {0}".format(result))
+            else:
+                dispatcher.utter_message("Usted no ha obtenido ninguna")
+
+        return []
+

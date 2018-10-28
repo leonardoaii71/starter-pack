@@ -101,6 +101,79 @@
 - Perfecto
 - Muy bien
 
+## intent:condicion_academica
+- Cual es mi condicion academica actual?
+- cual es mi condicion academica?
+- Condicion academica
+- condicion academica
+- Cóndicion Académica
+- cual es mi condicion academica
+- mi condicion academica
+
+## intent:requisitos_pendientes
+- Cuales son mis requisitos pendientes?
+- Que requisitos pendientes tengo?
+- Requisitos pendientes
+- requisitos pendientes
+- cuales son mis requisitos pendientes?
+- cuales requisitos pendientes tengo?
+- mis requisitos pendientes
+- dime los requisitos pendientes
+
+
+## intent:creditos_acumulados
+- Cuantos creditos he cursado?
+- cuantos creditos he obtenido?
+- cuantos creditos he acumulado
+- creditos acumulados
+- Creditos Acumulados
+- creditos acumulados
+
+## intent:calificacion_a
+- Cuantas A he obtenido?
+- Cuantas a he obtenido?
+- Cuantas a he sacado?
+- Cuantas a consegui?
+- Cuantas a he conseguido?
+- cuantas a tengo
+- cuantas a tengo?
+
+## intent:calificacion_b
+- cuantas B he obtenido?
+- cuantas b he obtenido?
+- Cuantas b he sacado?
+- Cuantas b consegui?
+- Cuantas b he conseguido?
+- cuantas b tengo
+- cuantas B tengo?
+
+## intent:calificacion_c
+- Cuantas C he obtenido?
+- Cuantas c he obtenido?
+
+## intent:calificacion_d
+- Cuantas D he obtenido?
+- Cuantas d he obtenido?
+
+## intent:calificacion_f
+- cuantas F he obtenido?
+- cuantas f he obtenido?
+
+## intent:calificacion_r
+- cuantas R he obtenido?
+- cuantas r he obtenido?
+
+## intent:calificacion_fn
+- cuantas FN he obtenido?
+- cuantas fn he obtenido?
+
+## intent:requisitos_cursados
+- Cuales requisitos he cursado?
+- cuales requisitos he cursado?
+- requisitos cursados
+- Cuales materias he dado?
+- cuales materias he cursado
+
 ## intent:mood_unhappy
 - no me siento bien
 - No estoy bien
@@ -132,6 +205,61 @@
 - [0-9]{8}
 
 
+## intent:retiro_parcial
+- Retiro parcial
+- retiro parcial
+
+## intent:retiro_total
+- Retiro Total
+- retiro total
+- Retiro total
+
+## intent:retiro_prematricula
+- Retiro Prematricula
+- retiro prematricula
+- Retiro de prematricula
+
+
+## intent:graduacion_sti
+- Graduacion sti
+- graduacion santiago
+- graduacion campus santiago
+- Graduacion de Santiago
+- graduacion sti
+
+## intent:graduacion_sta
+- Graduacion sta
+- graduacion santo domingo
+- graduacion campus santo tomas de aquino
+- Graduacion de Santo Domingo
+- graduacion sta
+
+## intent:cuando_retiro
+- Cuando es el retiro?
+- cuando es el retiro
+- cuando es el retiro?
+
+## intent:cuando_graduacion
+- Cuando es la graduacion?
+- cuando es la graduacion
+- cuando es la graduacion?
+
+## intent:mi_indice
+- Cual es mi indice?
+- indice academico
+- cual es mi indice?
+- como esta mi indice academico
+
+## intent:indice_acumulado
+- Indice Acumulado
+- indice acumulado
+- Indice acumulado
+
+## intent:indice_del_periodo
+- Indice del periodo
+- indice del periodo
+- Indice periodo
+
 ## intent:query_event
 - cuando es el [Inicio de docencia](event)
 - cuando es el [Inicio de docencia](event)?
@@ -155,10 +283,6 @@
 - Cuando es el [Aniversario de la fundacion de PUCMM](event)?
 - cuando es el [Aniversario de la fundacion de PUCMM](event)
 - cuando es el [Aniversario de la fundacion de PUCMM](event)?
-- cuando es la [Graduacion Campus Santo Tomas de Aquino](event)
-- cuando es la [Graduacion Campus Santo Tomas de Aquino](event)?
-- Cuando es la [Graduacion Campus Santo Tomas de Aquino](event)?
-- Cuando es la [Graduacion Campus Santo Tomas de Aquino](event)
 - cuando es el [Dia de Nuestra Señora de las Mercedes](event)
 - cuando es el [Dia de Nuestra Señora de las Mercedes](event)?
 - Cuando es el [Dia de Nuestra Señora de las Mercedes](event)?
@@ -204,10 +328,6 @@
 - cuando es la [Solicitud de cambio de carrera](event)?
 - Cuando es la [Solicitud de cambio de carrera](event)?
 - Cuando es la [Solicitud de cambio de carrera](event)
-- cuando es la [Fecha limite para el retiro parcial](event)
-- cuando es la [Fecha limite para el retiro parcial](event)?
-- Cuando es la [Fecha limite para el retiro parcial](event)?
-- Cuando es la [Fecha limite para el retiro parcial](event)
 - cuando es la [Solicitud de revision de calificaciones finales](event)
 - cuando es la [Solicitud de revision de calificaciones finales](event)?
 - Cuando es la [Solicitud de revision de calificaciones finales](event)?
@@ -228,10 +348,6 @@
 - cuando es la [Prematricula](event)?
 - Cuando es la [Prematricula](event)?
 - Cuando es la [Prematricula](event)
-- cuando es la [Fecha limite para retiro total](event)
-- cuando es la [Fecha limite para retiro total](event)?
-- Cuando es la [Fecha limite para retiro total](event)?
-- Cuando es la [Fecha limite para retiro total](event)
 - cuando es el [Cuarto pago de matricula](event)
 - cuando es el [Cuarto pago de matricula](event)?
 - Cuando es el [Cuarto pago de matricula](event)?
@@ -276,10 +392,6 @@
 - cuando es el [Dia de Duarte](event)?
 - Cuando es el [Dia de Duarte](event)?
 - cuando es el [Dia de Duarte](event)
-- cuando es la [Graduación Campus Santiago](event)
-- cuando es la [Graduación Campus Santiago](event)?
-- Cuando es la [Graduación Campus Santiago](event)?
-- Cuando es la [Graduación Campus Santiago](event)
 - cuando es la [Feria Expo PUCMM](event)
 - cuando es la [Feria Expo PUCMM](event)?
 - Cuando es la [Feria Expo PUCMM](event)?
@@ -309,10 +421,6 @@
 - En que fecha es el [Aniversario de la fundacion de PUCMM](event)?
 - en que fecha es el [Aniversario de la fundacion de PUCMM](event)
 - en que fecha es el [Aniversario de la fundacion de PUCMM](event)?
-- en que fecha es la [Graduacion Campus Santo Tomas de Aquino](event)
-- en que fecha es la [Graduacion Campus Santo Tomas de Aquino](event)?
-- En que fecha es la [Graduacion Campus Santo Tomas de Aquino](event)?
-- En que fecha es la [Graduacion Campus Santo Tomas de Aquino](event)
 - en que fecha es el [Dia de Nuestra Señora de las Mercedes](event)
 - en que fecha es el [Dia de Nuestra Señora de las Mercedes](event)?
 - En que fecha es el [Dia de Nuestra Señora de las Mercedes](event)?
@@ -358,26 +466,14 @@
 - en que fecha es la [Solicitud de cambio de carrera](event)?
 - En que fecha es la [Solicitud de cambio de carrera](event)?
 - En que fecha es la [Solicitud de cambio de carrera](event)
-- en que fecha es la [Fecha limite para el retiro parcial](event)
-- en que fecha es la [Fecha limite para el retiro parcial](event)?
-- En que fecha es la [Fecha limite para el retiro parcial](event)?
-- En que fecha es la [Fecha limite para el retiro parcial](event)
 - en que fecha es la [Solicitud de revision de calificaciones finales](event)
 - en que fecha es la [Solicitud de revision de calificaciones finales](event)?
 - En que fecha es la [Solicitud de revision de calificaciones finales](event)?
 - En que fecha es la [Solicitud de revision de calificaciones finales](event)
-- en que fecha es el [Retiro de prematricula](event)
-- en que fecha es el [Retiro de prematricula](event)?
-- En que fecha es el [Retiro de prematricula](event)?
-- en que fecha es el [Retiro de prematricula](event)
 - en que fecha es la [Prematricula](event)
 - en que fecha es la [Prematricula](event)?
 - En que fecha es la [Prematricula](event)?
 - En que fecha es la [Prematricula](event)
-- en que fecha es la [Fecha limite para retiro total](event)
-- en que fecha es la [Fecha limite para retiro total](event)?
-- En que fecha es la [Fecha limite para retiro total](event)?
-- En que fecha es la [Fecha limite para retiro total](event)
 - en que fecha es el [Cuarto pago de matricula](event)
 - en que fecha es el [Cuarto pago de matricula](event)?
 - En que fecha es el [Cuarto pago de matricula](event)?
@@ -422,10 +518,6 @@
 - en que fecha es el [Dia de Duarte](event)?
 - En que fecha es el [Dia de Duarte](event)?
 - en que fecha es el [Dia de Duarte](event)
-- en que fecha es la [Graduacion Campus Santiago](event)
-- en que fecha es la [Graduacion Campus Santiago](event)?
-- En que fecha es la [Graduacion Campus Santiago](event)?
-- En que fecha es la [Graduacion Campus Santiago](event)
 - en que fecha es la [Feria Expo PUCMM](event)
 - en que fecha es la [Feria Expo PUCMM](event)?
 - En que fecha es la [Feria Expo PUCMM](event)?
@@ -455,10 +547,6 @@
 - En cual fecha es el [Aniversario de la fundacion de PUCMM](event)?
 - en cual fecha es el [Aniversario de la fundacion de PUCMM](event)
 - en cual fecha es el [Aniversario de la fundacion de PUCMM](event)?
-- en cual fecha es la [Graduacion Campus Santo Tomas de Aquino](event)
-- en cual fecha es la [Graduacion Campus Santo Tomas de Aquino](event)?
-- En cual fecha es la [Graduacion Campus Santo Tomas de Aquino](event)?
-- En cual fecha es la [Graduacion Campus Santo Tomas de Aquino](event)
 - en cual fecha es el [Dia de Nuestra Señora de las Mercedes](event)
 - en cual fecha es el [Dia de Nuestra Señora de las Mercedes](event)?
 - En cual fecha es el [Dia de Nuestra Señora de las Mercedes](event)?
@@ -504,26 +592,14 @@
 - en cual fecha es la [Solicitud de cambio de carrera](event)?
 - En cual fecha es la [Solicitud de cambio de carrera](event)?
 - En cual fecha es la [Solicitud de cambio de carrera](event)
-- en cual fecha es la [Fecha limite para el retiro parcial](event)
-- en cual fecha es la [Fecha limite para el retiro parcial](event)?
-- En cual fecha es la [Fecha limite para el retiro parcial](event)?
-- En cual fecha es la [Fecha limite para el retiro parcial](event)
 - en cual fecha es la [Solicitud de revision de calificaciones finales](event)
 - en cual fecha es la [Solicitud de revision de calificaciones finales](event)?
 - En cual fecha es la [Solicitud de revision de calificaciones finales](event)?
 - En cual fecha es la [Solicitud de revision de calificaciones finales](event)
-- en cual fecha es el [Retiro de prematricula](event)
-- en cual fecha es el [Retiro de prematricula](event)?
-- En cual fecha es el [Retiro de prematricula](event)?
-- en cual fecha es el [Retiro de prematricula](event)
 - en cual fecha es la [Prematricula](event)
 - en cual fecha es la [Prematricula](event)?
 - En cual fecha es la [Prematricula](event)?
 - En cual fecha es la [Prematricula](event)
-- en cual fecha es la [Fecha limite para retiro total](event)
-- en cual fecha es la [Fecha limite para retiro total](event)?
-- En cual fecha es la [Fecha limite para retiro total](event)?
-- En cual fecha es la [Fecha limite para retiro total](event)
 - en cual fecha es el [Cuarto pago de matricula](event)
 - en cual fecha es el [Cuarto pago de matricula](event)?
 - En cual fecha es el [Cuarto pago de matricula](event)?
@@ -568,10 +644,6 @@
 - en cual fecha es el [Dia de Duarte](event)?
 - En cual fecha es el [Dia de Duarte](event)?
 - en cual fecha es el [Dia de Duarte](event)
-- en cual fecha es la [Graduacion Campus Santiago](event)
-- en cual fecha es la [Graduacion Campus Santiago](event)?
-- En cual fecha es la [Graduacion Campus Santiago](event)?
-- En cual fecha es la [Graduacion Campus Santiago](event)
 - en cual fecha es la [Feria Expo PUCMM](event)
 - en cual fecha es la [Feria Expo PUCMM](event)?
 - En cual fecha es la [Feria Expo PUCMM](event)?
@@ -601,10 +673,6 @@
 - Cuando sera el [Aniversario de la fundacion de PUCMM](event)?
 - cuando sera el [Aniversario de la fundacion de PUCMM](event)
 - cuando sera el [Aniversario de la fundacion de PUCMM](event)?
-- cuando sera la [Graduacion Campus Santo Tomas de Aquino](event)
-- cuando sera la [Graduacion Campus Santo Tomas de Aquino](event)?
-- Cuando sera la [Graduacion Campus Santo Tomas de Aquino](event)?
-- Cuando sera la [Graduacion Campus Santo Tomas de Aquino](event)
 - cuando sera el [Dia de Nuestra Señora de las Mercedes](event)
 - cuando sera el [Dia de Nuestra Señora de las Mercedes](event)?
 - Cuando sera el [Dia de Nuestra Señora de las Mercedes](event)?
@@ -650,26 +718,14 @@
 - cuando sera la [Solicitud de cambio de carrera](event)?
 - Cuando sera la [Solicitud de cambio de carrera](event)?
 - Cuando sera la [Solicitud de cambio de carrera](event)
-- cuando sera la [Fecha limite para el retiro parcial](event)
-- cuando sera la [Fecha limite para el retiro parcial](event)?
-- Cuando sera la [Fecha limite para el retiro parcial](event)?
-- Cuando sera la [Fecha limite para el retiro parcial](event)
 - cuando sera la [Solicitud de revision de calificaciones finales](event)
 - cuando sera la [Solicitud de revision de calificaciones finales](event)?
 - Cuando sera la [Solicitud de revision de calificaciones finales](event)?
 - Cuando sera la [Solicitud de revision de calificaciones finales](event)
-- cuando sera el [Retiro de prematricula](event)
-- cuando sera el [Retiro de prematricula](event)?
-- Cuando sera el [Retiro de prematricula](event)?
-- cuando sera el [Retiro de prematricula](event)
 - cuando sera la [Prematricula](event)
 - cuando sera la [Prematricula](event)?
 - Cuando sera la [Prematricula](event)?
 - Cuando sera la [Prematricula](event)
-- cuando sera la [Fecha limite para retiro total](event)
-- cuando sera la [Fecha limite para retiro total](event)?
-- Cuando sera la [Fecha limite para retiro total](event)?
-- Cuando sera la [Fecha limite para retiro total](event)
 - cuando sera el [Cuarto pago de matricula](event)
 - cuando sera el [Cuarto pago de matricula](event)?
 - Cuando sera el [Cuarto pago de matricula](event)?
@@ -714,10 +770,6 @@
 - cuando sera el [Dia de Duarte](event)?
 - Cuando sera el [Dia de Duarte](event)?
 - cuando sera el [Dia de Duarte](event)
-- cuando sera la [Graduacion Campus Santiago](event)
-- cuando sera la [Graduacion Campus Santiago](event)?
-- Cuando sera la [Graduacion Campus Santiago](event)?
-- Cuando sera la [Graduacion Campus Santiago](event)
 - cuando sera la [Feria Expo PUCMM](event)
 - cuando sera la [Feria Expo PUCMM](event)?
 - Cuando sera la [Feria Expo PUCMM](event)?
@@ -747,10 +799,6 @@
 - Que dia es el [Aniversario de la fundacion de PUCMM](event)?
 - que dia es el [Aniversario de la fundacion de PUCMM](event)
 - que dia es el [Aniversario de la fundacion de PUCMM](event)?
-- que dia es la [Graduacion Campus Santo Tomas de Aquino](event)
-- que dia es la [Graduacion Campus Santo Tomas de Aquino](event)?
-- Que dia es la [Graduacion Campus Santo Tomas de Aquino](event)?
-- Que dia es la [Graduacion Campus Santo Tomas de Aquino](event)
 - que dia es el [Segundo pago de matricula](event)
 - que dia es el [Segundo pago de matricula](event)?
 - Que dia es el [Segundo pago de matricula](event)?
@@ -791,26 +839,14 @@
 - que dia es la [Solicitud de cambio de carrera](event)?
 - Que dia es la [Solicitud de cambio de carrera](event)?
 - Que dia es la [Solicitud de cambio de carrera](event)
-- que dia es la [Fecha limite para el retiro parcial](event)
-- que dia es la [Fecha limite para el retiro parcial](event)?
-- Que dia es la [Fecha limite para el retiro parcial](event)?
-- Que dia es la [Fecha limite para el retiro parcial](event)
 - que dia es la [Solicitud de revision de calificaciones finales](event)
 - que dia es la [Solicitud de revision de calificaciones finales](event)?
 - Que dia es la [Solicitud de revision de calificaciones finales](event)?
 - Que dia es la [Solicitud de revision de calificaciones finales](event)
-- que dia es el [Retiro de prematricula](event)
-- que dia es el [Retiro de prematricula](event)?
-- Que dia es el [Retiro de prematricula](event)?
-- que dia es el [Retiro de prematricula](event)
 - que dia es la [Prematricula](event)
 - que dia es la [Prematricula](event)?
 - Que dia es la [Prematricula](event)?
 - Que dia es la [Prematricula](event)
-- que dia es la [Fecha limite para retiro total](event)
-- que dia es la [Fecha limite para retiro total](event)?
-- Que dia es la [Fecha limite para retiro total](event)?
-- Que dia es la [Fecha limite para retiro total](event)
 - que dia es el [Cuarto pago de matricula](event)
 - que dia es el [Cuarto pago de matricula](event)?
 - Que dia es el [Cuarto pago de matricula](event)?
@@ -855,10 +891,6 @@
 - que dia es el [Dia de Duarte](event)?
 - Que dia es el [Dia de Duarte](event)?
 - que dia es el [Dia de Duarte](event)
-- que dia es la [Graduacion Campus Santiago](event)
-- que dia es la [Graduacion Campus Santiago](event)?
-- Que dia es la [Graduacion Campus Santiago](event)?
-- Que dia es la [Graduacion Campus Santiago](event)
 - que dia es la [Feria Expo PUCMM](event)
 - que dia es la [Feria Expo PUCMM](event)?
 - Que dia es la [Feria Expo PUCMM](event)?
@@ -937,8 +969,6 @@
 - que es la [modificacion de prematricula](proceso)
 - que son [bajas por prerrequisitos](proceso)?
 - que son [bajas por prerrequisitos](proceso)
-- que es el [retiro de prematricula](proceso)?
-- que es el [retiro de prematricula](proceso)
 - que es el [cambio de campus](proceso)?
 - que es el [cambio de campus](proceso)
 - que es [cursar asignaturas en otro campus](proceso)?
@@ -973,8 +1003,6 @@
 - que es el [reporte de calificaciones](proceso)
 - que es la [graduacion](proceso)?
 - que es la [graduacion](proceso)
-- que es el [retiro total y parcial](proceso)?
-- que es el [retiro total y parcial](proceso)
 - que es el [cambio de carrera](proceso)?
 - que es el [cambio de carrera](proceso)
 - que es la [readmision](proceso)?
@@ -1009,14 +1037,6 @@
 - como realizo la [modificacion de prematricula](proceso)
 - como se realiza la [modificacion de prematricula](proceso)
 - como hago la [modificacion de prematricula](proceso)
-- cual es el procedimiento para el [retiro de prematricula](proceso)?
-- como realizo el [retiro de prematricula](proceso)?
-- como se realiza el [retiro de prematricula](proceso)?
-- como hago el [retiro de prematricula](proceso)?
-- cual es el procedimiento para el [retiro de prematricula](proceso)
-- como realizo el [retiro de prematricula](proceso)
-- como se realiza el [retiro de prematricula](proceso)
-- como hago el [retiro de prematricula](proceso)
 - cual es el procedimiento para el [cambio de campus](proceso)?
 - como realizo el [cambio de campus](proceso)?
 - como se realiza el [cambio de campus](proceso)?
@@ -1077,14 +1097,6 @@
 - como realizo la [graduacion](proceso)
 - como se realiza la [graduacion](proceso)
 - como hago la [graduacion](proceso)
-- cual es el procedimiento para el [retiro total y parcial](proceso)?
-- como realizo el [retiro total y parcial](proceso)?
-- como se realiza el [retiro total y parcial](proceso)?
-- como hago el [retiro total y parcial](proceso)?
-- cual es el procedimiento para el [retiro total y parcial](proceso)
-- como realizo el [retiro total y parcial](proceso)
-- como se realiza el [retiro total y parcial](proceso)
-- como hago el [retiro total y parcial](proceso)
 - cual es el procedimiento para la [cambio de carrera](proceso)?
 - como realizo la [cambio de carrera](proceso)?
 - como se realiza la [cambio de carrera](proceso)?
@@ -1170,8 +1182,6 @@
 - cual es la advertencia para la [revision de calificaciones](proceso)
 - cual es la advertencia para la [graduacion](proceso)?
 - cual es la advertencia para la [graduacion](proceso)
-- cual es la advertencia para el [retiro total y parcial](proceso)?
-- cual es la advertencia para el [retiro total y parcial](proceso)
 - cual es la advertencia para el [cambio de carrera](proceso)?
 - cual es la advertencia para el [cambio de carrera](proceso)
 - cual es la advertencia para la [readmision](proceso)?
@@ -1206,11 +1216,6 @@
 
 ## synonym:Aniversario de la fundacion PUCMM
 - aniversario de la fundacion de pucmm
-
-## synonym:Graduacion Campus Santo Tomas de Aquino
-- graduacion santo domingo
-- proxima graduacion santo tomas de aquino
-- siguiente graduacion
 
 ## synonym:Dia de Nuestra Senora de las Mercedes
 - dia de las mercedes
