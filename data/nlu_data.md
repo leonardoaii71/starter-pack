@@ -129,43 +129,31 @@
 - Creditos Acumulados
 - creditos acumulados
 
-## intent:calificacion_a
-- Cuantas A he obtenido?
-- Cuantas a he obtenido?
-- Cuantas a he sacado?
-- Cuantas a consegui?
-- Cuantas a he conseguido?
-- cuantas a tengo
-- cuantas a tengo?
-
-## intent:calificacion_b
-- cuantas B he obtenido?
-- cuantas b he obtenido?
-- Cuantas b he sacado?
-- Cuantas b consegui?
-- Cuantas b he conseguido?
-- cuantas b tengo
-- cuantas B tengo?
-
-## intent:calificacion_c
-- Cuantas C he obtenido?
-- Cuantas c he obtenido?
-
-## intent:calificacion_d
-- Cuantas D he obtenido?
-- Cuantas d he obtenido?
-
-## intent:calificacion_f
-- cuantas F he obtenido?
-- cuantas f he obtenido?
-
-## intent:calificacion_r
-- cuantas R he obtenido?
-- cuantas r he obtenido?
-
-## intent:calificacion_fn
-- cuantas FN he obtenido?
-- cuantas fn he obtenido?
+## intent:cuantas_calificacion
+- Cuantas[A](calificacion)he obtenido?
+- Cuantas[a](calificacion)he obtenido?
+- Cuantas[a](calificacion)he sacado?
+- Cuantas[a](calificacion)consegui?
+- Cuantas[a](calificacion)he conseguido?
+- cuantas[a](calificacion)tengo
+- cuantas[a](calificacion)tengo?
+- cuantas [B](calificacion) he obtenido?
+- cuantas [b](calificacion) he obtenido?
+- Cuantas [b](calificacion) he sacado?
+- Cuantas [b](calificacion) consegui?
+- Cuantas [b](calificacion) he conseguido?
+- cuantas [b](calificacion) tengo
+- cuantas [B](calificacion) tengo?
+- Cuantas [C](calificacion) he obtenido?
+- Cuantas [c](calificacion) he obtenido?
+- Cuantas [D](calificacion) he obtenido?
+- Cuantas [d](calificacion) he obtenido?
+- cuantas [F](calificacion) he obtenido?
+- cuantas [f](calificacion) he obtenido?
+- cuantas [R](calificacion) he obtenido?
+- cuantas [r](calificacion) he obtenido?
+- cuantas [FN](calificacion) he obtenido?
+- cuantas [fn](calificacion) he obtenido?
 
 ## intent:requisitos_cursados
 - Cuales requisitos he cursado?
@@ -173,6 +161,7 @@
 - requisitos cursados
 - Cuales materias he dado?
 - cuales materias he cursado
+- cuales requisitos he pasado
 
 ## intent:mood_unhappy
 - no me siento bien
@@ -192,14 +181,24 @@
 - [20132013](matricula)
 - [20122012](matricula)
 - [12345678](matricula)
-- mipassword
-- 06505641
-- dfgdsd34f
-- asdffff
-- asdfasdf
-- m80943295824
-- jljdf8384
-- OOV
+- [mipassword](password)
+- [06505641](password)
+- [dfgdsd34f](password)
+- [asdffff](password)
+- [asdfasdf](password)
+- [m80943295824](password)
+- [micontraseña](password)
+- [leonard1](password)
+- [8095326897](password)
+- [jljdf8384](password)
+- [3838434n21](password)
+- [3233322341](password)
+- [829453053](password)
+- [23343](password)
+- [4384u434](password)
+- [334343421](password)
+- [323438822838ff1](password)
+- [OOV](password)
 
 ## regex:matricula
 - [0-9]{8}
@@ -1259,7 +1258,26 @@
 ## synonym:Limite para pagar segunda cuota graduacion
 - segunda cuota del derecho de graduacion
 
+## synonym:A
+- a
 
+## synonym:B
+- b
+
+## synonym:C
+- c
+
+## synonym:D
+- D
+
+## synonym:F
+- f
+
+## synonym:R
+- r
+
+## synonym:FN
+- fn
 
 ## synonym:Fecha limite para depositar documentos pendientes de graduacion
 - deposito de documentos de graduacion

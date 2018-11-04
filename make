@@ -13,9 +13,10 @@ python -m rasa_core_sdk.endpoint --actions actions
 
 #interactive learning:
 python -m rasa_core.train --online -d domain.yml -s data/stories.md -o models/current/dialogue -u models/current/nlu
+python -m rasa_core.train --online -d domain.yml -s data/stories.md -o models/current/dialogue -u models/current/nlu --endpoints endpoints.yml
 
 Activate BotProject
 cd C:\Users\Leonardo\Documents\GitHub\starter-pack
 
 
-python -m rasa_core.run -d models/dialogue -u models/nlu/current --port 5002 --credentials credentials.yml
+python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --port 5002 --credentials credentials.yml -c telegram --endpoints endpoints.yml

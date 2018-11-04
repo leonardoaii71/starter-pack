@@ -37,13 +37,8 @@ intents:
   - requisitos_cursados
   - requisitos_pendientes
   - creditos_acumulados
-  - calificacion_a
-  - calificacion_b
-  - calificacion_c
-  - calificacion_d
-  - calificacion_f
-  - calificacion_r
-  - calificacion_fn
+  - cuantas_calificacion
+  - Login
 
 entities:
   - event
@@ -71,10 +66,10 @@ slots:
   requested_slot:
     type: unfeaturized
   matricula:
-    type: unfeaturized
+    type: text
     initial_value: 20121917
   password:
-    type: unfeaturized
+    type: text
   indice:
     type: text
   calificacion:
@@ -203,9 +198,9 @@ templates:
   utter_cual_graduacion:
   - text: " ¿A cúal graduación te refieres?"
     buttons:
-    - title: "graduación Campus Santiago"
+    - title: "graduación CSTI"
       payload: "graduacion sti"
-    - title: "graduación Campus Santo Tomás de Aquino"
+    - title: "graduación CSTA"
       payload: "graduacion sta"
 
   utter_indice_acumulado:
@@ -269,65 +264,68 @@ templates:
   utter_creditos_acumulados:
     - text: "La cantidad de créditos acumulados actualmente es: {creditos}"
 
+  utter_welcome:
+    - text: "Bienvenido {username}! Puedes continuar preguntandome lo que quieres saber"
+
 actions:
   # all the utter actions from the templates, plus any custom actions
-  - utter_greet
-  - utter_thank
-  - utter_bye
-  - utter_sorry
-  - utter_date
-  - utter_did_that_help
-  - utter_happy
-  - utter_ack_eventdate
-  - utter_ack_prsnt_eventdate
-  - utter_goodbye
-  - utter_another_question
-  - utter_ask_username
-  - utter_default
-  - utter_suggestions
-  - utter_ack_asuetos
-  - utter_event_not_found
-  - action_look_event
+  - action_ack_calificacion
   - action_ack_eventdate
-  - action_suggest
-  - action_look_asuetos
-  - action_look_important
-  - utter_ack_number_asuetos
-  - utter_ack_number_importantes
-  - utter_you_should_ask
-  - utter_indice
-  - utter_ask_matricula
-  - utter_ask_password
-  - utter_disamb_intro
+  - action_condicion_academica
   - action_count_asuetos
   - action_count_important
+  - action_creditos_acumulados
+  - action_fallo
+  - action_login_form
+  - action_look_asuetos
+  - action_look_event
+  - action_look_important
+  - action_process_advertencia
   - action_process_descripcion
   - action_process_importancia
   - action_process_penalidad
-  - action_process_advertencia
   - action_process_procedimiento
-  - utter_retiro_total_fecha
+  - action_requisitos_cursados
+  - action_requisitos_pendientes
+  - action_suggest
+  - utter_ack_asuetos
+  - utter_ack_eventdate
+  - utter_ack_number_asuetos
+  - utter_ack_number_importantes
+  - utter_ack_prsnt_eventdate
+  - utter_adelante
+  - utter_algo_mas
+  - utter_another_question
+  - utter_ask_matricula
+  - utter_ask_password
+  - utter_ask_username
+  - utter_bye
+  - utter_condicion_academica
+  - utter_creditos_acumulados
+  - utter_cual_graduacion
+  - utter_cual_indice
+  - utter_cual_retiro
+  - utter_date
+  - utter_default
+  - utter_did_that_help
+  - utter_disamb_intro
+  - utter_event_not_found
+  - utter_goodbye
+  - utter_graduacion_sta_fecha
+  - utter_graduacion_sti_fecha
+  - utter_greet
+  - utter_happy
+  - utter_indice
+  - utter_indice_acumulado
+  - utter_indice_periodo
+  - utter_requisitos_cursados
+  - utter_requisitos_pendientes
   - utter_retiro_parcial_fecha
   - utter_retiro_prematricula_fecha
-  - utter_cual_retiro
-  - utter_cual_indice
-  - utter_indice_periodo
-  - utter_indice_acumulado
-  - utter_graduacion_sta_fecha
-  - utter_cual_graduacion
-  - utter_graduacion_sti_fecha
-  - utter_algo_mas
-  - utter_adelante
-  - utter_condicion_academica
-  - utter_requisitos_pendientes
-  - utter_creditos_acumulados
-  - utter_requisitos_cursados
-  - action_requisitos_pendientes
-  - action_creditos_acumulados
-  - action_condicion_academica
-  - action_requisitos_cursados
-  - action_login_form
-  - action_ack_calificacion
-  - action_fallo
+  - utter_retiro_total_fecha
+  - utter_sorry
+  - utter_suggestions
+  - utter_thank
+  - utter_you_should_ask
 
 

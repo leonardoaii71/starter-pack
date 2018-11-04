@@ -16,7 +16,11 @@
 
 ##deny
 * deny
-    -utter_bye
+    - utter_bye
+
+## Bienvenida
+* start
+    -utter_greet
 
 ## consultar evento ambiguo
 * query_event{"event": "prematricula"}
@@ -86,15 +90,15 @@
 
 ## Generated Story 3741297509561492559
 ##* query_indice
-##    - utter_ask_matricula
+##    - action_login_form
 ##    - slot{"requested_slot": "matricula"}
 ##* informar{"matricula": "20121917"}
+##    - action_login_form
 ##    - slot{"matricula": "20121917"}
 ##    - slot{"requested_slot": "password"}
-##    - utter_ask_password
 ##* informar{"password": "123456"}
-##    - slot{"password": "123456"}
-##    - utter_indice
+##    - action_login_form
+
 
 ## Generated Story -3767670091850773124
 * mi_indice
@@ -186,46 +190,31 @@
 
 ## Generated Story -806123001115259216
 * requisitos_cursados
+> login
     - action_requisitos_cursados
 
-## Calificaciones a
-* calificacion_a
-  - slot{"calificacion": "A"}
-  - action_ack_calificacion
-
-## Calificaciones b
-* calificacion_b
-  - slot{"calificacion": "B"}
-  - action_ack_calificacion
-
-## Calificaciones c
-* calificacion_c
-  - slot{"calificacion": "C"}
-  - action_ack_calificacion
-
-## Calificaciones d
-* calificacion_d
-  - slot{"calificacion": "D"}
-  - action_ack_calificacion
-
-## Calificaciones f
-* calificacion_f
-  - slot{"calificacion": "F"}
-  - action_ack_calificacion
-
-## Calificaciones r
-* calificacion_r
-  - slot{"calificacion": "R"}
-  - action_ack_calificacion
-
-## Calificaciones fn
-* calificacion_fn
-  - slot{"calificacion": "FN"}
-  - action_ack_calificacion
-
-## Generated Story 1295269183872706590
-* informar
-* calificacion_a{"calificacion": "A"}
+## Generated Story 5102960786421612016
+* cuantas_calificacion{"calificacion": "A"}
     - slot{"calificacion": "A"}
+> login
     - action_ack_calificacion
+
+## Generated Story -2157983280237184028
+* cuantas_calificacion{"calificacion": "B"}
+    - slot{"calificacion": "B"}
+> login
+    - action_ack_calificacion
+
+## Generated Story -3177612128008345689
+> login
+* Login
+    - action_login_form
+    - slot{"requested_slot": "matricula"}
+* informar{"matricula": "20121917"}
+    - slot{"matricula": "20121917"}
+* informar{"password": "321"}
+    - slot{"password": "321"}
+    - action_login_form
+    - slot{"password": "321"}
+    - slot{"username": "Leonardo"}
 

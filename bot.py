@@ -32,12 +32,12 @@ def train_dialogue(domain_file="domain.yml",
 
     agent = Agent(domain_file,
                   policies=[MemoizationPolicy(max_history=2),
-                            KerasPolicy()])
+                            KerasPolicy(), fallback])
 
     training_data = agent.load_data(training_data_file)
     agent.train(
             training_data,
-            epochs=400,
+            epochs=300,
             batch_size=100,
             validation_split=0.2
     )
@@ -54,16 +54,14 @@ def train_nlu():
     training_data = load_data('data/nlu_data.md')
     trainer = Trainer(config.load("nlu_config.yml"))
     trainer.train(training_data)
-    model_directory = trainer.persist('models/current/',
-                                      fixed_model_name="nlu")
+    model_directory = trainer.persist('models',
+                                      fixed_model_name="nlu", project_name='current')
 
     return model_directory
 
 
 def run(serve_forever=True):
-    # _agent = load_agent("models/current/dialogue",
-    #                     interpreter=_interpreter,
-    #                    endpoints=endpoints)
+
     AvailableEndpoints = namedtuple('AvailableEndpoints', 'nlg '
                                                           'nlu '
                                                           'action '
@@ -74,14 +72,11 @@ def run(serve_forever=True):
         endpoints = AvailableEndpoints(action=_endpoints, nlg=None, nlu=None, model=None)
         _interpreter = RasaNLUInterpreter("models/current/nlu/")
 
-        _sagent = SuperAgent.load("models/current/dialogue",
-                                interpreter=_interpreter,
-                                generator=endpoints.nlg,
-                                tracker_store=None,
-                                action_endpoint=endpoints.action,
-                                rules_file='rules.yml')
+        _agent = load_agent("models/current/dialogue",
+                            interpreter=_interpreter,
+                            endpoints=endpoints)
 
-        serve_application(_sagent,
+        serve_application(_agent,
                           "cmdline",
                           constants.DEFAULT_SERVER_PORT,)
     except:

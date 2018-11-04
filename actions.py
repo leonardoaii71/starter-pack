@@ -4,31 +4,51 @@ import pytz
 from rasa_core_sdk import Action, Tracker
 from rasa_core_sdk.events import SlotSet, UserUtteranceReverted
 from pymongo import MongoClient
-from rasa_core_sdk.forms import FormAction, FreeTextFormField, FormField
+from rasa_core_sdk.forms import FormAction, EntityFormField, FormField
 from Database import Database
 from hunspell import hunspell
 
-#collection = Database('kb', 'Calendarios').collection
+
+# collection = Database('kb', 'Calendarios').collection
 
 # Actions Eventos
 
 
-class ActionLogIn(Action):
+class ActionLogIn(FormAction):
+    RANDOMIZE = False
+
+    @staticmethod
+    def required_fields():
+        return [
+            EntityFormField("matricula", "matricula"),
+            EntityFormField("password", "password"),
+        ]
 
     def name(self):
         return 'action_login_form'
 
-    def run(self, dispatcher, tracker, domain):
+    def submit(self, dispatcher, tracker, domain):
         collection = Database('kb', 'Users').collection
-        passwd = str(tracker.get_slot("password")),
+        passwd = str(tracker.get_slot("password"))
         matricula = str(tracker.get_slot("matricula"))
         query = {
-        "password" : passwd,
-        "matricula" : matricula
+            "password": passwd,
+            "matricula": matricula
         }
-        result = collection.find_one(query)
+        if passwd and matricula:
+            result = collection.find_one(query)
+        else:
+            dispatcher.utter_message("Tengo dificultad reconociendo tu matricula, "
+                                     "asegúrate de que esté sin guiones ni espacios")
+            return [UserUtteranceReverted()]
+
         if result:
-            return [SlotSet("indice", result["indice"])]
+            dispatcher.utter_template("utter_welcome", tracker,
+                                      username=result['nombre'])
+            return [SlotSet("username", result["nombre"])]
+        else:
+            dispatcher.utter_message("matricula o contraseña incorrectos")
+            return [UserUtteranceReverted()]
         return []
 
 
@@ -130,7 +150,6 @@ class ActionLookForAsuetos(Action):
     def run(self, dispatcher, tracker: Tracker, domain):
         # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
         eventdate = tracker.get_slot('date')
-
 
         query = {
             "date": {"$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))}
@@ -275,7 +294,7 @@ class ActionlookforProcessDescription(Action):
             }
             result = collection.find_one(query, projection=projection)
             dispatcher.utter_template("utter_descripcion_proceso", tracker,
-                                          descripcion=result['descripcion'])
+                                      descripcion=result['descripcion'])
 
         return []
 
@@ -371,8 +390,8 @@ class ActionlookforProcessProcedimiento(Action):
                                       procedimiento=result['procedimiento'])
         return []
 
-class fallb(Action):
 
+class fallb(Action):
     def name(self):
         return 'action_fallo'
 
@@ -476,11 +495,12 @@ class ActionCondicionAcademica(Action):
             result = collection.find_one(query, projection=projection)
             if result:
                 dispatcher.utter_template("utter_condicion_academica", tracker,
-                                      condicion=result['condicionAcadActual'])
+                                          condicion=result['condicionAcadActual'])
             else:
                 dispatcher.utter_message("Error interno")
 
         return []
+
 
 class ActionCalificacion(Action):
     def name(self):
@@ -489,8 +509,8 @@ class ActionCalificacion(Action):
 
     def run(self, dispatcher, tracker, domain):
         collection = Database('kb', 'Calificaciones').collection
-        letra = "B"
-        matricula = 20121917
+        letra = str(tracker.get_slot('calificacion')).upper()
+        matricula = int(tracker.get_slot('matricula'))
         if matricula and letra:
             query = {
                 "matricula": matricula,
@@ -498,7 +518,6 @@ class ActionCalificacion(Action):
             }
             projection = {
                 "calificacion": 1,
-
             }
             result = collection.find(query, projection=projection).count()
             if result:
@@ -534,4 +553,3 @@ class ActionCalificacionMateria(Action):
                 dispatcher.utter_message("Usted no ha obtenido ninguna")
 
         return []
-
