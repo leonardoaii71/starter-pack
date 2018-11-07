@@ -26,7 +26,7 @@ def train_dialogue(domain_file="domain.yml",
                    model_path="models/current/dialogue",
                    training_data_file="data/stories.md"):
 
-    fallback = FallbackPolicy(fallback_action_name="action_fallo",
+    fallback = FallbackPolicy(fallback_action_name="action_default_fallback",
                               core_threshold=0.3,
                               nlu_threshold=0.1)
 
@@ -103,4 +103,3 @@ if __name__ == '__main__':
         train_nlu()
     elif task == "run":
         run()
-

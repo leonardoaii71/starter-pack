@@ -946,42 +946,42 @@
 - clima
 
 ## intent:descripcion_proceso
-- que es la [prematricula](proceso)?
+- qué es la [prematricula](proceso)?
 - que es la [prematricula](proceso)
-- que es la [oferta academica personalizada](proceso)?
+- qué es la [oferta academica personalizada](proceso)?
 - que es la [oferta academica personalizada](proceso)
 - que son [asignaturas no programadas](proceso)?
-- que son [asignaturas no programadas](proceso)
+- qué son [asignaturas no programadas](proceso)
 - que es la [seleccion de asignaturas libres](proceso)?
 - que es la [seleccion de asignaturas libres](proceso)
 - que es la [lista de espera](proceso)?
-- que es la [lista de espera](proceso)
+- qué es la [lista de espera](proceso)
 - que es la [autorizacion de empalmes](proceso)?
 - que es la [autorizacion de empalmes](proceso)
-- que es la [autorizacion de asignaturas por tutoria](proceso)?
+- qué es la [autorizacion de asignaturas por tutoria](proceso)?
 - que es la [autorizacion de asignaturas por tutoria](proceso)
-- que es la [autorizacion de exceso de carga academica](proceso)?
-- que es la [autorizacion de exceso de carga academica](proceso)
+- qué es la [autorizacion de exceso de carga academica](proceso)?
+- qué es la [autorizacion de exceso de carga academica](proceso)
 - que es la [asignacion de asignaturas fuera de carrera](proceso)?
-- que es la [asignacion de asignaturas fuera de carrera](proceso)
+- qué es la [asignacion de asignaturas fuera de carrera](proceso)
 - que es la [modificacion de prematricula](proceso)?
-- que es la [modificacion de prematricula](proceso)
-- que son [bajas por prerrequisitos](proceso)?
+- qué es la [modificacion de prematricula](proceso)
+- qué son [bajas por prerrequisitos](proceso)?
 - que son [bajas por prerrequisitos](proceso)
-- que es el [cambio de campus](proceso)?
-- que es el [cambio de campus](proceso)
+- qué es el [cambio de campus](proceso)?
+- qué es el [cambio de campus](proceso)
 - que es [cursar asignaturas en otro campus](proceso)?
-- que es [cursar asignaturas en otro campus](proceso)
+- qué es [cursar asignaturas en otro campus](proceso)
 - que son [estudiantes separados](proceso)?
 - que son [estudiantes separados](proceso)
 - que son [estudiantes no prematriculados](proceso)?
 - que son [estudiantes no prematriculados](proceso)
 - que son [estudiantes especiales](proceso)?
 - que son [estudiantes especiales](proceso)
-- que son [estudiantes oyentes](proceso)?
+- qué son [estudiantes oyentes](proceso)?
 - que son [estudiantes oyentes](proceso)
 - que es la [modificacion de inscripcion](proceso)?
-- que es la [modificacion de inscripcion](proceso)
+- qué es la [modificacion de inscripcion](proceso)
 - que es la [autorizacion de ampliacion de cupos](proceso)?
 - que es la [autorizacion de ampliacion de cupos](proceso)
 - que es la [transferencia de estudiantes de grupos](proceso)?

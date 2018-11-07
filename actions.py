@@ -391,12 +391,6 @@ class ActionlookforProcessProcedimiento(Action):
         return []
 
 
-class fallb(Action):
-    def name(self):
-        return 'action_fallo'
-
-    def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_template("utter_sorry", tracker)
 
 
 # Informacion Academica

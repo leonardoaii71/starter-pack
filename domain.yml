@@ -275,7 +275,6 @@ actions:
   - action_count_asuetos
   - action_count_important
   - action_creditos_acumulados
-  - action_fallo
   - action_login_form
   - action_look_asuetos
   - action_look_event
@@ -327,5 +326,3 @@ actions:
   - utter_suggestions
   - utter_thank
   - utter_you_should_ask
-
-
