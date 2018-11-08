@@ -1,0 +1,44 @@
+mes, dia, evento.finaliza, evento.nombre, evento.importante, evento.asueto
+
+9, 1, , Inicio de docencia, false, false
+9, 3, 7, Entrega de carne, false, false
+9, 4, , Catedra inaugural del ano academico, false, false
+9, 5, , Modificacion de inscripcion, false, false
+9, 9, ,	Aniversario de la fundacion de PUCMM, false, false
+9, 22, , Graduacion Campus Santo Tomas de Aquino, true, false
+9, 24, , Dia de Nuestra Señora de las Mercedes, false, true
+9, 26, , Segundo pago de matricula, true, false
+9, 28, ,	Firma de documentos de Credito Educativo, false, false
+10, 5, ,  Apelacion a la Vicerrectoria Academica, false, false
+10, 26, , Tercer pago de matricula, true, false
+10, 26, , Solicitud de readmision, true, false
+10, 26, , Solicitud de transferencia de universidad, true, false
+11, 3, ,	Primer Examen de admision, false, false
+11, 5, , Dia de la Constitucion, false, true
+11, 6, ,	Solicitud de cambio de campus, false, false
+11, 6, , Solicitud de cambio de carrera, false, false
+11, 9, ,	Fecha limite para retiro parcial, true, false
+11, 12, ,	Solicitud de revision de calificaciones finales, false, false
+11,12, , Retiro de prematricula, false, false
+11, 13,	, Reporte resultados revision de calificaciones finales, false, false
+11, 13, , Limite para pagar segunda cuota graduacion, false, false
+11, 13, ,	Solicitud tardia de graduacion, false, false
+11, 19, 21,	Prematricula, false, false
+11, 23, ,	Fecha limite para retiro total, true, false
+11, 26, , Fecha limite para depositar documentos pendientes de graduacion, false, false
+11, 27, ,	Cuarto pago de matricula, false, false
+12, 3, 10 ,	Periodo de modificacion de prematricula, false, false
+12, 3, ,	 Periodo de reporte de calificaciones finales, true, false
+12, 5	, , Solicitud de graduacion Campus de Santiago, false, false
+12, 7, ,	Ultimo dia de docencia, true, false
+12, 11, ,	Fecha limite para reportar calificaciones finales, true, false
+12, 17, ,	Inicio del periodo, false, false
+12, 17, ,	Inscripcion de nuevo ingreso, true, false
+12, 18, 19,	Inscripcion general, true, false
+12, 18, ,	Bienvenida estudiantes de nuevo ingreso, false, false
+12, 21, ,	Inicio asueto navideño, false, false
+1, 21, , Dia de Nuestra Señora de La Altagracia, false, true
+1, 26, , Dia de Duarte, false, true
+2, 2, , Graduacion Campus Santiago, true, false
+2, 21, 22, Feria Expo PUCMM, false, false
+2, 27, , Dia de la Independencia Nacional, false, true
