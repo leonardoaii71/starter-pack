@@ -31861,3 +31861,2179 @@ Traceback (most recent call last):
   File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 333, in run
     raise Exception("Failed to execute custom action.")
 Exception: Failed to execute custom action.
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 215 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 215 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 212 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 212 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 209 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 209 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 197 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 197 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 195 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 195 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 192 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 192 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 188 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 188 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 186 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 186 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 183 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 183 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 178 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 178 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 172 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 172 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 169 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 169 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 166 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 166 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 163 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 163 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 160 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 160 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 157 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 157 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 154 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 154 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 151 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 151 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 148 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 148 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 145 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 145 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 143 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 143 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 139 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 139 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 136 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 136 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 133 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 133 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 130 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 130 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 127 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 127 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 105 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 105 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 102 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 102 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 99 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 99 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 96 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 96 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 93 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 93 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 90 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 90 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 75 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 75 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 72 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 72 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 69 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 69 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 67 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 67 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 64 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 64 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 61 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 61 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Encountered an exception while running action 'utter_thank'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 140, in run
+    tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 146, in utter_template
+    self.utter_response(message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Encountered an exception while running action 'utter_thank'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 140, in run
+    tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 146, in utter_template
+    self.utter_response(message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Encountered an exception while running action 'utter_thank'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 140, in run
+    tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 146, in utter_template
+    self.utter_response(message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Encountered an exception while running action 'utter_thank'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Timed out
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 195, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 140, in run
+    tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 146, in utter_template
+    self.utter_response(message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 197, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 233 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 233 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 228 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 228 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 224 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 224 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 221 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 221 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 218 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 218 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 215 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 215 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 210 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 210 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 206 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 206 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 203 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 203 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 198 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 198 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 195 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 195 seconds
+Encountered an exception while running action 'action_look_important'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Flood control exceeded. Retry in 191 seconds
+Traceback (most recent call last):
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 338, in run
+    self._utter_responses(responses, dispatcher, tracker)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\actions\action.py", line 294, in _utter_responses
+    dispatcher.utter_response(draft)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\rasa_core\channels\telegram.py", line 31, in send_text_message
+    self.send_message(recipient_id, message_part)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\bot.py", line 85, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 278, in post
+    **urlopen_kwargs)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 208, in _request_wrapper
+    message = self._parse(resp.data)
+  File "C:\Users\Leonardo\Anaconda3\envs\BotProject\lib\site-packages\telegram\utils\request.py", line 168, in _parse
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 191 seconds

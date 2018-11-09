@@ -9,7 +9,7 @@ from collections import namedtuple
 from rasa_core import utils, constants
 from rasa_core.agent import Agent
 from rasa_addons.superagent import SuperAgent
-# from rasa_core.channels.console import
+from rasa_core.channels.telegram import TelegramInput
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.policies.fallback import FallbackPolicy
 from rasa_core.policies.keras_policy import KerasPolicy
@@ -69,21 +69,31 @@ def run(serve_forever=True):
 
     _endpoints = EndpointConfig(url="http://localhost:5055/webhook")
     try:
-        endpoints = AvailableEndpoints(action=_endpoints, nlg=None, nlu=None, model=None)
         _interpreter = RasaNLUInterpreter("models/current/nlu/")
-
-        _agent = load_agent("models/current/dialogue",
+        # load your trained agent
+        agent = Agent.load("models/current/dialogue",
                             interpreter=_interpreter,
-                            endpoints=endpoints)
+                            endpoints=_endpoints))
+        
 
-        serve_application(_agent,
-                          "cmdline",
-                          constants.DEFAULT_SERVER_PORT,)
+        input_channel = TelegramInput(
+            # you get this when setting up a bot
+            access_token="516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4",
+            # this is your bots username
+            verify="regispucmm_bot",
+            # the url your bot should listen for messages
+            webhook_url="https://www.sysservices.site/webhooks/telegram/webhook"
+    )
+
+    # set serve_forever=False if you want to keep the server running
+    s = agent.handle_channels([input_channel], 5005, serve_forever=False)
+
     except:
         raise Exception("Failed to run")
 
+    
 
-
+    
 if __name__ == '__main__':
     utils.configure_colored_logging(loglevel="INFO")
 
