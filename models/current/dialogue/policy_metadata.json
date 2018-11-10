@@ -1,0 +1,122 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "matricula",
+        "proceso",
+        "event",
+        "password",
+        "calificacion"
+      ]
+    },
+    "action_requisitos_cursados": {
+      "slots": []
+    },
+    "action_login_form": {
+      "slots": [
+        "username",
+        "password",
+        "requested_slot"
+      ]
+    },
+    "action_condicion_academica": {
+      "slots": []
+    },
+    "utter_graduacion_sta_fecha": {
+      "slots": []
+    },
+    "action_ack_calificacion": {
+      "slots": []
+    },
+    "action_process_procedimiento": {
+      "slots": []
+    },
+    "utter_default": {
+      "slots": []
+    },
+    "action_default_fallback": {
+      "slots": []
+    },
+    "utter_bye": {
+      "slots": []
+    },
+    "action_creditos_acumulados": {
+      "slots": []
+    },
+    "action_look_event": {
+      "slots": [
+        "matching_events"
+      ]
+    },
+    "action_suggest": {
+      "slots": []
+    },
+    "utter_thank": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_retiro_parcial_fecha": {
+      "slots": []
+    },
+    "action_process_descripcion": {
+      "slots": []
+    },
+    "utter_ask_matricula": {
+      "slots": [
+        "requested_slot"
+      ]
+    },
+    "utter_indice_acumulado": {
+      "slots": []
+    },
+    "utter_another_question": {
+      "slots": []
+    },
+    "action_ack_eventdate": {
+      "slots": []
+    },
+    "action_look_asuetos": {
+      "slots": [
+        "asueto_count"
+      ]
+    },
+    "utter_ack_number_importantes": {
+      "slots": []
+    },
+    "utter_graduacion_sti_fecha": {
+      "slots": []
+    },
+    "utter_you_should_ask": {
+      "slots": []
+    },
+    "utter_indice_periodo": {
+      "slots": []
+    },
+    "action_look_important": {
+      "slots": [
+        "importantes_count"
+      ]
+    },
+    "utter_happy": {
+      "slots": []
+    },
+    "utter_retiro_total_fecha": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.11.12",
+  "python": "3.6.6",
+  "max_histories": [
+    2,
+    5,
+    null
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy"
+  ]
+}
