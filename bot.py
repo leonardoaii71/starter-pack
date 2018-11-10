@@ -8,7 +8,6 @@ import logging
 from collections import namedtuple
 from rasa_core import utils, constants
 from rasa_core.agent import Agent
-from rasa_addons.superagent import SuperAgent
 from rasa_core.channels.telegram import TelegramInput
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.policies.fallback import FallbackPolicy
