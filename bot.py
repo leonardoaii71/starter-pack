@@ -73,7 +73,7 @@ def run(serve_forever=True):
         # load your trained agent
         agent = Agent.load("models/current/dialogue",
                             interpreter=_interpreter,
-                            endpoints=_endpoints))
+                            endpoints=_endpoints)
         
 
         input_channel = TelegramInput(
@@ -85,8 +85,8 @@ def run(serve_forever=True):
             webhook_url="https://www.sysservices.site/webhooks/telegram/webhook"
     )
 
-    # set serve_forever=False if you want to keep the server running
-    s = agent.handle_channels([input_channel], 5005, serve_forever=False)
+        # set serve_forever=False if you want to keep the server running
+        s = agent.handle_channels([input_channel], 5005, serve_forever=False)
 
     except:
         raise Exception("Failed to run")
