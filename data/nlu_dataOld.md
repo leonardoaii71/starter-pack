@@ -1,0 +1,984 @@
+## intent:bye
+- Bye
+- Goodbye
+- Hasta luego
+- bye bot
+- Adios amigo
+- bye
+- goodbye
+- hasta luego
+- me tengo que ir
+- Nos vemos
+- adios bot
+- adios amigo
+- nos vemos luego
+- hablamos luego
+
+## intent:greet
+- Hi
+- Hey
+- Hola bot
+- Hey bot
+- Hello
+- hola
+- hola denuevo
+- Hola amigo
+- Que tal
+- hola robot
+- saludos
+- Saludos
+- hey
+
+## intent:thank
+- Gracias
+- gracias
+- Muchas gracias
+- muchas gracias
+- Gracias bot
+- gracias bot
+- ok gracias
+- Ok gracias!
+- perfecto gracias
+- gracias por todo
+- gracias por la ayuda
+- te lo agradesco
+- cool, gracias
+
+## intent:deny
+- no
+- definitivamente no
+- nunca
+- absolutamente no
+- no creo
+- no robot
+- no robot
+- No
+- No creo
+- No bot
+- No robot
+- nah
+- no y no
+- Nah
+
+## intent:mood_affirm
+- si
+- Si
+- claro
+- por supuesto
+- correcto
+- Claro
+- Correcto
+- si, claro
+- si claro
+
+## intent:mood_deny
+- no
+- nunca
+- No creo
+- no creo
+- para nada
+
+## intent:mood_great
+- perfecto
+- muy bien
+- bien
+- increible
+- todo bien
+- me siento excelente
+- excelente
+- Yo estoy bien
+- yo me siento bien
+- tamo bien
+- super
+- Todo bien
+- Perfecto
+- Muy bien
+
+## intent:mood_unhappy
+- no me siento bien
+- No estoy bien
+- me siento mal
+- Me siento mal
+- No estoy feliz
+- no estoy feliz
+
+## intent:query_event
+- cuando es la [graduacion](event)
+- cuando es la [Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino](event)
+- cuando es el [Inicio de prematricula](event)
+- cuando es el [Inicio de prematricula](event)?
+- Cuando es el [Inicio de prematricula](event)?
+- cuando es el [Inicio de prematricula](event)
+- cuando es el [Inicio de prematricula](event)?
+- Cuando es la [prematricula](event)?
+- en que fecha es la [prematricula](event)
+- En que fecha es la [prematricula](event)?
+- Cuando sera la [prematricula](event)
+- cuando es la [inscripcion](event)
+- cuando es la [inscripcion](event)?
+- Cuando es la [inscripcion](event)?
+- en que fecha es la [inscripcion](event)
+- En que fecha es la [inscripcion](event)?
+- Cuando sera la [inscripcion](event)
+- cuando es el [Inicio del periodo](event)
+- cuando es el [Inicio del periodo](event)?
+- Cuando es el [Inicio del periodo](event)?
+- cuando es el [primer pago de matricula estudiantes de nuevo ingreso](event)
+- cuando es el [primer pago de matricula estudiantes de nuevo ingreso](event)?
+- Cuando es el [primer pago de matricula estudiantes de nuevo ingreso](event)?
+- Cuando es el [primer pago de matricula estudiantes de nuevo ingreso](event)
+- cuando son las [inscripciones Generales y Primer Pago de Matricula](event)
+- cuando son las [inscripciones generales y primer pago de matricula](event)?
+- Cuando son las [Inscripciones Generales y Primer Pago de Matricula](event)?
+- Cuando son las [Inscripciones Generales y Primer Pago de Matricula](event)
+- cuando es la [bienvenida estudiantes de nuevo ingreso](event)
+- cuando es la [bienvenida estudiantes de nuevo ingreso](event)?
+- Cuando es la [bienvenida estudiantes de nuevo ingreso](event)?
+- Cuando es la [bienvenida estudiantes de nuevo ingreso](event)
+- cuando es el [Reinicio de Labores](event)
+- cuando es el [Reinicio de Labores](event)?
+- Cuando es el [Reinicio de Labores](event)?
+- Cuando es el [Reinicio de Labores](event)
+- cuando son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)
+- cuando son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)?
+- Cuando son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)?
+- Cuando son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)
+- cuando es el [Inicio de Docencia](event)
+- cuando es el [Inicio de Docencia](event)?
+- Cuando es el [Inicio de Docencia](event)?
+- Cuando es el [Inicio de Docencia](event)
+- cuando es la [Remocion I/E del cuatrimestre 1-2017-2018](event)
+- cuando es la [Remocion I/E del cuatrimestre 1-2017-2018](event)?
+- Cuando es la [Remocion I/E del cuatrimestre 1-2017-2018](event)?
+- Cuando es la [Remocion I/E del cuatrimestre 1-2017-2018](event)
+- cuando es la [Modificacion de Inscripcion](event)
+- cuando es la [Modificacion de Inscripcion](event)?
+- Cuando es la [Modificacion de Inscripcion](event)?
+- Cuando es la [Modificacion de Inscripcion](event)
+- cuando es la [Entrega del carne](event)
+- cuando es la [Entrega del carne](event)?
+- Cuando es la [Entrega de carne](event)?
+- Cuando es la [Entrega de carne](event)
+- cuando son las [Inscripciones Tardias y de estudiantes con I/E](event)
+- cuando son las [Inscripciones Tardias y de estudiantes con I/E](event)?
+- Cuando son las [Inscripciones Tardias y de estudiantes con I/E](event)?
+- Cuando son las [Inscripciones Tardias y de estudiantes con I/E](event)
+- cuando es la [Fecha limite para la firma de documentos de Credito Educativo](event)
+- cuando es la [Fecha limite para la firma de documentos de Credito Educativo](event)?
+- Cuando es la [Fecha limite para la firma de documentos de Credito Educativo](event)?
+- Cuando es la [Fecha limite para la firma de documentos de Credito Educativo](event)
+- cuando es la [Fecha limite para el segundo pago de matricula](event)
+- cuando es la [Fecha limite para el segundo pago de matricula](event)?
+- Cuando es la [Fecha limite para el segundo pago de matricula](event)?
+- Cuando es la [Fecha limite para el segundo pago de matricula](event)
+- cuando es la [Ceremonia de la Nonagesima Septima Graduacion](event)
+- cuando es la [Ceremonia de la Nonagesima Septima Graduacion](event)?
+- Cuando es la [Ceremonia de la Nonagesima Septima Graduacion](event)?
+- Cuando es la [Ceremonia de la Nonagesima Septima Graduacion](event)
+- cuando es la [Fecha limite para los separados apelar a Vicerrectoria Academica, entrada al 3-2017-2018](event)
+- cuando es la [Fecha limite para los separados apelar a Vicerrectoria Academica, entrada al 3-2017-2018](event)?
+- Cuando es la [Fecha limite para los separados apelar a Vicerrectoria Academica, entrada al 3-2017-2018](event)?
+- Cuando es la [Fecha limite para los separados apelar a Vicerrectoria Academica, entrada al 3-2017-2018](event)
+- cuando es la [Feria Expo-PUCMM 2018](event)
+- cuando es la [Feria Expo-PUCMM 2018](event)?
+- Cuando es la [Feria Expo-PUCMM 2018](event)?
+- Cuando es la [Feria Expo-PUCMM 2018](event)
+- cuando es la [Fecha limite para el tercer pago de matricula](event)
+- cuando es la [Fecha limite para el tercer pago de matricula](event)?
+- Cuando es la [Fecha limite para el tercer pago de matricula](event)?
+- Cuando es la [Fecha limite para el tercer pago de matricula](event)
+- cuando es la [Solicitud de readmision para el periodo 3-2017-2018](event)
+- cuando es la [Solicitud de readmision para el periodo 3-2017-2018](event)?
+- Cuando es la [Solicitud de readmision para el periodo 3-2017-2018](event)?
+- Cuando es la [Solicitud de readmision para el periodo 3-2017-2018](event)
+- cuando es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)
+- cuando es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)?
+- Cuando es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)?
+- Cuando es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)
+- cuando es el [Inicio del periodo de Evaluacion Profesoral](event)
+- cuando es el [Inicio del periodo de Evaluacion Profesoral](event)?
+- Cuando es el [Inicio del periodo de Evaluacion Profesoral](event)?
+- Cuando es el [Inicio del periodo de Evaluacion Profesoral](event)
+- cuando es el [Retiro Parcial](event)
+- cuando es el [Retiro Parcial](event)?
+- Cuando es el [Retiro Parcial](event)?
+- Cuando es el [Retiro Parcial](event)
+- cuando es la [Solicitud de cambio de campus para el 3-2017-2018](event)
+- cuando es la [Solicitud de cambio de campus para el 3-2017-2018](event)?
+- Cuando es la [Solicitud de cambio de campus para el 3-2017-2018](event)?
+- Cuando es la [Solicitud de cambio de campus para el 3-2017-2018](event)
+- cuando es la [Solicitud de cambio de carrera para el 3-2017-2018](event)
+- cuando es la [Solicitud de cambio de carrera para el 3-2017-2018](event)?
+- Cuando es la [Solicitud de cambio de carrera para el 3-2017-2018](event)?
+- Cuando es la [Solicitud de cambio de carrera para el 3-2017-2018](event)
+- cuando es el [Periodo de prematricula para el 3-2017-2018](event)
+- cuando es el [Periodo de prematricula para el 3-2017-2018](event)?
+- Cuando es el [Periodo de prematricula para el 3-2017-2018](event)?
+- Cuando es el [Periodo de prematricula para el 3-2017-2018](event)
+- cuando es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)
+- cuando es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)?
+- Cuando es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)?
+- Cuando es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)
+- cuando es la [Fecha limite para el cuarto pago de matricula](event)
+- cuando es la [Fecha limite para el cuarto pago de matricula](event)?
+- Cuando es la [Fecha limite para el cuarto pago de matricula](event)?
+- Cuando es la [Fecha limite para el cuarto pago de matricula](event)
+- cuando es la [Fecha limite Retiro Total](event)
+- cuando es la [Fecha limite Retiro Total](event)?
+- Cuando es la [Fecha limite Retiro Total](event)?
+- Cuando es la [Fecha limite Retiro Total](event)
+- cuando es la [Fecha limite para remover IT y ET del 1-2017-2018.](event)
+- cuando es la [Fecha limite para remover IT y ET del 1-2017-2018.](event)?
+- Cuando es la [Fecha limite para remover IT y ET del 1-2017-2018.](event)?
+- Cuando es la [Fecha limite para remover IT y ET del 1-2017-2018.](event)
+- cuando es el [Fin periodo de evaluacion profesoral](event)
+- cuando es el [Fin periodo de evaluacion profesoral](event)?
+- Cuando es el [Fin periodo de evaluacion profesoral](event)?
+- Cuando es el [Fin periodo de evaluacion profesoral](event)
+- cuando es el [Inicio periodo de reporte de calificaciones finales](event)
+- cuando es el [Inicio periodo de reporte de calificaciones finales](event)?
+- Cuando es el [Inicio periodo de reporte de calificaciones finales](event)?
+- Cuando es el [Inicio periodo de reporte de calificaciones finales](event)
+- cuando es el [Periodo de modificacion de prematricula](event)
+- cuando es el [Periodo de modificacion de prematricula](event)?
+- Cuando es el [Periodo de modificacion de prematricula](event)?
+- Cuando es el [Periodo de modificacion de prematricula](event)
+- cuando es el [ultimo dia de docencia](event)
+- cuando es el [ultimo dia de docencia](event)?
+- Cuando es el [ultimo dia de docencia](event)?
+- Cuando es el [ultimo dia de docencia](event)
+- cuando es la [Fecha limite para los profesores reportar las calificaciones finales](event)
+- cuando es la [Fecha limite para los profesores reportar las calificaciones finales](event)?
+- Cuando es la [Fecha limite para los profesores reportar las calificaciones finales](event)?
+- Cuando es la [Fecha limite para los profesores reportar las calificaciones finales](event)
+- cuando es el [ultimo dia de docencia](event)
+- cuando es el [ultimo dia de docencia](event)?
+- Cuando es el [ultimo dia de docencia](event)?
+- Cuando es el [ultimo dia de docencia](event)
+- cuando es la [Solicitud de revision de calificaciones finales](event)
+- cuando es la [Solicitud de revision de calificaciones finales](event)?
+- Cuando es la [Solicitud de revision de calificaciones finales](event)?
+- Cuando es la [Solicitud de revision de calificaciones finales](event)
+- cuando es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)
+- cuando es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)?
+- Cuando es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)?
+- Cuando es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)
+- En que fecha es el [Inicio de prematricula](event)
+- en que fecha es el [Inicio de prematricula](event)?
+- En que fecha es el [Inicio de prematricula](event)?
+- en que fecha es el [Inicio de prematricula](event)
+- en que fecha es el [Inicio de prematricula](event)?
+- cuando sera la [prematricula](event)
+- En que fecha es la [inscripcion](event)
+- en que fecha es la [inscripcion](event)?
+- En que fecha es el [Inicio del periodo](event)
+- en que fecha es el [Inicio del periodo](event)?
+- En que fecha es el [Inicio del periodo](event)?
+- En que fecha es el [primer pago de matricula estudiantes de nuevo ingreso](event)
+- en que fecha es el [primer pago de matricula estudiantes de nuevo ingreso](event)?
+- En que fecha es el [primer pago de matricula estudiantes de nuevo ingreso](event)?
+- En que fecha es el [primer pago de matricula estudiantes de nuevo ingreso](event)
+- en que fecha son las [inscripciones Generales y Primer Pago de Matricula](event)
+- en que fecha son las [inscripciones generales y primer pago de matricula](event)?
+- En que fecha son las [Inscripciones Generales y Primer Pago de Matricula](event)?
+- En que fecha son las [Inscripciones Generales y Primer Pago de Matricula](event)
+- en que fecha es la [bienvenida estudiantes de nuevo ingreso](event)
+- en que fecha es la [bienvenida estudiantes de nuevo ingreso](event)?
+- En que fecha es la [bienvenida estudiantes de nuevo ingreso](event)?
+- En que fecha es la [bienvenida estudiantes de nuevo ingreso](event)
+- en que fecha es el [Reinicio de Labores](event)
+- en que fecha es el [Reinicio de Labores](event)?
+- En que fecha es el [Reinicio de Labores](event)?
+- En que fecha es el [Reinicio de Labores](event)
+- en que fecha son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)
+- en que fecha son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)?
+- En que fecha son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)?
+- En que fecha son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)
+- en que fecha es el [Inicio de Docencia](event)
+- en que fecha es el [Inicio de Docencia](event)?
+- En que fecha es el [Inicio de Docencia](event)?
+- En que fecha es el [Inicio de Docencia](event)
+- en que fecha es la [Remocion I/E del cuatrimestre 1-2017-2018](event)
+- en que fecha es la [Remocion I/E del cuatrimestre 1-2017-2018](event)?
+- En que fecha es la [Remocion I/E del cuatrimestre 1-2017-2018](event)?
+- En que fecha es la [Remocion I/E del cuatrimestre 1-2017-2018](event)
+- en que fecha es la [Modificacion de Inscripcion](event)
+- en que fecha es la [Modificacion de Inscripcion](event)?
+- En que fecha es la [Modificacion de Inscripcion](event)?
+- En que fecha es la [Modificacion de Inscripcion](event)
+- en que fecha es la [Entrega del carne](event)
+- en que fecha es la [Entrega del carne](event)?
+- En que fecha es la [Entrega de carne](event)?
+- En que fecha es la [Entrega de carne](event)
+- en que fecha son las [Inscripciones Tardias y de estudiantes con I/E](event)
+- en que fecha son las [Inscripciones Tardias y de estudiantes con I/E](event)?
+- En que fecha son las [Inscripciones Tardias y de estudiantes con I/E](event)?
+- En que fecha son las [Inscripciones Tardias y de estudiantes con I/E](event)
+- cual es la [Fecha limite para la firma de documentos de Credito Educativo](event)
+- cual es la [Fecha limite para la firma de documentos de Credito Educativo](event)?
+- Cual es la [Fecha limite para la firma de documentos de Credito Educativo](event)?
+- Cual es la [Fecha limite para la firma de documentos de Credito Educativo](event)
+- cual es la [Fecha limite para el segundo pago de matricula](event)
+- cual es la [Fecha limite para el segundo pago de matricula](event)?
+- Cual es la [Fecha limite para el segundo pago de matricula](event)?
+- Cual es la [Fecha limite para el segundo pago de matricula](event)
+- en que fecha es la [Ceremonia de la Nonagesima Septima Graduacion](event)
+- en que fecha es la [Ceremonia de la Nonagesima Septima Graduacion](event)?
+- En que fecha es la [Ceremonia de la Nonagesima Septima Graduacion](event)?
+- En que fecha es la [Ceremonia de la Nonagesima Septima Graduacion](event)
+- cual es la [Fecha limite para los separados apelar a Vicerrectoria Academica, entrada al 3-2017-2018](event)
+- cual es la [Fecha limite para los separados apelar a Vicerrectoria Academica, entrada al 3-2017-2018](event)?
+- Cual es la [Fecha limite para los separados apelar a Vicerrectoria Academica, entrada al 3-2017-2018](event)?
+- Cual es la [Fecha limite para los separados apelar a Vicerrectoria Academica, entrada al 3-2017-2018](event)
+- en que fecha es la [Feria Expo-PUCMM 2018](event)
+- en que fecha es la [Feria Expo-PUCMM 2018](event)?
+- En que fecha es la [Feria Expo-PUCMM 2018](event)?
+- En que fecha es la [Feria Expo-PUCMM 2018](event)
+- cual es la [Fecha limite para el tercer pago de matricula](event)
+- cual es la [Fecha limite para el tercer pago de matricula](event)?
+- Cual es la [Fecha limite para el tercer pago de matricula](event)?
+- Cual es la [Fecha limite para el tercer pago de matricula](event)
+- en que fecha es la [Solicitud de readmision para el periodo 3-2017-2018](event)
+- en que fecha es la [Solicitud de readmision para el periodo 3-2017-2018](event)?
+- En que fecha es la [Solicitud de readmision para el periodo 3-2017-2018](event)?
+- En que fecha es la [Solicitud de readmision para el periodo 3-2017-2018](event)
+- en que fecha es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)
+- en que fecha es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)?
+- en que fecha es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)?
+- En que fecha es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)
+- en que fecha es el [Inicio del periodo de Evaluacion Profesoral](event)
+- en que fecha es el [Inicio del periodo de Evaluacion Profesoral](event)?
+- En que fecha es el [Inicio del periodo de Evaluacion Profesoral](event)?
+- En que fecha es el [Inicio del periodo de Evaluacion Profesoral](event)
+- en que fecha es el [Retiro Parcial](event)
+- en que fecha es el [Retiro Parcial](event)?
+- En que fecha es el [Retiro Parcial](event)?
+- En que fecha es el [Retiro Parcial](event)
+- en que fecha es la [Solicitud de cambio de campus para el 3-2017-2018](event)
+- en que fecha es la [Solicitud de cambio de campus para el 3-2017-2018](event)?
+- En que fecha es la [Solicitud de cambio de campus para el 3-2017-2018](event)?
+- En que fecha es la [Solicitud de cambio de campus para el 3-2017-2018](event)
+- en que fecha es la [Solicitud de cambio de carrera para el 3-2017-2018](event)
+- en que fecha es la [Solicitud de cambio de carrera para el 3-2017-2018](event)?
+- En que fecha es la [Solicitud de cambio de carrera para el 3-2017-2018](event)?
+- En que fecha es la [Solicitud de cambio de carrera para el 3-2017-2018](event)
+- en que fecha es el [Periodo de prematricula para el 3-2017-2018](event)
+- en que fecha es el [Periodo de prematricula para el 3-2017-2018](event)?
+- En que fecha es el [Periodo de prematricula para el 3-2017-2018](event)?
+- En que fecha es el [Periodo de prematricula para el 3-2017-2018](event)
+- en que fecha es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)
+- en que fecha es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)?
+- En que fecha es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)?
+- En que fecha es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)
+- en que fecha es la [Fecha limite para el cuarto pago de matricula](event)
+- en que fecha es la [Fecha limite para el cuarto pago de matricula](event)?
+- En que fecha es la [Fecha limite para el cuarto pago de matricula](event)?
+- En que fecha es la [Fecha limite para el cuarto pago de matricula](event)
+- en que fecha es la [Fecha limite Retiro Total](event)
+- en que fecha es la [Fecha limite Retiro Total](event)?
+- Cual es la [Fecha limite Retiro Total](event)?
+- Cual es la [Fecha limite Retiro Total](event)
+- cual es la [Fecha limite para remover IT y ET del 1-2017-2018.](event)
+- cual es la [Fecha limite para remover IT y ET del 1-2017-2018.](event)?
+- Cual es la [Fecha limite para remover IT y ET del 1-2017-2018.](event)?
+- Cual es la [Fecha limite para remover IT y ET del 1-2017-2018.](event)
+- en que fecha es el [Fin periodo de evaluacion profesoral](event)
+- en que fecha es el [Fin periodo de evaluacion profesoral](event)?
+- En que fecha es el [Fin periodo de evaluacion profesoral](event)?
+- En que fecha es el [Fin periodo de evaluacion profesoral](event)
+- en que fecha es el [Inicio periodo de reporte de calificaciones finales](event)
+- en que fecha es el [Inicio periodo de reporte de calificaciones finales](event)?
+- en que fecha es el [Inicio periodo de reporte de calificaciones finales](event)?
+- En que fecha es el [Inicio periodo de reporte de calificaciones finales](event)
+- en que fecha es el [Periodo de modificacion de prematricula](event)
+- en que fecha es el [Periodo de modificacion de prematricula](event)?
+- En que fecha es el [Periodo de modificacion de prematricula](event)?
+- En que fecha es el [Periodo de modificacion de prematricula](event)
+- en que fecha es el [ultimo dia de docencia](event)
+- en que fecha es el [ultimo dia de docencia](event)?
+- En que fecha es el [ultimo dia de docencia](event)?
+- En que fecha es el [ultimo dia de docencia](event)
+- cual es la [Fecha limite para los profesores reportar las calificaciones finales](event)
+- cual es la [Fecha limite para los profesores reportar las calificaciones finales](event)?
+- Cual es la [Fecha limite para los profesores reportar las calificaciones finales](event)?
+- Cual es la [Fecha limite para los profesores reportar las calificaciones finales](event)
+- en que fecha es el [ultimo dia de docencia](event)
+- en que fecha es el [ultimo dia de docencia](event)?
+- En que fecha es el [ultimo dia de docencia](event)?
+- En que fecha es el [ultimo dia de docencia](event)
+- en que fecha es la [Solicitud de revision de calificaciones finales](event)
+- en que fecha es la [Solicitud de revision de calificaciones finales](event)?
+- En que fecha es la [Solicitud de revision de calificaciones finales](event)?
+- En que fecha es la [Solicitud de revision de calificaciones finales](event)
+- cual es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)
+- cual es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)?
+- Cual es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)?
+- Cual es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)
+- En cual fecha es el [Inicio de prematricula](event)
+- en cual fecha es el [Inicio de prematricula](event)?
+- En cual fecha es el [Inicio de prematricula](event)?
+- en cual fecha es el [Inicio de prematricula](event)
+- en cual fecha es el [Inicio de prematricula](event)?
+- En cual fecha es la [inscripcion](event)
+- en cual fecha es la [inscripcion](event)?
+- En cual fecha es el [Inicio del periodo](event)
+- en cual fecha es el [Inicio del periodo](event)?
+- En cual fecha es el [Inicio del periodo](event)?
+- En cual fecha es el [primer pago de matricula estudiantes de nuevo ingreso](event)
+- en cual fecha es el [primer pago de matricula estudiantes de nuevo ingreso](event)?
+- En cual fecha es el [primer pago de matricula estudiantes de nuevo ingreso](event)?
+- En cual fecha es el [primer pago de matricula estudiantes de nuevo ingreso](event)
+- en cual fecha son las [inscripciones Generales y Primer Pago de Matricula](event)
+- en cual fecha son las [inscripciones generales y primer pago de matricula](event)?
+- En cual fecha son las [Inscripciones Generales y Primer Pago de Matricula](event)?
+- En cual fecha son las [Inscripciones Generales y Primer Pago de Matricula](event)
+- en cual fecha es la [bienvenida estudiantes de nuevo ingreso](event)
+- en cual fecha es la [bienvenida estudiantes de nuevo ingreso](event)?
+- En cual fecha es la [bienvenida estudiantes de nuevo ingreso](event)?
+- En cual fecha es la [bienvenida estudiantes de nuevo ingreso](event)
+- en cual fecha es el [Reinicio de Labores](event)
+- en cual fecha es el [Reinicio de Labores](event)?
+- En cual fecha es el [Reinicio de Labores](event)?
+- En cual fecha es el [Reinicio de Labores](event)
+- en cual fecha son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)
+- en cual fecha son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)?
+- En cual fecha son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)?
+- En cual fecha son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)
+- en cual fecha es el [Inicio de Docencia](event)
+- en cual fecha es el [Inicio de Docencia](event)?
+- En cual fecha es el [Inicio de Docencia](event)?
+- En cual fecha es el [Inicio de Docencia](event)
+- en cual fecha es la [Remocion I/E del cuatrimestre 1-2017-2018](event)
+- en cual fecha es la [Remocion I/E del cuatrimestre 1-2017-2018](event)?
+- En cual fecha es la [Remocion I/E del cuatrimestre 1-2017-2018](event)?
+- En cual fecha es la [Remocion I/E del cuatrimestre 1-2017-2018](event)
+- en cual fecha es la [Modificacion de Inscripcion](event)
+- en cual fecha es la [Modificacion de Inscripcion](event)?
+- En cual fecha es la [Modificacion de Inscripcion](event)?
+- En cual fecha es la [Modificacion de Inscripcion](event)
+- en cual fecha es la [Entrega del carne](event)
+- en cual fecha es la [Entrega del carne](event)?
+- En cual fecha es la [Entrega de carne](event)?
+- En cual fecha es la [Entrega de carne](event)
+- en cual fecha son las [Inscripciones Tardias y de estudiantes con I/E](event)
+- en cual fecha son las [Inscripciones Tardias y de estudiantes con I/E](event)?
+- En cual fecha son las [Inscripciones Tardias y de estudiantes con I/E](event)?
+- En cual fecha son las [Inscripciones Tardias y de estudiantes con I/E](event)
+- en cual fecha es la [Ceremonia de la Nonagesima Septima Graduacion](event)
+- en cual fecha es la [Ceremonia de la Nonagesima Septima Graduacion](event)?
+- En cual fecha es la [Ceremonia de la Nonagesima Septima Graduacion](event)?
+- En cual fecha es la [Ceremonia de la Nonagesima Septima Graduacion](event)
+- en cual fecha es la [Feria Expo-PUCMM 2018](event)
+- en cual fecha es la [Feria Expo-PUCMM 2018](event)?
+- En cual fecha es la [Feria Expo-PUCMM 2018](event)?
+- En cual fecha es la [Feria Expo-PUCMM 2018](event)
+- en cual fecha es la [Solicitud de readmision para el periodo 3-2017-2018](event)
+- en cual fecha es la [Solicitud de readmision para el periodo 3-2017-2018](event)?
+- En cual fecha es la [Solicitud de readmision para el periodo 3-2017-2018](event)?
+- En cual fecha es la [Solicitud de readmision para el periodo 3-2017-2018](event)
+- en cual fecha es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)
+- en cual fecha es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)?
+- en cual fecha es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)?
+- En cual fecha es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)
+- en cual fecha es el [Inicio del periodo de Evaluacion Profesoral](event)
+- en cual fecha es el [Inicio del periodo de Evaluacion Profesoral](event)?
+- En cual fecha es el [Inicio del periodo de Evaluacion Profesoral](event)?
+- En cual fecha es el [Inicio del periodo de Evaluacion Profesoral](event)
+- en cual fecha es el [Retiro Parcial](event)
+- en cual fecha es el [Retiro Parcial](event)?
+- En cual fecha es el [Retiro Parcial](event)?
+- En cual fecha es el [Retiro Parcial](event)
+- en cual fecha es la [Solicitud de cambio de campus para el 3-2017-2018](event)
+- en cual fecha es la [Solicitud de cambio de campus para el 3-2017-2018](event)?
+- En cual fecha es la [Solicitud de cambio de campus para el 3-2017-2018](event)?
+- En cual fecha es la [Solicitud de cambio de campus para el 3-2017-2018](event)
+- en cual fecha es la [Solicitud de cambio de carrera para el 3-2017-2018](event)
+- en cual fecha es la [Solicitud de cambio de carrera para el 3-2017-2018](event)?
+- En cual fecha es la [Solicitud de cambio de carrera para el 3-2017-2018](event)?
+- En cual fecha es la [Solicitud de cambio de carrera para el 3-2017-2018](event)
+- en cual fecha es el [Periodo de prematricula para el 3-2017-2018](event)
+- en cual fecha es el [Periodo de prematricula para el 3-2017-2018](event)?
+- En cual fecha es el [Periodo de prematricula para el 3-2017-2018](event)?
+- En cual fecha es el [Periodo de prematricula para el 3-2017-2018](event)
+- en cual fecha es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)
+- en cual fecha es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)?
+- En cual fecha es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)?
+- En cual fecha es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)
+- en cual fecha es la [Fecha limite para el cuarto pago de matricula](event)
+- en cual fecha es la [Fecha limite para el cuarto pago de matricula](event)?
+- En cual fecha es la [Fecha limite para el cuarto pago de matricula](event)?
+- En cual fecha es la [Fecha limite para el cuarto pago de matricula](event)
+- en cual fecha es la [Fecha limite Retiro Total](event)
+- en cual fecha es la [Fecha limite Retiro Total](event)?
+- en cual fecha es el [Fin periodo de evaluacion profesoral](event)
+- en cual fecha es el [Fin periodo de evaluacion profesoral](event)?
+- En cual fecha es el [Fin periodo de evaluacion profesoral](event)?
+- En cual fecha es el [Fin periodo de evaluacion profesoral](event)
+- en cual fecha es el [Inicio periodo de reporte de calificaciones finales](event)
+- en cual fecha es el [Inicio periodo de reporte de calificaciones finales](event)?
+- en cual fecha es el [Inicio periodo de reporte de calificaciones finales](event)?
+- En cual fecha es el [Inicio periodo de reporte de calificaciones finales](event)
+- en cual fecha es el [Periodo de modificacion de prematricula](event)
+- en cual fecha es el [Periodo de modificacion de prematricula](event)?
+- En cual fecha es el [Periodo de modificacion de prematricula](event)?
+- En cual fecha es el [Periodo de modificacion de prematricula](event)
+- en cual fecha es el [ultimo dia de docencia](event)
+- en cual fecha es el [ultimo dia de docencia](event)?
+- En cual fecha es el [ultimo dia de docencia](event)?
+- En cual fecha es el [ultimo dia de docencia](event)
+- en cual fecha es el [ultimo dia de docencia](event)
+- en cual fecha es el [ultimo dia de docencia](event)?
+- En cual fecha es el [ultimo dia de docencia](event)?
+- En cual fecha es el [ultimo dia de docencia](event)
+- en cual fecha es la [Solicitud de revision de calificaciones finales](event)
+- en cual fecha es la [Solicitud de revision de calificaciones finales](event)?
+- En cual fecha es la [Solicitud de revision de calificaciones finales](event)?
+- En cual fecha es la [Solicitud de revision de calificaciones finales](event)
+- Cuando sera el [Inicio de prematricula](event)
+- cuando sera el [Inicio de prematricula](event)?
+- Cuando sera el [Inicio de prematricula](event)?
+- cuando sera el [Inicio de prematricula](event)
+- cuando sera el [Inicio de prematricula](event)?
+- cuando sera la [inscripcion](event)
+- cuando sera la [inscripcion](event)?
+- Cuando sera el [Inicio del periodo](event)
+- cuando sera el [Inicio del periodo](event)?
+- Cuando sera el [Inicio del periodo](event)?
+- Cuando sera el [primer pago de matricula estudiantes de nuevo ingreso](event)
+- cuando sera el [primer pago de matricula estudiantes de nuevo ingreso](event)?
+- Cuando sera el [primer pago de matricula estudiantes de nuevo ingreso](event)?
+- Cuando sera el [primer pago de matricula estudiantes de nuevo ingreso](event)
+- cuando seran las [inscripciones Generales y Primer Pago de Matricula](event)
+- cuando seran las [inscripciones generales y primer pago de matricula](event)?
+- Cuando seran las [Inscripciones Generales y Primer Pago de Matricula](event)?
+- Cuando seran las [Inscripciones Generales y Primer Pago de Matricula](event)
+- cuando sera la [bienvenida estudiantes de nuevo ingreso](event)
+- cuando sera la [bienvenida estudiantes de nuevo ingreso](event)?
+- Cuando sera la [bienvenida estudiantes de nuevo ingreso](event)?
+- Cuando sera la [bienvenida estudiantes de nuevo ingreso](event)
+- cuando sera el [Reinicio de Labores](event)
+- cuando sera el [Reinicio de Labores](event)?
+- cuando sera el [Reinicio de Labores](event)?
+- Cuando sera el [Reinicio de Labores](event)
+- cuando seran los [Examenes. I/E del cuatrimestre 1-2017-2018](event)
+- cuando seran los [Examenes. I/E del cuatrimestre 1-2017-2018](event)?
+- Cuando seran los [Examenes. I/E del cuatrimestre 1-2017-2018](event)?
+- Cuando seran los [Examenes. I/E del cuatrimestre 1-2017-2018](event)
+- cuando sera el [Inicio de Docencia](event)
+- cuando sera el [Inicio de Docencia](event)?
+- Cuando sera el [Inicio de Docencia](event)?
+- Cuando sera el [Inicio de Docencia](event)
+- cuando sera la [Remocion I/E del cuatrimestre 1-2017-2018](event)
+- cuando sera la [Remocion I/E del cuatrimestre 1-2017-2018](event)?
+- Cuando sera la [Remocion I/E del cuatrimestre 1-2017-2018](event)?
+- Cuando sera la [Remocion I/E del cuatrimestre 1-2017-2018](event)
+- cuando sera la [Modificacion de Inscripcion](event)
+- cuando sera la [Modificacion de Inscripcion](event)?
+- Cuando sera la [Modificacion de Inscripcion](event)?
+- Cuando sera la [Modificacion de Inscripcion](event)
+- cuando sera la [Entrega del carne](event)
+- cuando sera la [Entrega del carne](event)?
+- Cuando sera la [Entrega de carne](event)?
+- Cuando sera la [Entrega de carne](event)
+- cuando seran las [Inscripciones Tardias y de estudiantes con I/E](event)
+- cuando seran las [Inscripciones Tardias y de estudiantes con I/E](event)?
+- Cuando seran las [Inscripciones Tardias y de estudiantes con I/E](event)?
+- Cuando seran las [Inscripciones Tardias y de estudiantes con I/E](event)
+- cuando sera la [Ceremonia de la Nonagesima Septima Graduacion](event)
+- cuando sera la [Ceremonia de la Nonagesima Septima Graduacion](event)?
+- Cuando sera la [Ceremonia de la Nonagesima Septima Graduacion](event)?
+- Cuando sera la [Ceremonia de la Nonagesima Septima Graduacion](event)
+- cuando sera la [Feria Expo-PUCMM 2018](event)
+- cuando sera la [Feria Expo-PUCMM 2018](event)?
+- Cuando sera la [Feria Expo-PUCMM 2018](event)?
+- Cuando sera la [Feria Expo-PUCMM 2018](event)
+- cuando sera la [Solicitud de readmision para el periodo 3-2017-2018](event)
+- cuando sera la [Solicitud de readmision para el periodo 3-2017-2018](event)?
+- Cuando sera la [Solicitud de readmision para el periodo 3-2017-2018](event)?
+- Cuando sera la [Solicitud de readmision para el periodo 3-2017-2018](event)
+- cuando sera la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)
+- cuando sera la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)?
+- cuando sera la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)?
+- Cuando sera la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)
+- cuando sera el [Inicio del periodo de Evaluacion Profesoral](event)
+- cuando sera el [Inicio del periodo de Evaluacion Profesoral](event)?
+- Cuando sera el [Inicio del periodo de Evaluacion Profesoral](event)?
+- Cuando sera el [Inicio del periodo de Evaluacion Profesoral](event)
+- cuando sera el [Retiro Parcial](event)
+- cuando sera el [Retiro Parcial](event)?
+- Cuando sera el [Retiro Parcial](event)?
+- Cuando sera el [Retiro Parcial](event)
+- cuando sera la [Solicitud de cambio de campus para el 3-2017-2018](event)
+- cuando sera la [Solicitud de cambio de campus para el 3-2017-2018](event)?
+- Cuando sera la [Solicitud de cambio de campus para el 3-2017-2018](event)?
+- Cuando sera la [Solicitud de cambio de campus para el 3-2017-2018](event)
+- cuando sera la [Solicitud de cambio de carrera para el 3-2017-2018](event)
+- cuando sera la [Solicitud de cambio de carrera para el 3-2017-2018](event)?
+- Cuando sera la [Solicitud de cambio de carrera para el 3-2017-2018](event)?
+- Cuando sera la [Solicitud de cambio de carrera para el 3-2017-2018](event)
+- cuando sera el [Periodo de prematricula para el 3-2017-2018](event)
+- cuando sera el [Periodo de prematricula para el 3-2017-2018](event)?
+- Cuando sera el [Periodo de prematricula para el 3-2017-2018](event)?
+- Cuando sera el [Periodo de prematricula para el 3-2017-2018](event)
+- cuando sera el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)
+- cuando sera el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)?
+- Cuando sera el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)?
+- Cuando sera el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)
+- cuando sera la [Fecha limite para el cuarto pago de matricula](event)
+- cuando sera la [Fecha limite para el cuarto pago de matricula](event)?
+- Cuando sera la [Fecha limite para el cuarto pago de matricula](event)?
+- Cuando sera la [Fecha limite para el cuarto pago de matricula](event)
+- cuando sera la [Fecha limite Retiro Total](event)
+- cuando sera la [Fecha limite Retiro Total](event)?
+- cuando sera el [Fin periodo de evaluacion profesoral](event)
+- cuando sera el [Fin periodo de evaluacion profesoral](event)?
+- Cuando sera el [Fin periodo de evaluacion profesoral](event)?
+- Cuando sera el [Fin periodo de evaluacion profesoral](event)
+- cuando sera el [Inicio periodo de reporte de calificaciones finales](event)
+- cuando sera el [Inicio periodo de reporte de calificaciones finales](event)?
+- cuando sera el [Inicio periodo de reporte de calificaciones finales](event)?
+- Cuando sera el [Inicio periodo de reporte de calificaciones finales](event)
+- cuando sera el [Periodo de modificacion de prematricula](event)
+- cuando sera el [Periodo de modificacion de prematricula](event)?
+- Cuando sera el [Periodo de modificacion de prematricula](event)?
+- Cuando sera el [Periodo de modificacion de prematricula](event)
+- cuando sera el [ultimo dia de docencia](event)
+- cuando sera el [ultimo dia de docencia](event)?
+- Cuando sera el [ultimo dia de docencia](event)?
+- Cuando sera el [ultimo dia de docencia](event)
+- cuando sera el [ultimo dia de docencia](event)
+- cuando sera el [ultimo dia de docencia](event)?
+- Cuando sera el [ultimo dia de docencia](event)?
+- Cuando sera el [ultimo dia de docencia](event)
+- cuando sera la [Solicitud de revision de calificaciones finales](event)
+- cuando sera la [Solicitud de revision de calificaciones finales](event)?
+- Cuando sera la [Solicitud de revision de calificaciones finales](event)?
+- Cuando sera la [Solicitud de revision de calificaciones finales](event)
+- que dia es el [Inicio de prematricula](event)
+- que dia es el [Inicio de prematricula](event)?
+- Que dia es el [Inicio de prematricula](event)?
+- que dia es el [Inicio de prematricula](event)
+- Que dia es el [Inicio de prematricula](event)?
+- Que dia es la [prematricula](event)?
+- que dia es la [prematricula](event)
+- Que dia es la [prematricula](event)?
+- Que dia es la [prematricula](event)
+- que dia es la [inscripcion](event)
+- que dia es la [inscripcion](event)?
+- Que dia es la [inscripcion](event)?
+- que dia es la [inscripcion](event)
+- Que dia es la [inscripcion](event)?
+- Que dia es la [inscripcion](event)
+- que dia es el [Inicio del periodo](event)
+- que dia es el [Inicio del periodo](event)?
+- Que dia es el [Inicio del periodo](event)?
+- que dia es el [primer pago de matricula estudiantes de nuevo ingreso](event)
+- que dia es el [primer pago de matricula estudiantes de nuevo ingreso](event)?
+- Que dia es el [primer pago de matricula estudiantes de nuevo ingreso](event)?
+- Que dia es el [primer pago de matricula estudiantes de nuevo ingreso](event)
+- que dias son las [inscripciones Generales y Primer Pago de Matricula](event)
+- que dias son las [inscripciones generales y primer pago de matricula](event)?
+- Que dias son las [Inscripciones Generales y Primer Pago de Matricula](event)?
+- Que dias son las [Inscripciones Generales y Primer Pago de Matricula](event)
+- que dia es la [bienvenida estudiantes de nuevo ingreso](event)
+- que dia es la [bienvenida estudiantes de nuevo ingreso](event)?
+- Que dia es la [bienvenida estudiantes de nuevo ingreso](event)?
+- Que dia es la [bienvenida estudiantes de nuevo ingreso](event)
+- que dia es el [Reinicio de Labores](event)
+- que dia es el [Reinicio de Labores](event)?
+- Que dia es el [Reinicio de Labores](event)?
+- Que dia es el [Reinicio de Labores](event)
+- cuales dias son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)
+- cuales dias son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)?
+- Cuales dias son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)?
+- Cuales dias son los [Examenes. I/E del cuatrimestre 1-2017-2018](event)
+- que dia es el [Inicio de Docencia](event)
+- que dia es el [Inicio de Docencia](event)?
+- Que dia es el [Inicio de Docencia](event)?
+- Que dia es el [Inicio de Docencia](event)
+- que dia es la [Remocion I/E del cuatrimestre 1-2017-2018](event)
+- que dia es la [Remocion I/E del cuatrimestre 1-2017-2018](event)?
+- Que dia es la [Remocion I/E del cuatrimestre 1-2017-2018](event)?
+- Que dia es la [Remocion I/E del cuatrimestre 1-2017-2018](event)
+- que dia es la [Modificacion de Inscripcion](event)
+- que dia es la [Modificacion de Inscripcion](event)?
+- Que dia es la [Modificacion de Inscripcion](event)?
+- Que dia es la [Modificacion de Inscripcion](event)
+- que dia es la [Entrega del carne](event)
+- que dia es la [Entrega del carne](event)?
+- Que dia es la [Entrega de carne](event)?
+- Que dia es la [Entrega de carne](event)
+- que dias son las [Inscripciones Tardias y de estudiantes con I/E](event)
+- que dias son las [Inscripciones Tardias y de estudiantes con I/E](event)?
+- Que dias son las [Inscripciones Tardias y de estudiantes con I/E](event)?
+- que dias son las [Inscripciones Tardias y de estudiantes con I/E](event)
+- que dia es la [Fecha limite para la firma de documentos de Credito Educativo](event)
+- que dia es la [Fecha limite para la firma de documentos de Credito Educativo](event)?
+- Que dia es la [Fecha limite para la firma de documentos de Credito Educativo](event)?
+- Que dia es la [Fecha limite para la firma de documentos de Credito Educativo](event)
+- que dia es la [Fecha limite para el segundo pago de matricula](event)
+- que dia es la [Fecha limite para el segundo pago de matricula](event)?
+- Que dia es la [Fecha limite para el segundo pago de matricula](event)?
+- Que dia es la [Fecha limite para el segundo pago de matricula](event)
+- que dia es la [Ceremonia de la Nonagesima Septima Graduacion](event)
+- que dia es la [Ceremonia de la Nonagesima Septima Graduacion](event)?
+- Que dia es la [Ceremonia de la Nonagesima Septima Graduacion](event)?
+- Que dia es la [Ceremonia de la Nonagesima Septima Graduacion](event)
+- que dia es la [Fecha limite para los separados apelar a Vicerrectoria Academica, entrada al 3-2017-2018](event)
+- que dia es la [Fecha limite para los separados apelar a Vicerrectoria Academica, entrada al 3-2017-2018](event)?
+- Que dia es la [Fecha limite para los separados apelar a Vicerrectoria Academica, entrada al 3-2017-2018](event)?
+- Que dia es la [Fecha limite para los separados apelar a Vicerrectoria Academica, entrada al 3-2017-2018](event)
+- que dia es la [Feria Expo-PUCMM 2018](event)
+- que dia es la [Feria Expo-PUCMM 2018](event)?
+- Que dia es la [Feria Expo-PUCMM 2018](event)?
+- Que dia es la [Feria Expo-PUCMM 2018](event)
+- que dia es la [Fecha limite para el tercer pago de matricula](event)
+- que dia es la [Fecha limite para el tercer pago de matricula](event)?
+- Que dia es la [Fecha limite para el tercer pago de matricula](event)?
+- Que dia es la [Fecha limite para el tercer pago de matricula](event)
+- que dia es la [Solicitud de readmision para el periodo 3-2017-2018](event)
+- que dia es la [Solicitud de readmision para el periodo 3-2017-2018](event)?
+- Que dia es la [Solicitud de readmision para el periodo 3-2017-2018](event)?
+- Que dia es la [Solicitud de readmision para el periodo 3-2017-2018](event)
+- que dia es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)
+- que dia es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)?
+- Que dia es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)?
+- Que dia es la [Solicitud de transferencia de otra universidad para el 3-2017-2018](event)
+- que dia es el [Inicio del periodo de Evaluacion Profesoral](event)
+- que dia es el [Inicio del periodo de Evaluacion Profesoral](event)?
+- Que dia es el [Inicio del periodo de Evaluacion Profesoral](event)?
+- Que dia es el [Inicio del periodo de Evaluacion Profesoral](event)
+- que dia es el [Retiro Parcial](event)
+- que dia es el [Retiro Parcial](event)?
+- Que dia es el [Retiro Parcial](event)?
+- Que dia es el [Retiro Parcial](event)
+- que dia es la [Solicitud de cambio de campus para el 3-2017-2018](event)
+- que dia es la [Solicitud de cambio de campus para el 3-2017-2018](event)?
+- Que dia es la [Solicitud de cambio de campus para el 3-2017-2018](event)?
+- Que dia es la [Solicitud de cambio de campus para el 3-2017-2018](event)
+- que dia es la [Solicitud de cambio de carrera para el 3-2017-2018](event)
+- que dia es la [Solicitud de cambio de carrera para el 3-2017-2018](event)?
+- Que dia es la [Solicitud de cambio de carrera para el 3-2017-2018](event)?
+- Que dia es la [Solicitud de cambio de carrera para el 3-2017-2018](event)
+- que dia es el [Periodo de prematricula para el 3-2017-2018](event)
+- que dia es el [Periodo de prematricula para el 3-2017-2018](event)?
+- Que dia es el [Periodo de prematricula para el 3-2017-2018](event)?
+- Que dia es el [Periodo de prematricula para el 3-2017-2018](event)
+- que dia es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)
+- que dia es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)?
+- Que dia es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)?
+- Que dia es el [Primer examen de admision para ingresar en el periodo 1-2018-2019](event)
+- que dia es la [Fecha limite para el cuarto pago de matricula](event)
+- que dia es la [Fecha limite para el cuarto pago de matricula](event)?
+- Que dia es la [Fecha limite para el cuarto pago de matricula](event)?
+- Que dia es la [Fecha limite para el cuarto pago de matricula](event)
+- que dia es la [Fecha limite Retiro Total](event)
+- que dia es la [Fecha limite Retiro Total](event)?
+- que dia es la [Fecha limite Retiro Total](event)?
+- Que dia es la [Fecha limite Retiro Total](event)
+- que dia es la [Fecha limite para remover IT y ET del 1-2017-2018.](event)
+- que dia es la [Fecha limite para remover IT y ET del 1-2017-2018.](event)?
+- Que dia es la [Fecha limite para remover IT y ET del 1-2017-2018.](event)?
+- Que dia es la [Fecha limite para remover IT y ET del 1-2017-2018.](event)
+- que dia es el [Fin periodo de evaluacion profesoral](event)
+- que dia es el [Fin periodo de evaluacion profesoral](event)?
+- Que dia es el [Fin periodo de evaluacion profesoral](event)?
+- Que dia es el [Fin periodo de evaluacion profesoral](event)
+- que dia es el [Inicio periodo de reporte de calificaciones finales](event)
+- que dia es el [Inicio periodo de reporte de calificaciones finales](event)?
+- Que dia es el [Inicio periodo de reporte de calificaciones finales](event)?
+- Que dia es el [Inicio periodo de reporte de calificaciones finales](event)
+- que dia es el [Periodo de modificacion de prematricula](event)
+- que dia es el [Periodo de modificacion de prematricula](event)?
+- Que dia es el [Periodo de modificacion de prematricula](event)?
+- Que dia es el [Periodo de modificacion de prematricula](event)
+- que dia es el [ultimo dia de docencia](event)
+- que dia es el [ultimo dia de docencia](event)?
+- Que dia es el [ultimo dia de docencia](event)?
+- Que dia es el [ultimo dia de docencia](event)
+- que dia es la [Fecha limite para los profesores reportar las calificaciones finales](event)
+- que dia es la [Fecha limite para los profesores reportar las calificaciones finales](event)?
+- que dia es la [Fecha limite para los profesores reportar las calificaciones finales](event)?
+- Que dia es la [Fecha limite para los profesores reportar las calificaciones finales](event)
+- que dia es el [ultimo dia de docencia](event)
+- que dia es el [ultimo dia de docencia](event)?
+- Que dia es el [ultimo dia de docencia](event)?
+- Que dia es el [ultimo dia de docencia](event)
+- que dia es la [Solicitud de revision de calificaciones finales](event)
+- que dia es la [Solicitud de revision de calificaciones finales](event)?
+- Que dia es la [Solicitud de revision de calificaciones finales](event)?
+- Que dia es la [Solicitud de revision de calificaciones finales](event)
+- que dia es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)
+- que dia es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)?
+- Que dia es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)?
+- Que dia es la [Fecha limite para los escuelas reportar resultados de la revision de calificaciones finales](event)
+
+## intent:query_importantes
+- fechas importantes
+- Cuales son las fechas importantes?
+- dime fechas importantes
+- dime todos los dias importantes
+- cuales dias son importantes este periodo
+- cuales dias son importantes para este semestre
+- cuales fechas importantes hay
+- Cuales son las fechas importantes del periodo?
+- cuales son las fechas importantes de [enero](date)?
+- cuales son las fechas importantes de [febrero](date)?
+- cuales son las fechas importantes de [marzo](date)?
+- cuales son las fechas importantes de [abril](date)?
+- cuales son las fechas importantes de [mayo](date)?
+- cuales son las fechas importantes de [junio](date)?
+- cuales son las fechas importantes de [julio](date)?
+- cuales son las fechas importantes de [agosto](date)?
+- cuales son las fechas importantes de [septiembre](date)?
+- cuales son las fechas importantes de [octubre](date)?
+- cuales son las fechas importantes de [noviembre](date)?
+- cuales son las fechas importantes de [diciembre](date)?
+
+## intent:query_asueto
+- dias asuetos
+- Cuales son los dias asueto?
+- dime todos los dias asueto
+- Cuales son los dias asueto del periodo?
+- cuales dias asuetos hay
+- cuales dias asueto hay en [enero](date)?
+- cuales dias asueto hay en [febrero](date)?
+- cuales dias asueto hay en [marzo](date)?
+- cuales dias asueto hay en [abril](date)?
+- cuales dias asueto hay en [mayo](date)?
+- cuales dias asueto hay en [junio](date)?
+- cuales dias asueto hay en [julio](date)?
+- cuales dias asueto hay en [agosto](date)?
+- cuales dias asueto hay en [septiembre](date)?
+- cuales dias asueto hay en [octubre](date)?
+- cuales dias asueto hay en [noviembre](date)?
+- cuales dias asueto hay en [diciembre](date)?
+
+## intent:count_asueto
+- cuantos dias asuetos hay en este periodo
+- cuantos dias asuetos hay en este semestre
+- cual es la cantidad de dias asuetos del periodo
+- cantidad de dias asuetos
+- cantidad de dias asuetos
+
+## intent:count_importante
+- cuantos dias importantes hay
+- cuantos dias importantes hay en este periodo
+- cuantos dias importantes hay en este semestre
+- cual es la cantidad de dias importantes del periodo
+- cantidad de dias importantes
+- cuantos son los dias importantes
+
+## synonym:Inicio de docencia
+- inicio de clases
+- inicio de clase
+
+## synonym:Entrega de carn?
+- entrega del carne
+- entrega de carne
+- entrega del carn?
+
+## synonym:C?tedra inaugural del a?o acad?mico 2018-2019 - Campus de Santiago
+- inauguracion del a?o academico 2018-2019
+- inauguracion del a?o academico
+
+## synonym:Modificaci?n a la inscripci?n
+- modificacion de inscripcion
+- modificacion de inscripciones
+- modificacion a la inscripcion
+
+## synonym:Aniversario de la fundaci?n de la PUCMM
+- aniversario de la fundacion de pucmm
+
+## synonym:Ceremonia de la sexag?sima quinta graduaci?n ? Campus Santo Tom?s de Aquino
+- graduacion
+- proxima graduacion
+- siguiente graduacion
+
+## synonym:D?a de Nuestra Se?ora de las Mercedes
+- dia de las mercedes
+
+## synonym:Fecha l?mite para Segundo pago de matr?cula
+- segundo pago de matricula
+- segundo pago de la matricula
+
+## synonym:Firma de documentos de Cr?dito Educativo
+- firmas de documentos de credito
+
+## synonym:Fecha l?mite para Tercer pago de matr?cula
+- tercer pago de matricula
+- tercer pago de la matricula
+
+## synonym:Fecha limite para solicitar readmisi?n para el per?odo 2-2018-2019
+- solicitud de readmision
+
+## synonym:Fecha limite para solicitar transferencia de otra universidad para el per?odo 2-2018-2019
+- solicitud de transferencia
+- solicitud de transferencia de universidad
+
+## synonym:Examen de admisi?n para ingresar al per?odo 2-2018-2019
+- examen de admision
+- examenes de admision
+
+## synonym:Celebraci?n D?a de la Constituci?n
+- dia de la constitucion
+
+## synonym:Fecha l?mite para solicitar cambio de campus para el per?odo 2-2018-2019
+- solicitud de cambio de Campus
+- cambio de campus
+
+## synonym:Fecha limite para cambio de carrera para el per?odo 2-2018-2019
+- cambio de carrera
+- solicitud de cambio de carrera
+
+## synonym:Fecha l?mite para retiro parcial
+- retiro parcial
+
+## synonym:Fecha l?mite para solicitar revisi?n de calificaciones finales
+- revision de calificaciones
+- revision de calificaciones finales
+
+## synonym:Fecha limite para retirar prematr?cula del per?odo 2-2018-2019
+- retiro de prematricula
+
+## synonym:Fecha l?mite para las escuelas y departamentos reportar resultados de la revisi?n de calificaciones finales
+- reporte de calificaciones finales
+
+## synonym:Fecha limite para pagar la segunda cuota derecho graduaci?n febrero 2019
+- segunda cuota del derecho de graduacion
+
+## synonym:Fecha l?mite para solicitud tard?a graduaci?n febrero 2019 - Campus de Santiago
+- solicitud tardia de graduacion
+
+## synonym:Inicio per?odo de prematr?cula para el 2-2018-2019
+- periodo de prematricula
+
+## synonym:Fecha l?mite para retiro total
+- retiro total
+
+## synonym:Fecha limite para los candidatos a graduaci?n de febrero 2019 depositar documentos pendientes en la Oficina de Admisiones
+- deposito de documentos de graduacion
+- deposito de documentos pendientes de graduacion
+
+## synonym:Fecha l?mite para cuarto pago de matr?cula
+- cuarto pago de matricula
+
+## synonym:Per?odo de modificaci?n de prematr?cula (presencial)
+- modificacion de prematricula
+
+## synonym:?ltimo d?a de docencia
+- ultimo dia de docencia
+- ultimo dia de clases
+
+## synonym:Inicio del per?odo
+- inicio del periodo
+
+## synonym:Inscripci?n y primer pago de matr?cula estudiantes de nuevo ingreso
+- inscripciones de nuevo ingreso
+
+## synonym:Inicio Inscripciones generales y primer pago de matr?cula
+- inscripcion
+
+## synonym:Inicio asueto navide?o
+- vacaciones navidenas
+- vacaciones navide?as

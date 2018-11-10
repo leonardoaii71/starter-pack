@@ -1,0 +1,43 @@
+mes, dia, evento.finaliza, evento.nombre, evento.importante, evento.asueto
+
+9, 1, , Inicio de docencia, false, false
+9, 3, 7, Entrega de carné, false, false
+9, 4, , Cátedra inaugural del año académico 2018-2019 - Campus de Santiago, false, false
+9, 5, , Modificación a la inscripción, false, false
+9, 9, ,	Aniversario de la fundación de la PUCMM, false, false
+9, 22, , Ceremonia de la sexagésima quinta graduación – Campus Santo Tomás de Aquino, true, false
+9, 24, , Día de Nuestra Señora de las Mercedes, false, true
+9, 26, , Fecha límite para Segundo pago de matrícula, true, false
+9, 28, ,	Firma de documentos de Crédito Educativo, false, false
+10, 5, , Fecha límite para los separados apelar a la Vicerrectoría Académica, entrada al período 2-2018-2019, false, false
+10, 26, , Fecha límite para Tercer pago de matrícula, true, false
+10, 26, , Fecha limite para solicitar readmisión para el período 2-2018-2019, true, false
+10, 26, , Fecha limite para solicitar transferencia de otra universidad para el período 2-2018-2019, true, false
+11, 3, ,	Examen de admisión para ingresar al período 2-2018-2019, false, false
+11, 5, , Celebración Día de la Constitución, false, true
+11, 6, ,	Fecha límite para solicitar cambio de campus para el período 2-2018-2019, false, false
+11, 6, , Fecha limite para cambio de carrera para el período 2-2018-2019, false, false
+11, 7, ,	Fecha límite para solicitud de graduación mayo 2019, Campus Santo Tomás de Aquino, true, false
+11, 9, ,	Fecha límite para retiro parcial, true, false
+11, 12, ,	Fecha límite para solicitar revisión de calificaciones finales, false, false
+11,12, , Fecha limite para retirar prematrícula del período 2-2018-2019, false, false
+11, 13,	, Fecha límite para las escuelas y departamentos reportar resultados de la revisión de calificaciones finales, false, false
+11, 13, , Fecha limite para pagar la segunda cuota derecho graduación febrero 2019, false, false
+11, 13, ,	Fecha límite para solicitud tardía graduación febrero 2019 - Campus de Santiago, false, false
+11, 19, 21,	Inicio período de prematrícula para el 2-2018-2019, false, false
+11, 23, ,	Fecha límite para retiro total, true, false
+11, 26, ,	Fecha límite para solicitar cursar asignaturas en campus diferentes para el período 2-2018-2019, false, false
+11, 26, , Fecha limite para los candidatos a graduación de febrero 2019 depositar documentos pendientes en la Oficina de Admisiones, false, false
+11, 27, ,	Fecha límite para cuarto pago de matrícula, false, false
+11, 30, ,	Fecha límite para remover IT y ET de los períodos 2-2017-2018 y 3-2017-2018, false, false
+12, 3, 10 ,	Período de modificación de prematrícula (presencial), false, false
+12, 3, ,	Inicio período de reporte de calificaciones finales, true, false
+12, 5	, , Fecha límite para solicitud de graduación junio 2019 - Campus de Santiago, false, false
+12, 7, ,	Último día de docencia, true, false
+12, 11, ,	Fecha límite para los profesores reportar las calificaciones finales, true, false
+12, 17, ,	Inicio del período, false, false
+12, 17, ,	Inscripción y primer pago de matrícula estudiantes de nuevo ingreso, true, false
+12, 18, 19,	Inicio Inscripciones generales y primer pago de matrícula, true, false
+12, 18, ,	Bienvenida estudiantes de nuevo ingreso - Campus de Santiago, false, false
+12, 19, ,	Bienvenida estudiantes de nuevo ingreso - Campus Santo Tomás de Aquino, false, false
+12, 21, ,	Inicio asueto navideño, false, false

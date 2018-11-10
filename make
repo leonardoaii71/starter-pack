@@ -19,4 +19,4 @@ Activate BotProject
 cd C:\Users\Leonardo\Documents\GitHub\starter-pack
 
 
-python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --port 5002 --credentials credentials.yml -c telegram --endpoints endpoints.yml
+python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --port 5005 --credentials credentials.yml -c telegram --endpoints endpoints.yml

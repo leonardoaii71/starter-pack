@@ -1,0 +1,14 @@
+intent_substitutions:
+  - after: utter_ask_password
+    intent: informar
+    unless: sorry|bye
+
+disambiguation_policy:
+  trigger: $0 < 2
+  max_suggestions: 2
+  display:
+    text_template: utter_disamb_intro
+    button_title_template_prefix: utter_disamb
+    fallback_button:
+      title: utter_fallback_yes
+      payload: /fallback
