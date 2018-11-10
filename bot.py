@@ -25,7 +25,6 @@ logger = logging.getLogger(__name__)
 def train_dialogue(domain_file="domain.yml",
                    model_path="models/current/dialogue",
                    training_data_file="data/stories.md"):
-
     fallback = FallbackPolicy(fallback_action_name="action_default_fallback",
                               core_threshold=0.3,
                               nlu_threshold=0.1)
@@ -36,10 +35,10 @@ def train_dialogue(domain_file="domain.yml",
 
     training_data = agent.load_data(training_data_file)
     agent.train(
-            training_data,
-            epochs=300,
-            batch_size=100,
-            validation_split=0.2
+        training_data,
+        epochs=300,
+        batch_size=100,
+        validation_split=0.2
     )
 
     agent.persist(model_path)
@@ -61,7 +60,6 @@ def train_nlu():
 
 
 def run(serve_forever=True):
-
     AvailableEndpoints = namedtuple('AvailableEndpoints', 'nlg '
                                                           'nlu '
                                                           'action '
@@ -72,9 +70,7 @@ def run(serve_forever=True):
         _interpreter = RasaNLUInterpreter("models/current/nlu/")
         # load your trained agent
         agent = Agent.load("models/current/dialogue",
-                            interpreter=_interpreter,
-                            endpoints=_endpoints)
-        
+                           interpreter=_interpreter, action_endpoint=_endpoints)
 
         input_channel = TelegramInput(
             # you get this when setting up a bot
@@ -83,7 +79,7 @@ def run(serve_forever=True):
             verify="regispucmm_bot",
             # the url your bot should listen for messages
             webhook_url="https://www.sysservices.site/webhooks/telegram/webhook"
-    )
+        )
 
         # set serve_forever=False if you want to keep the server running
         s = agent.handle_channels([input_channel], 5005, serve_forever=False)
@@ -91,25 +87,23 @@ def run(serve_forever=True):
     except:
         raise Exception("Failed to run")
 
-    
 
-    
 if __name__ == '__main__':
     utils.configure_colored_logging(loglevel="INFO")
 
     parser = argparse.ArgumentParser(
-            description='starts the bot')
+        description='starts the bot')
 
     parser.add_argument(
-            'task',
-            choices=["train-nlu", "train-dialogue", "run"],
-            help="what the bot should do - e.g. run or train?")
+        'task',
+        choices=["train-nlu", "train-dialogue", "run"],
+        help="what the bot should do - e.g. run or train?")
     task = parser.parse_args().task
 
     # decide what to do based on first parameter of the script
     if task == "train-dialogue":
         train_dialogue()
-    elif task =="train-nlu":
+    elif task == "train-nlu":
         train_nlu()
     elif task == "run":
         run()
