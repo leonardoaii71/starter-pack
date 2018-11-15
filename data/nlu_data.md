@@ -14,13 +14,12 @@
 - nos vemos luego
 - hablamos luego
 
-
-
 ## intent:what_should_i_ask
 - que cosas te puedo preguntar?
 - que te puedo preguntar?
 - que me puedes decir?
 - sobre que te puedo preguntar?
+- ayuda
 
 ## intent:greet
 - Hi
@@ -105,7 +104,11 @@
 ## intent:condicion_academica
 - Cual es mi condicion academica actual?
 - cual es mi condicion academica?
+- Condicion academica
 - condicion academica
+- Cóndicion Académica
+- cual es mi condicion academica
+- mi condicion academica
 
 ## intent:requisitos_pendientes
 - Cuales son mis requisitos pendientes?
@@ -114,40 +117,43 @@
 - requisitos pendientes
 - cuales son mis requisitos pendientes?
 - cuales requisitos pendientes tengo?
+- mis requisitos pendientes
+- dime los requisitos pendientes
+
 
 ## intent:creditos_acumulados
 - Cuantos creditos he cursado?
 - cuantos creditos he obtenido?
 - cuantos creditos he acumulado
 - creditos acumulados
+- Creditos Acumulados
+- creditos acumulados
 
-## intent:calificacion_a
-- Cuantas A he obtenido?
-- Cuantas a he obtenido?
-
-## intent:calificacion_b
-- cuantas B he obtenido?
-- cuantas b he obtenido?
-
-## intent:calificacion_c
-- Cuantas C he obtenido?
-- Cuantas c he obtenido?
-
-## intent:calificacion_d
-- Cuantas D he obtenido?
-- Cuantas d he obtenido?
-
-## intent:calificacion_f
-- cuantas F he obtenido?
-- cuantas f he obtenido?
-
-## intent:calificacion_r
-- cuantas R he obtenido?
-- cuantas r he obtenido?
-
-## intent:calificacion_fn
-- cuantas FN he obtenido?
-- cuantas fn he obtenido?
+## intent:cuantas_calificacion
+- Cuantas[A](calificacion)he obtenido?
+- Cuantas[a](calificacion)he obtenido?
+- Cuantas[a](calificacion)he sacado?
+- Cuantas[a](calificacion)consegui?
+- Cuantas[a](calificacion)he conseguido?
+- cuantas[a](calificacion)tengo
+- cuantas[a](calificacion)tengo?
+- cuantas [B](calificacion) he obtenido?
+- cuantas [b](calificacion) he obtenido?
+- Cuantas [b](calificacion) he sacado?
+- Cuantas [b](calificacion) consegui?
+- Cuantas [b](calificacion) he conseguido?
+- cuantas [b](calificacion) tengo
+- cuantas [B](calificacion) tengo?
+- Cuantas [C](calificacion) he obtenido?
+- Cuantas [c](calificacion) he obtenido?
+- Cuantas [D](calificacion) he obtenido?
+- Cuantas [d](calificacion) he obtenido?
+- cuantas [F](calificacion) he obtenido?
+- cuantas [f](calificacion) he obtenido?
+- cuantas [R](calificacion) he obtenido?
+- cuantas [r](calificacion) he obtenido?
+- cuantas [FN](calificacion) he obtenido?
+- cuantas [fn](calificacion) he obtenido?
 
 ## intent:requisitos_cursados
 - Cuales requisitos he cursado?
@@ -155,6 +161,7 @@
 - requisitos cursados
 - Cuales materias he dado?
 - cuales materias he cursado
+- cuales requisitos he pasado
 
 ## intent:mood_unhappy
 - no me siento bien
@@ -163,6 +170,39 @@
 - Me siento mal
 - No estoy feliz
 - no estoy feliz
+
+## intent:informar
+- [20121917](matricula)
+- [20130940](matricula)
+- [20003215](matricula)
+- [19980532](matricula)
+- [20106598](matricula)
+- [20186459](matricula)
+- [20132013](matricula)
+- [20122012](matricula)
+- [12345678](matricula)
+- [mipassword](password)
+- [06505641](password)
+- [dfgdsd34f](password)
+- [asdffff](password)
+- [asdfasdf](password)
+- [m80943295824](password)
+- [micontraseña](password)
+- [leonard1](password)
+- [8095326897](password)
+- [jljdf8384](password)
+- [3838434n21](password)
+- [3233322341](password)
+- [829453053](password)
+- [23343](password)
+- [4384u434](password)
+- [334343421](password)
+- [323438822838ff1](password)
+- [OOV](password)
+
+## regex:matricula
+- [0-9]{8}
+
 
 ## intent:retiro_parcial
 - Retiro parcial
@@ -202,7 +242,6 @@
 - Cuando es la graduacion?
 - cuando es la graduacion
 - cuando es la graduacion?
-- graduacion
 
 ## intent:mi_indice
 - Cual es mi indice?
@@ -292,6 +331,18 @@
 - cuando es la [Solicitud de revision de calificaciones finales](event)?
 - Cuando es la [Solicitud de revision de calificaciones finales](event)?
 - Cuando es la [Solicitud de revision de calificaciones finales](event)
+- cuando es el [Retiro de prematricula](event)
+- cuando es el [Retiro de prematricula](event)?
+- Cuando es el [Retiro de prematricula](event)?
+- cuando es el [Retiro de prematricula](event)
+- cuando es el [Retiro](event)
+- cuando es el [Retiro](event)?
+- Cuando es el [Retiro](event)?
+- cuando es el [Retiro] (event)
+- que dia es el [Retiro](event)?
+- cual dia sera el [Retiro](event)?
+- cuando va a ser el [Retiro](event)?
+- Cuando es el [Retiro](event)?
 - cuando es la [Prematricula](event)
 - cuando es la [Prematricula](event)?
 - Cuando es la [Prematricula](event)?
@@ -857,18 +908,6 @@
 - cuales dias son importantes para este semestre
 - cuales fechas importantes hay
 - Cuales son las fechas importantes del periodo?
-- cuales son las fechas importantes de [enero](date)?
-- cuales son las fechas importantes de [febrero](date)?
-- cuales son las fechas importantes de [marzo](date)?
-- cuales son las fechas importantes de [abril](date)?
-- cuales son las fechas importantes de [mayo](date)?
-- cuales son las fechas importantes de [junio](date)?
-- cuales son las fechas importantes de [julio](date)?
-- cuales son las fechas importantes de [agosto](date)?
-- cuales son las fechas importantes de [septiembre](date)?
-- cuales son las fechas importantes de [octubre](date)?
-- cuales son las fechas importantes de [noviembre](date)?
-- cuales son las fechas importantes de [diciembre](date)?
 
 ## intent:query_asueto
 - dias asuetos
@@ -878,18 +917,6 @@
 - dime dias asueto
 - cuales son los dias asueto del periodo?
 - cuales dias asuetos hay
-- cuales dias asueto hay en [enero](date)?
-- cuales dias asueto hay en [febrero](date)?
-- cuales dias asueto hay en [marzo](date)?
-- cuales dias asueto hay en [abril](date)?
-- cuales dias asueto hay en [mayo](date)?
-- cuales dias asueto hay en [junio](date)?
-- cuales dias asueto hay en [julio](date)?
-- cuales dias asueto hay en [agosto](date)?
-- cuales dias asueto hay en [septiembre](date)?
-- cuales dias asueto hay en [octubre](date)?
-- cuales dias asueto hay en [noviembre](date)?
-- cuales dias asueto hay en [diciembre](date)?
 
 ## intent:count_asueto
 - cuantos dias asuetos hay en este periodo
@@ -919,42 +946,42 @@
 - clima
 
 ## intent:descripcion_proceso
-- que es la [prematricula](proceso)?
+- qué es la [prematricula](proceso)?
 - que es la [prematricula](proceso)
-- que es la [oferta academica personalizada](proceso)?
+- qué es la [oferta academica personalizada](proceso)?
 - que es la [oferta academica personalizada](proceso)
 - que son [asignaturas no programadas](proceso)?
-- que son [asignaturas no programadas](proceso)
+- qué son [asignaturas no programadas](proceso)
 - que es la [seleccion de asignaturas libres](proceso)?
 - que es la [seleccion de asignaturas libres](proceso)
 - que es la [lista de espera](proceso)?
-- que es la [lista de espera](proceso)
+- qué es la [lista de espera](proceso)
 - que es la [autorizacion de empalmes](proceso)?
 - que es la [autorizacion de empalmes](proceso)
-- que es la [autorizacion de asignaturas por tutoria](proceso)?
+- qué es la [autorizacion de asignaturas por tutoria](proceso)?
 - que es la [autorizacion de asignaturas por tutoria](proceso)
-- que es la [autorizacion de exceso de carga academica](proceso)?
-- que es la [autorizacion de exceso de carga academica](proceso)
+- qué es la [autorizacion de exceso de carga academica](proceso)?
+- qué es la [autorizacion de exceso de carga academica](proceso)
 - que es la [asignacion de asignaturas fuera de carrera](proceso)?
-- que es la [asignacion de asignaturas fuera de carrera](proceso)
+- qué es la [asignacion de asignaturas fuera de carrera](proceso)
 - que es la [modificacion de prematricula](proceso)?
-- que es la [modificacion de prematricula](proceso)
-- que son [bajas por prerrequisitos](proceso)?
+- qué es la [modificacion de prematricula](proceso)
+- qué son [bajas por prerrequisitos](proceso)?
 - que son [bajas por prerrequisitos](proceso)
-- que es el [cambio de campus](proceso)?
-- que es el [cambio de campus](proceso)
+- qué es el [cambio de campus](proceso)?
+- qué es el [cambio de campus](proceso)
 - que es [cursar asignaturas en otro campus](proceso)?
-- que es [cursar asignaturas en otro campus](proceso)
+- qué es [cursar asignaturas en otro campus](proceso)
 - que son [estudiantes separados](proceso)?
 - que son [estudiantes separados](proceso)
 - que son [estudiantes no prematriculados](proceso)?
 - que son [estudiantes no prematriculados](proceso)
 - que son [estudiantes especiales](proceso)?
 - que son [estudiantes especiales](proceso)
-- que son [estudiantes oyentes](proceso)?
+- qué son [estudiantes oyentes](proceso)?
 - que son [estudiantes oyentes](proceso)
 - que es la [modificacion de inscripcion](proceso)?
-- que es la [modificacion de inscripcion](proceso)
+- qué es la [modificacion de inscripcion](proceso)
 - que es la [autorizacion de ampliacion de cupos](proceso)?
 - que es la [autorizacion de ampliacion de cupos](proceso)
 - que es la [transferencia de estudiantes de grupos](proceso)?
@@ -1161,6 +1188,14 @@
 - cual es la advertencia para la [expedicion de documentos](proceso)?
 - cual es la advertencia para la [expedicion de documentos](proceso)
 
+## intent:query_indice
+- Cual es mi indice academico?
+- mi indice
+- cual es mi indice?
+- cual es mi indice
+- Cual es mi indice?
+
+
 ## synonym:Inicio de docencia
 - inicio de clases
 - inicio de clase
@@ -1212,12 +1247,41 @@
 ## synonym:Solicitud de cambio de carrera
 - cambio de carrera
 
+
 ## synonym:Solicitud de revision de calificaciones finales
 - revision de calificaciones
 - revision de calificaciones finales
 
 ## synonym:Reporte resultados revision de calificaciones finales
 - reporte de calificaciones finales
+
+## synonym:Limite para pagar segunda cuota graduacion
+- segunda cuota del derecho de graduacion
+
+## synonym:A
+- a
+
+## synonym:B
+- b
+
+## synonym:C
+- c
+
+## synonym:D
+- D
+
+## synonym:F
+- f
+
+## synonym:R
+- r
+
+## synonym:FN
+- fn
+
+## synonym:Fecha limite para depositar documentos pendientes de graduacion
+- deposito de documentos de graduacion
+- deposito de documentos pendientes de graduacion
 
 ## synonym:Periodo de modificacion de prematricula
 - modificacion de prematricula
