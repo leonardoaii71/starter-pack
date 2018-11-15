@@ -9,6 +9,7 @@ from collections import namedtuple
 from rasa_core import utils, constants
 from rasa_core.agent import Agent
 from rasa_core.channels.telegram import TelegramInput
+from rasa_core.channels.facebook import FacebookInput
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.policies.fallback import FallbackPolicy
 from rasa_core.policies.keras_policy import KerasPolicy
@@ -59,9 +60,9 @@ def train_nlu():
 
 
 def run(serve_forever=True):
-    AvailableEndpoints = namedtuple('AvailableEndpoints', 'nlg '
-                                                          'nlu '
-                                                          'action '
+    AvailableEndpoints = namedtuple('AvailableEndpoints', 'nlg'
+                                                          'nlu'
+                                                          'action'
                                                           'model')
 
     _endpoints = EndpointConfig(url="http://localhost:5055/webhook")
@@ -71,6 +72,14 @@ def run(serve_forever=True):
         agent = Agent.load("models/current/dialogue",
                            interpreter=_interpreter, action_endpoint=_endpoints)
 
+        facebook_channel = FacebookInput(
+            fb_verify="rasa-bot",
+            # you need tell facebook this token, to confirm your URL
+            fb_secret="a5fd69f298c42b0d87de817c7071a6a4",  # your app secret
+            fb_access_token="EAABqmImVq5sBAD0A5VeANePSHM7HJkr1rsJKCytYRtNfZBaIProv0jmXmg6xnZALqgkQ1P3Wtw5ZB8tfvrZChE0JCCHI9FhKDkAorhixyh9Vho49ykQQlPV1dJTVS0gP4JRwMC6fsBEFG7LhpXrgsDaqTgaI6bZCxjNG1AzcLoXXRjQgkHMkZAFxLWfLt2LNoZD"
+            # token for the page you subscribed to
+            )
+
         input_channel = TelegramInput(
             # you get this when setting up a bot
             access_token="516790963:AAEgzLnFfhmNk48eEwqb1sfFD-HqAThQHT4",
@@ -78,10 +87,10 @@ def run(serve_forever=True):
             verify="regispucmm_bot",
             # the url your bot should listen for messages
             webhook_url="https://www.sysservices.site/webhooks/telegram/webhook"
-        )
+            )
 
         # set serve_forever=False if you want to keep the server running
-        s = agent.handle_channels([input_channel], 5005, serve_forever=False)
+        s = agent.handle_channels([input_channel, facebook_channel], 5005, serve_forever=True)
 
     except:
         raise Exception("Failed to run")
