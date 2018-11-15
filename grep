@@ -1,0 +1,11 @@
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      696/systemd-resolve 
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      13002/sshd          
+tcp       41      0 0.0.0.0:443             0.0.0.0:*               LISTEN      19872/python3.6     
+tcp        0      0 0.0.0.0:5002            0.0.0.0:*               LISTEN      19741/python3.6     
+tcp        3      0 0.0.0.0:5005            0.0.0.0:*               LISTEN      20075/python3.6     
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      13347/nginx: master 
+tcp6       0      0 :::22                   :::*                    LISTEN      13002/sshd          
+tcp6       0      0 :::80                   :::*                    LISTEN      13347/nginx: master 
+udp     9216      0 127.0.0.53:53           0.0.0.0:*                           696/systemd-resolve 
