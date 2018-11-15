@@ -86,10 +86,21 @@ slots:
 templates:
   # templates the bot should respond with
   utter_you_should_ask:
-    - text: "Puedes preguntarme cosas como: ¿Cuándo es la prematrícula?,  ¿Cuál es mi índice académico?,  ¿Qué son estudiantes especiales?, ¿En qué fecha es el retiro parcial?... Adelante!"
-    - text: "Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :). Adelante"
-    - text: "Puedes preguntarme cosas como: ¿Qué son bajas por prerrequisitos?,  ¿Cómo realizo la selección de asignaturas libres?, ¿Cuál es la penalidad para la graduación? "
-
+    - text: "Puedo ofrecerte informacion acerca de:"
+      buttons:
+      - title: "Fechas Importantes"
+        payload: "fechas importantes"
+      - title: "Índice Académico"
+        payload: "indice academico"
+      - title: "Requisitos Pendientes"
+        payload: "requisitos pendientes"
+      - title: "Requisitos Cursados"
+        payload: "requisitos cursados" 
+      - title: "Condicion Académica"
+        payload: "condicion academica"
+      - title: "Créditos Acumulados"
+        payload: "creditos acumulados"
+        
   utter_greet:
     - text: "¡Hola {username}! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuándo es la prematrícula?,  ¿Cuál es mi índice académico?,  ¿Qué son estudiantes especiales?... Adelante!"
     - text: "¡Saludos {username}!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?"
