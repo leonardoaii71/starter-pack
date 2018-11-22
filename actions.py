@@ -162,19 +162,15 @@ class ActionLookForAsuetos(Action):
         projection["evento.nombre"] = 1
         projection["date"] = 1
         matches = list()
+        collection = Database('kb', 'Calendarios').collection
+        docs = collection.find(query, projection=projection)
+        if docs:
+            for doc in docs:
+                dia = doc['date'].strftime('%d de %B del %Y')
+                matches.append(doc['evento']['nombre'] + " " + dia + '\n')
 
-        with MongoClient("mongodb://localhost:27017/") as client:
-            database = client["kb"]
-            collection = database["Calendarios"]
-            docs = collection.find(query, projection=projection)
-
-            if docs:
-                for doc in docs:
-                    dia = doc['date'].strftime('%d de %B del %Y')
-                    matches.append(doc['evento']['nombre'] + " " + dia + '\n')
-
-                dispatcher.utter_template('utter_ack_asuetos', tracker)
-                dispatcher.utter_message(matches.__str__())
+            dispatcher.utter_template('utter_ack_asuetos', tracker)
+            dispatcher.utter_message(matches.__str__())
         return [SlotSet('asueto_count', docs.count())]
 
 
@@ -198,11 +194,8 @@ class ActionCountAsuetos(Action):
         projection = dict()
         query["evento.asueto"] = "true"
         projection["evento.nombre"] = 1
-
-        with MongoClient("mongodb://localhost:27017/") as client:
-            database = client["kb"]
-            collection = database["Calendarios"]
-            docs = collection.find(query, projection=projection)
+        collection = Database('kb', 'Calendarios').collection
+        docs = collection.find(query, projection=projection)
 
         return [SlotSet('asueto_count', docs.count())]
 
@@ -227,19 +220,16 @@ class ActionLookForImportant(Action):
         projection["evento.nombre"] = 1
         projection["date"] = 1
         matches = list()
+        collection = Database('kb', 'Calendarios').collection
+        docs = collection.find(query, projection=projection)
+        if docs:
+            for doc in docs:
+                # date = datetime.strptime(doc['date'], '%Y-%m-%d %H:%M:%S.%f')
+                dia = doc['date'].strftime('%d de %B del %Y')
+                matches.append(doc['evento']['nombre'] + " " + dia + '\n')
 
-        with MongoClient("mongodb://localhost:27017/") as client:
-            database = client["kb"]
-            collection = database["Calendarios"]
-            docs = collection.find(query, projection=projection)
-            if docs:
-                for doc in docs:
-                    # date = datetime.strptime(doc['date'], '%Y-%m-%d %H:%M:%S.%f')
-                    dia = doc['date'].strftime('%d de %B del %Y')
-                    matches.append(doc['evento']['nombre'] + " " + dia + '\n')
-
-                dispatcher.utter_template('utter_ack_importantes', tracker)
-                dispatcher.utter_message(matches.__str__())
+            dispatcher.utter_template('utter_ack_importantes', tracker)
+            dispatcher.utter_message(matches.__str__())
         return [SlotSet('importantes_count', docs.count())]
 
 
@@ -267,12 +257,8 @@ class ActionCountImportant(Action):
         projection = dict()
         query["evento.importante"] = "true"
         projection["evento.nombre"] = 1
-
-        with MongoClient("mongodb://localhost:27017/") as client:
-            database = client["kb"]
-            collection = database["Calendarios"]
-            docs = collection.find(query, projection=projection)
-
+        collection = Database('kb', 'Calendarios').collection
+        docs = collection.find(query, projection=projection)
         return [SlotSet('importantes_count', docs.count())]
 
 
