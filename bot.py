@@ -65,7 +65,7 @@ def run(serve_forever=True):
                                                           'action'
                                                           'model')
 
-    _endpoints = EndpointConfig(url="http://localhost:5055/webhook")
+    _endpoints = EndpointConfig(url="http://209.97.146.240:5055/webhook")
     try:
         _interpreter = RasaNLUInterpreter("models/current/nlu/")
         # load your trained agent
@@ -90,7 +90,7 @@ def run(serve_forever=True):
             )
 
         # set serve_forever=False if you want to keep the server running
-        s = agent.handle_channels([input_channel, facebook_channel], 5005, serve_forever=True)
+        s = agent.handle_channels([facebook_channel, input_channel], 5005, serve_forever=True)
 
     except:
         raise Exception("Failed to run")
