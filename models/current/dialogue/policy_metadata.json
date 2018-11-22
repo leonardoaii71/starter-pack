@@ -2,79 +2,41 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "matricula",
         "proceso",
+        "password",
+        "calificacion",
         "event",
-        "password",
-        "calificacion"
+        "matricula"
       ]
     },
-    "action_requisitos_cursados": {
-      "slots": []
-    },
-    "action_login_form": {
-      "slots": [
-        "username",
-        "password",
-        "requested_slot"
-      ]
-    },
-    "action_condicion_academica": {
+    "utter_another_question": {
       "slots": []
     },
     "utter_graduacion_sta_fecha": {
       "slots": []
     },
-    "action_ack_calificacion": {
-      "slots": []
-    },
-    "action_process_procedimiento": {
-      "slots": []
-    },
-    "utter_default": {
+    "utter_thank": {
       "slots": []
     },
     "action_default_fallback": {
       "slots": []
     },
-    "utter_bye": {
+    "utter_happy": {
       "slots": []
     },
-    "action_creditos_acumulados": {
+    "utter_retiro_total_fecha": {
       "slots": []
     },
-    "action_look_event": {
-      "slots": [
-        "matching_events"
-      ]
-    },
-    "action_suggest": {
-      "slots": []
-    },
-    "utter_thank": {
-      "slots": []
-    },
-    "utter_greet": {
+    "action_ack_eventdate": {
       "slots": []
     },
     "utter_retiro_parcial_fecha": {
       "slots": []
     },
-    "action_process_descripcion": {
+    "action_requisitos_pendientes": {
       "slots": []
     },
-    "utter_ask_matricula": {
-      "slots": [
-        "requested_slot"
-      ]
-    },
-    "utter_indice_acumulado": {
-      "slots": []
-    },
-    "utter_another_question": {
-      "slots": []
-    },
-    "action_ack_eventdate": {
+    "utter_greet": {
       "slots": []
     },
     "action_look_asuetos": {
@@ -82,16 +44,45 @@
         "asueto_count"
       ]
     },
-    "utter_ack_number_importantes": {
+    "action_login_form": {
+      "slots": [
+        "requested_slot",
+        "password",
+        "username"
+      ]
+    },
+    "action_requisitos_cursados": {
       "slots": []
     },
-    "utter_graduacion_sti_fecha": {
+    "utter_ask_matricula": {
+      "slots": [
+        "requested_slot"
+      ]
+    },
+    "action_ack_calificacion": {
       "slots": []
     },
-    "utter_you_should_ask": {
+    "action_process_procedimiento": {
       "slots": []
     },
-    "utter_indice_periodo": {
+    "action_look_event": {
+      "slots": [
+        "matching_events"
+      ]
+    },
+    "action_condicion_academica": {
+      "slots": []
+    },
+    "utter_default": {
+      "slots": []
+    },
+    "utter_event_not_found": {
+      "slots": []
+    },
+    "action_creditos_acumulados": {
+      "slots": []
+    },
+    "utter_bye": {
       "slots": []
     },
     "action_look_important": {
@@ -99,10 +90,13 @@
         "importantes_count"
       ]
     },
-    "utter_happy": {
+    "utter_graduacion_sti_fecha": {
       "slots": []
     },
-    "utter_retiro_total_fecha": {
+    "utter_ack_number_importantes": {
+      "slots": []
+    },
+    "utter_indice_acumulado": {
       "slots": []
     }
   },

@@ -11844,6 +11844,7 @@
         "pattern": "[0-9]{8}"
       }
     ],
+    "lookup_tables": [],
     "entity_synonyms": [
       {
         "value": "Inicio de docencia",
