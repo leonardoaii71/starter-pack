@@ -13,6 +13,7 @@
 - adios amigo
 - nos vemos luego
 - hablamos luego
+- cuidate
 
 ## intent:what_should_i_ask
 - que cosas te puedo preguntar?
@@ -20,8 +21,14 @@
 - que me puedes decir?
 - sobre que te puedo preguntar?
 - ayuda
+- help
+- ayudame
 
 ## intent:greet
+- Dime av
+- Klk
+- Klk wawawa
+- Salu2
 - Hi
 - Hey
 - Hola bot
@@ -35,6 +42,9 @@
 - saludos
 - Saludos
 - hey
+- dame dato
+- dime aver
+- saludando
 
 ## intent:thank
 - Gracias
@@ -50,6 +60,13 @@
 - gracias por la ayuda
 - te lo agradesco
 - cool, gracias
+- mil gracias
+- Ta jevi
+- Muy jevi
+- Tato
+- Yala
+- nitido
+
 
 ## intent:deny
 - no
@@ -119,7 +136,6 @@
 - cuales requisitos pendientes tengo?
 - mis requisitos pendientes
 - dime los requisitos pendientes
-
 
 ## intent:creditos_acumulados
 - Cuantos creditos he cursado?
@@ -203,7 +219,6 @@
 ## regex:matricula
 - [0-9]{8}
 
-
 ## intent:retiro_parcial
 - Retiro parcial
 - retiro parcial
@@ -217,7 +232,6 @@
 - Retiro Prematricula
 - retiro prematricula
 - Retiro de prematricula
-
 
 ## intent:graduacion_sti
 - Graduacion sti
@@ -242,6 +256,7 @@
 - Cuando es la graduacion?
 - cuando es la graduacion
 - cuando es la graduacion?
+- graduacion
 
 ## intent:mi_indice
 - Cual es mi indice?
@@ -331,18 +346,6 @@
 - cuando es la [Solicitud de revision de calificaciones finales](event)?
 - Cuando es la [Solicitud de revision de calificaciones finales](event)?
 - Cuando es la [Solicitud de revision de calificaciones finales](event)
-- cuando es el [Retiro de prematricula](event)
-- cuando es el [Retiro de prematricula](event)?
-- Cuando es el [Retiro de prematricula](event)?
-- cuando es el [Retiro de prematricula](event)
-- cuando es el [Retiro](event)
-- cuando es el [Retiro](event)?
-- Cuando es el [Retiro](event)?
-- cuando es el [Retiro] (event)
-- que dia es el [Retiro](event)?
-- cual dia sera el [Retiro](event)?
-- cuando va a ser el [Retiro](event)?
-- Cuando es el [Retiro](event)?
 - cuando es la [Prematricula](event)
 - cuando es la [Prematricula](event)?
 - Cuando es la [Prematricula](event)?
@@ -1254,9 +1257,6 @@
 
 ## synonym:Reporte resultados revision de calificaciones finales
 - reporte de calificaciones finales
-
-## synonym:Limite para pagar segunda cuota graduacion
-- segunda cuota del derecho de graduacion
 
 ## synonym:A
 - a
