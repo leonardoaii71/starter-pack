@@ -40,6 +40,7 @@ intents:
   - cuantas_calificacion
   - Login
   - como_estas
+  - tato
 
 entities:
   - event
@@ -138,8 +139,8 @@ templates:
     - text: "¿Encontraste la información que buscabas?"
 
   utter_happy:
-    - text: "Genial!"
-    - text: "Me alegra escuchar eso!"
+    - text: "Genial! Puedes seguir preguntando lo que desees."
+    - text: "Me alegra escuchar eso! Puedes seguir consultando."
 
   utter_goodbye:
     - text: "Bye"
@@ -156,8 +157,8 @@ templates:
     - text: "Por favor digite su nombre para iniciar:"
 
   utter_another_question:
-    - text: "Tienes otra pregunta {username}?"
-    - text: "Necesitas saber algo mas {username}?"
+    - text: "Tienes otra pregunta {username}? Adelante."
+    - text: "Necesitas saber algo mas {username}? Adelante."
 
   utter_suggestions:
     - text: "Creo que no entendí bien, quisiste decir:"
