@@ -41,6 +41,13 @@ intents:
   - Login
   - como_estas
   - tato
+  - cuando_prematricula
+  - cuando_inscripcion
+  - inscripcion_nuevo_ingreso
+  - inscripcion_general
+  - cuando_solicitud_graduacion
+  - solicitud_sti
+  - solicitud_sta
 
 entities:
   - event
@@ -207,6 +214,8 @@ templates:
       payload: "cual es mi indice"
     - title: "Requisitos Pendientes"
       payload: "requisitos pendientes"
+    - title: "Requisitos Cursados"
+      payload: "requisitos cursados"
     - title: "Créditos Acumulados"
       payload: "creditos acumulados"
 
@@ -224,8 +233,39 @@ templates:
     - title: "graduación CSTA"
       payload: "graduacion sta"
 
+  utter_cual_inscripcion:
+  - text: " ¿A cúal inscripción te refieres?"
+    buttons:
+    - title: "Nuevo Ingreso"
+      payload: "nuevo ingreso"
+    - title: "General"
+      payload: "inscripcion general"
+
+   utter_cual_solicitud:
+   - text: " ¿A cúal solicitud de graduación te refieres?"
+     buttons:
+     - title: "Campus STI"
+       payload: "solicitud sti"
+     - title: "Campus STA"
+       payload: "solicitud sta"
+       
+   utter_solicitud_sta_fecha:
+   - text: "La fecha límite para solicitud de graduación Mayo 2019, Campus Santo Tomás de Aquino fue el 7 de Noviembre del 2018."
+
+   utter_solicitud_sti_fecha:
+   - text: "La fecha límite para solicitud de graduación Junio 2019, Campus Santiago será el 5 de Diciembre del 2018."
+  
+  utter_inscripcion_nuevo_ingreso_fecha:
+  - text: "La próxima inscripción para estudiantes de nuevo ingreso será el 17 de Diciembre del 2018."
+
+  utter_inscripcion_general_fecha:
+  - text: "Las inscripciones generales serán los días 18 y 19 de Diciembre del 2018."
+
   utter_indice_acumulado:
   - text: "Tu índice acumulado es 2.5."
+
+  utter_prematricula_fecha:
+  - text: "El período de prematrícula para el 3-2018-2019 será desde el 19 al 21 de Marzo del 2019." 
 
   utter_algo_mas:
   - text: "¿Necesitas saber algo más?."
@@ -349,3 +389,10 @@ actions:
   - utter_you_should_ask
   - utter_seguridad
   - utter_como_estas
+  - utter_cual_inscripcion
+  - utter_inscripcion_nuevo_ingreso_fecha
+  - utter_inscripcion_general_fecha
+  - utter_cual_solicitud
+  - utter_prematricula_fecha
+  - utter_solicitud_sti_fecha
+  - utter_solicitud_sta_fecha
