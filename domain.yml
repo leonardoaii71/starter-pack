@@ -39,6 +39,7 @@ intents:
   - creditos_acumulados
   - cuantas_calificacion
   - Login
+  - como_estas
 
 entities:
   - event
@@ -85,31 +86,25 @@ slots:
 
 templates:
   # templates the bot should respond with
-  utter_you_should_ask:
-    - text: "Puedo ofrecerte informacion acerca de:"
-      buttons:
-      - title: "Fechas Importantes"
-        payload: "fechas importantes"
-      - title: "Índice Académico"
-        payload: "indice academico"
-      - title: "Requisitos Pendientes"
-        payload: "requisitos pendientes"
-      - title: "Requisitos Cursados"
-        payload: "requisitos cursados" 
-      - title: "Condicion Académica"
-        payload: "condicion academica"
-      - title: "Créditos Acumulados"
-        payload: "creditos acumulados"
-        
-  utter_greet:
-    - text: "¡Hola {username}! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuándo es la graduación?,  ¿Cuál es mi índice académico?,  ¿Qué son bajas por prerrequisitos?... Adelante!"
-    - text: "¡Saludos {username}!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?"
-    - text: "¡Bienvenido {username}!. Soy el bot regis. Estoy aquí para ofrecerte información académica. Pregúntame acerca del calendario, procesos académicos o sobre tu historial. ¿Qué deseas saber?"
 
+  utter_greet:
+    - text: "¡Hola! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuándo es la prematrícula?,  ¿Cuál es mi índice académico?,  ¿Qué son estudiantes especiales?... Adelante!"
+    - text: "¡Saludos!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?"
+    - text: "¡Bienvenido {username}!. Soy el bot regis. Estoy aquí para ofrecerte información académica. Pregúntame cosas como: Fechas importantes, ¿Cuándo es el retiro?, ¿Cómo realizo la graduación? . ¿Qué deseas saber?"
+    - text: "Hey! Me llaman Regis, el bot de PUCMM. Soy experto en información académica. Puedes escribir el comando 'Ayuda' y con gusto te asistiré."
+    - text: "Hola humano! Te doy la bienvenida. Soy Regis, el bot de registro. Puedo ofrecerte información académica relevante. ¿En qué puedo ayudarte?"
 
   utter_ask_matricula:
     - text: "Por favor, digita tu matricula sin espacios para continuar"
     - text: "Por favor digitar tu matricula sin espacios ni guiones"
+
+  utter_seguridad:
+    - text: "Por seguridad te recomiendo que elimines la conversación cuando finalices tu consulta, así garantizas confidencialidad en la información suministrada."
+
+  utter_como_estas:
+    - text: "Me encuentro bien. Gracias por preguntar. ¿En qué puedo ayudarte?"
+    - text: "Todo marcha bien. Espero que te encuentres bien también. ¿En qué puedo servirte?"
+    - text: "Todo bajo control. Gracias. ¿En qué te ayudo?"
 
   utter_ask_password:
     - text: "Por favor digite su contraseña para continuar"
@@ -119,13 +114,15 @@ templates:
   utter_thank:
     - "Por nada. Estoy para servirte!"
     - "Es un placer ayudarte."
-    - "Fui creado para ayudarte"
+    - "Fui creado para ayudarte."
+    - "Es un gusto ayudarte."
+    - "Descuida, mi deber es ayudarte."
 
   utter_bye:
-    - text: "Adios {username}."
-    - text: "¡Bye-bye {username}!"
-    - text: "¡Hasta luego {username}!"
-    - text: "Hasta pronto, gracias por tu visita {username}!"
+    - text: "Adios {username}. Muchas gracias por tu visita, espero que me escribas pronto."
+    - text: "¡Bye-bye {username}! Espero haberte ayudado. Recuerda que estoy disponible las 24 horas del día."
+    - text: "¡Hasta luego {username}! Espero haber respondido todas tus inquietudes."
+    - text: "Hasta pronto, gracias por tu visita {username}! La próxima vez solo dices 'Hola' y con gusto te ayudo."
 
   utter_sorry:
     - text: "Lo siento pero por el momento no puedo ayudarte."
@@ -200,6 +197,20 @@ templates:
     - title: "Retiro de prematrícula"
       payload: "retiro prematricula"
 
+  utter_you_should_ask:
+  - text: "Estas son algunas de las inquietudes académicas que puedo responder:"
+    buttons:
+    - title: "Fechas Importantes"
+      payload: "fechas importantes"
+    - title: "Índice Académico"
+      payload: "cual es mi indice"
+    - title: "Requisitos Pendientes"
+      payload: "requisitos pendientes"
+    - title: "Requisitos Cursados"
+      payload: "requisitos cursados"
+    - title: "Créditos Acumulados"
+      payload: "creditos acumulados"
+
   utter_graduacion_sti_fecha:
    - text: "La ceremonia de la nonagésima novena graduación del Campus Santiago será el 2 de Febrero del 2019."
 
@@ -273,7 +284,7 @@ templates:
     - text: "Sus requisitos cursados son: "
 
   utter_creditos_acumulados:
-    - text: "La cantidad de créditos acumulados actualmente es: {creditos}"
+    - text: "La cantidad de créditos acumulados actualmente es: 215"
 
   utter_welcome:
     - text: "Bienvenido {username}! Puedes continuar preguntandome lo que quieres saber"
@@ -337,3 +348,5 @@ actions:
   - utter_suggestions
   - utter_thank
   - utter_you_should_ask
+  - utter_seguridad
+  - utter_como_estas
