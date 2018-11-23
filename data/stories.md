@@ -166,6 +166,34 @@
 * retiro_prematricula
     - utter_retiro_prematricula_fecha
 
+## prematricula
+* cuando_prematricula
+    - utter_prematricula_fecha
+
+## inscripcion nuevo ingreso
+* cuando_inscripcion
+    - utter_cual_inscripcion
+* inscripcion_nuevo_ingreso
+    - utter_inscripcion_nuevo_ingreso_fecha
+
+## inscripcion general
+* cuando_inscripcion
+    - utter_cual_inscripcion
+* inscripcion_general
+    - utter_inscripcion_general_fecha
+
+## solicitud de graduacion sti
+* cuando_solicitud_graduacion
+    - utter_cual_solicitud
+* solicitud_sti
+    - utter_solicitud_sti_fecha
+
+## solicitud de graduacion sta
+* cuando_solicitud_graduacion
+    - utter_cual_solicitud
+* solicitud_sta
+    - utter_solicitud_sta_fecha
+
 ## Generated Story 6516674712220716356
 * requisitos_pendientes
     - action_requisitos_pendientes
