@@ -137,6 +137,39 @@
 - Perfecto
 - Muy bien
 
+## intent:cuando_prematricula
+- cuando es la prematricula?
+- cuando es la prematricula
+- cuando sera la prematricula?
+- cuando sera la prematricula
+- en que fecha es la prematricula?
+- en que fecha sera la prematricula?
+- en que fecha es la prematricula
+- en cual fecha es la prematricula?
+- en cual fecha sera la prematricula
+- en cual fecha es la prematricula
+- que dia es la prematricula?
+- que dia es la prematricula
+
+## intent:cuando_inscripcion
+- cuando es la inscripcion?
+- cuando es la inscripcion
+- cuando sera la inscripcion?
+- cuando sera la inscripcion
+- en que fecha es la inscripcion
+- en que fecha es la inscripcion?
+- en cual fecha es la inscripcion?
+- que dia es la inscripcion?
+- que dia es la inscripcion
+- que dia sera la inscripcion?
+- que dia sera la inscripcion
+
+## intent:inscripcion_nuevo_ingreso
+- nuevo ingreso
+
+## intent:inscripcion_general
+- inscripcion general
+
 ## intent:condicion_academica
 - Cual es mi condicion academica actual?
 - cual es mi condicion academica?
@@ -283,6 +316,26 @@
 - cuando es la graduacion
 - cuando es la graduacion?
 - graduacion
+- en que fecha es la graduacion?
+- en que fecha es la graduacion
+- que dia es la graduacion?
+- que dia es la graduacion
+
+## intent:cuando_solicitud_graduacion
+- Cuando es la solicitud de graduacion?
+- cuando es la solicitud de graduacion
+- cuando es la solicitud graduacion?
+- solicitud de graduacion
+- en que fecha es la solicitud de graduacion?
+- en que fecha es la solicitud de graduacion
+- que dia es la solicitud de graduacion?
+- que dia es la solicitud de graduacion
+
+## intent:solicitud_sti
+- solicitud sti
+
+## intent:solicitud_sta
+- solicitud sta
 
 ## intent:mi_indice
 - Cual es mi indice?
@@ -374,18 +427,10 @@
 - cuando es la [Solicitud de revision de calificaciones finales](event)?
 - Cuando es la [Solicitud de revision de calificaciones finales](event)?
 - Cuando es la [Solicitud de revision de calificaciones finales](event)
-- cuando es la [Prematricula](event)
-- cuando es la [Prematricula](event)?
-- Cuando es la [Prematricula](event)?
-- Cuando es la [Prematricula](event)
 - cuando es el [Cuarto pago de matricula](event)
 - cuando es el [Cuarto pago de matricula](event)?
 - Cuando es el [Cuarto pago de matricula](event)?
 - cuando es el [Cuarto pago de matricula](event)
-- cuando es el [Periodo de modificacion de prematricula](event)
-- cuando es el [Periodo de modificacion de prematricula](event)?
-- Cuando es el [Periodo de modificacion de prematricula](event)?
-- cuando es el [Periodo de modificacion de prematricula](event)
 - cuando es el [Periodo de reporte de calificaciones finales](event)
 - cuando es el [Periodo de reporte de calificaciones finales](event)?
 - Cuando es el [Periodo de reporte de calificaciones finales](event)?
@@ -398,18 +443,6 @@
 - cuando es el [Inicio del periodo](event)?
 - Cuando es el [Inicio del periodo](event)?
 - cuando es el [Inicio del periodo](event)
-- cuando es la [Inscripcion de nuevo ingreso](event)
-- cuando es la [Inscripcion de nuevo ingreso](event)?
-- Cuando es la [Inscripcion de nuevo ingreso](event)?
-- Cuando es la [Inscripcion de nuevo ingreso](event)
-- cuando es la [Inscripcion general](event)
-- cuando es la [Inscripcion general](event)?
-- Cuando es la [Inscripcion general](event)?
-- Cuando es la [Inscripcion general](event)
-- cuando es la [Bienvenida estudiantes de nuevo ingreso](event)
-- cuando es la [Bienvenida estudiantes de nuevo ingreso](event)?
-- Cuando es la [Bienvenida estudiantes de nuevo ingreso](event)?
-- Cuando es la [Bienvenida estudiantes de nuevo ingreso](event)
 - cuando es el [Inicio asueto navideño](event)
 - cuando es el [Inicio asueto navideño](event)?
 - Cuando es el [Inicio asueto navideño](event)?
@@ -500,10 +533,6 @@
 - en que fecha es la [Solicitud de revision de calificaciones finales](event)?
 - En que fecha es la [Solicitud de revision de calificaciones finales](event)?
 - En que fecha es la [Solicitud de revision de calificaciones finales](event)
-- en que fecha es la [Prematricula](event)
-- en que fecha es la [Prematricula](event)?
-- En que fecha es la [Prematricula](event)?
-- En que fecha es la [Prematricula](event)
 - en que fecha es el [Cuarto pago de matricula](event)
 - en que fecha es el [Cuarto pago de matricula](event)?
 - En que fecha es el [Cuarto pago de matricula](event)?
@@ -524,18 +553,6 @@
 - en que fecha es el [Inicio del periodo](event)?
 - En que fecha es el [Inicio del periodo](event)?
 - en que fecha es el [Inicio del periodo](event)
-- en que fecha es la [Inscripcion de nuevo ingreso](event)
-- en que fecha es la [Inscripcion de nuevo ingreso](event)?
-- En que fecha es la [Inscripcion de nuevo ingreso](event)?
-- En que fecha es la [Inscripcion de nuevo ingreso](event)
-- en que fecha es la [Inscripcion general](event)
-- en que fecha es la [Inscripcion general](event)?
-- En que fecha es la [Inscripcion general](event)?
-- En que fecha es la [Inscripcion general](event)
-- en que fecha es la [Bienvenida estudiantes de nuevo ingreso](event)
-- en que fecha es la [Bienvenida estudiantes de nuevo ingreso](event)?
-- En que fecha es la [Bienvenida estudiantes de nuevo ingreso](event)?
-- En que fecha es la [Bienvenida estudiantes de nuevo ingreso](event)
 - en que fecha es el [Inicio asueto navideño](event)
 - en que fecha es el [Inicio asueto navideño](event)?
 - En que fecha es el [Inicio asueto navideño](event)?
@@ -568,10 +585,6 @@
 - en cual fecha es la [Catedra inaugural del ano academico](event)?
 - En cual fecha es la [Catedra inaugural del ano academico](event)?
 - En cual fecha es la [Catedra inaugural del ano academico](event)
-- en cual fecha es la [Modificacion de inscripcion](event)
-- en cual fecha es la [Modificacion de inscripcion](event)?
-- En cual fecha es la [Modificacion de inscripcion](event)?
-- En cual fecha es la [Modificacion de inscripcion](event)
 - en cual fecha es el [Aniversario de la fundacion de PUCMM](event)
 - en cual fecha es el [Aniversario de la fundacion de PUCMM](event)?
 - En cual fecha es el [Aniversario de la fundacion de PUCMM](event)?
@@ -626,10 +639,6 @@
 - en cual fecha es la [Solicitud de revision de calificaciones finales](event)?
 - En cual fecha es la [Solicitud de revision de calificaciones finales](event)?
 - En cual fecha es la [Solicitud de revision de calificaciones finales](event)
-- en cual fecha es la [Prematricula](event)
-- en cual fecha es la [Prematricula](event)?
-- En cual fecha es la [Prematricula](event)?
-- En cual fecha es la [Prematricula](event)
 - en cual fecha es el [Cuarto pago de matricula](event)
 - en cual fecha es el [Cuarto pago de matricula](event)?
 - En cual fecha es el [Cuarto pago de matricula](event)?
@@ -650,18 +659,6 @@
 - en cual fecha es el [Inicio del periodo](event)?
 - En cual fecha es el [Inicio del periodo](event)?
 - en cual fecha es el [Inicio del periodo](event)
-- en cual fecha es la [Inscripcion de nuevo ingreso](event)
-- en cual fecha es la [Inscripcion de nuevo ingreso](event)?
-- En cual fecha es la [Inscripcion de nuevo ingreso](event)?
-- En cual fecha es la [Inscripcion de nuevo ingreso](event)
-- en cual fecha es la [Inscripcion general](event)
-- en cual fecha es la [Inscripcion general](event)?
-- En cual fecha es la [Inscripcion general](event)?
-- En cual fecha es la [Inscripcion general](event)
-- en cual fecha es la [Bienvenida estudiantes de nuevo ingreso](event)
-- en cual fecha es la [Bienvenida estudiantes de nuevo ingreso](event)?
-- En cual fecha es la [Bienvenida estudiantes de nuevo ingreso](event)?
-- En cual fecha es la [Bienvenida estudiantes de nuevo ingreso](event)
 - en cual fecha es el [Inicio asueto navideño](event)
 - en cual fecha es el [Inicio asueto navideño](event)?
 - En cual fecha es el [Inicio asueto navideño](event)?
@@ -752,10 +749,6 @@
 - cuando sera la [Solicitud de revision de calificaciones finales](event)?
 - Cuando sera la [Solicitud de revision de calificaciones finales](event)?
 - Cuando sera la [Solicitud de revision de calificaciones finales](event)
-- cuando sera la [Prematricula](event)
-- cuando sera la [Prematricula](event)?
-- Cuando sera la [Prematricula](event)?
-- Cuando sera la [Prematricula](event)
 - cuando sera el [Cuarto pago de matricula](event)
 - cuando sera el [Cuarto pago de matricula](event)?
 - Cuando sera el [Cuarto pago de matricula](event)?
@@ -776,18 +769,6 @@
 - cuando sera el [Inicio del periodo](event)?
 - Cuando sera el [Inicio del periodo](event)?
 - cuando sera el [Inicio del periodo](event)
-- cuando sera la [Inscripcion de nuevo ingreso](event)
-- cuando sera la [Inscripcion de nuevo ingreso](event)?
-- Cuando sera la [Inscripcion de nuevo ingreso](event)?
-- Cuando sera la [Inscripcion de nuevo ingreso](event)
-- cuando sera la [Inscripcion general](event)
-- cuando sera la [Inscripcion general](event)?
-- Cuando sera la [Inscripcion general](event)?
-- Cuando sera la [Inscripcion general](event)
-- cuando sera la [Bienvenida estudiantes de nuevo ingreso](event)
-- cuando sera la [Bienvenida estudiantes de nuevo ingreso](event)?
-- Cuando sera la [Bienvenida estudiantes de nuevo ingreso](event)?
-- Cuando sera la [Bienvenida estudiantes de nuevo ingreso](event)
 - cuando sera el [Inicio asueto navideño](event)
 - cuando sera el [Inicio asueto navideño](event)?
 - Cuando sera el [Inicio asueto navideño](event)?
@@ -873,10 +854,6 @@
 - que dia es la [Solicitud de revision de calificaciones finales](event)?
 - Que dia es la [Solicitud de revision de calificaciones finales](event)?
 - Que dia es la [Solicitud de revision de calificaciones finales](event)
-- que dia es la [Prematricula](event)
-- que dia es la [Prematricula](event)?
-- Que dia es la [Prematricula](event)?
-- Que dia es la [Prematricula](event)
 - que dia es el [Cuarto pago de matricula](event)
 - que dia es el [Cuarto pago de matricula](event)?
 - Que dia es el [Cuarto pago de matricula](event)?
@@ -897,18 +874,6 @@
 - que dia es el [Inicio del periodo](event)?
 - Que dia es el [Inicio del periodo](event)?
 - que dia es el [Inicio del periodo](event)
-- que dia es la [Inscripcion de nuevo ingreso](event)
-- que dia es la [Inscripcion de nuevo ingreso](event)?
-- Que dia es la [Inscripcion de nuevo ingreso](event)?
-- Que dia es la [Inscripcion de nuevo ingreso](event)
-- que dia es la [Inscripcion general](event)
-- que dia es la [Inscripcion general](event)?
-- Que dia es la [Inscripcion general](event)?
-- Que dia es la [Inscripcion general](event)
-- que dia es la [Bienvenida estudiantes de nuevo ingreso](event)
-- que dia es la [Bienvenida estudiantes de nuevo ingreso](event)?
-- Que dia es la [Bienvenida estudiantes de nuevo ingreso](event)?
-- Que dia es la [Bienvenida estudiantes de nuevo ingreso](event)
 - que dia es el [Inicio asueto navideño](event)
 - que dia es el [Inicio asueto navideño](event)?
 - Que dia es el [Inicio asueto navideño](event)?
