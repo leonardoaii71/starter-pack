@@ -171,6 +171,13 @@
 - cuantas [FN](calificacion) he obtenido?
 - cuantas [fn](calificacion) he obtenido?
 
+## intent:como_estas
+ - como estas
+ - como te sientes?
+ - como estas?
+ - como tamo?
+ - como tu ta?
+
 ## intent:requisitos_cursados
 - Cuales requisitos he cursado?
 - cuales requisitos he cursado?
