@@ -11,22 +11,26 @@
 * thank
     - utter_thank
 
-##affirm
-* affirm
-    - utter_happy
+## tato
+* tato
+    - utter_another_question
 
-##deny
+## deny
 * deny
     - utter_bye
     - utter_seguridad
 
-##como estas
+## como estas
 * como_estas
     - utter_como_estas
 
 ## Bienvenida
 * start
-    -utter_greet
+    - utter_greet
+
+## si
+* mood_affirm 
+    - utter_happy
 
 ## consultar evento ambiguo
 * query_event{"event": "prematricula"}
