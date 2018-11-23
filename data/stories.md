@@ -5,6 +5,7 @@
 ## bye
 * bye
     - utter_bye
+    - utter_seguridad
 
 ## thank
 * thank
@@ -17,6 +18,11 @@
 ##deny
 * deny
     - utter_bye
+    - utter_seguridad
+
+##como estas
+* como_estas
+    - utter_como_estas
 
 ## Bienvenida
 * start
@@ -34,12 +40,6 @@
     - slot{"event": "Inicio de prematricula"}
     - action_look_event
     - action_ack_eventdate
-
-
-## consultar evento sin nombre
-* query_event
-    - utter_event_not_found
-
 
 ## preguntar por dias importantes
 * query_importantes
@@ -60,7 +60,6 @@
 ## preguntar cantidad dia asueto
 * count_asueto
     - action_count_asuetos
-    - utter_another_question
 
 ## Generated Story 6319266707024298916
 * descripcion_proceso{"proceso": "bajas por prerrequisitos"}
@@ -157,6 +156,12 @@
 * retiro_total
     - utter_retiro_total_fecha
 
+## Retiro Prematricula
+* cuando_retiro
+    - utter_cual_retiro
+* retiro_prematricula
+    - utter_retiro_prematricula_fecha
+
 ## Generated Story 6516674712220716356
 * requisitos_pendientes
     - action_requisitos_pendientes
@@ -189,7 +194,7 @@
     - action_default_fallback
 
 ## Generated Story -806123001115259216
-* requisitos_cursados
+#* requisitos_cursados
 > login
     - action_requisitos_cursados
 
@@ -217,4 +222,3 @@
     - action_login_form
     - slot{"password": "321"}
     - slot{"username": "Leonardo"}
-
