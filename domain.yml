@@ -207,8 +207,6 @@ templates:
       payload: "cual es mi indice"
     - title: "Requisitos Pendientes"
       payload: "requisitos pendientes"
-    - title: "Requisitos Cursados"
-      payload: "requisitos cursados"
     - title: "Créditos Acumulados"
       payload: "creditos acumulados"
 
