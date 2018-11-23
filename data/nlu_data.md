@@ -14,6 +14,8 @@
 - nos vemos luego
 - hablamos luego
 - cuidate
+- hablamo
+- hablamos
 
 ## intent:what_should_i_ask
 - que cosas te puedo preguntar?
@@ -23,9 +25,19 @@
 - ayuda
 - help
 - ayudame
+- que te puedo preguntar
+- que me puedes decir
+- sobre que te puedo preguntar
+- que puedes responder
+- que puedes responder?
+- que cosas puedes responder?
+- que cosas puedes responder
+- ayuda?
+- ayudame?
 
 ## intent:greet
 - Dime av
+- dime ab
 - Klk
 - Klk wawawa
 - Salu2
@@ -45,6 +57,7 @@
 - dame dato
 - dime aver
 - saludando
+- wawawa
 
 ## intent:thank
 - Gracias
@@ -53,20 +66,26 @@
 - muchas gracias
 - Gracias bot
 - gracias bot
-- ok gracias
-- Ok gracias!
+- gracias!
+- gracias!!
 - perfecto gracias
 - gracias por todo
 - gracias por la ayuda
 - te lo agradesco
 - cool, gracias
 - mil gracias
+
+## intent:tato
 - Ta jevi
 - Muy jevi
 - Tato
 - Yala
 - nitido
-
+- ok
+- oki doki
+- okay
+- okis
+- oki
 
 ## intent:deny
 - no
@@ -270,6 +289,8 @@
 - indice academico
 - cual es mi indice?
 - como esta mi indice academico
+- cual es mi indice
+- indice academico?
 
 ## intent:indice_acumulado
 - Indice Acumulado
