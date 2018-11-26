@@ -326,6 +326,11 @@ templates:
   utter_welcome:
     - text: "Bienvenido {username}! Puedes continuar preguntandome lo que quieres saber"
 
+  utter_ofrecer_descripcion:
+    - text: "También puedo describir procesos académicos como: Bajas por prerrequisitos, Estudiantes especiales, Estudiantes separados, etc. Tu solo pregunta '¿Qué es/son?' Yo me encargo del resto ;)"
+    - text: "Puedo ofrecerte descripción de tópicos académicos de interés como: Correo estudiantil, Asignaturas no programadas, Reporte de calificaciones, etc. Pregúntame '¿Qué es/son?'."
+    - text: "Tengo información de procesos académicos como: Autorización de empalmes, Oferta académica personalizada, Readmisión, etc. Pregúntame '¿Qué es/son?' con gusto te ayudo."
+
 actions:
   # all the utter actions from the templates, plus any custom actions
   - action_ack_calificacion
@@ -394,3 +399,4 @@ actions:
   - utter_prematricula_fecha
   - utter_solicitud_sti_fecha
   - utter_solicitud_sta_fecha
+  - utter_ofrecer_descripcion
