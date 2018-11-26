@@ -1270,10 +1270,24 @@
 - cual es mi indice
 - Cual es mi indice?
 
-
 ## synonym:Inicio de docencia
 - inicio de clases
 - inicio de clase
+
+## synonym:oferta academica personalizada
+- oferta académica personalizada
+- oferta personalizada
+- óferta académica personalizada
+
+## synonym:autorizacion de empalmes
+- autorización de empalme
+- autorización de empalmes
+- autorizacion de empalme
+
+## synonym:correo electronico estudiantil
+- correo estudiantil
+- correo
+- correo de estudiantes
 
 ## synonym:Entrega de carne
 - entrega del carne
@@ -1306,6 +1320,11 @@
 
 ## synonym:Solicitud de readmision
 - solicitud para readmision
+- solicitid de readmisión
+
+## synonym:readmision
+- readmisión
+- readmisíon
 
 ## synonym:Solicitud de transferencia de universidad
 - solicitud de transferencia
