@@ -15,6 +15,7 @@
 * tato
     - utter_another_question
     - utter_ofrecer_descripcion
+    - utter_no_mas_info
 
 ## deny
 * deny
@@ -29,7 +30,7 @@
 * start
     - utter_greet
 
-## si
+## yess
 * mood_affirm
     - utter_happy
 
@@ -117,9 +118,12 @@
 * graduacion_sta
     - utter_graduacion_sta_fecha
 
-## Generated Story 7261267099767182670
+## basic thanks
 * thank
     - utter_thank
+    - utter_another_question
+* mood_affirm
+    - utter_happy
 
 ## Generated Story 6319266707024298916
 * descripcion_proceso{"proceso": "bajas por prerrequisitos"}
@@ -128,8 +132,8 @@
 
 ## penalidad de procesos
 * penalidad_proceso
-    - action_process_penalidad 
- 
+    - action_process_penalidad
+
 
 ## Generated Story -4629031046991902444
 * cuando_graduacion
