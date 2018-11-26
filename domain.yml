@@ -118,11 +118,10 @@ templates:
     - text: "Por favor digite su contraseña para continuar"
     - text: "Por favor digite su contraseña para continuar, estará a salvo conmigo ;)"
 
-
   utter_thank:
     - "Por nada. Estoy para servirte!"
     - "Es un placer ayudarte."
-    - "Fui creado para ayudarte."
+    - "Fui creado para ayudarte, descuida."
     - "Es un gusto ayudarte."
     - "Descuida, mi deber es ayudarte."
 
@@ -164,8 +163,15 @@ templates:
     - text: "Por favor digite su nombre para iniciar:"
 
   utter_another_question:
-    - text: "Tienes otra pregunta {username}? Adelante."
-    - text: "Necesitas saber algo mas {username}? Adelante."
+    - text: "Tienes otra pregunta {username}?"
+    - text: "Necesitas saber algo mas {username}?"
+    - text: "Entendido ;) Puedes continuar con tu consulta."
+
+  utter_no_mas_info:
+    - text: "Si no deseas seguir preguntando solo dime 'No' o 'Adios' y te comprenderé."
+    - text: "Si haz terminado tu consulta solo escribe 'Bye' o 'Hasta luego'."
+    - text: "Si deseas terminar esta sesión basta con decir 'Bye' o 'Adios'."
+    - text: "Si no tienes nada más que consultar solo escribe 'No' o 'Bye' y te comprenderé."
 
   utter_suggestions:
     - text: "Creo que no entendí bien, quisiste decir:"
@@ -400,3 +406,4 @@ actions:
   - utter_solicitud_sti_fecha
   - utter_solicitud_sta_fecha
   - utter_ofrecer_descripcion
+  - utter_no_mas_info
