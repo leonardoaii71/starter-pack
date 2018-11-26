@@ -129,6 +129,11 @@
     - slot{"proceso": "bajas por prerrequisitos"}
     - action_process_descripcion
 
+## penalidad de procesos
+* penalidad_proceso
+    - action_process_penalidad 
+ 
+
 ## Generated Story -4629031046991902444
 * cuando_graduacion
     - utter_cual_graduacion
