@@ -48,6 +48,7 @@ intents:
   - cuando_solicitud_graduacion
   - solicitud_sti
   - solicitud_sta
+  - procedimiento_prematricula
 
 entities:
   - event
@@ -111,7 +112,7 @@ templates:
 
   utter_como_estas:
     - text: "Me encuentro bien. Gracias por preguntar. ¿En qué puedo ayudarte?"
-    - text: "Todo marcha bien. Espero que te encuentres bien también. ¿En qué puedo servirte?"
+    - text: "Todo marcha perfecto. Espero que te encuentres bien. ¿En qué puedo servirte?"
     - text: "Todo bajo control. Gracias. ¿En qué te ayudo?"
 
   utter_ask_password:
@@ -222,6 +223,18 @@ templates:
       payload: "requisitos pendientes"
     - title: "Créditos Acumulados"
       payload: "creditos acumulados"
+
+  utter_procedimiento_prematricula:
+  - text: "También te puedo ofrecer el procedimiento para realizar la prematrícula. Si deseas saber por favor selecciona ver más."
+    buttons:
+    - title: "Ver más..."
+      payload: "procedimiento prematricula"
+
+  utter_prematricula_proc:
+    - text: "1) El estudiante ingresa su prematrícula mediante la opción Realizar Prematrícula disponible en el menú Prematrícula de la aplicación WebSISE.
+    Esta opción aparece de manera automática desde el primer día que se inicia el período de prematrícula y se desactiva un día antes del inicio del período de inscripción.
+		Durante este tiempo, el estudiante puede efectuar cambios a su pre-selección de asignaturas en el momento que desee y sin costo alguno,
+    2) Una vez realizada la prematrícula, el estudiante debe imprimir el Informe de prematrícula como constancia de haber procesado la misma satisfactoriamente."
 
   utter_graduacion_sti_fecha:
    - text: "La ceremonia de la nonagésima novena graduación del Campus Santiago será el 2 de Febrero del 2019."
@@ -407,3 +420,5 @@ actions:
   - utter_solicitud_sta_fecha
   - utter_ofrecer_descripcion
   - utter_no_mas_info
+  - utter_procedimiento_prematricula
+  - utter_prematricula_proc
