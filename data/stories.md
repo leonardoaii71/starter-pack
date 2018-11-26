@@ -14,6 +14,7 @@
 ## tato
 * tato
     - utter_another_question
+    - utter_ofrecer_descripcion
 
 ## deny
 * deny
@@ -115,10 +116,6 @@
     - utter_cual_graduacion
 * graduacion_sta
     - utter_graduacion_sta_fecha
-
-## Generated Story -320681638175667493
-* bye
-    - utter_bye
 
 ## Generated Story 7261267099767182670
 * thank
