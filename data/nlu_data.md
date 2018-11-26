@@ -97,6 +97,10 @@
 - okis
 - oki
 
+## intent:procedimiento_prematricula
+- procedimiento prematricula
+- procedimiento prematrícula
+
 ## intent:deny
 - no
 - definitivamente no
