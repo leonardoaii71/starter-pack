@@ -123,6 +123,9 @@
 - Correcto
 - si, claro
 - si claro
+- siii
+- sii
+- sí
 
 ## intent:mood_deny
 - no
