@@ -167,6 +167,9 @@
 ## prematricula
 * cuando_prematricula
     - utter_prematricula_fecha
+    - utter_procedimiento_prematricula
+* procedimiento_prematricula
+    - utter_prematricula_proc
 
 ## inscripcion nuevo ingreso
 * cuando_inscripcion
