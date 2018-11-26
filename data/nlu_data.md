@@ -16,6 +16,16 @@
 - cuidate
 - hablamo
 - hablamos
+- bye!
+- goodbye!
+- hasta luego!
+- adios!
+- adios!!
+- byeeeeee
+- byeee
+- babai
+- gn
+- bai
 
 ## intent:what_should_i_ask
 - que cosas te puedo preguntar?
@@ -138,7 +148,11 @@
 - Muy bien
 
 ## intent:cuando_prematricula
-- cuando es la prematricula?
+- cuándo es la prematricula?
+- cuándo es la prematrícula?
+- ¿cuándo es la prematricula?
+- ¿cuándo es la prematrícula?
+- ¿cuando es la prematrícula?
 - cuando es la prematricula
 - cuando sera la prematricula?
 - cuando sera la prematricula
@@ -150,6 +164,7 @@
 - en cual fecha es la prematricula
 - que dia es la prematricula?
 - que dia es la prematricula
+
 
 ## intent:cuando_inscripcion
 - cuando es la inscripcion?
@@ -225,18 +240,39 @@
 
 ## intent:como_estas
  - como estas
+ - cómo estás?
+ - como estás?
  - como te sientes?
+ - cómo te sientes
+ - cómo te sientes?
  - como estas?
  - como tamo?
  - como tu ta?
+ - ¿como estas
+ - ¿cómo estás?
+ - ¿como estás?
+ - ¿como te sientes?
+ - ¿cómo te sientes
+ - ¿cómo te sientes?
+ - ¿como estas?
+ - ¿como tamo?
+ - ¿como tu ta?
 
 ## intent:requisitos_cursados
 - Cuales requisitos he cursado?
+- Cuáles requisitos he cursado
+- Cuáles requisitos he cursado?
 - cuales requisitos he cursado?
 - requisitos cursados
 - Cuales materias he dado?
+- cuáles materias he dado
+- cuáles materias he dado?
 - cuales materias he cursado
+- cuáles materias he cursado?
+- cuáles materias he cursado
 - cuales requisitos he pasado
+- cuáles requisitos he pasado?
+- cuáles requisitos
 
 ## intent:mood_unhappy
 - no me siento bien
@@ -310,23 +346,54 @@
 - Cuando es el retiro?
 - cuando es el retiro
 - cuando es el retiro?
+- cuándo es el retiro?
+- cuándo es el retiro
+- qué día es el retiro?
+- qué día es el retiro
+- qué dia es el retiro?
+- qué dia es el retiro
+- en qué fecha es el retiro
+- en qué fecha es el retiro?
 
 ## intent:cuando_graduacion
 - Cuando es la graduacion?
+- cuándo es la graduación?
+- cuándo es la graduación
+- cuándo es la graduacion?
+- cuándo es la graduacion
+- cuando es la graduación?
+- cuando es la graduación
 - cuando es la graduacion
 - cuando es la graduacion?
 - graduacion
+- graduación
 - en que fecha es la graduacion?
+- en qué fecha es la graduación?
+- en qué fecha es la graduación
+- en qué fecha es la graduacion?
+- en qué fecha es la graduacion
+- en que fecha es la graduación?
 - en que fecha es la graduacion
+- qué día es la graduación?
+- qué día es la graduación?
 - que dia es la graduacion?
 - que dia es la graduacion
 
 ## intent:cuando_solicitud_graduacion
 - Cuando es la solicitud de graduacion?
+- Cuándo es la solicitud de graduación?
+- Cuándo es la solicitud de graduación
+- Cuándo es la solicitud de graduacion?
+- Cuándo es la solicitud de graduacion?
+- Cuándo es la solicitud de graduacion
+- cuando es la solicitud de graduación?
+- cuando es la solicitud de graduación
 - cuando es la solicitud de graduacion
 - cuando es la solicitud graduacion?
 - solicitud de graduacion
+- solicitud de graduación
 - en que fecha es la solicitud de graduacion?
+- en qué fecha es la solicitud de graduación?
 - en que fecha es la solicitud de graduacion
 - que dia es la solicitud de graduacion?
 - que dia es la solicitud de graduacion
@@ -339,6 +406,12 @@
 
 ## intent:mi_indice
 - Cual es mi indice?
+- cuál es mi índice?
+- cuál es mi índice
+- cuál es mi indice?
+- cuál es mi indice
+- cual es mi índice?
+- cual es mi índice
 - indice academico
 - cual es mi indice?
 - como esta mi indice academico
@@ -898,11 +971,18 @@
 ## intent:query_importantes
 - fechas importantes
 - Cuales son las fechas importantes?
+- Cuáles son las fechas importantes?
 - dime fechas importantes
 - dime todos los dias importantes
+- dime todos los días importantes
 - cuales dias son importantes este periodo
+- cuáles días son importantes este período
 - cuales dias son importantes para este semestre
+- cuáles días son importantes para este semestre
 - cuales fechas importantes hay
+- cuáles fechas importantes hay
+- cuales fechas importantes hay?
+- cuáles fechas importantes hay?
 - Cuales son las fechas importantes del periodo?
 
 ## intent:query_asueto
@@ -1136,12 +1216,11 @@
 - cual es la penalidad para los [estudiantes no prematriculados](proceso)?
 - cual es la penalidad para la [modificacion de inscripcion](proceso)?
 - cual es la penalidad para la [ausencia a clases](proceso)?
-- cual es la penalidad para la [graduacion](proceso)?
 - cual es la penalidad para la [prematricula](proceso)
 - cual es la penalidad para los [estudiantes no prematriculados](proceso)
 - cual es la penalidad para la [modificacion de inscripcion](proceso)
 - cual es la penalidad para la [ausencia a clases](proceso)
-- cual es la penalidad para la [graduacion](proceso)
+
 
 ## intent:advertencia_proceso
 - cual es la advertencia para la [prematricula](proceso)?
