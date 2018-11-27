@@ -45,6 +45,13 @@
 - ayuda?
 - ayudame?
 
+## intent:procedimiento_graduacion
+- procedimiento graduacion
+- procedimiento de graduacion
+- procedimiento graduación
+- procedimiento graduación?
+- procedimiento graduacion?
+
 ## intent:greet
 - Dime av
 - dime ab
