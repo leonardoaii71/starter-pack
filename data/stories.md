@@ -158,6 +158,10 @@
 * retiro_total
     - utter_retiro_total_fecha
 
+## Procedimiento graduacion ofrecido
+* procedimiento_graduacion
+    - utter_graduacion_proc
+
 ## Retiro Prematricula
 * cuando_retiro
     - utter_cual_retiro
@@ -188,12 +192,14 @@
     - utter_cual_solicitud
 * solicitud_sti
     - utter_solicitud_sti_fecha
+    - utter_procedimiento_graduacion
 
 ## solicitud de graduacion sta
 * cuando_solicitud_graduacion
     - utter_cual_solicitud
 * solicitud_sta
     - utter_solicitud_sta_fecha
+    - utter_procedimiento_graduacion
 
 ## Generated Story 6516674712220716356
 * requisitos_pendientes
