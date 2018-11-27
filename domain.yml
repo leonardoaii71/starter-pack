@@ -49,6 +49,7 @@ intents:
   - solicitud_sti
   - solicitud_sta
   - procedimiento_prematricula
+  - procedimiento_graduacion
 
 entities:
   - event
@@ -229,6 +230,23 @@ templates:
     buttons:
     - title: "Ver más..."
       payload: "procedimiento prematricula"
+
+  utter_procedimiento_graduacion:
+  - text: "También te puedo ofrecer el procedimiento para realizar la graduación. Si deseas saber por favor selecciona ver más."
+    buttons:
+    - title: "Ver más..."
+      payload: "/procedimiento_graduacion"
+
+  utter_graduacion_proc:
+    - text: "1) El estudiante realiza esta solicitud en a la Oficina de Registro donde se ingresa la misma en el sistema y se imprime,
+  		en original y copia, un informe de los requisitos académicos y administrativos pendientes hasta ese momento y se entrega al solicitante,
+  		2) Luego de haber realizado la solicitud de graduación, el estudiante realiza el pago correspondiente en el área de caja y deposita el
+  		recibo en Registro, 3) Durante el período correspondiente, Registro imprime el primer listado de candidatos a graduación y lo envía a los departamentos de las carreras,
+  		para su publicación, 4) Después de la entrega de las calificaciones finales, la Dirección del Registro actualiza la lista de solicitantes en base
+  		al resultado de las calificaciones del último período académico, la entrega del informe de pasantía y el cumplimiento de otros requisitos del
+  		pensum, 5) Aproximadamente diez días antes de la ceremonia oficial de graduación, Registro entrega a todos los graduandos las informaciones
+  		relativas al protocolo de la ceremonia y las certificaciones oficiales que los acreditan para mandar a confeccionar el anillo y alquilar el
+  		traje académico, 6) El día de la ceremonia, cada graduando recibe una carpeta con su título oficial, certificación de grado y récord de notas."
 
   utter_prematricula_proc:
     - text: "1) El estudiante ingresa su prematrícula mediante la opción Realizar Prematrícula disponible en el menú Prematrícula de la aplicación WebSISE.
@@ -422,3 +440,5 @@ actions:
   - utter_no_mas_info
   - utter_procedimiento_prematricula
   - utter_prematricula_proc
+  - utter_procedimiento_graduacion
+  - utter_graduacion_proc
