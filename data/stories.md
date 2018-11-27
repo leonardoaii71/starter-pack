@@ -162,6 +162,14 @@
 * procedimiento_graduacion
     - utter_graduacion_proc
 
+## corrector prematricula
+* corrector_prematricula
+    - utter_you_meant_prematricula
+
+## incorrecto path
+* incorrecto
+    - utter_incorrecto
+
 ## Retiro Prematricula
 * cuando_retiro
     - utter_cual_retiro
