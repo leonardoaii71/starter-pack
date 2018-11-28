@@ -137,6 +137,67 @@
 - cundo et la primftricula?
 - prematicula
 - prematícula
+- en qué fecha es la prumutricula?
+- en que fecha es la prumutricula
+- cundo será la prematicula
+- cuando sera la prematicula?
+- cuándo es la prumutrícula?
+- cuándo es la prumutrícula
+- cundo es la prematícula
+
+## intent:corrector_graduacion
+- cuando es la gruducion?
+- cuando es la gradcion
+- cundo es la grudicion
+- cuándo es la graducion?
+- cuándo es la gradacion?
+- cuándo es la grudución
+- cundo es la graduacción
+- cuándo es la greducion?
+- cundo es la gradución
+- en que fecha es la graducion?
+- en cul fecha es la grducion?
+- cuando sera la grsducion
+- cuando será la gradación?
+- cuando es la grduaion?
+- cundo et la grdcuion
+- xuando et la graduecion?
+- grsdiacion
+- gradcion
+
+## intent:corrector_inscripcion
+- cuando es la incricion?
+- cuando es la indcripcion?
+- cundo es la iscricion?
+- cuándo es la iscripsion?
+- cuándo es la inscecion?
+- cuándo es la iscripción?
+- cundo es la encricion?
+- cuándo es la enscripcion?
+- cundo es la inscripcion
+- en que fecha es la inscrion?
+- en cul fecha es la nscipcion?
+- cuando sera la inscricion
+- cuando será la iscrición?
+- cuando es la inscricion?
+- cundo et la grdcuion
+- xuando et la inscricion?
+- inscion
+- enscriciom
+- inscripciom
+
+## intent:corrector_como_estas
+- com eta
+- como ets
+- cómo etsa
+
+## intent:corrector_requisitos_pendientes
+- rquisitos pendentes
+- rquisitos oendientes
+- xuales son mis requisotos pendientes?
+- rquisitos pendentes?
+- rquisitos oendientes?
+- xuales son mis requisotos pendientes
 
 ## intent:procedimiento_graduacion
 - procedimiento graduacion
@@ -1694,6 +1755,18 @@
 - ¿que es la [expedicion de documentos](proceso)
 - ¿que es el [correo electronico estudiantil](proceso)?
 - ¿que es el [correo electronico estudiantil](proceso)
+- ¿qué es la [readmision](proceso)?
+- ¿qué es la [readmision](proceso)
+- ¿qué es la [expedicion de documentos](proceso)?
+- ¿qué es la [expedicion de documentos](proceso)
+- ¿qué es el [correo electronico estudiantil](proceso)?
+- ¿qué es el [correo electronico estudiantil](proceso)
+- qué es la [readmision](proceso)?
+- qué es la [readmision](proceso)
+- qué es la [expedicion de documentos](proceso)?
+- qué es la [expedicion de documentos](proceso)
+- qué es el [correo electronico estudiantil](proceso)?
+- qué es el [correo electronico estudiantil](proceso)
 
 ## intent:procedimiento_proceso
 - cual es el procedimiento para la [prematricula](proceso)?
