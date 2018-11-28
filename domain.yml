@@ -52,6 +52,10 @@ intents:
   - procedimiento_graduacion
   - corrector_prematricula
   - incorrecto
+  - corrector_graduacion
+  - corrector_como_estas
+  - corrector_requisitos_pendientes
+  - corrector_inscripcion
 
 entities:
   - event
@@ -251,6 +255,37 @@ templates:
     - title: "Incorrecto"
       payload: "/incorrecto"
 
+  utter_you_meant_graduacion:
+  - text: "Oh no, me he confundido. Quisiste decir '¿Cuándo es la graduación?'"
+    buttons:
+    - title: "Correcto"
+      payload: "/cuando_graduacion"
+    - title: "Incorrecto"
+      payload: "/incorrecto"
+
+  utter_you_meant_inscripcion:
+  - text: "Oh no, me he confundido. Quisiste decir '¿Cuándo es la inscripción?'"
+    buttons:
+    - title: "Correcto"
+      payload: "/cuando_inscripcion"
+    - title: "Incorrecto"
+      payload: "/incorrecto"
+
+  utter_you_meant_como_estas:
+  - text: "Oh no, me he confundido. Quisiste decir '¿Cómo estás?'"
+    buttons:
+    - title: "Correcto"
+      payload: "/como_estas"
+    - title: "Incorrecto"
+      payload: "/incorrecto"
+
+  utter_you_meant_requisitos_pendientes:
+  - text: "Oh no, me he confundido. Quisiste decir '¿Requisitos Pendientes?'"
+    buttons:
+    - title: "Correcto"
+      payload: "/requisitos_pendientes"
+    - title: "Incorrecto"
+      payload: "/incorrecto"
 
   utter_graduacion_proc:
     - text: "1) El estudiante realiza esta solicitud en a la Oficina de Registro donde se ingresa la misma en el sistema y se imprime,
@@ -459,3 +494,7 @@ actions:
   - utter_graduacion_proc
   - utter_you_meant_prematricula
   - utter_incorrecto
+  - utter_you_meant_graduacion
+  - utter_you_meant_inscripcion
+  - utter_you_meant_como_estas
+  - utter_you_meant_requisitos_pendientes
