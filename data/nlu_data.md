@@ -56,7 +56,9 @@
 - babai!
 - gn!
 - bai!
-
+- bay
+- baii
+- bai
 
 ## intent:what_should_i_ask
 - que cosas te puedo preguntar?
@@ -103,6 +105,12 @@
 - ¿qué puedes responder?
 - ¿qué cosas puedes responder?
 - ¿qué cosas puedes responder
+- ayuda?
+- help?
+- alguna ayuda?
+- alguna ayuda
+- no se, ayudame?
+- no se 
 
 ## intent:corrector_prematricula
 - cuando es la prumutricula?
@@ -135,8 +143,6 @@
 - ¿cuando es la prematriculas
 - cundo et la primftricula
 - cundo et la primftricula?
-- prematicula
-- prematícula
 - en qué fecha es la prumutricula?
 - en que fecha es la prumutricula
 - cundo será la prematicula
@@ -164,6 +170,12 @@
 - xuando et la graduecion?
 - grsdiacion
 - gradcion
+- cundo es la graducion
+- cundo es la graducion?
+- cuendo e la graducion?
+- cundo es la gradacion
+- cundo es la graducion?
+
 
 ## intent:corrector_inscripcion
 - cuando es la incricion?
@@ -198,6 +210,9 @@
 - rquisitos pendentes?
 - rquisitos oendientes?
 - xuales son mis requisotos pendientes
+- requisitos pendentes
+- reisitos Pendientes
+- reisitos pendentes
 
 ## intent:procedimiento_graduacion
 - procedimiento graduacion
@@ -313,6 +328,12 @@
 - Ta jevi
 - Muy jevi
 - Tato
+- ta to
+- ya
+- ta to!
+- yaaa
+- yala!!!
+- muy duro
 - Yala
 - nitido
 - ok
@@ -333,6 +354,7 @@
 - genial
 - mul duro
 - que apero!
+- genial!!
 
 ## intent:procedimiento_prematricula
 - procedimiento prematricula
@@ -439,6 +461,7 @@
 
 ## intent:incorrecto
 - Incorrecto
+- incorrecto
 
 ## intent:cuando_prematricula
 - cuándo es la prematricula?
@@ -482,6 +505,7 @@
 - ¿que día es la prematricula
 - ¿qué dia es la prematrícula?
 - ¿que día es la prematrícula
+- cuando será la prematricula?
 
 ## intent:cuando_inscripcion
 - cuando es la inscripcion?
@@ -532,6 +556,7 @@
 - cual es mi condicion academica?
 - Condicion academica
 - condicion academica
+- condición académica
 - Cóndicion Académica
 - cual es mi condicion academica
 - mi condicion academica
@@ -577,6 +602,12 @@
 - ¿mis requisitos pendientes
 - ¿dime los requisitos pendientes
 - ¿dime mis requisitos pendientes
+- ¿Cuáles son mis requisitos pendientes
+- ¿Qué requisitos pendientes tengo
+- Requisitos pendientes
+- requisitos pendientes
+- ¿cuáles son mis requisitos pendientes
+- ¿cuáles requisitos pendientes tengo
 
 ## intent:creditos_acumulados
 - Cuantos creditos he cursado?
@@ -776,6 +807,7 @@
 - Retiro Prematricula
 - retiro prematricula
 - Retiro de prematricula
+- retiro de prematrícula
 
 ## intent:graduacion_sti
 - Graduacion sti
@@ -831,11 +863,13 @@
 - cuándo es el retiro
 - cuándo es el retiro
 - qué día es el retiro
-- qué día es el retiro
+- qué día es el retiro?
 - qué dia es el retiro
 - qué dia es el retiro
 - en qué fecha es el retiro
 - en qué fecha es el retiro
+- cuando sera el retiro
+- cuando será el retiro
 
 ## intent:cuando_graduacion
 - Cuando es la graduacion?
@@ -918,6 +952,8 @@
 - ¿en que fecha es la solicitud de graduacion
 - ¿que dia es la solicitud de graduacion?
 - ¿que dia es la solicitud de graduacion
+- qué dia es la solicitud de graduacion?
+- qué dia es la solicitud de graduacion
 
 ## intent:solicitud_sti
 - solicitud sti
@@ -962,6 +998,7 @@
 - ¿cómo está mi índice academico
 - ¿cual es mi índice
 - ¿indice académico?
+-
 
 ## intent:indice_acumulado
 - Indice Acumulado
