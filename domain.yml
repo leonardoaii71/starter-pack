@@ -108,11 +108,11 @@ templates:
     - text: "¡Saludos!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?"
     - text: "¡Bienvenido {username}!. Soy el bot regis. Estoy aquí para ofrecerte información académica. Pregúntame cosas como: Fechas importantes, ¿Cuándo es el retiro?, ¿Cómo realizo la graduación? . ¿Qué deseas saber?"
     - text: "Hey! Me llaman Regis, el bot de PUCMM. Soy experto en información académica. Puedes escribir el comando 'Ayuda' y con gusto te asistiré."
-    - text: "Hola humano! Te doy la bienvenida. Soy Regis, el bot de registro. Puedo ofrecerte información académica relevante. ¿En qué puedo ayudarte?"
+    - text: "¡Hola! Te doy la bienvenida. Soy Regis, el bot de registro. Puedo ofrecerte información académica relevante. ¿En qué puedo ayudarte?"
 
   utter_ask_matricula:
-    - text: "Por favor, digita tu matricula sin espacios para continuar"
-    - text: "Por favor digitar tu matricula sin espacios ni guiones"
+    - text: "Por favor, digita tu matrícula sin espacios para continuar."
+    - text: "Por favor digitar tu matrícula sin espacios ni guiones."
 
   utter_seguridad:
     - text: "Por seguridad te recomiendo que elimines la conversación cuando finalices tu consulta, así garantizas confidencialidad en la información suministrada."
@@ -123,7 +123,7 @@ templates:
     - text: "Todo bajo control. Gracias. ¿En qué te ayudo?"
 
   utter_ask_password:
-    - text: "Por favor digite su contraseña para continuar"
+    - text: "Por favor digite su contraseña para continuar."
     - text: "Por favor digite su contraseña para continuar, estará a salvo conmigo ;)"
 
   utter_thank:
@@ -136,8 +136,8 @@ templates:
   utter_bye:
     - text: "Adios {username}. Muchas gracias por tu visita, espero que me escribas pronto."
     - text: "¡Bye-bye {username}! Espero haberte ayudado. Recuerda que estoy disponible las 24 horas del día."
-    - text: "¡Hasta luego {username}! Espero haber respondido todas tus inquietudes."
-    - text: "Hasta pronto, gracias por tu visita {username}! La próxima vez solo dices 'Hola' y con gusto te ayudo."
+    - text: "¡Hasta luego! Espero haber respondido todas tus inquietudes."
+    - text: "Hasta pronto, gracias por tu visita. La próxima vez solo dices 'Hola' y con gusto te ayudo."
 
   utter_sorry:
     - text: "Lo siento pero por el momento no puedo ayudarte."
