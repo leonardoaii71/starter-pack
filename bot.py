@@ -86,7 +86,7 @@ def run(serve_forever=True):
             # this is your bots username
             verify="regispucmm_bot",
             # the url your bot should listen for messages
-            webhook_url="https://www.sysservices.site/webhooks/telegram/webhook"
+            webhook_url="https://www.sysservicezs.site/webhooks/telegram/webhook"
             )
 
         # set serve_forever=False if you want to keep the server running

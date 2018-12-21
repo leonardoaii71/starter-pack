@@ -401,9 +401,8 @@ class ActionlookforRequisitosPendientes(Action):
                 "creditos": 1
             }
             result = collection.find(query, projection=projection)
-            requisitos = [(doc["codTema"], doc["nombre"], doc["creditos"]) for doc in result]
-            dispatcher.utter_template("utter_requisitos_pendientes", tracker,
-                                      requisitos=requisitos)
+            requisitos = [(doc["codTema"] + doc["nombre"] + doc["creditos"]) for doc in result]
+            dispatcher.utter_message("\n".join(requisitos))
         return []
 
 
