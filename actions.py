@@ -7,9 +7,9 @@ from rasa_core_sdk.events import SlotSet, UserUtteranceReverted
 from pymongo import MongoClient
 from rasa_core_sdk.forms import FormAction, EntityFormField, FormField
 from Database import Database
-from hunspell import hunspell
+from hunspell import Hunspell
 
-
+hsp = Hunspell('es_ANY')
 # collection = Database('kb', 'Calendarios').collection
 
 # Actions Eventos
@@ -76,7 +76,9 @@ class ActionlookforEvent(Action):
                     "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
                 }
             }
-        ], "$text": {u"$search": evento}}
+        ],
+            "$text": {u"$search": evento}
+        }
 
         projection = {
             "score": {u"$meta": u"textScore"},
@@ -378,8 +380,6 @@ class ActionlookforProcessProcedimiento(Action):
         return []
 
 
-
-
 # Informacion Academica
 class ActionlookforRequisitosPendientes(Action):
     def name(self):
@@ -534,3 +534,16 @@ class ActionCalificacionMateria(Action):
                 dispatcher.utter_message("Usted no ha obtenido ninguna")
 
         return []
+
+
+class ActionFallBack(Action):
+    def name(self):
+        # type: () -> Text
+        return "action_materia_calificacion"
+
+    def run(self, dispatcher, tracker, domain):
+        """
+        :type tracker: Tracker
+        """
+        message = tracker.latest_message
+        message
