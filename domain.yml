@@ -50,6 +50,12 @@ intents:
   - solicitud_sta
   - procedimiento_prematricula
   - procedimiento_graduacion
+  - corrector_prematricula
+  - incorrecto
+  - corrector_graduacion
+  - corrector_como_estas
+  - corrector_requisitos_pendientes
+  - corrector_inscripcion
 
 entities:
   - event
@@ -102,11 +108,11 @@ templates:
     - text: "¡Saludos!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?"
     - text: "¡Bienvenido {username}!. Soy el bot regis. Estoy aquí para ofrecerte información académica. Pregúntame cosas como: Fechas importantes, ¿Cuándo es el retiro?, ¿Cómo realizo la graduación? . ¿Qué deseas saber?"
     - text: "Hey! Me llaman Regis, el bot de PUCMM. Soy experto en información académica. Puedes escribir el comando 'Ayuda' y con gusto te asistiré."
-    - text: "Hola humano! Te doy la bienvenida. Soy Regis, el bot de registro. Puedo ofrecerte información académica relevante. ¿En qué puedo ayudarte?"
+    - text: "¡Hola! Te doy la bienvenida. Soy Regis, el bot de registro. Puedo ofrecerte información académica relevante. ¿En qué puedo ayudarte?"
 
   utter_ask_matricula:
-    - text: "Por favor, digita tu matricula sin espacios para continuar"
-    - text: "Por favor digitar tu matricula sin espacios ni guiones"
+    - text: "Por favor, digita tu matrícula sin espacios para continuar."
+    - text: "Por favor digitar tu matrícula sin espacios ni guiones."
 
   utter_seguridad:
     - text: "Por seguridad te recomiendo que elimines la conversación cuando finalices tu consulta, así garantizas confidencialidad en la información suministrada."
@@ -117,7 +123,7 @@ templates:
     - text: "Todo bajo control. Gracias. ¿En qué te ayudo?"
 
   utter_ask_password:
-    - text: "Por favor digite su contraseña para continuar"
+    - text: "Por favor digite su contraseña para continuar."
     - text: "Por favor digite su contraseña para continuar, estará a salvo conmigo ;)"
 
   utter_thank:
@@ -130,8 +136,8 @@ templates:
   utter_bye:
     - text: "Adios {username}. Muchas gracias por tu visita, espero que me escribas pronto."
     - text: "¡Bye-bye {username}! Espero haberte ayudado. Recuerda que estoy disponible las 24 horas del día."
-    - text: "¡Hasta luego {username}! Espero haber respondido todas tus inquietudes."
-    - text: "Hasta pronto, gracias por tu visita {username}! La próxima vez solo dices 'Hola' y con gusto te ayudo."
+    - text: "¡Hasta luego! Espero haber respondido todas tus inquietudes."
+    - text: "Hasta pronto, gracias por tu visita. La próxima vez solo dices 'Hola' y con gusto te ayudo."
 
   utter_sorry:
     - text: "Lo siento pero por el momento no puedo ayudarte."
@@ -176,8 +182,12 @@ templates:
     - text: "Si no tienes nada más que consultar solo escribe 'No' o 'Bye' y te comprenderé."
 
   utter_suggestions:
-    - text: "Creo que no entendí bien, quisiste decir:"
-    - text: "Por favor podrías ser mas específico? intenta con:"
+    - text: "Creo que no entendí bien lo que quisiste decir. Intenta de nuevo"
+    - text: "Por favor podrías ser mas específico? intenta con otra pregunta."
+
+  utter_incorrecto:
+    - text: "Por favor verifica tu inquietud e intenta de nuevo."
+    - text: "Lamento no poder comprender tu inquietud. Intenta con otra idea."
 
   utter_ack_asuetos:
     - text: "Estos son los días asuetos que encontré: "
@@ -217,25 +227,65 @@ templates:
   - text: "Estas son algunas de las inquietudes académicas que puedo responder:"
     buttons:
     - title: "Fechas Importantes"
-      payload: "fechas importantes"
+      payload: "/query_importantes"
     - title: "Índice Académico"
-      payload: "cual es mi indice"
+      payload: "/mi_indice"
     - title: "Requisitos Pendientes"
-      payload: "requisitos pendientes"
+      payload: "/requisitos_pendientes"
     - title: "Créditos Acumulados"
-      payload: "creditos acumulados"
+      payload: "/creditos_acumulados"
 
   utter_procedimiento_prematricula:
   - text: "También te puedo ofrecer el procedimiento para realizar la prematrícula. Si deseas saber por favor selecciona ver más."
     buttons:
     - title: "Ver más..."
-      payload: "procedimiento prematricula"
+      payload: ":/procedimiento_prematricula"
 
   utter_procedimiento_graduacion:
   - text: "También te puedo ofrecer el procedimiento para realizar la graduación. Si deseas saber por favor selecciona ver más."
     buttons:
     - title: "Ver más..."
       payload: "/procedimiento_graduacion"
+
+  utter_you_meant_prematricula:
+  - text: "Oh no, me he confundido. Quisiste decir '¿Cuándo es la prematrícula?'"
+    buttons:
+    - title: "Correcto"
+      payload: "/cuando_prematricula"
+    - title: "Incorrecto"
+      payload: "/incorrecto"
+
+  utter_you_meant_graduacion:
+  - text: "Oh no, me he confundido. Quisiste decir '¿Cuándo es la graduación?'"
+    buttons:
+    - title: "Correcto"
+      payload: "/cuando_graduacion"
+    - title: "Incorrecto"
+      payload: "/incorrecto"
+
+  utter_you_meant_inscripcion:
+  - text: "Oh no, me he confundido. Quisiste decir '¿Cuándo es la inscripción?'"
+    buttons:
+    - title: "Correcto"
+      payload: "/cuando_inscripcion"
+    - title: "Incorrecto"
+      payload: "/incorrecto"
+
+  utter_you_meant_como_estas:
+  - text: "Oh no, me he confundido. Quisiste decir '¿Cómo estás?'"
+    buttons:
+    - title: "Correcto"
+      payload: "/como_estas"
+    - title: "Incorrecto"
+      payload: "/incorrecto"
+
+  utter_you_meant_requisitos_pendientes:
+  - text: "Oh no, me he confundido. Quisiste decir '¿Requisitos Pendientes?'"
+    buttons:
+    - title: "Correcto"
+      payload: "/requisitos_pendientes"
+    - title: "Incorrecto"
+      payload: "/incorrecto"
 
   utter_graduacion_proc:
     - text: "1) El estudiante realiza esta solicitud en a la Oficina de Registro donde se ingresa la misma en el sistema y se imprime,
@@ -272,17 +322,17 @@ templates:
   - text: " ¿A cúal inscripción te refieres?"
     buttons:
     - title: "Nuevo Ingreso"
-      payload: "nuevo ingreso"
+      payload: "/inscripcion_nuevo_ingreso"
     - title: "General"
-      payload: "inscripcion general"
+      payload: "/inscripcion_general"
 
   utter_cual_solicitud:
   - text: "¿A cúal solicitud de graduación te refieres?"
     buttons:
     - title: "Campus STI"
-      payload: "solicitud sti"
+      payload: "/solicitud_sti"
     - title: "Campus STA"
-      payload: "solicitud sta"
+      payload: "/solicitud_sta"
 
   utter_solicitud_sta_fecha:
   - text: "La fecha límite para solicitud de graduación Mayo 2019, Campus Santo Tomás de Aquino fue el 7 de Noviembre del 2018."
@@ -317,9 +367,9 @@ templates:
   - text: " ¿A cúal índice te refieres?"
     buttons:
     - title: "Índice acumulado"
-      payload: "indice acumulado"
+      payload: "/indice_acumulado"
     - title: "Índice del período"
-      payload: "indice del periodo"
+      payload: "/indice_del_periodo"
 
   utter_default:
     - text: "Lo siento, no entendí tu pregunta, intenta con otra"
@@ -442,3 +492,9 @@ actions:
   - utter_prematricula_proc
   - utter_procedimiento_graduacion
   - utter_graduacion_proc
+  - utter_you_meant_prematricula
+  - utter_incorrecto
+  - utter_you_meant_graduacion
+  - utter_you_meant_inscripcion
+  - utter_you_meant_como_estas
+  - utter_you_meant_requisitos_pendientes

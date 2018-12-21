@@ -26,6 +26,39 @@
 - babai
 - gn
 - bai
+- byee
+- byeee
+- byee!!
+- Bye!
+- Goodbye!
+- Hasta luego!
+- bye bot!
+- Adios amigo!
+- bye!
+- goodbye!
+- hasta luego!
+- me tengo que ir!
+- Nos vemos!
+- adios bot!
+- adios amigo!
+- nos vemos luego!
+- hablamos luego!
+- cuidate!
+- hablamo!
+- hablamos!
+- bye!
+- goodbye!
+- hasta luego!
+- adios!
+- adios!!
+- byeeeeee!
+- byeee!
+- babai!
+- gn!
+- bai!
+- bay
+- baii
+- bai
 
 ## intent:what_should_i_ask
 - que cosas te puedo preguntar?
@@ -44,6 +77,142 @@
 - que cosas puedes responder
 - ayuda?
 - ayudame?
+- qué cosas te puedo preguntar?
+- qué te puedo preguntar?
+- qué me puedes decir?
+- sobre qué te puedo preguntar?
+- ayuda
+- help
+- ayúdame
+- qué te puedo preguntar
+- qué me puedes decir
+- sobre qué te puedo preguntar
+- qué puedes responder
+- qué puedes responder?
+- qué cosas puedes responder?
+- qué cosas puedes responder
+- ¿qué cosas te puedo preguntar?
+- ¿qué te puedo preguntar?
+- ¿qué me puedes decir?
+- ¿sobre qué te puedo preguntar?
+- ¿ayuda
+- ¿help?
+- ¿ayúdame?
+- ¿qué te puedo preguntar
+- ¿qué me puedes decir?
+- ¿sobre qué te puedo preguntar
+- ¿qué puedes responder
+- ¿qué puedes responder?
+- ¿qué cosas puedes responder?
+- ¿qué cosas puedes responder
+- ayuda?
+- help?
+- alguna ayuda?
+- alguna ayuda
+- no se, ayudame?
+- no se 
+
+## intent:corrector_prematricula
+- cuando es la prumutricula?
+- cuando es la prumutricula
+- cundo es la prematicula
+- cuando es la prematicula?
+- cuándo es la prumutrícula?
+- cuándo es la prumutrícula
+- cundo es la prematícula
+- cuándo es la prematícula?
+- cundo es la preomatricula
+- cundo es la preomatricula?
+- cundo es la preomatrícula
+- cundo es la preomatrícula
+- cundo es la preomatrículas
+- cuando es la prematriculas
+- ¿cuando es la prumutricula?
+- ¿cuando es la prumutricula
+- ¿cundo es la prematicula
+- ¿cuando es la prematicula?
+- ¿cuándo es la prumutrícula?
+- ¿cuándo es la prumutrícula
+- ¿cundo es la prematícula
+- ¿cuándo es la prematícula?
+- ¿cundo es la preomatricula
+- ¿cundo es la preomatricula?
+- ¿cundo es la preomatrícula
+- ¿cundo es la preomatrícula
+- ¿cundo es la preomatrículas
+- ¿cuando es la prematriculas
+- cundo et la primftricula
+- cundo et la primftricula?
+- en qué fecha es la prumutricula?
+- en que fecha es la prumutricula
+- cundo será la prematicula
+- cuando sera la prematicula?
+- cuándo es la prumutrícula?
+- cuándo es la prumutrícula
+- cundo es la prematícula
+
+## intent:corrector_graduacion
+- cuando es la gruducion?
+- cuando es la gradcion
+- cundo es la grudicion
+- cuándo es la graducion?
+- cuándo es la gradacion?
+- cuándo es la grudución
+- cundo es la graduacción
+- cuándo es la greducion?
+- cundo es la gradución
+- en que fecha es la graducion?
+- en cul fecha es la grducion?
+- cuando sera la grsducion
+- cuando será la gradación?
+- cuando es la grduaion?
+- cundo et la grdcuion
+- xuando et la graduecion?
+- grsdiacion
+- gradcion
+- cundo es la graducion
+- cundo es la graducion?
+- cuendo e la graducion?
+- cundo es la gradacion
+- cundo es la graducion?
+
+
+## intent:corrector_inscripcion
+- cuando es la incricion?
+- cuando es la indcripcion?
+- cundo es la iscricion?
+- cuándo es la iscripsion?
+- cuándo es la inscecion?
+- cuándo es la iscripción?
+- cundo es la encricion?
+- cuándo es la enscripcion?
+- cundo es la inscripcion
+- en que fecha es la inscrion?
+- en cul fecha es la nscipcion?
+- cuando sera la inscricion
+- cuando será la iscrición?
+- cuando es la inscricion?
+- cundo et la grdcuion
+- xuando et la inscricion?
+- inscion
+- enscriciom
+- inscripciom
+
+## intent:corrector_como_estas
+- com eta
+- como ets
+- cómo etsa
+
+## intent:corrector_requisitos_pendientes
+- rquisitos pendentes
+- rquisitos oendientes
+- xuales son mis requisotos pendientes?
+- rquisitos pendentes?
+- rquisitos oendientes?
+- xuales son mis requisotos pendientes
+- requisitos pendentes
+- reisitos Pendientes
+- reisitos pendentes
 
 ## intent:procedimiento_graduacion
 - procedimiento graduacion
@@ -51,6 +220,11 @@
 - procedimiento graduación
 - procedimiento graduación?
 - procedimiento graduacion?
+- ¿procedimiento graduacion?
+- ¿procedimiento de graduacion?
+- ¿procedimiento graduación?
+- ¿procedimiento graduación?
+- ¿procedimiento graduacion?
 
 ## intent:greet
 - Dime av
@@ -75,6 +249,50 @@
 - dime aver
 - saludando
 - wawawa
+- Dime av?
+- dime ab?
+- Klk?
+- Klk wawawa!
+- Salu2!
+- Hi!
+- Hey!
+- Hola bot!!
+- Hey bot!
+- Hello!
+- hola!
+- hola denuevo!!
+- Hola amigo!
+- Que tal?
+- hola robot!
+- saludos!
+- Saludos!!
+- hey?
+- dame dato?
+- dime aver?
+- saludando?
+- ¿wawawa?
+- ¿Dime av?
+- ¿dime ab?
+- ¿Klk?
+- ¿Klk wawawa!
+- ¿Salu2!
+- ¿Hi!
+- ¿Hey!
+- Hola bot!!
+- Hey bot!
+- Hello!
+- hola!
+- hola denuevo!!
+- Hola amigo!
+- ¿Que tal?
+- hola robot!
+- saludos!
+- Saludos!!
+- ¿hey?
+- ¿dame dato?
+- ¿dime aver?
+- ¿saludando?
+- ¿wawawa?
 
 ## intent:thank
 - Gracias
@@ -91,11 +309,31 @@
 - te lo agradesco
 - cool, gracias
 - mil gracias
+- Gracias!
+- gracias!!
+- Muchas gracias!
+- muchas gracias!
+- Gracias bot!
+- gracias bot!!
+- gracias!
+- gracias!!
+- perfecto gracias!
+- gracias por todo!!
+- gracias por la ayuda!
+- te lo agradesco!
+- cool, gracias!!
+- mil gracias!
 
 ## intent:tato
 - Ta jevi
 - Muy jevi
 - Tato
+- ta to
+- ya
+- ta to!
+- yaaa
+- yala!!!
+- muy duro
 - Yala
 - nitido
 - ok
@@ -103,10 +341,28 @@
 - okay
 - okis
 - oki
+- Ta jevi!
+- Muy jevi!
+- Tato!!
+- Yala!
+- nitido!
+- ok!
+- oki doki!
+- okay!!
+- okis!
+- oki!
+- genial
+- mul duro
+- que apero!
+- genial!!
 
 ## intent:procedimiento_prematricula
 - procedimiento prematricula
 - procedimiento prematrícula
+- procedimiento prematricula?
+- procedimiento prematrícula?
+- ¿procedimiento prematricula?
+- ¿procedimiento prematrícula?
 
 ## intent:deny
 - no
@@ -123,6 +379,20 @@
 - nah
 - no y no
 - Nah
+- no!
+- definitivamente no!
+- nunca!
+- absolutamente no!
+- no creo!
+- no robot!
+- no robot!!
+- No!!!
+- No creo!!
+- No bot!!
+- No robot!
+- nah!
+- no y no!
+- Nah!
 
 ## intent:mood_affirm
 - si
@@ -137,6 +407,20 @@
 - siii
 - sii
 - sí
+- si!
+- Si!!
+- claro!
+- por supuesto!
+- correcto!
+- Claro!
+- Correcto!!
+- si, claro!
+- si claro!
+- siii!
+- sii!
+- sí!
+- siiiii
+- siii
 
 ## intent:mood_deny
 - no
@@ -160,6 +444,24 @@
 - Todo bien
 - Perfecto
 - Muy bien
+- perfecto!
+- muy bien!
+- bien!
+- increible!
+- todo bien!
+- me siento excelente!
+- excelente!
+- Yo estoy bien!
+- yo me siento bien!
+- tamo bien!
+- super!
+- Todo bien!
+- Perfecto!
+- Muy bien!
+
+## intent:incorrecto
+- Incorrecto
+- incorrecto
 
 ## intent:cuando_prematricula
 - cuándo es la prematricula?
@@ -178,7 +480,32 @@
 - en cual fecha es la prematricula
 - que dia es la prematricula?
 - que dia es la prematricula
-
+- ¿cuándo es la prematricula
+- ¿cuando sera la prematricula?
+- ¿cuando sera la prematricula
+- ¿en que fecha es la prematricula?
+- ¿en que fecha sera la prematricula?
+- ¿en que fecha es la prematricula
+- ¿en cual fecha es la prematricula?
+- ¿en cual fecha sera la prematricula
+- ¿en cual fecha es la prematricula
+- ¿que dia es la prematricula?
+- ¿que dia es la prematricula
+- qué día es la prematricula
+- ¿cuándo es la prematrícula
+- ¿cuando será la prematricula?
+- ¿cuándo sera la prematricula
+- ¿en qué fecha es la prematricula?
+- ¿en que fecha sera la prematricula?
+- ¿en qué fecha es la prematrícula
+- ¿en cual fecha es la prematricula?
+- ¿en cuál fecha será la prematricula
+- ¿en cuál fecha es la prematricula
+- ¿qué dia es la prematricula?
+- ¿que día es la prematricula
+- ¿qué dia es la prematrícula?
+- ¿que día es la prematrícula
+- cuando será la prematricula?
 
 ## intent:cuando_inscripcion
 - cuando es la inscripcion?
@@ -192,21 +519,61 @@
 - que dia es la inscripcion
 - que dia sera la inscripcion?
 - que dia sera la inscripcion
+- cuándo es la inscripción?
+- cuándo es la inscripción
+- cuándo será la inscripción?
+- cuando será la inscripción
+- en qué fecha es la inscripción
+- en que fecha es la inscripcion?
+- en cual fecha es la inscripcion?
+- que dia es la inscripción?
+- qué día es la inscripcion
+- que dia será la inscripcion?
+- qué día será la inscripcion
+- ¿cuándo es la inscripción?
+- ¿cuándo es la inscripción
+- ¿cuándo será la inscripción?
+- ¿cuando será la inscripción
+- ¿en qué fecha es la inscripción
+- ¿en que fecha es la inscripcion?
+- ¿en cual fecha es la inscripcion?
+- ¿que dia es la inscripción?
+- ¿qué día es la inscripcion
+- ¿que dia será la inscripcion?
+- ¿qué día será la inscripcion
 
 ## intent:inscripcion_nuevo_ingreso
 - nuevo ingreso
 
 ## intent:inscripcion_general
 - inscripcion general
+- inscripción general
+- inscripcion general?
+- ¿inscripcion general?
 
 ## intent:condicion_academica
 - Cual es mi condicion academica actual?
 - cual es mi condicion academica?
 - Condicion academica
 - condicion academica
+- condición académica
 - Cóndicion Académica
 - cual es mi condicion academica
 - mi condicion academica
+- Cuál es mi condición academica actual?
+- cuál es mi condición academica?
+- Condición académica
+- condición académica
+- Cóndicion Académica
+- cuál es mi condición académica
+- mi condición académica
+- ¿Cuál es mi condición academica actual?
+- ¿cuál es mi condición academica?
+- ¿Condición académica
+- ¿condición académica?
+- ¿Cóndicion Académica?
+- ¿cuál es mi condición académica?
+- ¿mi condición académica
 
 ## intent:requisitos_pendientes
 - Cuales son mis requisitos pendientes?
@@ -217,6 +584,30 @@
 - cuales requisitos pendientes tengo?
 - mis requisitos pendientes
 - dime los requisitos pendientes
+- Cuáles son mis requisitos pendientes?
+- Qué requisitos pendientes tengo?
+- Requisitos pendientes
+- requisitos pendientes
+- cuáles son mis requisitos pendientes?
+- cuáles requisitos pendientes tengo?
+- mis requisitos pendientes
+- dime los requisitos pendientes
+- dime mis requisitos pendientes
+- ¿Cuáles son mis requisitos pendientes?
+- ¿Qué requisitos pendientes tengo?
+- ¿Requisitos pendientes
+- ¿requisitos pendientes
+- ¿cuáles son mis requisitos pendientes?
+- ¿cuáles requisitos pendientes tengo?
+- ¿mis requisitos pendientes
+- ¿dime los requisitos pendientes
+- ¿dime mis requisitos pendientes
+- ¿Cuáles son mis requisitos pendientes
+- ¿Qué requisitos pendientes tengo
+- Requisitos pendientes
+- requisitos pendientes
+- ¿cuáles son mis requisitos pendientes
+- ¿cuáles requisitos pendientes tengo
 
 ## intent:creditos_acumulados
 - Cuantos creditos he cursado?
@@ -225,6 +616,18 @@
 - creditos acumulados
 - Creditos Acumulados
 - creditos acumulados
+- Cuántos créditos he cursado?
+- cuántos créditos he obtenido?
+- cuántos créditos he acumulado
+- créditos acumulados
+- Créditos Acumulados
+- créditos acumulados
+- ¿Cuántos créditos he cursado?
+- ¿cuántos créditos he obtenido?
+- ¿cuántos créditos he acumulado
+- ¿créditos acumulados
+- ¿Créditos Acumulados
+- ¿créditos acumulados
 
 ## intent:cuantas_calificacion
 - Cuantas[A](calificacion)he obtenido?
@@ -251,6 +654,30 @@
 - cuantas [r](calificacion) he obtenido?
 - cuantas [FN](calificacion) he obtenido?
 - cuantas [fn](calificacion) he obtenido?
+- ¿Cuántas[A](calificacion)he obtenido?
+- ¿Cuántas[a](calificacion)he obtenido?
+- ¿Cuántas[a](calificacion)he sacado?
+- ¿Cuántas[a](calificacion)consegui?
+- ¿Cuántas[a](calificacion)he conseguido?
+- ¿cuántas[a](calificacion)tengo
+- ¿cuántas[a](calificacion)tengo?
+- ¿cuántas [B](calificacion) he obtenido?
+- ¿cuántas [b](calificacion) he obtenido?
+- ¿Cuántas [b](calificacion) he sacado?
+- ¿Cuántas [b](calificacion) consegui?
+- ¿Cuántas [b](calificacion) he conseguido?
+- ¿cuantas [b](calificacion) tengo
+- ¿cuantas [B](calificacion) tengo?
+- ¿Cuantas [C](calificacion) he obtenido?
+- ¿Cuantas [c](calificacion) he obtenido?
+- ¿Cuantas [D](calificacion) he obtenido?
+- ¿Cuantas [d](calificacion) he obtenido?
+- ¿cuantas [F](calificacion) he obtenido?
+- ¿cuantas [f](calificacion) he obtenido?
+- ¿cuantas [R](calificacion) he obtenido?
+- ¿cuantas [r](calificacion) he obtenido?
+- ¿cuantas [FN](calificacion) he obtenido?
+- ¿cuantas [fn](calificacion) he obtenido?
 
 ## intent:como_estas
  - como estas
@@ -271,6 +698,17 @@
  - ¿como estas?
  - ¿como tamo?
  - ¿como tu ta?
+ - ¿cómo estás
+ - ¿cómo estás?
+ - ¿cómo estás?
+ - ¿cómo te sientes?
+ - ¿cómo te sientes
+ - ¿cómo te sientes
+ - ¿como estas?
+ - ¿como tamo?
+ - ¿como tu ta?
+ - ¿cómo tamo?
+ - ¿cómo tu ta?
 
 ## intent:requisitos_cursados
 - Cuales requisitos he cursado?
@@ -287,6 +725,34 @@
 - cuales requisitos he pasado
 - cuáles requisitos he pasado?
 - cuáles requisitos
+- Cuáles requisitos he cursado?
+- Cuáles requisitos he cursado
+- Cuáles requisitos he cursado?
+- cuales requisitos he cursado?
+- requisitos cursados
+- Cuáles materias he dado?
+- cuáles materias he dado
+- cuáles materias he dado?
+- cuáles materias he cursado
+- cuáles materias he cursado?
+- cuáles materias he cursado
+- cuáles requisitos he pasado
+- cuáles requisitos he pasado?
+- cuáles requisitos
+- ¿Cuáles requisitos he cursado?
+- ¿Cuáles requisitos he cursado
+- ¿Cuáles requisitos he cursado?
+- ¿cuales requisitos he cursado?
+- ¿requisitos cursados
+- ¿Cuáles materias he dado?
+- ¿cuáles materias he dado
+- ¿cuáles materias he dado?
+- ¿cuáles materias he cursado
+- ¿cuáles materias he cursado?
+- ¿cuáles materias he cursado
+- ¿cuáles requisitos he pasado
+- ¿cuáles requisitos he pasado?
+- ¿cuáles requisitos
 
 ## intent:mood_unhappy
 - no me siento bien
@@ -341,6 +807,7 @@
 - Retiro Prematricula
 - retiro prematricula
 - Retiro de prematricula
+- retiro de prematrícula
 
 ## intent:graduacion_sti
 - Graduacion sti
@@ -368,6 +835,41 @@
 - qué dia es el retiro
 - en qué fecha es el retiro
 - en qué fecha es el retiro?
+- Cuándo es el retiro?
+- cuándo es el retiro
+- cuándo es el retiro?
+- cuándo es el retiro?
+- cuándo es el retiro
+- qué día es el retiro?
+- qué día es el retiro
+- qué dia es el retiro?
+- qué dia es el retiro
+- en qué fecha es el retiro
+- en qué fecha es el retiro?
+- ¿Cuándo es el retiro?
+- ¿cuándo es el retiro
+- ¿cuándo es el retiro?
+- ¿cuándo es el retiro?
+- ¿cuándo es el retiro
+- ¿qué día es el retiro?
+- ¿qué día es el retiro
+- ¿qué dia es el retiro?
+- ¿qué dia es el retiro
+- ¿en qué fecha es el retiro
+- ¿en qué fecha es el retiro?
+- Cuando es el retiro
+- cuando es el retiro
+- cuando es el retiro
+- cuándo es el retiro
+- cuándo es el retiro
+- qué día es el retiro
+- qué día es el retiro?
+- qué dia es el retiro
+- qué dia es el retiro
+- en qué fecha es el retiro
+- en qué fecha es el retiro
+- cuando sera el retiro
+- cuando será el retiro
 
 ## intent:cuando_graduacion
 - Cuando es la graduacion?
@@ -392,6 +894,28 @@
 - qué día es la graduación?
 - que dia es la graduacion?
 - que dia es la graduacion
+- ¿Cuándo es la graduacion?
+- ¿cuándo es la graduación?
+- cuándo es la graduación
+- ¿cuándo es la graduacion?
+- ¿cuándo es la graduacion
+- ¿cuándo es la graduación?
+- cuándo es la graduación
+- cuándo es la graduacion
+- ¿cuando es la graduacion?
+- graduacion
+- graduación?
+- ¿en que fecha es la graduacion?
+- ¿en qué fecha es la graduación?
+- en qué fecha es la graduación
+- ¿en qué fecha es la graduacion?
+- en qué fecha es la graduacion
+- ¿en que fecha es la graduación?
+- en que fecha es la graduacion
+- ¿qué día es la graduación?
+- ¿qué día es la graduación?
+- ¿que dia es la graduacion?
+- ¿que dia es la graduacion
 
 ## intent:cuando_solicitud_graduacion
 - Cuando es la solicitud de graduacion?
@@ -411,6 +935,25 @@
 - en que fecha es la solicitud de graduacion
 - que dia es la solicitud de graduacion?
 - que dia es la solicitud de graduacion
+- ¿Cuándo es la solicitud de graduacion?
+- ¿Cuándo es la solicitud de graduación?
+- ¿Cuándo es la solicitud de graduación
+- ¿Cuándo es la solicitud de graduacion?
+- ¿Cuándo es la solicitud de graduacion?
+- ¿Cuándo es la solicitud de graduacion
+- ¿cuándo es la solicitud de graduación?
+- ¿cuándo es la solicitud de graduación
+- ¿cuándo es la solicitud de graduacion
+- ¿cuándo es la solicitud graduacion?
+- ¿solicitud de graduacion
+- ¿solicitud de graduación
+- ¿en que fecha es la solicitud de graduacion?
+- ¿en qué fecha es la solicitud de graduación?
+- ¿en que fecha es la solicitud de graduacion
+- ¿que dia es la solicitud de graduacion?
+- ¿que dia es la solicitud de graduacion
+- qué dia es la solicitud de graduacion?
+- qué dia es la solicitud de graduacion
 
 ## intent:solicitud_sti
 - solicitud sti
@@ -431,6 +974,31 @@
 - como esta mi indice academico
 - cual es mi indice
 - indice academico?
+- Cuál es mi indice?
+- cuál es mi índice?
+- cuál es mi índice
+- cuál es mi indice?
+- cuál es mi indice
+- cual es mi índice?
+- cual es mi índice
+- índice academico
+- cuál es mi indice?
+- cómo está mi índice academico
+- cual es mi índice
+- indice académico?
+- ¿Cuál es mi indice?
+- ¿cuál es mi índice?
+- ¿cuál es mi índice
+- ¿cuál es mi indice?
+- ¿cuál es mi indice
+- ¿cual es mi índice?
+- ¿cual es mi índice
+- ¿índice academico
+- ¿cuál es mi indice?
+- ¿cómo está mi índice academico
+- ¿cual es mi índice
+- ¿indice académico?
+-
 
 ## intent:indice_acumulado
 - Indice Acumulado
@@ -998,6 +1566,21 @@
 - cuales fechas importantes hay?
 - cuáles fechas importantes hay?
 - Cuales son las fechas importantes del periodo?
+- fechas importantes
+- ¿Cuáles son las fechas importantes?
+- ¿Cuáles son las fechas importantes?
+- ¿dime fechas importantes?
+- ¿dime todos los dias importantes?
+- dime todos los días importantes
+- ¿cuáles días son importantes este periodo?
+- ¿cuáles días son importantes este período
+- ¿cuales dias son importantes para este semestre?
+- ¿cuáles días son importantes para este semestre
+- ¿cuales fechas importantes hay?
+- ¿cuáles fechas importantes hay?
+- ¿cuales fechas importantes hay?
+- ¿cuáles fechas importantes hay?
+- ¿Cuales son las fechas importantes del periodo?
 
 ## intent:query_asueto
 - dias asuetos
@@ -1007,6 +1590,20 @@
 - dime dias asueto
 - cuales son los dias asueto del periodo?
 - cuales dias asuetos hay
+- días asuetos
+- cuáles son los días asueto?
+- dime todos los días asueto
+- dime los días asuetos
+- dime días asueto
+- cuáles son los días asueto del periodo?
+- cuáles dias asuetos hay
+- ¿días asuetos?
+- ¿cuáles son los días asueto?
+- ¿dime todos los días asueto?
+- ¿dime los días asuetos?
+- ¿dime días asueto?
+- ¿cuáles son los días asueto del periodo?
+- ¿cuáles dias asuetos hay?
 
 ## intent:count_asueto
 - cuantos dias asuetos hay en este periodo
@@ -1015,6 +1612,18 @@
 - cual es la cantidad de dias asuetos del periodo
 - cantidad de dias asuetos
 - cantidad de dias asuetos
+- cuántos días asuetos hay en este periodo
+- cuántos días asuetos hay en este semestre
+- cuántos días asuetos hay
+- cuál es la cantidad de días asuetos del periodo
+- cantidad de días asuetos
+- cantidad de dias asuetos
+- ¿cuántos días asuetos hay en este periodo
+- ¿cuántos días asuetos hay en este semestre
+- ¿cuántos días asuetos hay
+- ¿cuál es la cantidad de días asuetos del periodo
+- ¿cantidad de días asuetos
+- ¿cantidad de dias asuetos
 
 ## intent:count_importante
 - cuantos dias importantes hay
@@ -1023,6 +1632,24 @@
 - cual es la cantidad de dias importantes del periodo
 - cantidad de dias importantes
 - cuantos son los dias importantes
+- cuántos días importantes hay
+- cuántos días importantes hay en este período
+- cuántos días importantes hay en este semestre
+- cuál es la cantidad de días importantes del período
+- cantidad de días importantes
+- cuántos son los días importantes
+- cuántos días importantes hay?
+- cuántos días importantes hay en este período?
+- cuántos días importantes hay en este semestre?
+- cuál es la cantidad de días importantes del período?
+- cantidad de días importantes?
+- cuántos son los días importantes?
+- ¿cuántos días importantes hay?
+- ¿cuántos días importantes hay en este período?
+- ¿cuántos días importantes hay en este semestre?
+- ¿cuál es la cantidad de días importantes del período?
+- ¿cantidad de días importantes?
+- ¿cuántos son los días importantes?
 
 ## intent:nonsense
 - asldkfjaksf
@@ -1100,6 +1727,83 @@
 - que es la [expedicion de documentos](proceso)
 - que es el [correo electronico estudiantil](proceso)?
 - que es el [correo electronico estudiantil](proceso)
+
+- ¿qué es la [prematricula](proceso)?
+- ¿que es la [prematricula](proceso)
+- ¿qué es la [oferta academica personalizada](proceso)?
+- ¿que es la [oferta academica personalizada](proceso)
+- ¿que son [asignaturas no programadas](proceso)?
+- ¿qué son [asignaturas no programadas](proceso)
+- ¿que es la [seleccion de asignaturas libres](proceso)?
+- ¿que es la [seleccion de asignaturas libres](proceso)
+- ¿que es la [lista de espera](proceso)?
+- ¿qué es la [lista de espera](proceso)
+- ¿que es la [autorizacion de empalmes](proceso)?
+- ¿que es la [autorizacion de empalmes](proceso)
+- ¿qué es la [autorizacion de asignaturas por tutoria](proceso)?
+- ¿que es la [autorizacion de asignaturas por tutoria](proceso)
+- ¿qué es la [autorizacion de exceso de carga academica](proceso)?
+- ¿qué es la [autorizacion de exceso de carga academica](proceso)
+- ¿que es la [asignacion de asignaturas fuera de carrera](proceso)?
+- ¿qué es la [asignacion de asignaturas fuera de carrera](proceso)
+- ¿que es la [modificacion de prematricula](proceso)?
+- ¿qué es la [modificacion de prematricula](proceso)
+- ¿qué son [bajas por prerrequisitos](proceso)?
+- ¿que son [bajas por prerrequisitos](proceso)
+- ¿qué es el [cambio de campus](proceso)?
+- ¿qué es el [cambio de campus](proceso)
+- ¿que es [cursar asignaturas en otro campus](proceso)?
+- ¿qué es [cursar asignaturas en otro campus](proceso)
+- ¿que son [estudiantes separados](proceso)?
+- ¿que son [estudiantes separados](proceso)
+- ¿que son [estudiantes no prematriculados](proceso)?
+- ¿que son [estudiantes no prematriculados](proceso)
+- ¿que son [estudiantes especiales](proceso)?
+- ¿que son [estudiantes especiales](proceso)
+- ¿qué son [estudiantes oyentes](proceso)?
+- ¿que son [estudiantes oyentes](proceso)
+- ¿que es la [modificacion de inscripcion](proceso)?
+- ¿qué es la [modificacion de inscripcion](proceso)
+- ¿que es la [autorizacion de ampliacion de cupos](proceso)?
+- ¿que es la [autorizacion de ampliacion de cupos](proceso)
+- ¿que es la [transferencia de estudiantes de grupos](proceso)?
+- ¿que es la [transferencia de estudiantes de grupos](proceso)
+- ¿que es la [cancelacion de grupos](proceso)?
+- ¿que es la [cancelacion de grupos](proceso)
+- ¿que es la [lista de clases](proceso)?
+- ¿que es la [lista de clases](proceso)
+- ¿que es [fn](proceso)?
+- ¿que es [fn](proceso)
+- ¿que son [actas de pruebas parciales](proceso)?
+- ¿que son [actas de pruebas parciales](proceso)
+- ¿que son [actas de calificaciones finales](proceso)?
+- ¿que son [actas de calificaciones finales](proceso)
+- ¿que es la [revision de calificaciones](proceso)?
+- ¿que es la [revision de calificaciones](proceso)
+- ¿que es el [reporte de calificaciones](proceso)?
+- ¿que es el [reporte de calificaciones](proceso)
+- ¿que es la [graduacion](proceso)?
+- ¿que es la [graduacion](proceso)
+- ¿que es el [cambio de carrera](proceso)?
+- ¿que es el [cambio de carrera](proceso)
+- ¿que es la [readmision](proceso)?
+- ¿que es la [readmision](proceso)
+- ¿que es la [expedicion de documentos](proceso)?
+- ¿que es la [expedicion de documentos](proceso)
+- ¿que es el [correo electronico estudiantil](proceso)?
+- ¿que es el [correo electronico estudiantil](proceso)
+- ¿qué es la [readmision](proceso)?
+- ¿qué es la [readmision](proceso)
+- ¿qué es la [expedicion de documentos](proceso)?
+- ¿qué es la [expedicion de documentos](proceso)
+- ¿qué es el [correo electronico estudiantil](proceso)?
+- ¿qué es el [correo electronico estudiantil](proceso)
+- qué es la [readmision](proceso)?
+- qué es la [readmision](proceso)
+- qué es la [expedicion de documentos](proceso)?
+- qué es la [expedicion de documentos](proceso)
+- qué es el [correo electronico estudiantil](proceso)?
+- qué es el [correo electronico estudiantil](proceso)
 
 ## intent:procedimiento_proceso
 - cual es el procedimiento para la [prematricula](proceso)?
@@ -1234,7 +1938,22 @@
 - cual es la penalidad para los [estudiantes no prematriculados](proceso)
 - cual es la penalidad para la [modificacion de inscripcion](proceso)
 - cual es la penalidad para la [ausencia a clases](proceso)
-
+- cuál es la penalidad para la [prematricula](proceso)?
+- cuál es la penalidad para los [estudiantes no prematriculados](proceso)?
+- cuál es la penalidad para la [modificacion de inscripcion](proceso)?
+- cuál es la penalidad para la [ausencia a clases](proceso)?
+- cuál es la penalidad para la [prematricula](proceso)
+- cuál es la penalidad para los [estudiantes no prematriculados](proceso)
+- cuál es la penalidad para la [modificacion de inscripcion](proceso)
+- cuál es la penalidad para la [ausencia a clases](proceso)
+- ¿cuál es la penalidad para la [prematricula](proceso)?
+- ¿cuál es la penalidad para los [estudiantes no prematriculados](proceso)?
+- ¿cuál es la penalidad para la [modificacion de inscripcion](proceso)?
+- ¿cuál es la penalidad para la [ausencia a clases](proceso)?
+- ¿cuál es la penalidad para la [prematricula](proceso)
+- ¿cuál es la penalidad para los [estudiantes no prematriculados](proceso)
+- ¿cuál es la penalidad para la [modificacion de inscripcion](proceso)
+- ¿cuál es la penalidad para la [ausencia a clases](proceso)
 
 ## intent:advertencia_proceso
 - cual es la advertencia para la [prematricula](proceso)?
@@ -1283,6 +2002,11 @@
 - cual es mi indice?
 - cual es mi indice
 - Cual es mi indice?
+- ¿Cual es mi indice academico?
+- ¿mi indice
+- ¿cual es mi indice?
+- ¿cual es mi indice
+- ¿Cual es mi indice?
 
 ## synonym:Inicio de docencia
 - inicio de clases
@@ -1321,16 +2045,20 @@
 
 ## synonym:Dia de Nuestra Senora de las Mercedes
 - dia de las mercedes
+- día de las mercedes
 
 ## synonym:Segundo pago de matricula
 - segundo pago de matricula
 - segundo pago de la matricula
+- - segundo pago de la matrícula
 
 ## synonym:Firma de documentos de Credito Educativo
 - firmas de documentos de credito
+- documentos de crédito
 
 ## synonym:Tercer pago de matricula
 - tercer pago de la matricula
+- tercer pago de matrícula
 
 ## synonym:Solicitud de readmision
 - solicitud para readmision
@@ -1345,9 +2073,11 @@
 
 ## synonym:Primer Examen de admision
 - examen de admision
+- examen de admisión
 
 ## synonym:Dia de la Constitucion
 - constitucion
+- constitución
 
 ## synonym:Solicitud de cambio de campus
 - cambio de campus
@@ -1355,10 +2085,10 @@
 ## synonym:Solicitud de cambio de carrera
 - cambio de carrera
 
-
 ## synonym:Solicitud de revision de calificaciones finales
 - revision de calificaciones
 - revision de calificaciones finales
+- revisión de calificaciones finales
 
 ## synonym:Reporte resultados revision de calificaciones finales
 - reporte de calificaciones finales
@@ -1387,16 +2117,22 @@
 ## synonym:Fecha limite para depositar documentos pendientes de graduacion
 - deposito de documentos de graduacion
 - deposito de documentos pendientes de graduacion
+- depósito de documentos de graduación
 
 ## synonym:Periodo de modificacion de prematricula
 - modificacion de prematricula
+- modificación de prematrícula
 
 ## synonym:Ultimo dia de docencia
 - ultimo dia de docencia
 - ultimo dia de clases
+- último día de clases
+- último día de docencia
 
 ## synonym:Inicio del periodo
 - inicio del periodo
+- inicio del período
 
 ## synonym:Inicio asueto navideño
 - vacaciones navidenas
+- vacaciones navideñas

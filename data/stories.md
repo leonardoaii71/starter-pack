@@ -162,6 +162,30 @@
 * procedimiento_graduacion
     - utter_graduacion_proc
 
+## corrector prematricula
+* corrector_prematricula
+    - utter_you_meant_prematricula
+
+## corrector como estas
+* corrector_como_estas
+    - utter_you_meant_como_estas
+
+## corrector graduacion
+* corrector_graduacion
+    - utter_you_meant_graduacion
+
+## corrector inscripcion
+* corrector_inscripcion
+    - utter_you_meant_inscripcion
+
+## corrector requisitos pendientes
+* corrector_requisitos_pendientes
+    - utter_you_meant_requisitos_pendientes
+
+## incorrecto path
+* incorrecto
+    - utter_incorrecto
+
 ## Retiro Prematricula
 * cuando_retiro
     - utter_cual_retiro
