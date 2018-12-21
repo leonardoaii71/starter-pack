@@ -545,5 +545,6 @@ class ActionFallBack(Action):
         """
         :type tracker: Tracker
         """
-        message = tracker.latest_message
-        message
+        #message = tracker.latest_message
+        #message
+        pass

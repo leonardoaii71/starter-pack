@@ -16,21 +16,12 @@ class t:
         projection = {}
         sort = {}
         query = dict()
-        """query = {
-            "$or": [
-                {
-                    "date": {
-                        "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
-                    }
-                },
-                {
-                    "evento.finaliza": {
-                        "$gte": datetime.now(tz=pytz.timezone('America/Santo_Domingo'))
-                    }
-                }
-            ]
-        }"""
         evento = 'retiro'
+        query = {
+            "date": {
+                    "$gte": datetime(year=2018, month=1, day=1, tz=pytz.timezone('America/Santo_Domingo'))
+                }
+        }
         query["$text"] = {
             u"$search": evento
         }
@@ -169,4 +160,4 @@ class t:
             else:
                 print("Usted no ha obtenido ninguna")
 
-t.califi()
+t.Events()
