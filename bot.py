@@ -65,7 +65,7 @@ def run(serve_forever=True):
                                                           'action'
                                                           'model')
 
-    _endpoints = EndpointConfig(url="http://209.97.146.240:5055/webhook")
+    _endpoints = EndpointConfig(url="http://localhost:5055/webhook")
     try:
         _interpreter = RasaNLUInterpreter("models/current/nlu/")
         # load your trained agent
@@ -86,7 +86,7 @@ def run(serve_forever=True):
             # this is your bots username
             verify="regispucmm_bot",
             # the url your bot should listen for messages
-            webhook_url="https://www.sysservicezs.site/webhooks/telegram/webhook"
+            webhook_url="https://49e936b1.ngrok.io/webhooks/telegram/webhook"
             )
 
         # set serve_forever=False if you want to keep the server running
@@ -104,7 +104,7 @@ if __name__ == '__main__':
 
     parser.add_argument(
         'task',
-        choices=["train-nlu", "train-dialogue", "run"],
+        choices=["train-nlu", "train-dialogue", "run", "runall"],
         help="what the bot should do - e.g. run or train?")
     task = parser.parse_args().task
 
@@ -114,4 +114,8 @@ if __name__ == '__main__':
     elif task == "train-nlu":
         train_nlu()
     elif task == "run":
+        run()
+    elif task == "runall":
+        train_nlu()
+        train_dialogue()
         run()
