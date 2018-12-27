@@ -12,11 +12,11 @@ sort = {}
 with MongoClient("mongodb://localhost:27017/") as client:
     database = client["kb"]
     collection = database["Calendarios"]
-    docs = collection.find({})
+    docs = collection.find({'year': {"$exists": True }})
     #matches = []
     unset = {u"$unset": {"year": "", "month": "", "day": ""}}
     for doc in docs:
-        year = 2018
+        year = int(doc['year'])
         mes = int(doc['mes'])
         dia = int(doc['dia'])
         update = {}

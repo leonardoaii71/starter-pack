@@ -18,6 +18,7 @@ actions:
 - action_process_procedimiento
 - action_requisitos_cursados
 - action_requisitos_pendientes
+- action_fallback
 - action_suggest
 - utter_ack_asuetos
 - utter_ack_eventdate
@@ -58,6 +59,27 @@ actions:
 - utter_suggestions
 - utter_thank
 - utter_you_should_ask
+- utter_seguridad
+- utter_como_estas
+- utter_cual_inscripcion
+- utter_inscripcion_nuevo_ingreso_fecha
+- utter_inscripcion_general_fecha
+- utter_cual_solicitud
+- utter_prematricula_fecha
+- utter_solicitud_sti_fecha
+- utter_solicitud_sta_fecha
+- utter_ofrecer_descripcion
+- utter_no_mas_info
+- utter_procedimiento_prematricula
+- utter_prematricula_proc
+- utter_procedimiento_graduacion
+- utter_graduacion_proc
+- utter_you_meant_prematricula
+- utter_incorrecto
+- utter_you_meant_graduacion
+- utter_you_meant_inscripcion
+- utter_you_meant_como_estas
+- utter_you_meant_requisitos_pendientes
 config:
   store_entities_as_slots: true
 entities:
@@ -144,6 +166,40 @@ intents:
     use_entities: true
 - Login:
     use_entities: true
+- como_estas:
+    use_entities: true
+- tato:
+    use_entities: true
+- cuando_prematricula:
+    use_entities: true
+- cuando_inscripcion:
+    use_entities: true
+- inscripcion_nuevo_ingreso:
+    use_entities: true
+- inscripcion_general:
+    use_entities: true
+- cuando_solicitud_graduacion:
+    use_entities: true
+- solicitud_sti:
+    use_entities: true
+- solicitud_sta:
+    use_entities: true
+- procedimiento_prematricula:
+    use_entities: true
+- procedimiento_graduacion:
+    use_entities: true
+- corrector_prematricula:
+    use_entities: true
+- incorrecto:
+    use_entities: true
+- corrector_graduacion:
+    use_entities: true
+- corrector_como_estas:
+    use_entities: true
+- corrector_requisitos_pendientes:
+    use_entities: true
+- corrector_inscripcion:
+    use_entities: true
 slots:
   asueto_count:
     initial_value: null
@@ -213,23 +269,30 @@ templates:
   utter_another_question:
   - text: Tienes otra pregunta {username}?
   - text: Necesitas saber algo mas {username}?
+  - text: Entendido ;) Puedes continuar con tu consulta.
   utter_ask_matricula:
-  - text: Por favor, digita tu matricula sin espacios para continuar
-  - text: Por favor digitar tu matricula sin espacios ni guiones
+  - text: Por favor, digita tu matrícula sin espacios para continuar.
+  - text: Por favor digitar tu matrícula sin espacios ni guiones.
   utter_ask_password:
-  - text: Por favor digite su contraseña para continuar
+  - text: Por favor digite su contraseña para continuar.
   - text: Por favor digite su contraseña para continuar, estará a salvo conmigo ;)
   utter_ask_username:
   - text: 'Por favor digite su nombre para iniciar:'
   utter_bye:
-  - text: Adios {username}.
-  - text: ¡Bye-bye {username}!
-  - text: ¡Hasta luego {username}!
-  - text: Hasta pronto, gracias por tu visita {username}!
+  - text: Adios {username}. Muchas gracias por tu visita, espero que me escribas pronto.
+  - text: ¡Bye-bye {username}! Espero haberte ayudado. Recuerda que estoy disponible
+      las 24 horas del día.
+  - text: ¡Hasta luego! Espero haber respondido todas tus inquietudes.
+  - text: Hasta pronto, gracias por tu visita. La próxima vez solo dices 'Hola' y
+      con gusto te ayudo.
+  utter_como_estas:
+  - text: Me encuentro bien. Gracias por preguntar. ¿En qué puedo ayudarte?
+  - text: Todo marcha perfecto. Espero que te encuentres bien. ¿En qué puedo servirte?
+  - text: Todo bajo control. Gracias. ¿En qué te ayudo?
   utter_condicion_academica:
   - text: 'Su condicion académica es: {condicion}.'
   utter_creditos_acumulados:
-  - text: 'La cantidad de créditos acumulados actualmente es: {creditos}'
+  - text: 'La cantidad de créditos acumulados actualmente es: 215'
   utter_cual_graduacion:
   - buttons:
     - payload: graduacion sti
@@ -239,11 +302,18 @@ templates:
     text: ' ¿A cúal graduación te refieres?'
   utter_cual_indice:
   - buttons:
-    - payload: indice acumulado
+    - payload: /indice_acumulado
       title: Índice acumulado
-    - payload: indice del periodo
+    - payload: /indice_del_periodo
       title: Índice del período
     text: ' ¿A cúal índice te refieres?'
+  utter_cual_inscripcion:
+  - buttons:
+    - payload: /inscripcion_nuevo_ingreso
+      title: Nuevo Ingreso
+    - payload: /inscripcion_general
+      title: General
+    text: ' ¿A cúal inscripción te refieres?'
   utter_cual_retiro:
   - buttons:
     - payload: retiro parcial
@@ -253,6 +323,13 @@ templates:
     - payload: retiro prematricula
       title: Retiro de prematrícula
     text: ' ¿A cúal retiro te refieres?'
+  utter_cual_solicitud:
+  - buttons:
+    - payload: /solicitud_sti
+      title: Campus STI
+    - payload: /solicitud_sta
+      title: Campus STA
+    text: ¿A cúal solicitud de graduación te refieres?
   utter_date:
   - text: 'You have one incoming event: Prematricula'
   utter_default:
@@ -275,6 +352,24 @@ templates:
   - text: Bye
   - text: Hasta luego!
   - text: Adios!
+  utter_graduacion_proc:
+  - text: 1) El estudiante realiza esta solicitud en a la Oficina de Registro donde
+      se ingresa la misma en el sistema y se imprime, en original y copia, un informe
+      de los requisitos académicos y administrativos pendientes hasta ese momento
+      y se entrega al solicitante, 2) Luego de haber realizado la solicitud de graduación,
+      el estudiante realiza el pago correspondiente en el área de caja y deposita
+      el recibo en Registro, 3) Durante el período correspondiente, Registro imprime
+      el primer listado de candidatos a graduación y lo envía a los departamentos
+      de las carreras, para su publicación, 4) Después de la entrega de las calificaciones
+      finales, la Dirección del Registro actualiza la lista de solicitantes en base
+      al resultado de las calificaciones del último período académico, la entrega
+      del informe de pasantía y el cumplimiento de otros requisitos del pensum, 5)
+      Aproximadamente diez días antes de la ceremonia oficial de graduación, Registro
+      entrega a todos los graduandos las informaciones relativas al protocolo de la
+      ceremonia y las certificaciones oficiales que los acreditan para mandar a confeccionar
+      el anillo y alquilar el traje académico, 6) El día de la ceremonia, cada graduando
+      recibe una carpeta con su título oficial, certificación de grado y récord de
+      notas.
   utter_graduacion_sta_fecha:
   - text: La ceremonia de la sexagésima sexta graduación del Campus Santo Tomás de
       Aquino será el 18 de Mayo del 2019.
@@ -282,27 +377,77 @@ templates:
   - text: La ceremonia de la nonagésima novena graduación del Campus Santiago será
       el 2 de Febrero del 2019.
   utter_greet:
-  - text: '¡Hola {username}! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuándo
-      es la prematrícula?,  ¿Cuál es mi índice académico?,  ¿Qué son estudiantes especiales?...
-      Adelante!'
-  - text: ¡Saludos {username}!. Soy regis. Puedo ofrecerte informacion académica acerca
-      del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?
-  - text: ¡Bienvenido {username}!. Soy el bot regis. Estoy aquí para ofrecerte información
-      académica. Pregúntame acerca del calendario, procesos académicos o sobre tu
-      historial. ¿Qué deseas saber?
+  - text: '¡Hola! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuándo es la prematrícula?,  ¿Cuál
+      es mi índice académico?,  ¿Qué son estudiantes especiales?... Adelante!'
+  - text: ¡Saludos!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario,
+      procesos y sobre tu historial :) ¿En qué puedo ayudarte?
+  - text: '¡Bienvenido {username}!. Soy el bot regis. Estoy aquí para ofrecerte información
+      académica. Pregúntame cosas como: Fechas importantes, ¿Cuándo es el retiro?,
+      ¿Cómo realizo la graduación? . ¿Qué deseas saber?'
+  - text: Hey! Me llaman Regis, el bot de PUCMM. Soy experto en información académica.
+      Puedes escribir el comando 'Ayuda' y con gusto te asistiré.
+  - text: ¡Hola! Te doy la bienvenida. Soy Regis, el bot de registro. Puedo ofrecerte
+      información académica relevante. ¿En qué puedo ayudarte?
   utter_happy:
-  - text: Genial!
-  - text: Me alegra escuchar eso!
+  - text: Genial! Puedes seguir preguntando lo que desees.
+  - text: Me alegra escuchar eso! Puedes seguir consultando.
   utter_importancia_proceso:
   - text: '{importancia}'
+  utter_incorrecto:
+  - text: Por favor verifica tu inquietud e intenta de nuevo.
+  - text: Lamento no poder comprender tu inquietud. Intenta con otra idea.
   utter_indice:
   - text: su indice es de 3.0
   utter_indice_acumulado:
   - text: Tu índice acumulado es 2.5.
   utter_indice_periodo:
   - text: Tu índice del período es 2.8.
+  utter_inscripcion_general_fecha:
+  - text: Las inscripciones generales serán los días 18 y 19 de Diciembre del 2018.
+  utter_inscripcion_nuevo_ingreso_fecha:
+  - text: La próxima inscripción para estudiantes de nuevo ingreso será el 17 de Diciembre
+      del 2018.
+  utter_no_mas_info:
+  - text: Si no deseas seguir preguntando solo dime 'No' o 'Adios' y te comprenderé.
+  - text: Si haz terminado tu consulta solo escribe 'Bye' o 'Hasta luego'.
+  - text: Si deseas terminar esta sesión basta con decir 'Bye' o 'Adios'.
+  - text: Si no tienes nada más que consultar solo escribe 'No' o 'Bye' y te comprenderé.
+  utter_ofrecer_descripcion:
+  - text: "También puedo describir procesos académicos como: Bajas por prerrequisitos,\
+      \ Estudiantes especiales, Estudiantes separados, etc. Tu solo pregunta '¿Qué\
+      \ es/son?' Yo me encargo del resto ;)"
+  - text: "Puedo ofrecerte descripción de tópicos académicos de interés como: Correo\
+      \ estudiantil, Asignaturas no programadas, Reporte de calificaciones, etc. Pregúntame\
+      \ '¿Qué es/son?'."
+  - text: "Tengo información de procesos académicos como: Autorización de empalmes,\
+      \ Oferta académica personalizada, Readmisión, etc. Pregúntame '¿Qué es/son?'\
+      \ con gusto te ayudo."
   utter_penalidad_proceso:
   - text: '{penalidad}'
+  utter_prematricula_fecha:
+  - text: El período de prematrícula para el 3-2018-2019 será desde el 19 al 21 de
+      Marzo del 2019.
+  utter_prematricula_proc:
+  - text: 1) El estudiante ingresa su prematrícula mediante la opción Realizar Prematrícula
+      disponible en el menú Prematrícula de la aplicación WebSISE. Esta opción aparece
+      de manera automática desde el primer día que se inicia el período de prematrícula
+      y se desactiva un día antes del inicio del período de inscripción. Durante este
+      tiempo, el estudiante puede efectuar cambios a su pre-selección de asignaturas
+      en el momento que desee y sin costo alguno, 2) Una vez realizada la prematrícula,
+      el estudiante debe imprimir el Informe de prematrícula como constancia de haber
+      procesado la misma satisfactoriamente.
+  utter_procedimiento_graduacion:
+  - buttons:
+    - payload: /procedimiento_graduacion
+      title: Ver más...
+    text: También te puedo ofrecer el procedimiento para realizar la graduación. Si
+      deseas saber por favor selecciona ver más.
+  utter_procedimiento_prematricula:
+  - buttons:
+    - payload: :/procedimiento_prematricula
+      title: Ver más...
+    text: También te puedo ofrecer el procedimiento para realizar la prematrícula.
+      Si deseas saber por favor selecciona ver más.
   utter_procedimiento_proceso:
   - text: '{procedimiento}'
   utter_requisitos_cursados:
@@ -316,24 +461,73 @@ templates:
       2018.
   utter_retiro_total_fecha:
   - text: La fecha límite para el retiro total es el 23 de Noviembre.
+  utter_seguridad:
+  - text: Por seguridad te recomiendo que elimines la conversación cuando finalices
+      tu consulta, así garantizas confidencialidad en la información suministrada.
+  utter_solicitud_sta_fecha:
+  - text: La fecha límite para solicitud de graduación Mayo 2019, Campus Santo Tomás
+      de Aquino fue el 7 de Noviembre del 2018.
+  utter_solicitud_sti_fecha:
+  - text: La fecha límite para solicitud de graduación Junio 2019, Campus Santiago
+      será el 5 de Diciembre del 2018.
   utter_sorry:
   - text: Lo siento pero por el momento no puedo ayudarte.
   - text: No tengo informacion suficiente para responderte.
   - text: No puedo responder tu inquietud, disculpa.
   utter_suggestions:
-  - text: 'Creo que no entendí bien, quisiste decir:'
-  - text: 'Por favor podrías ser mas específico? intenta con:'
+  - text: Creo que no entendí bien lo que quisiste decir. Intenta de nuevo
+  - text: Por favor podrías ser mas específico? intenta con otra pregunta.
   utter_thank:
   - text: Por nada. Estoy para servirte!
   - text: Es un placer ayudarte.
-  - text: Fui creado para ayudarte
+  - text: Fui creado para ayudarte, descuida.
+  - text: Es un gusto ayudarte.
+  - text: Descuida, mi deber es ayudarte.
   utter_welcome:
   - text: Bienvenido {username}! Puedes continuar preguntandome lo que quieres saber
+  utter_you_meant_como_estas:
+  - buttons:
+    - payload: /como_estas
+      title: Correcto
+    - payload: /incorrecto
+      title: Incorrecto
+    text: Oh no, me he confundido. Quisiste decir '¿Cómo estás?'
+  utter_you_meant_graduacion:
+  - buttons:
+    - payload: /cuando_graduacion
+      title: Correcto
+    - payload: /incorrecto
+      title: Incorrecto
+    text: Oh no, me he confundido. Quisiste decir '¿Cuándo es la graduación?'
+  utter_you_meant_inscripcion:
+  - buttons:
+    - payload: /cuando_inscripcion
+      title: Correcto
+    - payload: /incorrecto
+      title: Incorrecto
+    text: Oh no, me he confundido. Quisiste decir '¿Cuándo es la inscripción?'
+  utter_you_meant_prematricula:
+  - buttons:
+    - payload: /cuando_prematricula
+      title: Correcto
+    - payload: /incorrecto
+      title: Incorrecto
+    text: Oh no, me he confundido. Quisiste decir '¿Cuándo es la prematrícula?'
+  utter_you_meant_requisitos_pendientes:
+  - buttons:
+    - payload: /requisitos_pendientes
+      title: Correcto
+    - payload: /incorrecto
+      title: Incorrecto
+    text: Oh no, me he confundido. Quisiste decir '¿Requisitos Pendientes?'
   utter_you_should_ask:
-  - text: 'Puedes preguntarme cosas como: ¿Cuándo es la prematrícula?,  ¿Cuál es mi
-      índice académico?,  ¿Qué son estudiantes especiales?, ¿En qué fecha es el retiro
-      parcial?... Adelante!'
-  - text: Puedo ofrecerte informacion académica acerca del calendario, procesos y
-      sobre tu historial :). Adelante
-  - text: 'Puedes preguntarme cosas como: ¿Qué son bajas por prerrequisitos?,  ¿Cómo
-      realizo la selección de asignaturas libres?, ¿Cuál es la penalidad para la graduación? '
+  - buttons:
+    - payload: /query_importantes
+      title: Fechas Importantes
+    - payload: /mi_indice
+      title: Índice Académico
+    - payload: /requisitos_pendientes
+      title: Requisitos Pendientes
+    - payload: /creditos_acumulados
+      title: Créditos Acumulados
+    text: 'Estas son algunas de las inquietudes académicas que puedo responder:'

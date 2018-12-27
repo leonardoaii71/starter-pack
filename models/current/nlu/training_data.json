@@ -58,6 +58,190 @@
         "text": "hablamos luego"
       },
       {
+        "intent": "bye",
+        "text": "cuidate"
+      },
+      {
+        "intent": "bye",
+        "text": "hablamo"
+      },
+      {
+        "intent": "bye",
+        "text": "hablamos"
+      },
+      {
+        "intent": "bye",
+        "text": "bye!"
+      },
+      {
+        "intent": "bye",
+        "text": "goodbye!"
+      },
+      {
+        "intent": "bye",
+        "text": "hasta luego!"
+      },
+      {
+        "intent": "bye",
+        "text": "adios!"
+      },
+      {
+        "intent": "bye",
+        "text": "adios!!"
+      },
+      {
+        "intent": "bye",
+        "text": "byeeeeee"
+      },
+      {
+        "intent": "bye",
+        "text": "byeee"
+      },
+      {
+        "intent": "bye",
+        "text": "babai"
+      },
+      {
+        "intent": "bye",
+        "text": "gn"
+      },
+      {
+        "intent": "bye",
+        "text": "bai"
+      },
+      {
+        "intent": "bye",
+        "text": "byee"
+      },
+      {
+        "intent": "bye",
+        "text": "byeee"
+      },
+      {
+        "intent": "bye",
+        "text": "byee!!"
+      },
+      {
+        "intent": "bye",
+        "text": "Bye!"
+      },
+      {
+        "intent": "bye",
+        "text": "Goodbye!"
+      },
+      {
+        "intent": "bye",
+        "text": "Hasta luego!"
+      },
+      {
+        "intent": "bye",
+        "text": "bye bot!"
+      },
+      {
+        "intent": "bye",
+        "text": "Adios amigo!"
+      },
+      {
+        "intent": "bye",
+        "text": "bye!"
+      },
+      {
+        "intent": "bye",
+        "text": "goodbye!"
+      },
+      {
+        "intent": "bye",
+        "text": "hasta luego!"
+      },
+      {
+        "intent": "bye",
+        "text": "me tengo que ir!"
+      },
+      {
+        "intent": "bye",
+        "text": "Nos vemos!"
+      },
+      {
+        "intent": "bye",
+        "text": "adios bot!"
+      },
+      {
+        "intent": "bye",
+        "text": "adios amigo!"
+      },
+      {
+        "intent": "bye",
+        "text": "nos vemos luego!"
+      },
+      {
+        "intent": "bye",
+        "text": "hablamos luego!"
+      },
+      {
+        "intent": "bye",
+        "text": "cuidate!"
+      },
+      {
+        "intent": "bye",
+        "text": "hablamo!"
+      },
+      {
+        "intent": "bye",
+        "text": "hablamos!"
+      },
+      {
+        "intent": "bye",
+        "text": "bye!"
+      },
+      {
+        "intent": "bye",
+        "text": "goodbye!"
+      },
+      {
+        "intent": "bye",
+        "text": "hasta luego!"
+      },
+      {
+        "intent": "bye",
+        "text": "adios!"
+      },
+      {
+        "intent": "bye",
+        "text": "adios!!"
+      },
+      {
+        "intent": "bye",
+        "text": "byeeeeee!"
+      },
+      {
+        "intent": "bye",
+        "text": "byeee!"
+      },
+      {
+        "intent": "bye",
+        "text": "babai!"
+      },
+      {
+        "intent": "bye",
+        "text": "gn!"
+      },
+      {
+        "intent": "bye",
+        "text": "bai!"
+      },
+      {
+        "intent": "bye",
+        "text": "bay"
+      },
+      {
+        "intent": "bye",
+        "text": "baii"
+      },
+      {
+        "intent": "bye",
+        "text": "bai"
+      },
+      {
         "intent": "what_should_i_ask",
         "text": "que cosas te puedo preguntar?"
       },
@@ -76,6 +260,610 @@
       {
         "intent": "what_should_i_ask",
         "text": "ayuda"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "help"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "ayudame"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "que te puedo preguntar"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "que me puedes decir"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "sobre que te puedo preguntar"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "que puedes responder"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "que puedes responder?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "que cosas puedes responder?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "que cosas puedes responder"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "ayuda?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "ayudame?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "qué cosas te puedo preguntar?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "qué te puedo preguntar?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "qué me puedes decir?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "sobre qué te puedo preguntar?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "ayuda"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "help"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "ayúdame"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "qué te puedo preguntar"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "qué me puedes decir"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "sobre qué te puedo preguntar"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "qué puedes responder"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "qué puedes responder?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "qué cosas puedes responder?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "qué cosas puedes responder"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿qué cosas te puedo preguntar?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿qué te puedo preguntar?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿qué me puedes decir?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿sobre qué te puedo preguntar?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿ayuda"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿help?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿ayúdame?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿qué te puedo preguntar"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿qué me puedes decir?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿sobre qué te puedo preguntar"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿qué puedes responder"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿qué puedes responder?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿qué cosas puedes responder?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "¿qué cosas puedes responder"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "ayuda?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "help?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "alguna ayuda?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "alguna ayuda"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "no se, ayudame?"
+      },
+      {
+        "intent": "what_should_i_ask",
+        "text": "no se"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cuando es la prumutricula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cuando es la prumutricula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cundo es la prematicula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cuando es la prematicula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cuándo es la prumutrícula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cuándo es la prumutrícula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cundo es la prematícula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cuándo es la prematícula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cundo es la preomatricula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cundo es la preomatricula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cundo es la preomatrícula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cundo es la preomatrícula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cundo es la preomatrículas"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cuando es la prematriculas"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cuando es la prumutricula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cuando es la prumutricula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cundo es la prematicula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cuando es la prematicula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cuándo es la prumutrícula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cuándo es la prumutrícula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cundo es la prematícula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cuándo es la prematícula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cundo es la preomatricula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cundo es la preomatricula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cundo es la preomatrícula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cundo es la preomatrícula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cundo es la preomatrículas"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "¿cuando es la prematriculas"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cundo et la primftricula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cundo et la primftricula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "en qué fecha es la prumutricula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "en que fecha es la prumutricula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cundo será la prematicula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cuando sera la prematicula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cuándo es la prumutrícula?"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cuándo es la prumutrícula"
+      },
+      {
+        "intent": "corrector_prematricula",
+        "text": "cundo es la prematícula"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cuando es la gruducion?"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cuando es la gradcion"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cundo es la grudicion"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cuándo es la graducion?"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cuándo es la gradacion?"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cuándo es la grudución"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cundo es la graduacción"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cuándo es la greducion?"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cundo es la gradución"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "en que fecha es la graducion?"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "en cul fecha es la grducion?"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cuando sera la grsducion"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cuando será la gradación?"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cuando es la grduaion?"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cundo et la grdcuion"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "xuando et la graduecion?"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "grsdiacion"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "gradcion"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cundo es la graducion"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cundo es la graducion?"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cuendo e la graducion?"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cundo es la gradacion"
+      },
+      {
+        "intent": "corrector_graduacion",
+        "text": "cundo es la graducion?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cuando es la incricion?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cuando es la indcripcion?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cundo es la iscricion?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cuándo es la iscripsion?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cuándo es la inscecion?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cuándo es la iscripción?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cundo es la encricion?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cuándo es la enscripcion?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cundo es la inscripcion"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "en que fecha es la inscrion?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "en cul fecha es la nscipcion?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cuando sera la inscricion"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cuando será la iscrición?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cuando es la inscricion?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "cundo et la grdcuion"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "xuando et la inscricion?"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "inscion"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "enscriciom"
+      },
+      {
+        "intent": "corrector_inscripcion",
+        "text": "inscripciom"
+      },
+      {
+        "intent": "corrector_como_estas",
+        "text": "com eta"
+      },
+      {
+        "intent": "corrector_como_estas",
+        "text": "como ets"
+      },
+      {
+        "intent": "corrector_como_estas",
+        "text": "cómo etsa"
+      },
+      {
+        "intent": "corrector_requisitos_pendientes",
+        "text": "rquisitos pendentes"
+      },
+      {
+        "intent": "corrector_requisitos_pendientes",
+        "text": "rquisitos oendientes"
+      },
+      {
+        "intent": "corrector_requisitos_pendientes",
+        "text": "xuales son mis requisotos pendientes?"
+      },
+      {
+        "intent": "corrector_requisitos_pendientes",
+        "text": "rquisitos pendentes?"
+      },
+      {
+        "intent": "corrector_requisitos_pendientes",
+        "text": "rquisitos oendientes?"
+      },
+      {
+        "intent": "corrector_requisitos_pendientes",
+        "text": "xuales son mis requisotos pendientes"
+      },
+      {
+        "intent": "corrector_requisitos_pendientes",
+        "text": "requisitos pendentes"
+      },
+      {
+        "intent": "corrector_requisitos_pendientes",
+        "text": "reisitos Pendientes"
+      },
+      {
+        "intent": "corrector_requisitos_pendientes",
+        "text": "reisitos pendentes"
+      },
+      {
+        "intent": "procedimiento_graduacion",
+        "text": "procedimiento graduacion"
+      },
+      {
+        "intent": "procedimiento_graduacion",
+        "text": "procedimiento de graduacion"
+      },
+      {
+        "intent": "procedimiento_graduacion",
+        "text": "procedimiento graduación"
+      },
+      {
+        "intent": "procedimiento_graduacion",
+        "text": "procedimiento graduación?"
+      },
+      {
+        "intent": "procedimiento_graduacion",
+        "text": "procedimiento graduacion?"
+      },
+      {
+        "intent": "procedimiento_graduacion",
+        "text": "¿procedimiento graduacion?"
+      },
+      {
+        "intent": "procedimiento_graduacion",
+        "text": "¿procedimiento de graduacion?"
+      },
+      {
+        "intent": "procedimiento_graduacion",
+        "text": "¿procedimiento graduación?"
+      },
+      {
+        "intent": "procedimiento_graduacion",
+        "text": "¿procedimiento graduación?"
+      },
+      {
+        "intent": "procedimiento_graduacion",
+        "text": "¿procedimiento graduacion?"
+      },
+      {
+        "intent": "greet",
+        "text": "Dime av"
+      },
+      {
+        "intent": "greet",
+        "text": "dime ab"
+      },
+      {
+        "intent": "greet",
+        "text": "Klk"
+      },
+      {
+        "intent": "greet",
+        "text": "Klk wawawa"
+      },
+      {
+        "intent": "greet",
+        "text": "Salu2"
       },
       {
         "intent": "greet",
@@ -130,6 +918,198 @@
         "text": "hey"
       },
       {
+        "intent": "greet",
+        "text": "dame dato"
+      },
+      {
+        "intent": "greet",
+        "text": "dime aver"
+      },
+      {
+        "intent": "greet",
+        "text": "saludando"
+      },
+      {
+        "intent": "greet",
+        "text": "wawawa"
+      },
+      {
+        "intent": "greet",
+        "text": "Dime av?"
+      },
+      {
+        "intent": "greet",
+        "text": "dime ab?"
+      },
+      {
+        "intent": "greet",
+        "text": "Klk?"
+      },
+      {
+        "intent": "greet",
+        "text": "Klk wawawa!"
+      },
+      {
+        "intent": "greet",
+        "text": "Salu2!"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi!"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey!"
+      },
+      {
+        "intent": "greet",
+        "text": "Hola bot!!"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey bot!"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello!"
+      },
+      {
+        "intent": "greet",
+        "text": "hola!"
+      },
+      {
+        "intent": "greet",
+        "text": "hola denuevo!!"
+      },
+      {
+        "intent": "greet",
+        "text": "Hola amigo!"
+      },
+      {
+        "intent": "greet",
+        "text": "Que tal?"
+      },
+      {
+        "intent": "greet",
+        "text": "hola robot!"
+      },
+      {
+        "intent": "greet",
+        "text": "saludos!"
+      },
+      {
+        "intent": "greet",
+        "text": "Saludos!!"
+      },
+      {
+        "intent": "greet",
+        "text": "hey?"
+      },
+      {
+        "intent": "greet",
+        "text": "dame dato?"
+      },
+      {
+        "intent": "greet",
+        "text": "dime aver?"
+      },
+      {
+        "intent": "greet",
+        "text": "saludando?"
+      },
+      {
+        "intent": "greet",
+        "text": "¿wawawa?"
+      },
+      {
+        "intent": "greet",
+        "text": "¿Dime av?"
+      },
+      {
+        "intent": "greet",
+        "text": "¿dime ab?"
+      },
+      {
+        "intent": "greet",
+        "text": "¿Klk?"
+      },
+      {
+        "intent": "greet",
+        "text": "¿Klk wawawa!"
+      },
+      {
+        "intent": "greet",
+        "text": "¿Salu2!"
+      },
+      {
+        "intent": "greet",
+        "text": "¿Hi!"
+      },
+      {
+        "intent": "greet",
+        "text": "¿Hey!"
+      },
+      {
+        "intent": "greet",
+        "text": "Hola bot!!"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey bot!"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello!"
+      },
+      {
+        "intent": "greet",
+        "text": "hola!"
+      },
+      {
+        "intent": "greet",
+        "text": "hola denuevo!!"
+      },
+      {
+        "intent": "greet",
+        "text": "Hola amigo!"
+      },
+      {
+        "intent": "greet",
+        "text": "¿Que tal?"
+      },
+      {
+        "intent": "greet",
+        "text": "hola robot!"
+      },
+      {
+        "intent": "greet",
+        "text": "saludos!"
+      },
+      {
+        "intent": "greet",
+        "text": "Saludos!!"
+      },
+      {
+        "intent": "greet",
+        "text": "¿hey?"
+      },
+      {
+        "intent": "greet",
+        "text": "¿dame dato?"
+      },
+      {
+        "intent": "greet",
+        "text": "¿dime aver?"
+      },
+      {
+        "intent": "greet",
+        "text": "¿saludando?"
+      },
+      {
+        "intent": "greet",
+        "text": "¿wawawa?"
+      },
+      {
         "intent": "thank",
         "text": "Gracias"
       },
@@ -155,11 +1135,11 @@
       },
       {
         "intent": "thank",
-        "text": "ok gracias"
+        "text": "gracias!"
       },
       {
         "intent": "thank",
-        "text": "Ok gracias!"
+        "text": "gracias!!"
       },
       {
         "intent": "thank",
@@ -180,6 +1160,210 @@
       {
         "intent": "thank",
         "text": "cool, gracias"
+      },
+      {
+        "intent": "thank",
+        "text": "mil gracias"
+      },
+      {
+        "intent": "thank",
+        "text": "Gracias!"
+      },
+      {
+        "intent": "thank",
+        "text": "gracias!!"
+      },
+      {
+        "intent": "thank",
+        "text": "Muchas gracias!"
+      },
+      {
+        "intent": "thank",
+        "text": "muchas gracias!"
+      },
+      {
+        "intent": "thank",
+        "text": "Gracias bot!"
+      },
+      {
+        "intent": "thank",
+        "text": "gracias bot!!"
+      },
+      {
+        "intent": "thank",
+        "text": "gracias!"
+      },
+      {
+        "intent": "thank",
+        "text": "gracias!!"
+      },
+      {
+        "intent": "thank",
+        "text": "perfecto gracias!"
+      },
+      {
+        "intent": "thank",
+        "text": "gracias por todo!!"
+      },
+      {
+        "intent": "thank",
+        "text": "gracias por la ayuda!"
+      },
+      {
+        "intent": "thank",
+        "text": "te lo agradesco!"
+      },
+      {
+        "intent": "thank",
+        "text": "cool, gracias!!"
+      },
+      {
+        "intent": "thank",
+        "text": "mil gracias!"
+      },
+      {
+        "intent": "tato",
+        "text": "Ta jevi"
+      },
+      {
+        "intent": "tato",
+        "text": "Muy jevi"
+      },
+      {
+        "intent": "tato",
+        "text": "Tato"
+      },
+      {
+        "intent": "tato",
+        "text": "ta to"
+      },
+      {
+        "intent": "tato",
+        "text": "ya"
+      },
+      {
+        "intent": "tato",
+        "text": "ta to!"
+      },
+      {
+        "intent": "tato",
+        "text": "yaaa"
+      },
+      {
+        "intent": "tato",
+        "text": "yala!!!"
+      },
+      {
+        "intent": "tato",
+        "text": "muy duro"
+      },
+      {
+        "intent": "tato",
+        "text": "Yala"
+      },
+      {
+        "intent": "tato",
+        "text": "nitido"
+      },
+      {
+        "intent": "tato",
+        "text": "ok"
+      },
+      {
+        "intent": "tato",
+        "text": "oki doki"
+      },
+      {
+        "intent": "tato",
+        "text": "okay"
+      },
+      {
+        "intent": "tato",
+        "text": "okis"
+      },
+      {
+        "intent": "tato",
+        "text": "oki"
+      },
+      {
+        "intent": "tato",
+        "text": "Ta jevi!"
+      },
+      {
+        "intent": "tato",
+        "text": "Muy jevi!"
+      },
+      {
+        "intent": "tato",
+        "text": "Tato!!"
+      },
+      {
+        "intent": "tato",
+        "text": "Yala!"
+      },
+      {
+        "intent": "tato",
+        "text": "nitido!"
+      },
+      {
+        "intent": "tato",
+        "text": "ok!"
+      },
+      {
+        "intent": "tato",
+        "text": "oki doki!"
+      },
+      {
+        "intent": "tato",
+        "text": "okay!!"
+      },
+      {
+        "intent": "tato",
+        "text": "okis!"
+      },
+      {
+        "intent": "tato",
+        "text": "oki!"
+      },
+      {
+        "intent": "tato",
+        "text": "genial"
+      },
+      {
+        "intent": "tato",
+        "text": "mul duro"
+      },
+      {
+        "intent": "tato",
+        "text": "que apero!"
+      },
+      {
+        "intent": "tato",
+        "text": "genial!!"
+      },
+      {
+        "intent": "procedimiento_prematricula",
+        "text": "procedimiento prematricula"
+      },
+      {
+        "intent": "procedimiento_prematricula",
+        "text": "procedimiento prematrícula"
+      },
+      {
+        "intent": "procedimiento_prematricula",
+        "text": "procedimiento prematricula?"
+      },
+      {
+        "intent": "procedimiento_prematricula",
+        "text": "procedimiento prematrícula?"
+      },
+      {
+        "intent": "procedimiento_prematricula",
+        "text": "¿procedimiento prematricula?"
+      },
+      {
+        "intent": "procedimiento_prematricula",
+        "text": "¿procedimiento prematrícula?"
       },
       {
         "intent": "deny",
@@ -238,6 +1422,62 @@
         "text": "Nah"
       },
       {
+        "intent": "deny",
+        "text": "no!"
+      },
+      {
+        "intent": "deny",
+        "text": "definitivamente no!"
+      },
+      {
+        "intent": "deny",
+        "text": "nunca!"
+      },
+      {
+        "intent": "deny",
+        "text": "absolutamente no!"
+      },
+      {
+        "intent": "deny",
+        "text": "no creo!"
+      },
+      {
+        "intent": "deny",
+        "text": "no robot!"
+      },
+      {
+        "intent": "deny",
+        "text": "no robot!!"
+      },
+      {
+        "intent": "deny",
+        "text": "No!!!"
+      },
+      {
+        "intent": "deny",
+        "text": "No creo!!"
+      },
+      {
+        "intent": "deny",
+        "text": "No bot!!"
+      },
+      {
+        "intent": "deny",
+        "text": "No robot!"
+      },
+      {
+        "intent": "deny",
+        "text": "nah!"
+      },
+      {
+        "intent": "deny",
+        "text": "no y no!"
+      },
+      {
+        "intent": "deny",
+        "text": "Nah!"
+      },
+      {
         "intent": "mood_affirm",
         "text": "si"
       },
@@ -272,6 +1512,74 @@
       {
         "intent": "mood_affirm",
         "text": "si claro"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "siii"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "sii"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "sí"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "si!"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "Si!!"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "claro!"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "por supuesto!"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "correcto!"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "Claro!"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "Correcto!!"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "si, claro!"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "si claro!"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "siii!"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "sii!"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "sí!"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "siiiii"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "siii"
       },
       {
         "intent": "mood_deny",
@@ -350,6 +1658,390 @@
         "text": "Muy bien"
       },
       {
+        "intent": "mood_great",
+        "text": "perfecto!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "muy bien!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "bien!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "increible!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "todo bien!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "me siento excelente!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "excelente!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "Yo estoy bien!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "yo me siento bien!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "tamo bien!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "super!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "Todo bien!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "Perfecto!"
+      },
+      {
+        "intent": "mood_great",
+        "text": "Muy bien!"
+      },
+      {
+        "intent": "incorrecto",
+        "text": "Incorrecto"
+      },
+      {
+        "intent": "incorrecto",
+        "text": "incorrecto"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "cuándo es la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "cuándo es la prematrícula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿cuándo es la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿cuándo es la prematrícula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿cuando es la prematrícula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "cuando es la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "cuando sera la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "cuando sera la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "en que fecha es la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "en que fecha sera la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "en que fecha es la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "en cual fecha es la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "en cual fecha sera la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "en cual fecha es la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "que dia es la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "que dia es la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿cuándo es la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿cuando sera la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿cuando sera la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿en que fecha es la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿en que fecha sera la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿en que fecha es la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿en cual fecha es la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿en cual fecha sera la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿en cual fecha es la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿que dia es la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿que dia es la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "qué día es la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿cuándo es la prematrícula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿cuando será la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿cuándo sera la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿en qué fecha es la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿en que fecha sera la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿en qué fecha es la prematrícula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿en cual fecha es la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿en cuál fecha será la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿en cuál fecha es la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿qué dia es la prematricula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿que día es la prematricula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿qué dia es la prematrícula?"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "¿que día es la prematrícula"
+      },
+      {
+        "intent": "cuando_prematricula",
+        "text": "cuando será la prematricula?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "cuando es la inscripcion?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "cuando es la inscripcion"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "cuando sera la inscripcion?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "cuando sera la inscripcion"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "en que fecha es la inscripcion"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "en que fecha es la inscripcion?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "en cual fecha es la inscripcion?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "que dia es la inscripcion?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "que dia es la inscripcion"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "que dia sera la inscripcion?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "que dia sera la inscripcion"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "cuándo es la inscripción?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "cuándo es la inscripción"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "cuándo será la inscripción?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "cuando será la inscripción"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "en qué fecha es la inscripción"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "en que fecha es la inscripcion?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "en cual fecha es la inscripcion?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "que dia es la inscripción?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "qué día es la inscripcion"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "que dia será la inscripcion?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "qué día será la inscripcion"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "¿cuándo es la inscripción?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "¿cuándo es la inscripción"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "¿cuándo será la inscripción?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "¿cuando será la inscripción"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "¿en qué fecha es la inscripción"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "¿en que fecha es la inscripcion?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "¿en cual fecha es la inscripcion?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "¿que dia es la inscripción?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "¿qué día es la inscripcion"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "¿que dia será la inscripcion?"
+      },
+      {
+        "intent": "cuando_inscripcion",
+        "text": "¿qué día será la inscripcion"
+      },
+      {
+        "intent": "inscripcion_nuevo_ingreso",
+        "text": "nuevo ingreso"
+      },
+      {
+        "intent": "inscripcion_general",
+        "text": "inscripcion general"
+      },
+      {
+        "intent": "inscripcion_general",
+        "text": "inscripción general"
+      },
+      {
+        "intent": "inscripcion_general",
+        "text": "inscripcion general?"
+      },
+      {
+        "intent": "inscripcion_general",
+        "text": "¿inscripcion general?"
+      },
+      {
         "intent": "condicion_academica",
         "text": "Cual es mi condicion academica actual?"
       },
@@ -367,6 +2059,10 @@
       },
       {
         "intent": "condicion_academica",
+        "text": "condición académica"
+      },
+      {
+        "intent": "condicion_academica",
         "text": "Cóndicion Académica"
       },
       {
@@ -376,6 +2072,62 @@
       {
         "intent": "condicion_academica",
         "text": "mi condicion academica"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "Cuál es mi condición academica actual?"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "cuál es mi condición academica?"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "Condición académica"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "condición académica"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "Cóndicion Académica"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "cuál es mi condición académica"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "mi condición académica"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "¿Cuál es mi condición academica actual?"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "¿cuál es mi condición academica?"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "¿Condición académica"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "¿condición académica?"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "¿Cóndicion Académica?"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "¿cuál es mi condición académica?"
+      },
+      {
+        "intent": "condicion_academica",
+        "text": "¿mi condición académica"
       },
       {
         "intent": "requisitos_pendientes",
@@ -410,6 +2162,102 @@
         "text": "dime los requisitos pendientes"
       },
       {
+        "intent": "requisitos_pendientes",
+        "text": "Cuáles son mis requisitos pendientes?"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "Qué requisitos pendientes tengo?"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "Requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "cuáles son mis requisitos pendientes?"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "cuáles requisitos pendientes tengo?"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "mis requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "dime los requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "dime mis requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿Cuáles son mis requisitos pendientes?"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿Qué requisitos pendientes tengo?"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿Requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿cuáles son mis requisitos pendientes?"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿cuáles requisitos pendientes tengo?"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿mis requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿dime los requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿dime mis requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿Cuáles son mis requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿Qué requisitos pendientes tengo"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "Requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿cuáles son mis requisitos pendientes"
+      },
+      {
+        "intent": "requisitos_pendientes",
+        "text": "¿cuáles requisitos pendientes tengo"
+      },
+      {
         "intent": "creditos_acumulados",
         "text": "Cuantos creditos he cursado?"
       },
@@ -432,6 +2280,54 @@
       {
         "intent": "creditos_acumulados",
         "text": "creditos acumulados"
+      },
+      {
+        "intent": "creditos_acumulados",
+        "text": "Cuántos créditos he cursado?"
+      },
+      {
+        "intent": "creditos_acumulados",
+        "text": "cuántos créditos he obtenido?"
+      },
+      {
+        "intent": "creditos_acumulados",
+        "text": "cuántos créditos he acumulado"
+      },
+      {
+        "intent": "creditos_acumulados",
+        "text": "créditos acumulados"
+      },
+      {
+        "intent": "creditos_acumulados",
+        "text": "Créditos Acumulados"
+      },
+      {
+        "intent": "creditos_acumulados",
+        "text": "créditos acumulados"
+      },
+      {
+        "intent": "creditos_acumulados",
+        "text": "¿Cuántos créditos he cursado?"
+      },
+      {
+        "intent": "creditos_acumulados",
+        "text": "¿cuántos créditos he obtenido?"
+      },
+      {
+        "intent": "creditos_acumulados",
+        "text": "¿cuántos créditos he acumulado"
+      },
+      {
+        "intent": "creditos_acumulados",
+        "text": "¿créditos acumulados"
+      },
+      {
+        "intent": "creditos_acumulados",
+        "text": "¿Créditos Acumulados"
+      },
+      {
+        "intent": "creditos_acumulados",
+        "text": "¿créditos acumulados"
       },
       {
         "intent": "cuantas_calificacion",
@@ -722,8 +2618,420 @@
         "text": "cuantas fn he obtenido?"
       },
       {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "A",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿CuántasAhe obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "a",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿Cuántasahe obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "a",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿Cuántasahe sacado?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "a",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿Cuántasaconsegui?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "a",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿Cuántasahe conseguido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "a",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿cuántasatengo"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "a",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿cuántasatengo?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "B",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿cuántas B he obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "b",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿cuántas b he obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "b",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿Cuántas b he sacado?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "b",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿Cuántas b consegui?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "b",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿Cuántas b he conseguido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "b",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿cuantas b tengo"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "B",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿cuantas B tengo?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "C",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿Cuantas C he obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "c",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿Cuantas c he obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "D",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿Cuantas D he obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "d",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿Cuantas d he obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "F",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿cuantas F he obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "f",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿cuantas f he obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "R",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿cuantas R he obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "r",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿cuantas r he obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 11,
+            "value": "FN",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿cuantas FN he obtenido?"
+      },
+      {
+        "intent": "cuantas_calificacion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 11,
+            "value": "fn",
+            "entity": "calificacion"
+          }
+        ],
+        "text": "¿cuantas fn he obtenido?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "como estas"
+      },
+      {
+        "intent": "como_estas",
+        "text": "cómo estás?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "como estás?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "como te sientes?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "cómo te sientes"
+      },
+      {
+        "intent": "como_estas",
+        "text": "cómo te sientes?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "como estas?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "como tamo?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "como tu ta?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿como estas"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿cómo estás?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿como estás?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿como te sientes?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿cómo te sientes"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿cómo te sientes?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿como estas?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿como tamo?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿como tu ta?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿cómo estás"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿cómo estás?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿cómo estás?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿cómo te sientes?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿cómo te sientes"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿cómo te sientes"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿como estas?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿como tamo?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿como tu ta?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿cómo tamo?"
+      },
+      {
+        "intent": "como_estas",
+        "text": "¿cómo tu ta?"
+      },
+      {
         "intent": "requisitos_cursados",
         "text": "Cuales requisitos he cursado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "Cuáles requisitos he cursado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "Cuáles requisitos he cursado?"
       },
       {
         "intent": "requisitos_cursados",
@@ -739,11 +3047,147 @@
       },
       {
         "intent": "requisitos_cursados",
+        "text": "cuáles materias he dado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuáles materias he dado?"
+      },
+      {
+        "intent": "requisitos_cursados",
         "text": "cuales materias he cursado"
       },
       {
         "intent": "requisitos_cursados",
+        "text": "cuáles materias he cursado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuáles materias he cursado"
+      },
+      {
+        "intent": "requisitos_cursados",
         "text": "cuales requisitos he pasado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuáles requisitos he pasado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuáles requisitos"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "Cuáles requisitos he cursado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "Cuáles requisitos he cursado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "Cuáles requisitos he cursado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuales requisitos he cursado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "requisitos cursados"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "Cuáles materias he dado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuáles materias he dado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuáles materias he dado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuáles materias he cursado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuáles materias he cursado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuáles materias he cursado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuáles requisitos he pasado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuáles requisitos he pasado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "cuáles requisitos"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿Cuáles requisitos he cursado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿Cuáles requisitos he cursado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿Cuáles requisitos he cursado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿cuales requisitos he cursado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿requisitos cursados"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿Cuáles materias he dado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿cuáles materias he dado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿cuáles materias he dado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿cuáles materias he cursado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿cuáles materias he cursado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿cuáles materias he cursado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿cuáles requisitos he pasado"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿cuáles requisitos he pasado?"
+      },
+      {
+        "intent": "requisitos_cursados",
+        "text": "¿cuáles requisitos"
       },
       {
         "intent": "mood_unhappy",
@@ -1126,6 +3570,10 @@
         "text": "Retiro de prematricula"
       },
       {
+        "intent": "retiro_prematricula",
+        "text": "retiro de prematrícula"
+      },
+      {
         "intent": "graduacion_sti",
         "text": "Graduacion sti"
       },
@@ -1178,8 +3626,204 @@
         "text": "cuando es el retiro?"
       },
       {
+        "intent": "cuando_retiro",
+        "text": "cuándo es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "cuándo es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "qué día es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "qué día es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "qué dia es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "qué dia es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "en qué fecha es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "en qué fecha es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "Cuándo es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "cuándo es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "cuándo es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "cuándo es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "cuándo es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "qué día es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "qué día es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "qué dia es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "qué dia es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "en qué fecha es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "en qué fecha es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "¿Cuándo es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "¿cuándo es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "¿cuándo es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "¿cuándo es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "¿cuándo es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "¿qué día es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "¿qué día es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "¿qué dia es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "¿qué dia es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "¿en qué fecha es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "¿en qué fecha es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "Cuando es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "cuando es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "cuando es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "cuándo es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "cuándo es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "qué día es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "qué día es el retiro?"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "qué dia es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "qué dia es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "en qué fecha es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "en qué fecha es el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "cuando sera el retiro"
+      },
+      {
+        "intent": "cuando_retiro",
+        "text": "cuando será el retiro"
+      },
+      {
         "intent": "cuando_graduacion",
         "text": "Cuando es la graduacion?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "cuándo es la graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "cuándo es la graduación"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "cuándo es la graduacion?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "cuándo es la graduacion"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "cuando es la graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "cuando es la graduación"
       },
       {
         "intent": "cuando_graduacion",
@@ -1190,8 +3834,324 @@
         "text": "cuando es la graduacion?"
       },
       {
+        "intent": "cuando_graduacion",
+        "text": "graduacion"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "graduación"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "en que fecha es la graduacion?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "en qué fecha es la graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "en qué fecha es la graduación"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "en qué fecha es la graduacion?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "en qué fecha es la graduacion"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "en que fecha es la graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "en que fecha es la graduacion"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "qué día es la graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "qué día es la graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "que dia es la graduacion?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "que dia es la graduacion"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿Cuándo es la graduacion?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿cuándo es la graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "cuándo es la graduación"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿cuándo es la graduacion?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿cuándo es la graduacion"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿cuándo es la graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "cuándo es la graduación"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "cuándo es la graduacion"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿cuando es la graduacion?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "graduacion"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿en que fecha es la graduacion?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿en qué fecha es la graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "en qué fecha es la graduación"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿en qué fecha es la graduacion?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "en qué fecha es la graduacion"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿en que fecha es la graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "en que fecha es la graduacion"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿qué día es la graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿qué día es la graduación?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿que dia es la graduacion?"
+      },
+      {
+        "intent": "cuando_graduacion",
+        "text": "¿que dia es la graduacion"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "Cuando es la solicitud de graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "Cuándo es la solicitud de graduación?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "Cuándo es la solicitud de graduación"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "Cuándo es la solicitud de graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "Cuándo es la solicitud de graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "Cuándo es la solicitud de graduacion"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "cuando es la solicitud de graduación?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "cuando es la solicitud de graduación"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "cuando es la solicitud de graduacion"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "cuando es la solicitud graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "solicitud de graduacion"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "solicitud de graduación"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "en que fecha es la solicitud de graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "en qué fecha es la solicitud de graduación?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "en que fecha es la solicitud de graduacion"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "que dia es la solicitud de graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "que dia es la solicitud de graduacion"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿Cuándo es la solicitud de graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿Cuándo es la solicitud de graduación?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿Cuándo es la solicitud de graduación"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿Cuándo es la solicitud de graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿Cuándo es la solicitud de graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿Cuándo es la solicitud de graduacion"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿cuándo es la solicitud de graduación?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿cuándo es la solicitud de graduación"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿cuándo es la solicitud de graduacion"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿cuándo es la solicitud graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿solicitud de graduacion"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿solicitud de graduación"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿en que fecha es la solicitud de graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿en qué fecha es la solicitud de graduación?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿en que fecha es la solicitud de graduacion"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿que dia es la solicitud de graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "¿que dia es la solicitud de graduacion"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "qué dia es la solicitud de graduacion?"
+      },
+      {
+        "intent": "cuando_solicitud_graduacion",
+        "text": "qué dia es la solicitud de graduacion"
+      },
+      {
+        "intent": "solicitud_sti",
+        "text": "solicitud sti"
+      },
+      {
+        "intent": "solicitud_sta",
+        "text": "solicitud sta"
+      },
+      {
         "intent": "mi_indice",
         "text": "Cual es mi indice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cuál es mi índice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cuál es mi índice"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cuál es mi indice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cuál es mi indice"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cual es mi índice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cual es mi índice"
       },
       {
         "intent": "mi_indice",
@@ -1204,6 +4164,110 @@
       {
         "intent": "mi_indice",
         "text": "como esta mi indice academico"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cual es mi indice"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "indice academico?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "Cuál es mi indice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cuál es mi índice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cuál es mi índice"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cuál es mi indice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cuál es mi indice"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cual es mi índice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cual es mi índice"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "índice academico"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cuál es mi indice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cómo está mi índice academico"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "cual es mi índice"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "indice académico?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "¿Cuál es mi indice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "¿cuál es mi índice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "¿cuál es mi índice"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "¿cuál es mi indice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "¿cuál es mi indice"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "¿cual es mi índice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "¿cual es mi índice"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "¿índice academico"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "¿cuál es mi indice?"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "¿cómo está mi índice academico"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "¿cual es mi índice"
+      },
+      {
+        "intent": "mi_indice",
+        "text": "¿indice académico?"
       },
       {
         "intent": "indice_acumulado",
@@ -2086,190 +5150,6 @@
         "entities": [
           {
             "start": 13,
-            "end": 35,
-            "value": "Retiro de prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es el Retiro de prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 35,
-            "value": "Retiro de prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es el Retiro de prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 35,
-            "value": "Retiro de prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando es el Retiro de prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 35,
-            "value": "Retiro de prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es el Retiro de prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 19,
-            "value": "Retiro",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es el Retiro"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 19,
-            "value": "Retiro",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es el Retiro?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 19,
-            "value": "Retiro",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando es el Retiro?"
-      },
-      {
-        "intent": "query_event",
-        "text": "cuando es el [Retiro] (event)"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 20,
-            "value": "Retiro",
-            "entity": "event"
-          }
-        ],
-        "text": "que dia es el Retiro?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 17,
-            "end": 23,
-            "value": "Retiro",
-            "entity": "event"
-          }
-        ],
-        "text": "cual dia sera el Retiro?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 25,
-            "value": "Retiro",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando va a ser el Retiro?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 19,
-            "value": "Retiro",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando es el Retiro?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 25,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es la Prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 25,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es la Prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 25,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando es la Prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 25,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando es la Prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
             "end": 37,
             "value": "Cuarto pago de matricula",
             "entity": "event"
@@ -2312,54 +5192,6 @@
           }
         ],
         "text": "cuando es el Cuarto pago de matricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 52,
-            "value": "Periodo de modificacion de prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es el Periodo de modificacion de prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 52,
-            "value": "Periodo de modificacion de prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es el Periodo de modificacion de prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 52,
-            "value": "Periodo de modificacion de prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando es el Periodo de modificacion de prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 52,
-            "value": "Periodo de modificacion de prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es el Periodo de modificacion de prematricula"
       },
       {
         "intent": "query_event",
@@ -2504,150 +5336,6 @@
           }
         ],
         "text": "cuando es el Inicio del periodo"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 41,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es la Inscripcion de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 41,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es la Inscripcion de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 41,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando es la Inscripcion de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 41,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando es la Inscripcion de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 32,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es la Inscripcion general"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 32,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es la Inscripcion general?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 32,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando es la Inscripcion general?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 32,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando es la Inscripcion general"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 52,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es la Bienvenida estudiantes de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 52,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando es la Bienvenida estudiantes de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 52,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando es la Bienvenida estudiantes de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 13,
-            "end": 52,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando es la Bienvenida estudiantes de nuevo ingreso"
       },
       {
         "intent": "query_event",
@@ -3734,54 +6422,6 @@
         "entities": [
           {
             "start": 19,
-            "end": 31,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "en que fecha es la Prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 31,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "en que fecha es la Prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 31,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "En que fecha es la Prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 31,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "En que fecha es la Prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
             "end": 43,
             "value": "Cuarto pago de matricula",
             "entity": "event"
@@ -4016,150 +6656,6 @@
           }
         ],
         "text": "en que fecha es el Inicio del periodo"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 47,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "en que fecha es la Inscripcion de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 47,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "en que fecha es la Inscripcion de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 47,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "En que fecha es la Inscripcion de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 47,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "En que fecha es la Inscripcion de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 38,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "en que fecha es la Inscripcion general"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 38,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "en que fecha es la Inscripcion general?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 38,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "En que fecha es la Inscripcion general?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 38,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "En que fecha es la Inscripcion general"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 58,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "en que fecha es la Bienvenida estudiantes de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 58,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "en que fecha es la Bienvenida estudiantes de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 58,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "En que fecha es la Bienvenida estudiantes de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 19,
-            "end": 58,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "En que fecha es la Bienvenida estudiantes de nuevo ingreso"
       },
       {
         "intent": "query_event",
@@ -4544,54 +7040,6 @@
           }
         ],
         "text": "En cual fecha es la Catedra inaugural del ano academico"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 47,
-            "value": "Modificacion de inscripcion",
-            "entity": "event"
-          }
-        ],
-        "text": "en cual fecha es la Modificacion de inscripcion"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 47,
-            "value": "Modificacion de inscripcion",
-            "entity": "event"
-          }
-        ],
-        "text": "en cual fecha es la Modificacion de inscripcion?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 47,
-            "value": "Modificacion de inscripcion",
-            "entity": "event"
-          }
-        ],
-        "text": "En cual fecha es la Modificacion de inscripcion?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 47,
-            "value": "Modificacion de inscripcion",
-            "entity": "event"
-          }
-        ],
-        "text": "En cual fecha es la Modificacion de inscripcion"
       },
       {
         "intent": "query_event",
@@ -5246,54 +7694,6 @@
         "entities": [
           {
             "start": 20,
-            "end": 32,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "en cual fecha es la Prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 32,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "en cual fecha es la Prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 32,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "En cual fecha es la Prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 32,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "En cual fecha es la Prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
             "end": 44,
             "value": "Cuarto pago de matricula",
             "entity": "event"
@@ -5528,150 +7928,6 @@
           }
         ],
         "text": "en cual fecha es el Inicio del periodo"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 48,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "en cual fecha es la Inscripcion de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 48,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "en cual fecha es la Inscripcion de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 48,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "En cual fecha es la Inscripcion de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 48,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "En cual fecha es la Inscripcion de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 39,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "en cual fecha es la Inscripcion general"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 39,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "en cual fecha es la Inscripcion general?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 39,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "En cual fecha es la Inscripcion general?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 39,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "En cual fecha es la Inscripcion general"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 59,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "en cual fecha es la Bienvenida estudiantes de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 59,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "en cual fecha es la Bienvenida estudiantes de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 59,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "En cual fecha es la Bienvenida estudiantes de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 20,
-            "end": 59,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "En cual fecha es la Bienvenida estudiantes de nuevo ingreso"
       },
       {
         "intent": "query_event",
@@ -6758,54 +9014,6 @@
         "entities": [
           {
             "start": 15,
-            "end": 27,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando sera la Prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 27,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando sera la Prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 27,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando sera la Prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 27,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando sera la Prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
             "end": 39,
             "value": "Cuarto pago de matricula",
             "entity": "event"
@@ -7040,150 +9248,6 @@
           }
         ],
         "text": "cuando sera el Inicio del periodo"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 43,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando sera la Inscripcion de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 43,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando sera la Inscripcion de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 43,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando sera la Inscripcion de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 43,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando sera la Inscripcion de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 34,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando sera la Inscripcion general"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 34,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando sera la Inscripcion general?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 34,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando sera la Inscripcion general?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 34,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando sera la Inscripcion general"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 54,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando sera la Bienvenida estudiantes de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 54,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "cuando sera la Bienvenida estudiantes de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 54,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando sera la Bienvenida estudiantes de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 15,
-            "end": 54,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "Cuando sera la Bienvenida estudiantes de nuevo ingreso"
       },
       {
         "intent": "query_event",
@@ -8210,54 +10274,6 @@
         "entities": [
           {
             "start": 14,
-            "end": 26,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "que dia es la Prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 26,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "que dia es la Prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 26,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "Que dia es la Prematricula?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 26,
-            "value": "Prematricula",
-            "entity": "event"
-          }
-        ],
-        "text": "Que dia es la Prematricula"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
             "end": 38,
             "value": "Cuarto pago de matricula",
             "entity": "event"
@@ -8492,150 +10508,6 @@
           }
         ],
         "text": "que dia es el Inicio del periodo"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 42,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "que dia es la Inscripcion de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 42,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "que dia es la Inscripcion de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 42,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "Que dia es la Inscripcion de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 42,
-            "value": "Inscripcion de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "Que dia es la Inscripcion de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 33,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "que dia es la Inscripcion general"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 33,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "que dia es la Inscripcion general?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 33,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "Que dia es la Inscripcion general?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 33,
-            "value": "Inscripcion general",
-            "entity": "event"
-          }
-        ],
-        "text": "Que dia es la Inscripcion general"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 53,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "que dia es la Bienvenida estudiantes de nuevo ingreso"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 53,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "que dia es la Bienvenida estudiantes de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 53,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "Que dia es la Bienvenida estudiantes de nuevo ingreso?"
-      },
-      {
-        "intent": "query_event",
-        "entities": [
-          {
-            "start": 14,
-            "end": 53,
-            "value": "Bienvenida estudiantes de nuevo ingreso",
-            "entity": "event"
-          }
-        ],
-        "text": "Que dia es la Bienvenida estudiantes de nuevo ingreso"
       },
       {
         "intent": "query_event",
@@ -8887,6 +10759,10 @@
       },
       {
         "intent": "query_importantes",
+        "text": "Cuáles son las fechas importantes?"
+      },
+      {
+        "intent": "query_importantes",
         "text": "dime fechas importantes"
       },
       {
@@ -8895,7 +10771,15 @@
       },
       {
         "intent": "query_importantes",
+        "text": "dime todos los días importantes"
+      },
+      {
+        "intent": "query_importantes",
         "text": "cuales dias son importantes este periodo"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "cuáles días son importantes este período"
       },
       {
         "intent": "query_importantes",
@@ -8903,11 +10787,87 @@
       },
       {
         "intent": "query_importantes",
+        "text": "cuáles días son importantes para este semestre"
+      },
+      {
+        "intent": "query_importantes",
         "text": "cuales fechas importantes hay"
       },
       {
         "intent": "query_importantes",
+        "text": "cuáles fechas importantes hay"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "cuales fechas importantes hay?"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "cuáles fechas importantes hay?"
+      },
+      {
+        "intent": "query_importantes",
         "text": "Cuales son las fechas importantes del periodo?"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "fechas importantes"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿Cuáles son las fechas importantes?"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿Cuáles son las fechas importantes?"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿dime fechas importantes?"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿dime todos los dias importantes?"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "dime todos los días importantes"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿cuáles días son importantes este periodo?"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿cuáles días son importantes este período"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿cuales dias son importantes para este semestre?"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿cuáles días son importantes para este semestre"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿cuales fechas importantes hay?"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿cuáles fechas importantes hay?"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿cuales fechas importantes hay?"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿cuáles fechas importantes hay?"
+      },
+      {
+        "intent": "query_importantes",
+        "text": "¿Cuales son las fechas importantes del periodo?"
       },
       {
         "intent": "query_asueto",
@@ -8938,6 +10898,62 @@
         "text": "cuales dias asuetos hay"
       },
       {
+        "intent": "query_asueto",
+        "text": "días asuetos"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "cuáles son los días asueto?"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "dime todos los días asueto"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "dime los días asuetos"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "dime días asueto"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "cuáles son los días asueto del periodo?"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "cuáles dias asuetos hay"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "¿días asuetos?"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "¿cuáles son los días asueto?"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "¿dime todos los días asueto?"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "¿dime los días asuetos?"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "¿dime días asueto?"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "¿cuáles son los días asueto del periodo?"
+      },
+      {
+        "intent": "query_asueto",
+        "text": "¿cuáles dias asuetos hay?"
+      },
+      {
         "intent": "count_asueto",
         "text": "cuantos dias asuetos hay en este periodo"
       },
@@ -8962,6 +10978,54 @@
         "text": "cantidad de dias asuetos"
       },
       {
+        "intent": "count_asueto",
+        "text": "cuántos días asuetos hay en este periodo"
+      },
+      {
+        "intent": "count_asueto",
+        "text": "cuántos días asuetos hay en este semestre"
+      },
+      {
+        "intent": "count_asueto",
+        "text": "cuántos días asuetos hay"
+      },
+      {
+        "intent": "count_asueto",
+        "text": "cuál es la cantidad de días asuetos del periodo"
+      },
+      {
+        "intent": "count_asueto",
+        "text": "cantidad de días asuetos"
+      },
+      {
+        "intent": "count_asueto",
+        "text": "cantidad de dias asuetos"
+      },
+      {
+        "intent": "count_asueto",
+        "text": "¿cuántos días asuetos hay en este periodo"
+      },
+      {
+        "intent": "count_asueto",
+        "text": "¿cuántos días asuetos hay en este semestre"
+      },
+      {
+        "intent": "count_asueto",
+        "text": "¿cuántos días asuetos hay"
+      },
+      {
+        "intent": "count_asueto",
+        "text": "¿cuál es la cantidad de días asuetos del periodo"
+      },
+      {
+        "intent": "count_asueto",
+        "text": "¿cantidad de días asuetos"
+      },
+      {
+        "intent": "count_asueto",
+        "text": "¿cantidad de dias asuetos"
+      },
+      {
         "intent": "count_importante",
         "text": "cuantos dias importantes hay"
       },
@@ -8984,6 +11048,78 @@
       {
         "intent": "count_importante",
         "text": "cuantos son los dias importantes"
+      },
+      {
+        "intent": "count_importante",
+        "text": "cuántos días importantes hay"
+      },
+      {
+        "intent": "count_importante",
+        "text": "cuántos días importantes hay en este período"
+      },
+      {
+        "intent": "count_importante",
+        "text": "cuántos días importantes hay en este semestre"
+      },
+      {
+        "intent": "count_importante",
+        "text": "cuál es la cantidad de días importantes del período"
+      },
+      {
+        "intent": "count_importante",
+        "text": "cantidad de días importantes"
+      },
+      {
+        "intent": "count_importante",
+        "text": "cuántos son los días importantes"
+      },
+      {
+        "intent": "count_importante",
+        "text": "cuántos días importantes hay?"
+      },
+      {
+        "intent": "count_importante",
+        "text": "cuántos días importantes hay en este período?"
+      },
+      {
+        "intent": "count_importante",
+        "text": "cuántos días importantes hay en este semestre?"
+      },
+      {
+        "intent": "count_importante",
+        "text": "cuál es la cantidad de días importantes del período?"
+      },
+      {
+        "intent": "count_importante",
+        "text": "cantidad de días importantes?"
+      },
+      {
+        "intent": "count_importante",
+        "text": "cuántos son los días importantes?"
+      },
+      {
+        "intent": "count_importante",
+        "text": "¿cuántos días importantes hay?"
+      },
+      {
+        "intent": "count_importante",
+        "text": "¿cuántos días importantes hay en este período?"
+      },
+      {
+        "intent": "count_importante",
+        "text": "¿cuántos días importantes hay en este semestre?"
+      },
+      {
+        "intent": "count_importante",
+        "text": "¿cuál es la cantidad de días importantes del período?"
+      },
+      {
+        "intent": "count_importante",
+        "text": "¿cantidad de días importantes?"
+      },
+      {
+        "intent": "count_importante",
+        "text": "¿cuántos son los días importantes?"
       },
       {
         "intent": "nonsense",
@@ -9788,6 +11924,918 @@
           }
         ],
         "text": "que es el correo electronico estudiantil"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 23,
+            "value": "prematricula",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la prematricula?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 23,
+            "value": "prematricula",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la prematricula"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 41,
+            "value": "oferta academica personalizada",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la oferta academica personalizada?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 41,
+            "value": "oferta academica personalizada",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la oferta academica personalizada"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 35,
+            "value": "asignaturas no programadas",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son asignaturas no programadas?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 35,
+            "value": "asignaturas no programadas",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué son asignaturas no programadas"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 42,
+            "value": "seleccion de asignaturas libres",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la seleccion de asignaturas libres?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 42,
+            "value": "seleccion de asignaturas libres",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la seleccion de asignaturas libres"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 26,
+            "value": "lista de espera",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la lista de espera?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 26,
+            "value": "lista de espera",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la lista de espera"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 35,
+            "value": "autorizacion de empalmes",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la autorizacion de empalmes?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 35,
+            "value": "autorizacion de empalmes",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la autorizacion de empalmes"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 50,
+            "value": "autorizacion de asignaturas por tutoria",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la autorizacion de asignaturas por tutoria?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 50,
+            "value": "autorizacion de asignaturas por tutoria",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la autorizacion de asignaturas por tutoria"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 52,
+            "value": "autorizacion de exceso de carga academica",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la autorizacion de exceso de carga academica?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 52,
+            "value": "autorizacion de exceso de carga academica",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la autorizacion de exceso de carga academica"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 53,
+            "value": "asignacion de asignaturas fuera de carrera",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la asignacion de asignaturas fuera de carrera?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 53,
+            "value": "asignacion de asignaturas fuera de carrera",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la asignacion de asignaturas fuera de carrera"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 39,
+            "value": "modificacion de prematricula",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la modificacion de prematricula?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 39,
+            "value": "modificacion de prematricula",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la modificacion de prematricula"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 33,
+            "value": "bajas por prerrequisitos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué son bajas por prerrequisitos?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 33,
+            "value": "bajas por prerrequisitos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son bajas por prerrequisitos"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 27,
+            "value": "cambio de campus",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es el cambio de campus?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 27,
+            "value": "cambio de campus",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es el cambio de campus"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 8,
+            "end": 41,
+            "value": "cursar asignaturas en otro campus",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es cursar asignaturas en otro campus?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 8,
+            "end": 41,
+            "value": "cursar asignaturas en otro campus",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es cursar asignaturas en otro campus"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 30,
+            "value": "estudiantes separados",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son estudiantes separados?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 30,
+            "value": "estudiantes separados",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son estudiantes separados"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 39,
+            "value": "estudiantes no prematriculados",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son estudiantes no prematriculados?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 39,
+            "value": "estudiantes no prematriculados",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son estudiantes no prematriculados"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 31,
+            "value": "estudiantes especiales",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son estudiantes especiales?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 31,
+            "value": "estudiantes especiales",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son estudiantes especiales"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 28,
+            "value": "estudiantes oyentes",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué son estudiantes oyentes?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 28,
+            "value": "estudiantes oyentes",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son estudiantes oyentes"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 38,
+            "value": "modificacion de inscripcion",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la modificacion de inscripcion?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 38,
+            "value": "modificacion de inscripcion",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la modificacion de inscripcion"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 46,
+            "value": "autorizacion de ampliacion de cupos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la autorizacion de ampliacion de cupos?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 46,
+            "value": "autorizacion de ampliacion de cupos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la autorizacion de ampliacion de cupos"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 49,
+            "value": "transferencia de estudiantes de grupos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la transferencia de estudiantes de grupos?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 49,
+            "value": "transferencia de estudiantes de grupos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la transferencia de estudiantes de grupos"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 32,
+            "value": "cancelacion de grupos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la cancelacion de grupos?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 32,
+            "value": "cancelacion de grupos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la cancelacion de grupos"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 26,
+            "value": "lista de clases",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la lista de clases?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 26,
+            "value": "lista de clases",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la lista de clases"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "fn",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es fn?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "fn",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es fn"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 35,
+            "value": "actas de pruebas parciales",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son actas de pruebas parciales?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 35,
+            "value": "actas de pruebas parciales",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son actas de pruebas parciales"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 40,
+            "value": "actas de calificaciones finales",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son actas de calificaciones finales?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 9,
+            "end": 40,
+            "value": "actas de calificaciones finales",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que son actas de calificaciones finales"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 37,
+            "value": "revision de calificaciones",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la revision de calificaciones?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 37,
+            "value": "revision de calificaciones",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la revision de calificaciones"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 36,
+            "value": "reporte de calificaciones",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es el reporte de calificaciones?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 36,
+            "value": "reporte de calificaciones",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es el reporte de calificaciones"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "graduacion",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la graduacion?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "graduacion",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la graduacion"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 28,
+            "value": "cambio de carrera",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es el cambio de carrera?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 28,
+            "value": "cambio de carrera",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es el cambio de carrera"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "readmision",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la readmision?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "readmision",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la readmision"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 35,
+            "value": "expedicion de documentos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la expedicion de documentos?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 35,
+            "value": "expedicion de documentos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es la expedicion de documentos"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 41,
+            "value": "correo electronico estudiantil",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es el correo electronico estudiantil?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 41,
+            "value": "correo electronico estudiantil",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿que es el correo electronico estudiantil"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "readmision",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la readmision?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "readmision",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la readmision"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 35,
+            "value": "expedicion de documentos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la expedicion de documentos?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 35,
+            "value": "expedicion de documentos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es la expedicion de documentos"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 41,
+            "value": "correo electronico estudiantil",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es el correo electronico estudiantil?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 11,
+            "end": 41,
+            "value": "correo electronico estudiantil",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿qué es el correo electronico estudiantil"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 10,
+            "end": 20,
+            "value": "readmision",
+            "entity": "proceso"
+          }
+        ],
+        "text": "qué es la readmision?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 10,
+            "end": 20,
+            "value": "readmision",
+            "entity": "proceso"
+          }
+        ],
+        "text": "qué es la readmision"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 10,
+            "end": 34,
+            "value": "expedicion de documentos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "qué es la expedicion de documentos?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 10,
+            "end": 34,
+            "value": "expedicion de documentos",
+            "entity": "proceso"
+          }
+        ],
+        "text": "qué es la expedicion de documentos"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 10,
+            "end": 40,
+            "value": "correo electronico estudiantil",
+            "entity": "proceso"
+          }
+        ],
+        "text": "qué es el correo electronico estudiantil?"
+      },
+      {
+        "intent": "descripcion_proceso",
+        "entities": [
+          {
+            "start": 10,
+            "end": 40,
+            "value": "correo electronico estudiantil",
+            "entity": "proceso"
+          }
+        ],
+        "text": "qué es el correo electronico estudiantil"
       },
       {
         "intent": "procedimiento_proceso",
@@ -11282,18 +14330,6 @@
         "entities": [
           {
             "start": 29,
-            "end": 39,
-            "value": "graduacion",
-            "entity": "proceso"
-          }
-        ],
-        "text": "cual es la penalidad para la graduacion?"
-      },
-      {
-        "intent": "penalidad_proceso",
-        "entities": [
-          {
-            "start": 29,
             "end": 41,
             "value": "prematricula",
             "entity": "proceso"
@@ -11342,12 +14378,192 @@
         "entities": [
           {
             "start": 29,
-            "end": 39,
-            "value": "graduacion",
+            "end": 41,
+            "value": "prematricula",
             "entity": "proceso"
           }
         ],
-        "text": "cual es la penalidad para la graduacion"
+        "text": "cuál es la penalidad para la prematricula?"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 30,
+            "end": 60,
+            "value": "estudiantes no prematriculados",
+            "entity": "proceso"
+          }
+        ],
+        "text": "cuál es la penalidad para los estudiantes no prematriculados?"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 29,
+            "end": 56,
+            "value": "modificacion de inscripcion",
+            "entity": "proceso"
+          }
+        ],
+        "text": "cuál es la penalidad para la modificacion de inscripcion?"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 29,
+            "end": 46,
+            "value": "ausencia a clases",
+            "entity": "proceso"
+          }
+        ],
+        "text": "cuál es la penalidad para la ausencia a clases?"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 29,
+            "end": 41,
+            "value": "prematricula",
+            "entity": "proceso"
+          }
+        ],
+        "text": "cuál es la penalidad para la prematricula"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 30,
+            "end": 60,
+            "value": "estudiantes no prematriculados",
+            "entity": "proceso"
+          }
+        ],
+        "text": "cuál es la penalidad para los estudiantes no prematriculados"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 29,
+            "end": 56,
+            "value": "modificacion de inscripcion",
+            "entity": "proceso"
+          }
+        ],
+        "text": "cuál es la penalidad para la modificacion de inscripcion"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 29,
+            "end": 46,
+            "value": "ausencia a clases",
+            "entity": "proceso"
+          }
+        ],
+        "text": "cuál es la penalidad para la ausencia a clases"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 30,
+            "end": 42,
+            "value": "prematricula",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿cuál es la penalidad para la prematricula?"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 31,
+            "end": 61,
+            "value": "estudiantes no prematriculados",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿cuál es la penalidad para los estudiantes no prematriculados?"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 30,
+            "end": 57,
+            "value": "modificacion de inscripcion",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿cuál es la penalidad para la modificacion de inscripcion?"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 30,
+            "end": 47,
+            "value": "ausencia a clases",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿cuál es la penalidad para la ausencia a clases?"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 30,
+            "end": 42,
+            "value": "prematricula",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿cuál es la penalidad para la prematricula"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 31,
+            "end": 61,
+            "value": "estudiantes no prematriculados",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿cuál es la penalidad para los estudiantes no prematriculados"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 30,
+            "end": 57,
+            "value": "modificacion de inscripcion",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿cuál es la penalidad para la modificacion de inscripcion"
+      },
+      {
+        "intent": "penalidad_proceso",
+        "entities": [
+          {
+            "start": 30,
+            "end": 47,
+            "value": "ausencia a clases",
+            "entity": "proceso"
+          }
+        ],
+        "text": "¿cuál es la penalidad para la ausencia a clases"
       },
       {
         "intent": "advertencia_proceso",
@@ -11836,6 +15052,26 @@
       {
         "intent": "query_indice",
         "text": "Cual es mi indice?"
+      },
+      {
+        "intent": "query_indice",
+        "text": "¿Cual es mi indice academico?"
+      },
+      {
+        "intent": "query_indice",
+        "text": "¿mi indice"
+      },
+      {
+        "intent": "query_indice",
+        "text": "¿cual es mi indice?"
+      },
+      {
+        "intent": "query_indice",
+        "text": "¿cual es mi indice"
+      },
+      {
+        "intent": "query_indice",
+        "text": "¿Cual es mi indice?"
       }
     ],
     "regex_features": [
@@ -11844,13 +15080,36 @@
         "pattern": "[0-9]{8}"
       }
     ],
-    "lookup_tables": [],
     "entity_synonyms": [
       {
         "value": "Inicio de docencia",
         "synonyms": [
           "inicio de clases",
           "inicio de clase"
+        ]
+      },
+      {
+        "value": "oferta academica personalizada",
+        "synonyms": [
+          "oferta académica personalizada",
+          "oferta personalizada",
+          "óferta académica personalizada"
+        ]
+      },
+      {
+        "value": "autorizacion de empalmes",
+        "synonyms": [
+          "autorización de empalme",
+          "autorización de empalmes",
+          "autorizacion de empalme"
+        ]
+      },
+      {
+        "value": "correo electronico estudiantil",
+        "synonyms": [
+          "correo estudiantil",
+          "correo",
+          "correo de estudiantes"
         ]
       },
       {
@@ -11884,32 +15143,44 @@
       {
         "value": "Dia de Nuestra Senora de las Mercedes",
         "synonyms": [
-          "dia de las mercedes"
+          "dia de las mercedes",
+          "día de las mercedes"
         ]
       },
       {
         "value": "Segundo pago de matricula",
         "synonyms": [
           "segundo pago de matricula",
-          "segundo pago de la matricula"
+          "segundo pago de la matricula",
+          "- segundo pago de la matrícula"
         ]
       },
       {
         "value": "Firma de documentos de Credito Educativo",
         "synonyms": [
-          "firmas de documentos de credito"
+          "firmas de documentos de credito",
+          "documentos de crédito"
         ]
       },
       {
         "value": "Tercer pago de matricula",
         "synonyms": [
-          "tercer pago de la matricula"
+          "tercer pago de la matricula",
+          "tercer pago de matrícula"
         ]
       },
       {
         "value": "Solicitud de readmision",
         "synonyms": [
-          "solicitud para readmision"
+          "solicitud para readmision",
+          "solicitid de readmisión"
+        ]
+      },
+      {
+        "value": "readmision",
+        "synonyms": [
+          "readmisión",
+          "readmisíon"
         ]
       },
       {
@@ -11921,13 +15192,15 @@
       {
         "value": "Primer Examen de admision",
         "synonyms": [
-          "examen de admision"
+          "examen de admision",
+          "examen de admisión"
         ]
       },
       {
         "value": "Dia de la Constitucion",
         "synonyms": [
-          "constitucion"
+          "constitucion",
+          "constitución"
         ]
       },
       {
@@ -11946,19 +15219,14 @@
         "value": "Solicitud de revision de calificaciones finales",
         "synonyms": [
           "revision de calificaciones",
-          "revision de calificaciones finales"
+          "revision de calificaciones finales",
+          "revisión de calificaciones finales"
         ]
       },
       {
         "value": "Reporte resultados revision de calificaciones finales",
         "synonyms": [
           "reporte de calificaciones finales"
-        ]
-      },
-      {
-        "value": "Limite para pagar segunda cuota graduacion",
-        "synonyms": [
-          "segunda cuota del derecho de graduacion"
         ]
       },
       {
@@ -12001,32 +15269,38 @@
         "value": "Fecha limite para depositar documentos pendientes de graduacion",
         "synonyms": [
           "deposito de documentos de graduacion",
-          "deposito de documentos pendientes de graduacion"
+          "deposito de documentos pendientes de graduacion",
+          "depósito de documentos de graduación"
         ]
       },
       {
         "value": "Periodo de modificacion de prematricula",
         "synonyms": [
-          "modificacion de prematricula"
+          "modificacion de prematricula",
+          "modificación de prematrícula"
         ]
       },
       {
         "value": "Ultimo dia de docencia",
         "synonyms": [
           "ultimo dia de docencia",
-          "ultimo dia de clases"
+          "ultimo dia de clases",
+          "último día de clases",
+          "último día de docencia"
         ]
       },
       {
         "value": "Inicio del periodo",
         "synonyms": [
-          "inicio del periodo"
+          "inicio del periodo",
+          "inicio del período"
         ]
       },
       {
         "value": "Inicio asueto navideño",
         "synonyms": [
-          "vacaciones navidenas"
+          "vacaciones navidenas",
+          "vacaciones navideñas"
         ]
       }
     ]
