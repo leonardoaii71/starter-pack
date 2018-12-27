@@ -106,7 +106,7 @@ templates:
   utter_greet:
     - text: "¡Hola! Soy el bot regis. Puedes preguntarme cosas como: ¿Cuándo es la prematrícula?,  ¿Cuál es mi índice académico?,  ¿Qué son estudiantes especiales?... Adelante!"
     - text: "¡Saludos!. Soy regis. Puedo ofrecerte informacion académica acerca del calendario, procesos y sobre tu historial :) ¿En qué puedo ayudarte?"
-    - text: "¡Bienvenido {username}!. Soy el bot regis. Estoy aquí para ofrecerte información académica. Pregúntame cosas como: Fechas importantes, ¿Cuándo es el retiro?, ¿Cómo realizo la graduación? . ¿Qué deseas saber?"
+    - text: "¡Bienvenido!. Soy el bot regis. Estoy aquí para ofrecerte información académica. Pregúntame cosas como: Fechas importantes, ¿Cuándo es el retiro?, ¿Cómo realizo la graduación? . ¿Qué deseas saber?"
     - text: "Hey! Me llaman Regis, el bot de PUCMM. Soy experto en información académica. Puedes escribir el comando 'Ayuda' y con gusto te asistiré."
     - text: "¡Hola! Te doy la bienvenida. Soy Regis, el bot de registro. Puedo ofrecerte información académica relevante. ¿En qué puedo ayudarte?"
 
@@ -134,8 +134,8 @@ templates:
     - "Descuida, mi deber es ayudarte."
 
   utter_bye:
-    - text: "Adios {username}. Muchas gracias por tu visita, espero que me escribas pronto."
-    - text: "¡Bye-bye {username}! Espero haberte ayudado. Recuerda que estoy disponible las 24 horas del día."
+    - text: "Adios. Muchas gracias por tu visita, espero que me escribas pronto."
+    - text: "¡Bye-bye! Espero haberte ayudado. Recuerda que estoy disponible las 24 horas del día."
     - text: "¡Hasta luego! Espero haber respondido todas tus inquietudes."
     - text: "Hasta pronto, gracias por tu visita. La próxima vez solo dices 'Hola' y con gusto te ayudo."
 
@@ -171,18 +171,18 @@ templates:
     - text: "Por favor digite su nombre para iniciar:"
 
   utter_another_question:
-    - text: "Tienes otra pregunta {username}?"
-    - text: "Necesitas saber algo mas {username}?"
+    - text: "Tienes otra pregunta?"
+    - text: "Necesitas saber algo más?"
     - text: "Entendido ;) Puedes continuar con tu consulta."
 
   utter_no_mas_info:
-    - text: "Si no deseas seguir preguntando solo dime 'No' o 'Adios' y te comprenderé."
+    - text: "Si no deseas seguir preguntando solo dime 'Bye' o 'Adios' y te comprenderé."
     - text: "Si haz terminado tu consulta solo escribe 'Bye' o 'Hasta luego'."
     - text: "Si deseas terminar esta sesión basta con decir 'Bye' o 'Adios'."
-    - text: "Si no tienes nada más que consultar solo escribe 'No' o 'Bye' y te comprenderé."
+    - text: "Si no tienes nada más que consultar solo escribe 'Hasta luego' o 'Bye' y te comprenderé."
 
   utter_suggestions:
-    - text: "Creo que no entendí bien lo que quisiste decir. Intenta de nuevo"
+    - text: "Creo que no entendí bien lo que quisiste decir. Intenta de nuevo."
     - text: "Por favor podrías ser mas específico? intenta con otra pregunta."
 
   utter_incorrecto:
@@ -205,13 +205,13 @@ templates:
     - text: "Lo siento, no pude encontrar ese evento en el calendario. Intente con otro nombre"
 
   utter_retiro_parcial_fecha:
-   - text: "La fecha límite para el retiro parcial es el 9 de Noviembre."
+   - text: "La fecha límite para el retiro parcial es el 15 de Marzo del 2019."
 
   utter_retiro_total_fecha:
-  - text: "La fecha límite para el retiro total es el 23 de Noviembre."
+  - text: "La fecha límite para el retiro total es el 29 de Marzo del 2019."
 
   utter_retiro_prematricula_fecha:
-  - text: "La fecha límite para el retiro de prematrícula es el 12 de Diciembre del 2018."
+  - text: "La fecha límite para el retiro de prematrícula es el 16 de Abril del 2019."
 
   utter_cual_retiro:
   - text: " ¿A cúal retiro te refieres?"
@@ -291,17 +291,17 @@ templates:
     - text: "1) El estudiante realiza esta solicitud en a la Oficina de Registro donde se ingresa la misma en el sistema y se imprime,
   		en original y copia, un informe de los requisitos académicos y administrativos pendientes hasta ese momento y se entrega al solicitante,
   		2) Luego de haber realizado la solicitud de graduación, el estudiante realiza el pago correspondiente en el área de caja y deposita el
-  		recibo en Registro, 3) Durante el período correspondiente, Registro imprime el primer listado de candidatos a graduación y lo envía a los departamentos de las carreras,
-  		para su publicación, 4) Después de la entrega de las calificaciones finales, la Dirección del Registro actualiza la lista de solicitantes en base
-  		al resultado de las calificaciones del último período académico, la entrega del informe de pasantía y el cumplimiento de otros requisitos del
-  		pensum, 5) Aproximadamente diez días antes de la ceremonia oficial de graduación, Registro entrega a todos los graduandos las informaciones
-  		relativas al protocolo de la ceremonia y las certificaciones oficiales que los acreditan para mandar a confeccionar el anillo y alquilar el
+  		recibo en Registro, 3) Durante el período correspondiente, Registro imprime el primer listado de candidatos a graduación y lo envía a los
+  		departamentos de las carreras, para su publicación, 4) Después de la entrega de las calificaciones finales, la Dirección del Registro actualiza
+  		la lista de solicitantes en base al resultado de las calificaciones del último período académico, la entrega del informe de pasantía y el cumplimiento
+  		de otros requisitos del pensum, 5) Aproximadamente diez días antes de la ceremonia oficial de graduación, Registro entrega a todos los graduandos las
+  		informaciones relativas al protocolo de la ceremonia y las certificaciones oficiales que los acreditan para mandar a confeccionar el anillo y alquilar el
   		traje académico, 6) El día de la ceremonia, cada graduando recibe una carpeta con su título oficial, certificación de grado y récord de notas."
 
   utter_prematricula_proc:
     - text: "1) El estudiante ingresa su prematrícula mediante la opción Realizar Prematrícula disponible en el menú Prematrícula de la aplicación WebSISE.
-    Esta opción aparece de manera automática desde el primer día que se inicia el período de prematrícula y se desactiva un día antes del inicio del período de inscripción.
-		Durante este tiempo, el estudiante puede efectuar cambios a su pre-selección de asignaturas en el momento que desee y sin costo alguno,
+    Esta opción aparece de manera automática desde el primer día que se inicia el período de prematrícula y se desactiva un día antes del inicio del período de
+    inscripción. Durante este tiempo, el estudiante puede efectuar cambios a su pre-selección de asignaturas en el momento que desee y sin costo alguno,
     2) Una vez realizada la prematrícula, el estudiante debe imprimir el Informe de prematrícula como constancia de haber procesado la misma satisfactoriamente."
 
   utter_graduacion_sti_fecha:
@@ -338,13 +338,13 @@ templates:
   - text: "La fecha límite para solicitud de graduación Mayo 2019, Campus Santo Tomás de Aquino fue el 7 de Noviembre del 2018."
 
   utter_solicitud_sti_fecha:
-  - text: "La fecha límite para solicitud de graduación Junio 2019, Campus Santiago será el 5 de Diciembre del 2018."
+  - text: "La fecha límite para solicitud de graduación Junio 2019, Campus Santiago fue el 5 de Diciembre del 2018."
 
   utter_inscripcion_nuevo_ingreso_fecha:
-  - text: "La próxima inscripción para estudiantes de nuevo ingreso será el 17 de Diciembre del 2018."
+  - text: "La próxima inscripción para estudiantes de nuevo ingreso será el 27 de Agosto del 2019."
 
   utter_inscripcion_general_fecha:
-  - text: "Las inscripciones generales serán los días 18 y 19 de Diciembre del 2018."
+  - text: "Las inscripciones generales serán los días 28 y 29 de Agosto del 2019."
 
   utter_indice_acumulado:
   - text: "Tu índice acumulado es 2.5."
@@ -399,7 +399,7 @@ templates:
     - text: "oh no! me he confundido, quisiste decir:"
 
   utter_condicion_academica:
-    - text: "Su condicion académica es: {condicion}."
+    - text: "{condicion}."
 
   utter_requisitos_pendientes:
     - text: "Sus requisitos pendientes son: {requisitos} "
