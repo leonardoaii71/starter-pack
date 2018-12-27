@@ -255,6 +255,14 @@
 ## Generated Story -189469721235285774
 * nonsense
     - action_default_fallback
+    
+## para jodones
+* nonsense
+    - action_default_fallback
+* nonsense
+    - action_default_fallback
+* nonsense
+    - utter_revisate
 
 ## Generated Story -806123001115259216
 #* requisitos_cursados

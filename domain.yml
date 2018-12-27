@@ -114,6 +114,10 @@ templates:
     - text: "Por favor, digita tu matrícula sin espacios para continuar."
     - text: "Por favor digitar tu matrícula sin espacios ni guiones."
 
+  utter_revisate:
+    - text: "Al parecer te haz confundido bastante. Intenta con otra inquietud por favor."
+    - text: "Oh no, parece que no logro comprenderte. Intenta con otra inquietud por favor."
+
   utter_seguridad:
     - text: "Por seguridad te recomiendo que elimines la conversación cuando finalices tu consulta, así garantizas confidencialidad en la información suministrada."
 
@@ -438,6 +442,7 @@ actions:
   - action_requisitos_cursados
   - action_requisitos_pendientes
   - action_fallback
+  - utter_revisate
   - action_suggest
   - utter_ack_asuetos
   - utter_ack_eventdate
