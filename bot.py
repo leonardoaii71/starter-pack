@@ -53,7 +53,8 @@ def train_nlu():
     training_data = load_data('data/nlu_data.md')
     trainer = Trainer(config.load("nlu_config.yml"))
     trainer.train(training_data)
-    model_directory = trainer.persist('models', fixed_model_name="nlu", project_name='current')
+    model_directory = trainer.persist('models',
+                                      fixed_model_name="nlu", project_name='current')
 
     return model_directory
 
@@ -85,7 +86,7 @@ def run(serve_forever=True):
             # this is your bots username
             verify="regispucmm_bot",
             # the url your bot should listen for messages
-            webhook_url="https://a3cfd479.ngrok.io/webhooks/telegram/webhook"
+            webhook_url="https://49e936b1.ngrok.io/webhooks/telegram/webhook"
             )
 
         # set serve_forever=False if you want to keep the server running
