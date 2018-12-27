@@ -546,7 +546,7 @@ class ActionFallBack(Action):
         """
         :type tracker: Tracker
         """
-        message = tracker.latest_message()
+        message = tracker.latest_message
         doc = nlp(message)
         tokens = [token.text for token in doc if token.is_alpha]
         msp = [w for w in tokens if hsp.spell(w) is not True]
