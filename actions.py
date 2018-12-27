@@ -538,12 +538,22 @@ class ActionCalificacionMateria(Action):
 class ActionFallBack(Action):
     def name(self):
         # type: () -> Text
-        return "action_materia_calificacion"
+        return "action_fallback"
 
     def run(self, dispatcher, tracker, domain):
+        import spacy
+        nlp = spacy.load('es')
         """
         :type tracker: Tracker
         """
-        #message = tracker.latest_message
-        #message
-        pass
+        message = tracker.latest_message()
+        doc = nlp(message)
+        tokens = [token.text for token in doc if token.is_alpha]
+        msp = [w for w in tokens if hsp.spell(w) is not True]
+        suggestions = hsp.bulk_suggest(msp)
+        dispatcher.utter_message(suggestions)
+        print(suggestions)
+        m = message
+        for s in suggestions.keys():
+            m = m.replace(s, suggestions[s][0])
+        dispatcher.utter_message(m)

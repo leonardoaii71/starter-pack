@@ -437,6 +437,7 @@ actions:
   - action_process_procedimiento
   - action_requisitos_cursados
   - action_requisitos_pendientes
+  - action_fallback
   - action_suggest
   - utter_ack_asuetos
   - utter_ack_eventdate
