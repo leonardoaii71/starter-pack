@@ -11,12 +11,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/current/nlu/intent_classifier_tensorflow_embedding_inv_intent_dict.pkl" afterPath="$PROJECT_DIR$/models/current/nlu/intent_classifier_tensorflow_embedding_inv_intent_dict.pkl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/current/nlu/intent_featurizer_count_vectors.pkl" afterPath="$PROJECT_DIR$/models/current/nlu/intent_featurizer_count_vectors.pkl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actions.py" afterPath="$PROJECT_DIR$/actions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Database.py" afterPath="$PROJECT_DIR$/Database.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bot.py" afterPath="$PROJECT_DIR$/bot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain.yml" afterPath="$PROJECT_DIR$/domain.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/current/dialogue/domain.json" afterPath="$PROJECT_DIR$/models/current/dialogue/domain.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/current/dialogue/domain.yml" afterPath="$PROJECT_DIR$/models/current/dialogue/domain.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/current/dialogue/policy_0_MemoizationPolicy/memorized_turns.json" afterPath="$PROJECT_DIR$/models/current/dialogue/policy_0_MemoizationPolicy/memorized_turns.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/current/dialogue/policy_1_KerasPolicy/featurizer.json" afterPath="$PROJECT_DIR$/models/current/dialogue/policy_1_KerasPolicy/featurizer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/current/dialogue/policy_2_FallbackPolicy/fallback_policy.json" afterPath="$PROJECT_DIR$/models/current/dialogue/policy_2_FallbackPolicy/fallback_policy.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/current/dialogue/policy_metadata.json" afterPath="$PROJECT_DIR$/models/current/dialogue/policy_metadata.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/current/nlu/checkpoint" afterPath="$PROJECT_DIR$/models/current/nlu/checkpoint" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/current/nlu/entity_synonyms.json" afterPath="$PROJECT_DIR$/models/current/nlu/entity_synonyms.json" />
@@ -53,10 +55,15 @@
       <file leaf-file-name="bot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+            <state relative-caret-position="1377">
+              <caret line="81" column="30" lean-forward="false" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
+                <marker date="1545878862100" expanded="true" signature="988:1048" ph="..." />
+                <marker date="1545878862100" expanded="true" signature="3435:3618" ph="..." />
+                <marker date="1545878862100" expanded="true" signature="3435:3672" ph="..." />
+                <marker date="1545878862100" expanded="true" signature="3701:4331" ph="..." />
+                <marker date="1545878862100" expanded="true" signature="4272:4331" ph="..." />
               </folding>
             </state>
           </provider>
@@ -66,7 +73,7 @@
         <entry file="file://$USER_HOME$/Anaconda3/envs/BotProject/Lib/site-packages/rasa_core/channels/telegram.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/data/nlu_data.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="16660">
-              <caret line="980" column="19" lean-forward="true" selection-start-line="980" selection-start-column="19" selection-end-line="980" selection-end-column="19" />
+              <caret line="980" column="19" lean-forward="false" selection-start-line="980" selection-start-column="19" selection-end-line="980" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -97,7 +104,104 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="731">
               <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-              <folding />
+              <folding>
+                <marker date="1545878659158" expanded="true" signature="1769:14884" ph="templates: &lt;67 keys&gt;" />
+                <marker date="1545878659158" expanded="true" signature="1825:2194" ph="utter_greet: &lt;5 items&gt;" />
+                <marker date="1545878659158" expanded="true" signature="2182:2194" ph="¡Bienveni…eas saber?" />
+                <marker date="1545878659158" expanded="true" signature="13899:13912" ph="Su condic…ondicion}." />
+                <marker date="1545878659158" expanded="true" signature="13916:14003" ph="utter_req…pendientes: &lt;1 item&gt;" />
+                <marker date="1545878659158" expanded="true" signature="13957:14003" ph="Sus requi…quisitos} " />
+                <marker date="1545878659158" expanded="true" signature="14007:14077" ph="utter_req…s_cursados: &lt;1 item&gt;" />
+                <marker date="1545878659158" expanded="true" signature="14046:14077" ph="Sus requi…ados son: " />
+                <marker date="1545878659158" expanded="true" signature="14081:14176" ph="utter_cre…acumulados: &lt;1 item&gt;" />
+                <marker date="1545878659158" expanded="true" signature="14120:14176" ph="La cantid…te es: 215" />
+                <marker date="1545878659158" expanded="true" signature="14180:14283" ph="utter_welcome: &lt;1 item&gt;" />
+                <marker date="1545878659158" expanded="true" signature="14207:14283" ph="Bienvenid…eres saber" />
+                <marker date="1545878659158" expanded="true" signature="14287:14884" ph="utter_ofr…escripcion: &lt;3 items&gt;" />
+                <marker date="1545878659158" expanded="true" signature="14326:14514" ph="También p…l resto ;)" />
+                <marker date="1545878659158" expanded="true" signature="14527:14702" ph="Puedo ofr… es/son?'." />
+                <marker date="1545878659158" expanded="true" signature="14715:14884" ph="Tengo inf… te ayudo." />
+                <marker date="1545878659158" expanded="true" signature="14886:17052" ph="actions: &lt;79 items&gt;" />
+                <marker date="1545878659158" expanded="true" signature="14969:14992" ph="action_ac…lificacion" />
+                <marker date="1545878659158" expanded="true" signature="14997:15017" ph="action_ack_eventdate" />
+                <marker date="1545878659158" expanded="true" signature="15022:15048" ph="action_co…_academica" />
+                <marker date="1545878659158" expanded="true" signature="15053:15073" ph="action_count_asuetos" />
+                <marker date="1545878659158" expanded="true" signature="15078:15100" ph="action_co…_important" />
+                <marker date="1545878659158" expanded="true" signature="15105:15131" ph="action_cr…acumulados" />
+                <marker date="1545878659158" expanded="true" signature="15136:15153" ph="action_login_form" />
+                <marker date="1545878659158" expanded="true" signature="15158:15177" ph="action_look_asuetos" />
+                <marker date="1545878659158" expanded="true" signature="15182:15199" ph="action_look_event" />
+                <marker date="1545878659158" expanded="true" signature="15204:15225" ph="action_lo…_important" />
+                <marker date="1545878659158" expanded="true" signature="15230:15256" ph="action_pr…dvertencia" />
+                <marker date="1545878659158" expanded="true" signature="15261:15287" ph="action_pr…escripcion" />
+                <marker date="1545878659158" expanded="true" signature="15292:15318" ph="action_pr…mportancia" />
+                <marker date="1545878659158" expanded="true" signature="15323:15347" ph="action_pr…_penalidad" />
+                <marker date="1545878659158" expanded="true" signature="15352:15380" ph="action_pr…cedimiento" />
+                <marker date="1545878659158" expanded="true" signature="15385:15411" ph="action_re…s_cursados" />
+                <marker date="1545878659158" expanded="true" signature="15416:15444" ph="action_re…pendientes" />
+                <marker date="1545878659158" expanded="true" signature="15449:15464" ph="action_fallback" />
+                <marker date="1545878659158" expanded="true" signature="15469:15483" ph="action_suggest" />
+                <marker date="1545878659158" expanded="true" signature="15488:15505" ph="utter_ack_asuetos" />
+                <marker date="1545878659158" expanded="true" signature="15510:15529" ph="utter_ack_eventdate" />
+                <marker date="1545878659158" expanded="true" signature="15534:15558" ph="utter_ack…er_asuetos" />
+                <marker date="1545878659158" expanded="true" signature="15563:15591" ph="utter_ack…mportantes" />
+                <marker date="1545878659158" expanded="true" signature="15596:15621" ph="utter_ack…_eventdate" />
+                <marker date="1545878659158" expanded="true" signature="15626:15640" ph="utter_adelante" />
+                <marker date="1545878659158" expanded="true" signature="15645:15659" ph="utter_algo_mas" />
+                <marker date="1545878659158" expanded="true" signature="15664:15686" ph="utter_ano…r_question" />
+                <marker date="1545878659158" expanded="true" signature="15691:15710" ph="utter_ask_matricula" />
+                <marker date="1545878659158" expanded="true" signature="15715:15733" ph="utter_ask_password" />
+                <marker date="1545878659158" expanded="true" signature="15738:15756" ph="utter_ask_username" />
+                <marker date="1545878659158" expanded="true" signature="15761:15770" ph="utter_bye" />
+                <marker date="1545878659158" expanded="true" signature="15775:15800" ph="utter_con…_academica" />
+                <marker date="1545878659158" expanded="true" signature="15805:15830" ph="utter_cre…acumulados" />
+                <marker date="1545878659158" expanded="true" signature="15835:15856" ph="utter_cua…graduacion" />
+                <marker date="1545878659158" expanded="true" signature="15861:15878" ph="utter_cual_indice" />
+                <marker date="1545878659158" expanded="true" signature="15883:15900" ph="utter_cual_retiro" />
+                <marker date="1545878659158" expanded="true" signature="15905:15915" ph="utter_date" />
+                <marker date="1545878659158" expanded="true" signature="15920:15933" ph="utter_default" />
+                <marker date="1545878659158" expanded="true" signature="15938:15957" ph="utter_did_that_help" />
+                <marker date="1545878659158" expanded="true" signature="15962:15980" ph="utter_disamb_intro" />
+                <marker date="1545878659158" expanded="true" signature="15985:16006" ph="utter_eve…_not_found" />
+                <marker date="1545878659158" expanded="true" signature="16011:16024" ph="utter_goodbye" />
+                <marker date="1545878659158" expanded="true" signature="16029:16055" ph="utter_gra…_sta_fecha" />
+                <marker date="1545878659158" expanded="true" signature="16060:16086" ph="utter_gra…_sti_fecha" />
+                <marker date="1545878659158" expanded="true" signature="16091:16102" ph="utter_greet" />
+                <marker date="1545878659158" expanded="true" signature="16107:16118" ph="utter_happy" />
+                <marker date="1545878659158" expanded="true" signature="16123:16135" ph="utter_indice" />
+                <marker date="1545878659158" expanded="true" signature="16140:16162" ph="utter_ind…_acumulado" />
+                <marker date="1545878659158" expanded="true" signature="16167:16187" ph="utter_indice_periodo" />
+                <marker date="1545878659158" expanded="true" signature="16192:16217" ph="utter_req…s_cursados" />
+                <marker date="1545878659158" expanded="true" signature="16222:16249" ph="utter_req…pendientes" />
+                <marker date="1545878659158" expanded="true" signature="16254:16280" ph="utter_ret…cial_fecha" />
+                <marker date="1545878659158" expanded="true" signature="16285:16316" ph="utter_ret…cula_fecha" />
+                <marker date="1545878659158" expanded="true" signature="16321:16345" ph="utter_ret…otal_fecha" />
+                <marker date="1545878659158" expanded="true" signature="16350:16361" ph="utter_sorry" />
+                <marker date="1545878659158" expanded="true" signature="16366:16383" ph="utter_suggestions" />
+                <marker date="1545878659158" expanded="true" signature="16388:16399" ph="utter_thank" />
+                <marker date="1545878659158" expanded="true" signature="16404:16424" ph="utter_you_should_ask" />
+                <marker date="1545878659158" expanded="true" signature="16429:16444" ph="utter_seguridad" />
+                <marker date="1545878659158" expanded="true" signature="16449:16465" ph="utter_como_estas" />
+                <marker date="1545878659158" expanded="true" signature="16470:16492" ph="utter_cua…nscripcion" />
+                <marker date="1545878659158" expanded="true" signature="16497:16534" ph="utter_ins…reso_fecha" />
+                <marker date="1545878659158" expanded="true" signature="16539:16570" ph="utter_ins…eral_fecha" />
+                <marker date="1545878659158" expanded="true" signature="16575:16595" ph="utter_cual_solicitud" />
+                <marker date="1545878659158" expanded="true" signature="16600:16624" ph="utter_pre…cula_fecha" />
+                <marker date="1545878659158" expanded="true" signature="16629:16654" ph="utter_sol…_sti_fecha" />
+                <marker date="1545878659158" expanded="true" signature="16659:16684" ph="utter_sol…_sta_fecha" />
+                <marker date="1545878659158" expanded="true" signature="16689:16714" ph="utter_ofr…escripcion" />
+                <marker date="1545878659158" expanded="true" signature="16719:16736" ph="utter_no_mas_info" />
+                <marker date="1545878659158" expanded="true" signature="16741:16773" ph="utter_pro…ematricula" />
+                <marker date="1545878659158" expanded="true" signature="16778:16801" ph="utter_pre…icula_proc" />
+                <marker date="1545878659158" expanded="true" signature="16806:16836" ph="utter_pro…graduacion" />
+                <marker date="1545878659158" expanded="true" signature="16841:16862" ph="utter_gra…acion_proc" />
+                <marker date="1545878659158" expanded="true" signature="16867:16895" ph="utter_you…ematricula" />
+                <marker date="1545878659158" expanded="true" signature="16900:16916" ph="utter_incorrecto" />
+                <marker date="1545878659158" expanded="true" signature="16921:16947" ph="utter_you…graduacion" />
+                <marker date="1545878659158" expanded="true" signature="16952:16979" ph="utter_you…nscripcion" />
+                <marker date="1545878659158" expanded="true" signature="16984:17010" ph="utter_you…como_estas" />
+                <marker date="1545878659158" expanded="true" signature="17015:17052" ph="utter_you…pendientes" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +209,8 @@
       <file leaf-file-name="actions.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/actions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="508" column="0" lean-forward="true" selection-start-line="508" selection-start-column="0" selection-end-line="508" selection-end-column="0" />
+            <state relative-caret-position="441">
+              <caret line="509" column="0" lean-forward="true" selection-start-line="509" selection-start-column="0" selection-end-line="509" selection-end-column="0" />
               <folding>
                 <element signature="e#366#421#0" expanded="false" />
                 <element signature="e#478#1711#0" expanded="false" />
@@ -236,11 +340,6 @@
                 <element signature="e#17904#18353#0" expanded="false" />
                 <element signature="e#17912#18006#0" expanded="false" />
                 <element signature="e#18032#18083#0" expanded="false" />
-                <element signature="e#18409#18672#0" expanded="false" />
-                <element signature="e#18433#18496#0" expanded="false" />
-                <element signature="e#18554#18672#0" expanded="false" />
-                <element signature="e#18554#18600#1" expanded="false" />
-                <element signature="e#18609#18642#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -380,6 +479,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -396,8 +497,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -668,18 +767,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17927383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18154311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3535188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31423897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3535188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7545008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1046,14 +1146,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rasa_core.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="127">
-          <caret line="29417" column="115" lean-forward="false" selection-start-line="29417" selection-start-column="115" selection-end-line="29417" selection-end-column="115" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-14726">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="127">
+          <caret line="29417" column="115" lean-forward="false" selection-start-line="29417" selection-start-column="115" selection-end-line="29417" selection-end-column="115" />
         </state>
       </provider>
     </entry>
@@ -1098,7 +1198,7 @@
     <entry file="file://$PROJECT_DIR$/data/nlu_data.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16660">
-          <caret line="980" column="19" lean-forward="true" selection-start-line="980" selection-start-column="19" selection-end-line="980" selection-end-column="19" />
+          <caret line="980" column="19" lean-forward="false" selection-start-line="980" selection-start-column="19" selection-end-line="980" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1107,16 +1207,118 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-          <folding />
+          <folding>
+            <marker date="1545878659158" expanded="true" signature="1769:14884" ph="templates: &lt;67 keys&gt;" />
+            <marker date="1545878659158" expanded="true" signature="1825:2194" ph="utter_greet: &lt;5 items&gt;" />
+            <marker date="1545878659158" expanded="true" signature="2182:2194" ph="¡Bienveni…eas saber?" />
+            <marker date="1545878659158" expanded="true" signature="13899:13912" ph="Su condic…ondicion}." />
+            <marker date="1545878659158" expanded="true" signature="13916:14003" ph="utter_req…pendientes: &lt;1 item&gt;" />
+            <marker date="1545878659158" expanded="true" signature="13957:14003" ph="Sus requi…quisitos} " />
+            <marker date="1545878659158" expanded="true" signature="14007:14077" ph="utter_req…s_cursados: &lt;1 item&gt;" />
+            <marker date="1545878659158" expanded="true" signature="14046:14077" ph="Sus requi…ados son: " />
+            <marker date="1545878659158" expanded="true" signature="14081:14176" ph="utter_cre…acumulados: &lt;1 item&gt;" />
+            <marker date="1545878659158" expanded="true" signature="14120:14176" ph="La cantid…te es: 215" />
+            <marker date="1545878659158" expanded="true" signature="14180:14283" ph="utter_welcome: &lt;1 item&gt;" />
+            <marker date="1545878659158" expanded="true" signature="14207:14283" ph="Bienvenid…eres saber" />
+            <marker date="1545878659158" expanded="true" signature="14287:14884" ph="utter_ofr…escripcion: &lt;3 items&gt;" />
+            <marker date="1545878659158" expanded="true" signature="14326:14514" ph="También p…l resto ;)" />
+            <marker date="1545878659158" expanded="true" signature="14527:14702" ph="Puedo ofr… es/son?'." />
+            <marker date="1545878659158" expanded="true" signature="14715:14884" ph="Tengo inf… te ayudo." />
+            <marker date="1545878659158" expanded="true" signature="14886:17052" ph="actions: &lt;79 items&gt;" />
+            <marker date="1545878659158" expanded="true" signature="14969:14992" ph="action_ac…lificacion" />
+            <marker date="1545878659158" expanded="true" signature="14997:15017" ph="action_ack_eventdate" />
+            <marker date="1545878659158" expanded="true" signature="15022:15048" ph="action_co…_academica" />
+            <marker date="1545878659158" expanded="true" signature="15053:15073" ph="action_count_asuetos" />
+            <marker date="1545878659158" expanded="true" signature="15078:15100" ph="action_co…_important" />
+            <marker date="1545878659158" expanded="true" signature="15105:15131" ph="action_cr…acumulados" />
+            <marker date="1545878659158" expanded="true" signature="15136:15153" ph="action_login_form" />
+            <marker date="1545878659158" expanded="true" signature="15158:15177" ph="action_look_asuetos" />
+            <marker date="1545878659158" expanded="true" signature="15182:15199" ph="action_look_event" />
+            <marker date="1545878659158" expanded="true" signature="15204:15225" ph="action_lo…_important" />
+            <marker date="1545878659158" expanded="true" signature="15230:15256" ph="action_pr…dvertencia" />
+            <marker date="1545878659158" expanded="true" signature="15261:15287" ph="action_pr…escripcion" />
+            <marker date="1545878659158" expanded="true" signature="15292:15318" ph="action_pr…mportancia" />
+            <marker date="1545878659158" expanded="true" signature="15323:15347" ph="action_pr…_penalidad" />
+            <marker date="1545878659158" expanded="true" signature="15352:15380" ph="action_pr…cedimiento" />
+            <marker date="1545878659158" expanded="true" signature="15385:15411" ph="action_re…s_cursados" />
+            <marker date="1545878659158" expanded="true" signature="15416:15444" ph="action_re…pendientes" />
+            <marker date="1545878659158" expanded="true" signature="15449:15464" ph="action_fallback" />
+            <marker date="1545878659158" expanded="true" signature="15469:15483" ph="action_suggest" />
+            <marker date="1545878659158" expanded="true" signature="15488:15505" ph="utter_ack_asuetos" />
+            <marker date="1545878659158" expanded="true" signature="15510:15529" ph="utter_ack_eventdate" />
+            <marker date="1545878659158" expanded="true" signature="15534:15558" ph="utter_ack…er_asuetos" />
+            <marker date="1545878659158" expanded="true" signature="15563:15591" ph="utter_ack…mportantes" />
+            <marker date="1545878659158" expanded="true" signature="15596:15621" ph="utter_ack…_eventdate" />
+            <marker date="1545878659158" expanded="true" signature="15626:15640" ph="utter_adelante" />
+            <marker date="1545878659158" expanded="true" signature="15645:15659" ph="utter_algo_mas" />
+            <marker date="1545878659158" expanded="true" signature="15664:15686" ph="utter_ano…r_question" />
+            <marker date="1545878659158" expanded="true" signature="15691:15710" ph="utter_ask_matricula" />
+            <marker date="1545878659158" expanded="true" signature="15715:15733" ph="utter_ask_password" />
+            <marker date="1545878659158" expanded="true" signature="15738:15756" ph="utter_ask_username" />
+            <marker date="1545878659158" expanded="true" signature="15761:15770" ph="utter_bye" />
+            <marker date="1545878659158" expanded="true" signature="15775:15800" ph="utter_con…_academica" />
+            <marker date="1545878659158" expanded="true" signature="15805:15830" ph="utter_cre…acumulados" />
+            <marker date="1545878659158" expanded="true" signature="15835:15856" ph="utter_cua…graduacion" />
+            <marker date="1545878659158" expanded="true" signature="15861:15878" ph="utter_cual_indice" />
+            <marker date="1545878659158" expanded="true" signature="15883:15900" ph="utter_cual_retiro" />
+            <marker date="1545878659158" expanded="true" signature="15905:15915" ph="utter_date" />
+            <marker date="1545878659158" expanded="true" signature="15920:15933" ph="utter_default" />
+            <marker date="1545878659158" expanded="true" signature="15938:15957" ph="utter_did_that_help" />
+            <marker date="1545878659158" expanded="true" signature="15962:15980" ph="utter_disamb_intro" />
+            <marker date="1545878659158" expanded="true" signature="15985:16006" ph="utter_eve…_not_found" />
+            <marker date="1545878659158" expanded="true" signature="16011:16024" ph="utter_goodbye" />
+            <marker date="1545878659158" expanded="true" signature="16029:16055" ph="utter_gra…_sta_fecha" />
+            <marker date="1545878659158" expanded="true" signature="16060:16086" ph="utter_gra…_sti_fecha" />
+            <marker date="1545878659158" expanded="true" signature="16091:16102" ph="utter_greet" />
+            <marker date="1545878659158" expanded="true" signature="16107:16118" ph="utter_happy" />
+            <marker date="1545878659158" expanded="true" signature="16123:16135" ph="utter_indice" />
+            <marker date="1545878659158" expanded="true" signature="16140:16162" ph="utter_ind…_acumulado" />
+            <marker date="1545878659158" expanded="true" signature="16167:16187" ph="utter_indice_periodo" />
+            <marker date="1545878659158" expanded="true" signature="16192:16217" ph="utter_req…s_cursados" />
+            <marker date="1545878659158" expanded="true" signature="16222:16249" ph="utter_req…pendientes" />
+            <marker date="1545878659158" expanded="true" signature="16254:16280" ph="utter_ret…cial_fecha" />
+            <marker date="1545878659158" expanded="true" signature="16285:16316" ph="utter_ret…cula_fecha" />
+            <marker date="1545878659158" expanded="true" signature="16321:16345" ph="utter_ret…otal_fecha" />
+            <marker date="1545878659158" expanded="true" signature="16350:16361" ph="utter_sorry" />
+            <marker date="1545878659158" expanded="true" signature="16366:16383" ph="utter_suggestions" />
+            <marker date="1545878659158" expanded="true" signature="16388:16399" ph="utter_thank" />
+            <marker date="1545878659158" expanded="true" signature="16404:16424" ph="utter_you_should_ask" />
+            <marker date="1545878659158" expanded="true" signature="16429:16444" ph="utter_seguridad" />
+            <marker date="1545878659158" expanded="true" signature="16449:16465" ph="utter_como_estas" />
+            <marker date="1545878659158" expanded="true" signature="16470:16492" ph="utter_cua…nscripcion" />
+            <marker date="1545878659158" expanded="true" signature="16497:16534" ph="utter_ins…reso_fecha" />
+            <marker date="1545878659158" expanded="true" signature="16539:16570" ph="utter_ins…eral_fecha" />
+            <marker date="1545878659158" expanded="true" signature="16575:16595" ph="utter_cual_solicitud" />
+            <marker date="1545878659158" expanded="true" signature="16600:16624" ph="utter_pre…cula_fecha" />
+            <marker date="1545878659158" expanded="true" signature="16629:16654" ph="utter_sol…_sti_fecha" />
+            <marker date="1545878659158" expanded="true" signature="16659:16684" ph="utter_sol…_sta_fecha" />
+            <marker date="1545878659158" expanded="true" signature="16689:16714" ph="utter_ofr…escripcion" />
+            <marker date="1545878659158" expanded="true" signature="16719:16736" ph="utter_no_mas_info" />
+            <marker date="1545878659158" expanded="true" signature="16741:16773" ph="utter_pro…ematricula" />
+            <marker date="1545878659158" expanded="true" signature="16778:16801" ph="utter_pre…icula_proc" />
+            <marker date="1545878659158" expanded="true" signature="16806:16836" ph="utter_pro…graduacion" />
+            <marker date="1545878659158" expanded="true" signature="16841:16862" ph="utter_gra…acion_proc" />
+            <marker date="1545878659158" expanded="true" signature="16867:16895" ph="utter_you…ematricula" />
+            <marker date="1545878659158" expanded="true" signature="16900:16916" ph="utter_incorrecto" />
+            <marker date="1545878659158" expanded="true" signature="16921:16947" ph="utter_you…graduacion" />
+            <marker date="1545878659158" expanded="true" signature="16952:16979" ph="utter_you…nscripcion" />
+            <marker date="1545878659158" expanded="true" signature="16984:17010" ph="utter_you…como_estas" />
+            <marker date="1545878659158" expanded="true" signature="17015:17052" ph="utter_you…pendientes" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+        <state relative-caret-position="1377">
+          <caret line="81" column="30" lean-forward="false" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+            <marker date="1545878862100" expanded="true" signature="988:1048" ph="..." />
+            <marker date="1545878862100" expanded="true" signature="3435:3618" ph="..." />
+            <marker date="1545878862100" expanded="true" signature="3435:3672" ph="..." />
+            <marker date="1545878862100" expanded="true" signature="3701:4331" ph="..." />
+            <marker date="1545878862100" expanded="true" signature="4272:4331" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1124,15 +1326,15 @@
     <entry file="file://$USER_HOME$/Anaconda3/envs/BotProject/Lib/site-packages/rasa_core/channels/telegram.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/actions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="508" column="0" lean-forward="true" selection-start-line="508" selection-start-column="0" selection-end-line="508" selection-end-column="0" />
+        <state relative-caret-position="441">
+          <caret line="509" column="0" lean-forward="true" selection-start-line="509" selection-start-column="0" selection-end-line="509" selection-end-column="0" />
           <folding>
             <element signature="e#366#421#0" expanded="false" />
             <element signature="e#478#1711#0" expanded="false" />
@@ -1262,11 +1464,6 @@
             <element signature="e#17904#18353#0" expanded="false" />
             <element signature="e#17912#18006#0" expanded="false" />
             <element signature="e#18032#18083#0" expanded="false" />
-            <element signature="e#18409#18672#0" expanded="false" />
-            <element signature="e#18433#18496#0" expanded="false" />
-            <element signature="e#18554#18672#0" expanded="false" />
-            <element signature="e#18554#18600#1" expanded="false" />
-            <element signature="e#18609#18642#0" expanded="false" />
           </folding>
         </state>
       </provider>

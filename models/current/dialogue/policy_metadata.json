@@ -2,87 +2,28 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "proceso",
         "password",
-        "calificacion",
-        "event",
-        "matricula"
+        "matricula",
+        "proceso",
+        "calificacion"
       ]
-    },
-    "utter_another_question": {
-      "slots": []
     },
     "utter_graduacion_sta_fecha": {
       "slots": []
     },
-    "utter_thank": {
+    "utter_ack_number_importantes": {
       "slots": []
     },
-    "action_default_fallback": {
-      "slots": []
-    },
-    "utter_happy": {
-      "slots": []
-    },
-    "utter_retiro_total_fecha": {
+    "utter_you_meant_prematricula": {
       "slots": []
     },
     "action_ack_eventdate": {
       "slots": []
     },
-    "utter_retiro_parcial_fecha": {
-      "slots": []
-    },
-    "action_requisitos_pendientes": {
-      "slots": []
-    },
-    "utter_greet": {
-      "slots": []
-    },
-    "action_look_asuetos": {
-      "slots": [
-        "asueto_count"
-      ]
-    },
-    "action_login_form": {
-      "slots": [
-        "requested_slot",
-        "password",
-        "username"
-      ]
-    },
     "action_requisitos_cursados": {
       "slots": []
     },
-    "utter_ask_matricula": {
-      "slots": [
-        "requested_slot"
-      ]
-    },
-    "action_ack_calificacion": {
-      "slots": []
-    },
-    "action_process_procedimiento": {
-      "slots": []
-    },
-    "action_look_event": {
-      "slots": [
-        "matching_events"
-      ]
-    },
-    "action_condicion_academica": {
-      "slots": []
-    },
-    "utter_default": {
-      "slots": []
-    },
-    "utter_event_not_found": {
-      "slots": []
-    },
-    "action_creditos_acumulados": {
-      "slots": []
-    },
-    "utter_bye": {
+    "utter_seguridad": {
       "slots": []
     },
     "action_look_important": {
@@ -90,13 +31,96 @@
         "importantes_count"
       ]
     },
+    "action_login_form": {
+      "slots": [
+        "username",
+        "password",
+        "requested_slot"
+      ]
+    },
     "utter_graduacion_sti_fecha": {
       "slots": []
     },
-    "utter_ack_number_importantes": {
+    "action_ack_calificacion": {
+      "slots": []
+    },
+    "utter_ask_matricula": {
+      "slots": [
+        "requested_slot"
+      ]
+    },
+    "utter_another_question": {
+      "slots": []
+    },
+    "action_process_descripcion": {
+      "slots": []
+    },
+    "utter_graduacion_proc": {
+      "slots": []
+    },
+    "action_condicion_academica": {
       "slots": []
     },
     "utter_indice_acumulado": {
+      "slots": []
+    },
+    "utter_como_estas": {
+      "slots": []
+    },
+    "utter_thank": {
+      "slots": []
+    },
+    "utter_happy": {
+      "slots": []
+    },
+    "utter_retiro_prematricula_fecha": {
+      "slots": []
+    },
+    "utter_inscripcion_general_fecha": {
+      "slots": []
+    },
+    "action_look_asuetos": {
+      "slots": [
+        "asueto_count"
+      ]
+    },
+    "utter_default": {
+      "slots": []
+    },
+    "action_count_asuetos": {
+      "slots": []
+    },
+    "utter_you_meant_graduacion": {
+      "slots": []
+    },
+    "action_process_procedimiento": {
+      "slots": []
+    },
+    "utter_retiro_parcial_fecha": {
+      "slots": []
+    },
+    "action_process_penalidad": {
+      "slots": []
+    },
+    "utter_you_should_ask": {
+      "slots": []
+    },
+    "utter_you_meant_como_estas": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_no_mas_info": {
+      "slots": []
+    },
+    "utter_incorrecto": {
+      "slots": []
+    },
+    "utter_retiro_total_fecha": {
+      "slots": []
+    },
+    "action_default_fallback": {
       "slots": []
     }
   },
