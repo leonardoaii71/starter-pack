@@ -91,7 +91,7 @@ def run(serve_forever=True):
 
         # set serve_forever=False if you want to keep the server running
         s = agent.handle_channels([facebook_channel, input_channel], 5005, serve_forever=True)
-EndpointConfig(url="http://209.97.146.240:5055/webhook")
+
     except:
         raise Exception("Failed to run")
 
