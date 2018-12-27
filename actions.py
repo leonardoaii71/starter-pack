@@ -169,10 +169,9 @@ class ActionLookForAsuetos(Action):
         if docs:
             for doc in docs:
                 dia = doc['date'].strftime('%d de %B del %Y')
-                matches.append(doc['evento']['nombre'] + " " + dia + '\n')
-
+                matches.append("- " + doc['evento']['nombre'] + " " + dia)
             dispatcher.utter_template('utter_ack_asuetos', tracker)
-            dispatcher.utter_message(matches.__str__())
+            dispatcher.utter_message("\n".join(matches))
         return [SlotSet('asueto_count', docs.count())]
 
 
@@ -198,6 +197,7 @@ class ActionCountAsuetos(Action):
         projection["evento.nombre"] = 1
         collection = Database('kb', 'Calendarios').collection
         docs = collection.find(query, projection=projection)
+
 
         return [SlotSet('asueto_count', docs.count())]
 
@@ -228,10 +228,11 @@ class ActionLookForImportant(Action):
             for doc in docs:
                 # date = datetime.strptime(doc['date'], '%Y-%m-%d %H:%M:%S.%f')
                 dia = doc['date'].strftime('%d de %B del %Y')
-                matches.append(doc['evento']['nombre'] + " " + dia + '\n')
+                matches.append("- " + doc['evento']['nombre'] + " " + dia)
 
             dispatcher.utter_template('utter_ack_importantes', tracker)
-            dispatcher.utter_message(matches.__str__())
+            dispatcher.utter_message("\n".join(matches))
+
         return [SlotSet('importantes_count', docs.count())]
 
 
