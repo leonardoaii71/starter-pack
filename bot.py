@@ -65,7 +65,7 @@ def run(serve_forever=True):
                                                           'action'
                                                           'model')
 
-   _endpoints = EndpointConfig(url="http://209.97.146.240:5055/webhook")
+    _endpoints = EndpointConfig(url="http://209.97.146.240:5055/webhook")
     try:
         _interpreter = RasaNLUInterpreter("models/current/nlu/")
         # load your trained agent
@@ -86,12 +86,12 @@ def run(serve_forever=True):
             # this is your bots username
             verify="regispucmm_bot",
             # the url your bot should listen for messages
-           webhook_url="https://www.sysservices.site/webhooks/telegram/webhook"
+            webhook_url="https://www.sysservices.site/webhooks/telegram/webhook"
             )
 
         # set serve_forever=False if you want to keep the server running
         s = agent.handle_channels([facebook_channel, input_channel], 5005, serve_forever=True)
-
+EndpointConfig(url="http://209.97.146.240:5055/webhook")
     except:
         raise Exception("Failed to run")
 
