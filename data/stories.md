@@ -83,6 +83,8 @@
     - utter_ask_matricula
     - slot{"requested_slot": "matricula"}
 * informar{"matricula": "20121917"}
+    - utter_ask_password
+* informar{"password": "leonard1"}
     - utter_indice_acumulado
 
 ## Generated Story 3741297509561492559
@@ -104,6 +106,8 @@
     - utter_ask_matricula
     - slot{"requested_slot": "matricula"}
 * informar{"matricula": "20121917"}
+    - utter_ask_password
+* informar{"password": "leonard1"}
     - utter_indice_periodo
 
 ## Generated Story -1130115263992449069
@@ -256,13 +260,6 @@
 * nonsense
     - action_default_fallback
     
-## para jodones
-* nonsense
-    - action_default_fallback
-* nonsense
-    - action_default_fallback
-* nonsense
-    - utter_revisate
 
 ## Generated Story -806123001115259216
 #* requisitos_cursados
@@ -293,3 +290,6 @@
     - action_login_form
     - slot{"password": "321"}
     - slot{"username": "Leonardo"}
+    
+
+    
